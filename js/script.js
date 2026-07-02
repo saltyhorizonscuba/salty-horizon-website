@@ -53,7 +53,7 @@ const I18N = {
 
     'team.eyebrow':'Your instructors',
     'team.title':'Camille & Julien',
-    'team.lead':'Two lives shaped by the ocean — now dedicated to sharing it with you, safely and authentically.',
+    'team.lead':'Two lives shaped by the ocean, now dedicated to sharing it with you, safely and authentically.',
     'camille.role':'PADI OWSI & MSDT',
     'camille.spec':'Specialties: AWARE Shark Conservation, Deep, Digital Underwater Photography, Dive Against Debris, Nitrox, Wreck, AWARE Coral Reef Conservation, PADI AWARE, Peak Performance Buoyancy, EFR',
     'camille.bio':'Raised between Costa Rica’s jungle and ocean, Camille has been diving since the age of 14. Passionate about sharks and marine conservation, she loves sharing the underwater world while inspiring others to protect it',
@@ -163,7 +163,7 @@ const I18N = {
 
     'team.eyebrow':'Vos instructeurs',
     'team.title':'Camille & Julien',
-    'team.lead':'Deux vies façonnées par l’océan — désormais dédiées à vous le faire découvrir, en sécurité et en authenticité.',
+    'team.lead':'Deux vies façonnées par l’océan, désormais dédiées à vous le faire découvrir, en sécurité et en authenticité.',
     'camille.role':'PADI OWSI & MSDT',
     'camille.spec':'Spécialités : AWARE Shark Conservation, Deep, Digital Underwater Photography, Dive Against Debris, Nitrox, Wreck, AWARE Coral Reef Conservation, PADI AWARE, Peak Performance Buoyancy, EFR',
     'camille.bio':'Élevée entre la jungle et l’océan du Costa Rica, Camille plonge depuis l’âge de 14 ans. Passionnée par les requins et la conservation marine, elle adore partager le monde sous-marin tout en inspirant les autres à le protéger',
@@ -272,7 +272,7 @@ const I18N = {
 
     'team.eyebrow':'Tus instructores',
     'team.title':'Camille & Julien',
-    'team.lead':'Dos vidas moldeadas por el océano — ahora dedicadas a compartirlo contigo, con seguridad y autenticidad.',
+    'team.lead':'Dos vidas moldeadas por el océano, ahora dedicadas a compartirlo contigo, con seguridad y autenticidad.',
     'camille.role':'PADI OWSI & MSDT',
     'camille.spec':'Especialidades: AWARE Shark Conservation, Deep, Digital Underwater Photography, Dive Against Debris, Nitrox, Wreck, AWARE Coral Reef Conservation, PADI AWARE, Peak Performance Buoyancy, EFR',
     'camille.bio':'Criada entre la selva y el océano de Costa Rica, Camille bucea desde los 14 años. Apasionada por los tiburones y la conservación marina, le encanta compartir el mundo submarino e inspirar a otros a protegerlo',
