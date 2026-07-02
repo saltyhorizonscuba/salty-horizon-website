@@ -95,7 +95,7 @@ const I18N = {
 
     /* subpages */
     'exp.page.h1':'Experiences',
-    'exp.page.intro':'Fully private, fully flexible. Thanks to trusted partnerships with selected dive centers, we adapt locations, schedules and formats to you — and every session includes unedited photos and videos.',
+    'exp.page.intro':'Fully private, fully flexible. Thanks to trusted partnerships with selected dive centers, we adapt locations, schedules and formats to you, and every session includes unedited photos and videos.',
     'exp.incl.dives':'guided dives','exp.incl.gear':'All scuba equipment included','exp.incl.snacks':'Snacks & drinks included','exp.incl.private':'Fully private experience','exp.incl.photos':'Photos & videos included','exp.incl.pool':'Private pool session included','exp.incl.certonly':'For certified divers only','exp.incl.advancedOnly':'For Advanced Open Water divers only',
     'cta.learn':'Learn more',
     'exp.incl.age10':'10 years & up','exp.incl.kids':'Fun for kids','exp.incl.nocert':'No certification needed',
@@ -204,7 +204,7 @@ const I18N = {
     'footer.explore':'Explorer','footer.contactH':'Contact','footer.rights':'Tous droits réservés.','footer.made':'Conçu pour l’océan',
 
     'exp.page.h1':'Expériences',
-    'exp.page.intro':'100 % privé, 100 % flexible. Grâce à nos partenariats de confiance avec des centres sélectionnés, nous adaptons lieux, horaires et formats à vous — et chaque sortie inclut des photos et vidéos non retouchées.',
+    'exp.page.intro':'100 % privé, 100 % flexible. Grâce à nos partenariats de confiance avec des centres sélectionnés, nous adaptons lieux, horaires et formats à vous, et chaque sortie inclut des photos et vidéos non retouchées.',
     'exp.incl.dives':'plongées guidées','exp.incl.gear':'Tout l’équipement de plongée inclus','exp.incl.snacks':'Snacks & boissons inclus','exp.incl.private':'Expérience 100 % privée','exp.incl.photos':'Photos & vidéos incluses','exp.incl.pool':'Séance privée en piscine incluse','exp.incl.certonly':'Réservé aux plongeurs certifiés','exp.incl.advancedOnly':'Réservé aux plongeurs Advanced Open Water',
     'cta.learn':'En savoir plus',
     'exp.incl.age10':'10 ans et +','exp.incl.kids':'Ludique pour les enfants','exp.incl.nocert':'Aucun brevet requis',
@@ -313,7 +313,7 @@ const I18N = {
     'footer.explore':'Explorar','footer.contactH':'Contacto','footer.rights':'Todos los derechos reservados.','footer.made':'Diseñado para el océano.',
 
     'exp.page.h1':'Experiencias',
-    'exp.page.intro':'100 % privado, 100 % flexible. Gracias a alianzas de confianza con centros seleccionados, adaptamos lugares, horarios y formatos a ti — y cada salida incluye fotos y videos sin editar.',
+    'exp.page.intro':'100 % privado, 100 % flexible. Gracias a alianzas de confianza con centros seleccionados, adaptamos lugares, horarios y formatos a ti, y cada salida incluye fotos y videos sin editar.',
     'exp.incl.dives':'inmersiones guiadas','exp.incl.gear':'Todo el equipo de buceo incluido','exp.incl.snacks':'Snacks y bebidas incluidos','exp.incl.private':'Experiencia 100 % privada','exp.incl.photos':'Fotos y videos incluidos','exp.incl.pool':'Sesión privada en piscina incluida','exp.incl.certonly':'Solo para buceadores certificados','exp.incl.advancedOnly':'Solo para buceadores Advanced Open Water',
     'cta.learn':'Saber más',
     'exp.incl.age10':'10 años en adelante','exp.incl.kids':'Divertido para niños','exp.incl.nocert':'Sin certificación necesaria',
