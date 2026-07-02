@@ -8,6 +8,7 @@ Ces règles s'appliquent à **toute session Claude Code** travaillant sur ce dé
 
 - **Interdiction absolue de pousser, merger ou déployer sur `main` sans autorisation explicite de l'administrateur.** `main` est la branche de **production** : elle est servie en ligne sur notre propre serveur, hébergé chez **Hostinger**, via déploiement Git (hPanel) branché sur cette branche. Toute mise à jour du site en ligne passe par `main`.
 - Le travail courant (features, corrections, réorganisation) se fait sur `dev` ou une branche dédiée, jamais directement sur `main`.
+- **Avant tout push vers `dev` (ou toute branche partagée), demander confirmation explicite à l'admin sur les modifications**, même si le travail semble prêt et testé. Le commit local ne pose pas de problème ; c'est le push qui doit être validé.
 - Avant tout push vers `main`, toute création/fermeture de pull request vers `main`, ou tout déploiement, **demander confirmation explicite à l'admin**, même si le travail semble prêt et testé.
 - Cette règle vaut aussi pour les actions irréversibles ou à fort impact : force push, suppression de branche, réécriture d'historique, modification de la config d'hébergement/domaine.
 - Dépôt GitHub : `github.com/saltyhorizonscuba/salty-horizon-website`. Branches : `main` (prod, protégée par cette règle), `dev` (travail courant).
