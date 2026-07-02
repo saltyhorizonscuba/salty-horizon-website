@@ -17,8 +17,8 @@ const I18N = {
 
     'about.eyebrow':'Who we are',
     'about.title':'Diving done the right way',
-    'about.lead':'We are Camille & Julien — two PADI instructors who turned a lifelong love of the ocean into a different kind of dive experience.',
-    'about.p1':'Trilingual in English, French and Spanish, we welcome travelers from all over the world and adapt every session to your comfort, goals and pace. No rushed schedules, no crowded boats — just small, fully private groups and our full attention.',
+    'about.lead':'We are Camille & Julien, two PADI instructors who turned a lifelong love of the ocean into a different kind of dive experience.',
+    'about.p1':'Trilingual in English, French and Spanish, we welcome travelers from all over the world and adapt every session to your comfort, goals and pace. No rushed schedules, just small, fully private groups and our full attention.',
     'about.f1t':'Fully private','about.f1d':'Small groups, your pace, maximum safety and comfort.',
     'about.f2t':'PADI certified','about.f2d':'Two professional PADI instructors who live and breathe the ocean.',
     'about.f3t':'Memories included','about.f3d':'Unedited photos & videos with every session, free.',
@@ -27,11 +27,11 @@ const I18N = {
 
     'exp.eyebrow':'What we offer',
     'exp.title':'Our experiences',
-    'exp.lead':'From your very first breath underwater to advanced shark dives — privately guided, every time.',
+    'exp.lead':'From your very first breath underwater to advanced shark dives, privately guided, every time.',
     'exp.cta':'See all experiences & prices',
     'nav.catalinas':'Catalinas',
     'cat.eyebrow':'Where we dive','cat.title':'Las Catalinas & its ecosystem',
-    'cat.lead':'A cluster of volcanic islands off Tamarindo — one of Costa Rica’s richest dive playgrounds.',
+    'cat.lead':'A cluster of volcanic islands off Tamarindo, one of Costa Rica’s richest dive playgrounds.',
     'cat.p1':'Rising from the Pacific just north of Tamarindo, the Catalina Islands channel cool, nutrient-rich currents that feed an extraordinary concentration of marine life across more than twenty pinnacles and reefs.',
     'cat.p2':'From December to May, giant Pacific manta rays glide through the islands, joined year-round by spotted eagle rays, white-tip reef sharks, sea turtles, moray eels, octopus and huge schools of tropical fish. Warm, clear water and gentle profiles make it ideal for first dives and unforgettable for the experienced.',
     'cat.h1':'20+ dive sites','cat.h2':'Manta season · Dec–May','cat.h3':'Eagle rays, reef sharks & turtles','cat.h4':'All levels welcome',
@@ -86,7 +86,7 @@ const I18N = {
 
     'contact.eyebrow':'Get in touch',
     'contact.title':'Let’s plan your dive',
-    'contact.lead':'Questions, custom requests or large groups — we are happy to help in English, French or Spanish.',
+    'contact.lead':'Questions, custom requests or large groups, we are happy to help in English, French or Spanish.',
     'contact.locT':'Location','contact.loc':'Playa Langosta, Tamarindo, Costa Rica',
     'contact.phoneT':'WhatsApp','contact.emailT':'Email','contact.hoursT':'Languages','contact.hours':'English · Français · Español',
 
@@ -127,8 +127,8 @@ const I18N = {
 
     'about.eyebrow':'Qui sommes-nous',
     'about.title':'La plongée comme elle devrait être',
-    'about.lead':'Nous sommes Camille & Julien — deux instructeurs PADI qui ont transformé une passion de toujours pour l’océan en une expérience de plongée différente.',
-    'about.p1':'Trilingues (français, anglais, espagnol), nous accueillons des voyageurs du monde entier et adaptons chaque sortie à votre niveau, vos envies et votre rythme. Pas d’horaires pressés, pas de bateaux bondés — juste de petits groupes 100 % privés et toute notre attention.',
+    'about.lead':'Nous sommes Camille & Julien, deux instructeurs PADI qui ont transformé une passion de toujours pour l’océan en une expérience de plongée différente.',
+    'about.p1':'Trilingues (français, anglais, espagnol), nous accueillons des voyageurs du monde entier et adaptons chaque sortie à votre niveau, vos envies et votre rythme. Pas d’horaires pressés, juste de petits groupes 100 % privés et toute notre attention.',
     'about.f1t':'100 % privé','about.f1d':'Petits groupes, votre rythme, sécurité et confort maximum.',
     'about.f2t':'Certifiés PADI','about.f2d':'Deux instructeurs PADI professionnels, passionnés par l’océan',
     'about.f3t':'Souvenirs inclus','about.f3d':'Photos & vidéos non retouchées à chaque sortie, offertes.',
@@ -137,11 +137,11 @@ const I18N = {
 
     'exp.eyebrow':'Ce que nous proposons',
     'exp.title':'Nos expériences',
-    'exp.lead':'De votre toute première respiration sous l’eau aux plongées avec requins — toujours guidées en privé.',
+    'exp.lead':'De votre toute première respiration sous l’eau aux plongées avec requins, toujours guidées en privé.',
     'exp.cta':'Voir toutes les expériences & tarifs',
     'nav.catalinas':'Catalinas',
     'cat.eyebrow':'Où nous plongeons','cat.title':'Las Catalinas & son écosystème',
-    'cat.lead':'Un archipel volcanique au large de Tamarindo — l’un des plus beaux terrains de plongée du Costa Rica.',
+    'cat.lead':'Un archipel volcanique au large de Tamarindo, l’un des plus beaux terrains de plongée du Costa Rica.',
     'cat.p1':'Surgissant du Pacifique juste au nord de Tamarindo, les îles Catalinas canalisent des courants froids et riches en nutriments qui nourrissent une concentration exceptionnelle de vie marine, répartie sur plus de vingt pitons et récifs.',
     'cat.p2':'De décembre à mai, les raies mantas géantes du Pacifique glissent entre les îles, rejointes toute l’année par les raies aigles, les requins à pointe blanche, les tortues marines, les murènes, les poulpes et d’immenses bancs de poissons tropicaux. Une eau chaude et claire et des profils doux en font un site idéal pour les premières plongées et inoubliable pour les confirmés.',
     'cat.h1':'20+ sites de plongée','cat.h2':'Saison des mantas · déc–mai','cat.h3':'Raies aigles, requins & tortues','cat.h4':'Tous niveaux',
@@ -196,7 +196,7 @@ const I18N = {
 
     'contact.eyebrow':'Contactez-nous',
     'contact.title':'Planifions votre plongée',
-    'contact.lead':'Questions, demandes sur mesure ou grands groupes — avec plaisir, en français, anglais ou espagnol.',
+    'contact.lead':'Questions, demandes sur mesure ou grands groupes, avec plaisir, en français, anglais ou espagnol.',
     'contact.locT':'Lieu','contact.loc':'Playa Langosta, Tamarindo, Costa Rica',
     'contact.phoneT':'WhatsApp','contact.emailT':'E-mail','contact.hoursT':'Langues','contact.hours':'English · Français · Español',
 
@@ -236,8 +236,8 @@ const I18N = {
 
     'about.eyebrow':'Quiénes somos',
     'about.title':'Bucear como se debe',
-    'about.lead':'Somos Camille & Julien — dos instructores PADI que convirtieron un amor de toda la vida por el océano en una forma distinta de bucear.',
-    'about.p1':'Trilingües (español, inglés y francés), recibimos viajeros de todo el mundo y adaptamos cada salida a tu comodidad, tus metas y tu ritmo. Sin horarios apresurados ni botes llenos — solo grupos pequeños 100 % privados y toda nuestra atención.',
+    'about.lead':'Somos Camille & Julien, dos instructores PADI que convirtieron un amor de toda la vida por el océano en una forma distinta de bucear.',
+    'about.p1':'Trilingües (español, inglés y francés), recibimos viajeros de todo el mundo y adaptamos cada salida a tu comodidad, tus metas y tu ritmo. Sin horarios apresurados, solo grupos pequeños 100 % privados y toda nuestra atención.',
     'about.f1t':'100 % privado','about.f1d':'Grupos pequeños, tu ritmo, máxima seguridad y comodidad.',
     'about.f2t':'Certificados PADI','about.f2d':'Dos instructores PADI profesionales, apasionados por el océano.',
     'about.f3t':'Recuerdos incluidos','about.f3d':'Fotos y videos sin editar en cada salida, gratis.',
@@ -246,7 +246,7 @@ const I18N = {
 
     'exp.eyebrow':'Lo que ofrecemos',
     'exp.title':'Nuestras experiencias',
-    'exp.lead':'Desde tu primera respiración bajo el agua hasta inmersiones con tiburones — siempre guiadas en privado.',
+    'exp.lead':'Desde tu primera respiración bajo el agua hasta inmersiones con tiburones, siempre guiadas en privado.',
     'exp.cta':'Ver todas las experiencias y precios',
     'nav.catalinas':'Catalinas',
     'cat.eyebrow':'Dónde buceamos','cat.title':'Las Catalinas y su ecosistema',
@@ -305,7 +305,7 @@ const I18N = {
 
     'contact.eyebrow':'Contáctanos',
     'contact.title':'Planeemos tu inmersión',
-    'contact.lead':'Preguntas, peticiones a medida o grupos grandes — con gusto, en español, inglés o francés.',
+    'contact.lead':'Preguntas, peticiones a medida o grupos grandes, con gusto, en español, inglés o francés.',
     'contact.locT':'Ubicación','contact.loc':'Playa Langosta, Tamarindo, Costa Rica',
     'contact.phoneT':'WhatsApp','contact.emailT':'Correo','contact.hoursT':'Idiomas','contact.hours':'English · Français · Español',
 
