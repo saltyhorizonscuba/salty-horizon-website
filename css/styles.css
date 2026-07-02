@@ -339,7 +339,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .exp-row__media img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover}
 .exp-row .price-pill{display:inline-flex;align-items:baseline;gap:.4rem;background:var(--cream);border:1px solid #e7ddc7;color:var(--ink);font-family:var(--font-display);font-weight:700;padding:.5rem 1rem;border-radius:999px;margin:.4rem 0 1.1rem}
 .exp-row .price-pill small{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.exp-row > div > p{color:var(--teal);background:rgba(231,201,138,.09);border:1px solid rgba(212,176,106,.55);border-radius:12px;padding:1rem 1.2rem;margin:.2rem 0 1.3rem;line-height:1.62}
+.exp-row > div > p{color:var(--teal);background:rgba(231,201,138,.16);border:2px solid var(--sand);border-radius:12px;padding:1rem 1.2rem;margin:.2rem 0 1.3rem;line-height:1.62}
 .incl{display:grid;gap:.5rem;margin:1rem 0 1.4rem}
 .incl li{display:flex;gap:.6rem;align-items:flex-start}
 .incl svg{width:18px;height:18px;color:var(--teal);flex:none;margin-top:3px}
