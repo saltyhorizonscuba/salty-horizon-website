@@ -11,7 +11,7 @@ const I18N = {
 
     'hero.eyebrow':'Tamarindo · Costa Rica',
     'hero.sub':'Exclusive Scuba Diving',
-    'hero.tag':'Private, personalized ocean experiences with two passionate PADI instructors. Quality over quantity — every dive designed around you.',
+    'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Book your dive','hero.cta2':'Explore experiences','hero.scroll':'Scroll',
     'strip.private':'Fully private','strip.padi':'PADI instructors','strip.langs':'EN · FR · ES','strip.photos':'Photos included',
 
@@ -121,7 +121,7 @@ const I18N = {
 
     'hero.eyebrow':'Tamarindo · Costa Rica',
     'hero.sub':'Plongée sous-marine exclusive',
-    'hero.tag':'Des expériences océaniques privées et personnalisées avec deux instructeurs PADI passionnés. La qualité avant la quantité — chaque plongée pensée pour vous.',
+    'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Réserver ma plongée','hero.cta2':'Voir les expériences','hero.scroll':'Défiler',
     'strip.private':'100 % privé','strip.padi':'Instructeurs PADI','strip.langs':'EN · FR · ES','strip.photos':'Photos incluses',
 
@@ -230,7 +230,7 @@ const I18N = {
 
     'hero.eyebrow':'Tamarindo · Costa Rica',
     'hero.sub':'Buceo exclusivo',
-    'hero.tag':'Experiencias privadas y personalizadas en el océano con dos instructores PADI apasionados. Calidad antes que cantidad — cada inmersión pensada para ti.',
+    'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Reserva tu inmersión','hero.cta2':'Ver experiencias','hero.scroll':'Desplázate',
     'strip.private':'100 % privado','strip.padi':'Instructores PADI','strip.langs':'EN · FR · ES','strip.photos':'Fotos incluidas',
 
@@ -357,6 +357,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
   if(!I18N[saved]) saved='en';
   applyLang(saved);
   document.querySelectorAll('.lang button').forEach(b=> b.addEventListener('click', ()=>applyLang(b.dataset.lang)));
+
+  // re-align to the URL hash: translated text just replaced empty placeholders above,
+  // which shifts section heights and throws off the browser's initial anchor scroll
+  if(location.hash){
+    requestAnimationFrame(()=>{
+      const target=document.querySelector(location.hash);
+      if(target) target.scrollIntoView();
+    });
+  }
 
   // header scroll state
   const header=document.querySelector('.header');
