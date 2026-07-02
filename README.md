@@ -2,14 +2,26 @@
 
 Site statique autonome (HTML/CSS/JS, sans framework), responsive, optimisé, prêt à héberger sur n'importe quelle plateforme.
 
+## ⚠️ Instructions pour Claude Code / toute instance Claude
+
+Ces règles s'appliquent à **toute session Claude Code** travaillant sur ce dépôt, quelle que soit la conversation qui l'a ouverte.
+
+- **Interdiction absolue de pousser, merger ou déployer sur `main` sans autorisation explicite de l'administrateur.** `main` est la branche de **production** : elle est servie en ligne via GitHub Pages avec un domaine personnalisé (fichier `CNAME`). Toute mise à jour du site en ligne passe par `main`.
+- Le travail courant (features, corrections, réorganisation) se fait sur `dev` ou une branche dédiée, jamais directement sur `main`.
+- Avant tout push vers `main`, toute création/fermeture de pull request vers `main`, ou tout déploiement, **demander confirmation explicite à l'admin**, même si le travail semble prêt et testé.
+- Cette règle vaut aussi pour les actions irréversibles ou à fort impact : force push, suppression de branche, réécriture d'historique, modification du `CNAME`/domaine.
+- Dépôt GitHub : `github.com/saltyhorizonscuba/salty-horizon-website`. Branches : `main` (prod, protégée par cette règle), `dev` (travail courant).
+- Stack : site statique pur (pas de build, pas de framework, pas de dépendances npm) — toute modification est directement visible en rechargeant les fichiers HTML.
+
 ## Contenu du dossier
 - `index.html` — page d'accueil immersive (hero, à propos, expériences, Las Catalinas, galerie, équipe, avis, réservation, contact)
 - `experiences.html` — détail des expériences + tarifs
 - `private-charters.html` — charters privés
-- `styles.css` — tout le design (identité océan/sable) + responsive
-- `script.js` — trilingue EN/FR/ES, galerie lightbox, carrousel d'avis, réservation → WhatsApp, animations
+- `css/styles.css` — tout le design (identité océan/sable) + responsive
+- `js/script.js` — trilingue EN/FR/ES, galerie lightbox, carrousel d'avis, réservation → WhatsApp, animations
 - `images/` — toutes les photos, **en local et optimisées** (plus aucune dépendance à Wix)
-- `favicon.svg` — icône d'onglet
+- `docs/DSD-Medical-Statement.pdf` — déclaration médicale du participant DSD
+- `favicon.png` / `favicon.svg` — icône d'onglet
 - `sitemap.xml` + `robots.txt` — pour le référencement Google
 
 ## Aperçu
