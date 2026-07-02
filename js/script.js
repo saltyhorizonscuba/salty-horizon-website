@@ -43,7 +43,7 @@ const I18N = {
     'card.bat.t':'Fun Dive · Bat Islands','card.bat.d':'The Bat Islands (Islas Murciélagos), off Santa Rosa National Park in Guanacaste, offer one of Costa Rica’s most legendary dives. Accessible from May to November, they let experienced divers observe the impressive bull sharks in their natural habitat. An intense experience in the heart of exceptional marine life.',
     'card.snorkel.t':'Snorkeling','card.snorkel.d':'Discover the seabed of the Catalina Islands during two snorkeling sessions of 45 minutes to 1 hour, accompanied by a guide. Explore crystal-clear waters home to tropical fish, sea turtles, rays and, depending on the season, the majestic manta rays. An activity accessible to everyone, ideal for observing the richness of Costa Rica’s marine life.',
     'card.courses.t':'PADI Courses','card.courses.d':'Develop your skills and progress at your own pace with our PADI courses, from Open Water Diver to Rescue Diver. Whether you want to earn your first certification, gain more independence or deepen your knowledge, our instructors guide you throughout your training to make you a more confident, skilled and experienced diver.',
-    'label.beginner':'Beginner','label.popular':'Most popular','label.advanced':'Advanced','label.season':'May–Sep','label.allLevels':'All levels','label.certified':'Certified',
+    'label.beginner':'Beginner','label.popular':'Most popular','label.advanced':'Advanced','label.season':'May–Nov','label.allLevels':'All levels','label.certified':'Certified',
 
     'stat.dives':'Dive sites','stat.langs':'Languages','stat.private':'Private dives','stat.rating':'Guest rating',
 
@@ -96,7 +96,7 @@ const I18N = {
     /* subpages */
     'exp.page.h1':'Experiences',
     'exp.page.intro':'Fully private, fully flexible. Thanks to trusted partnerships with selected dive centers, we adapt locations, schedules and formats to you — and every session includes unedited photos and videos.',
-    'exp.incl.dives':'guided dives','exp.incl.gear':'All scuba equipment included','exp.incl.snacks':'Snacks & drinks included','exp.incl.private':'Fully private experience','exp.incl.photos':'Photos & videos included','exp.incl.pool':'Private pool session included','exp.incl.certonly':'For certified divers only',
+    'exp.incl.dives':'guided dives','exp.incl.gear':'All scuba equipment included','exp.incl.snacks':'Snacks & drinks included','exp.incl.private':'Fully private experience','exp.incl.photos':'Photos & videos included','exp.incl.pool':'Private pool session included','exp.incl.certonly':'For certified divers only','exp.incl.advancedOnly':'For Advanced Open Water divers only',
     'cta.learn':'Learn more',
     'exp.incl.age10':'10 years & up','exp.incl.kids':'Fun for kids','exp.incl.nocert':'No certification needed',
     'dsd.pool':'Pool session at your villa or our facility the afternoon before the dives (approx. 2 hours) to practice skills and get comfortable with the equipment',
@@ -153,7 +153,7 @@ const I18N = {
     'card.bat.t':'Fun Dive · Bat Islands','card.bat.d':'Bat Islands (Islas Murciélagos), au large du parc national Santa Rosa (Guanacaste), offrent l’une des plongées les plus mythiques du Costa Rica. Accessibles de mai à novembre, elles permettent aux plongeurs expérimentés d’observer les impressionnants requins bouledogues dans leur habitat naturel. Une expérience intense au cœur d’une vie marine exceptionnelle.',
     'card.snorkel.t':'Snorkeling','card.snorkel.d':'Découvrez les fonds marins des îles Catalina lors de deux sessions de snorkeling de 45 minutes à 1 heure, accompagnées d’un guide. Explorez des eaux cristallines où évoluent poissons tropicaux, tortues marines, raies et, selon la saison, les majestueuses raies manta. Une activité accessible à tous, idéale pour observer la richesse de la vie marine du Costa Rica.',
     'card.courses.t':'Cours PADI','card.courses.d':'Développez vos compétences et progressez à votre rythme grâce à nos formations PADI, du Open Water Diver au Rescue Diver. Que vous souhaitiez obtenir votre première certification, gagner en autonomie ou renforcer vos connaissances, nos instructeurs vous accompagnent tout au long de votre apprentissage pour faire de vous un plongeur plus confiant, compétent et expérimenté.',
-    'label.beginner':'Débutant','label.popular':'Le plus prisé','label.advanced':'Confirmé','label.season':'Mai–Sep','label.allLevels':'Tous niveaux','label.certified':'Certifié',
+    'label.beginner':'Débutant','label.popular':'Le plus prisé','label.advanced':'Confirmé','label.season':'Mai–Nov','label.allLevels':'Tous niveaux','label.certified':'Certifié',
 
     'stat.dives':'Sites de plongée','stat.langs':'Langues','stat.private':'Plongées privées','stat.rating':'Note clients',
 
@@ -205,7 +205,7 @@ const I18N = {
 
     'exp.page.h1':'Expériences',
     'exp.page.intro':'100 % privé, 100 % flexible. Grâce à nos partenariats de confiance avec des centres sélectionnés, nous adaptons lieux, horaires et formats à vous — et chaque sortie inclut des photos et vidéos non retouchées.',
-    'exp.incl.dives':'plongées guidées','exp.incl.gear':'Tout l’équipement de plongée inclus','exp.incl.snacks':'Snacks & boissons inclus','exp.incl.private':'Expérience 100 % privée','exp.incl.photos':'Photos & vidéos incluses','exp.incl.pool':'Séance privée en piscine incluse','exp.incl.certonly':'Réservé aux plongeurs certifiés',
+    'exp.incl.dives':'plongées guidées','exp.incl.gear':'Tout l’équipement de plongée inclus','exp.incl.snacks':'Snacks & boissons inclus','exp.incl.private':'Expérience 100 % privée','exp.incl.photos':'Photos & vidéos incluses','exp.incl.pool':'Séance privée en piscine incluse','exp.incl.certonly':'Réservé aux plongeurs certifiés','exp.incl.advancedOnly':'Réservé aux plongeurs Advanced Open Water',
     'cta.learn':'En savoir plus',
     'exp.incl.age10':'10 ans et +','exp.incl.kids':'Ludique pour les enfants','exp.incl.nocert':'Aucun brevet requis',
     'dsd.pool':'Séance en piscine chez vous ou dans nos locaux l’après-midi précédant les plongées (environ 2 heures) pour pratiquer les techniques et vous familiariser avec l’équipement',
@@ -262,7 +262,7 @@ const I18N = {
     'card.bat.t':'Fun Dive · Bat Islands','card.bat.d':'Las Islas Murciélagos, frente al Parque Nacional Santa Rosa (Guanacaste), ofrecen una de las inmersiones más míticas de Costa Rica. Accesibles de mayo a noviembre, permiten a los buzos experimentados observar los impresionantes tiburones toro en su hábitat natural. Una experiencia intensa en el corazón de una vida marina excepcional.',
     'card.snorkel.t':'Snorkeling','card.snorkel.d':'Descubre los fondos marinos de las Islas Catalinas durante dos sesiones de snorkel de 45 minutos a 1 hora, acompañado por un guía. Explora aguas cristalinas donde nadan peces tropicales, tortugas marinas, rayas y, según la temporada, las majestuosas mantarrayas. Una actividad accesible para todos, ideal para observar la riqueza de la vida marina de Costa Rica.',
     'card.courses.t':'Cursos PADI','card.courses.d':'Desarrolla tus habilidades y progresa a tu propio ritmo con nuestros cursos PADI, desde Open Water Diver hasta Rescue Diver. Ya sea que quieras obtener tu primera certificación, ganar autonomía o ampliar tus conocimientos, nuestros instructores te acompañan durante toda tu formación para convertirte en un buceador más seguro, competente y experimentado.',
-    'label.beginner':'Principiante','label.popular':'Más popular','label.advanced':'Avanzado','label.season':'May–Sep','label.allLevels':'Todos los niveles','label.certified':'Certificado',
+    'label.beginner':'Principiante','label.popular':'Más popular','label.advanced':'Avanzado','label.season':'Mayo–Nov','label.allLevels':'Todos los niveles','label.certified':'Certificado',
 
     'stat.dives':'Puntos de buceo','stat.langs':'Idiomas','stat.private':'Inmersiones privadas','stat.rating':'Valoración',
 
@@ -314,7 +314,7 @@ const I18N = {
 
     'exp.page.h1':'Experiencias',
     'exp.page.intro':'100 % privado, 100 % flexible. Gracias a alianzas de confianza con centros seleccionados, adaptamos lugares, horarios y formatos a ti — y cada salida incluye fotos y videos sin editar.',
-    'exp.incl.dives':'inmersiones guiadas','exp.incl.gear':'Todo el equipo de buceo incluido','exp.incl.snacks':'Snacks y bebidas incluidos','exp.incl.private':'Experiencia 100 % privada','exp.incl.photos':'Fotos y videos incluidos','exp.incl.pool':'Sesión privada en piscina incluida','exp.incl.certonly':'Solo para buceadores certificados',
+    'exp.incl.dives':'inmersiones guiadas','exp.incl.gear':'Todo el equipo de buceo incluido','exp.incl.snacks':'Snacks y bebidas incluidos','exp.incl.private':'Experiencia 100 % privada','exp.incl.photos':'Fotos y videos incluidos','exp.incl.pool':'Sesión privada en piscina incluida','exp.incl.certonly':'Solo para buceadores certificados','exp.incl.advancedOnly':'Solo para buceadores Advanced Open Water',
     'cta.learn':'Saber más',
     'exp.incl.age10':'10 años en adelante','exp.incl.kids':'Divertido para niños','exp.incl.nocert':'Sin certificación necesaria',
     'dsd.pool':'Sesión en piscina en tu villa o en nuestras instalaciones la tarde anterior a las inmersiones (aprox. 2 horas) para practicar las técnicas y familiarizarte con el equipo',
