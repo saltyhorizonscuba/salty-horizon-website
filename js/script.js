@@ -376,6 +376,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
     setTimeout(landOnHash, 400);
   }
 
+  // same-page anchor links (nav, "Meet the team", hero CTAs...): clicking
+  // one further up the page scrolls past lazy-loaded images (gallery, etc.)
+  // that have no reserved height, so they grow mid-scroll and the smooth
+  // scroll animation lands short of the target. Re-align once it settles.
+  document.addEventListener('click', (e)=>{
+    const a=e.target.closest('a[href^="#"]');
+    if(!a || a.getAttribute('href').length<2) return;
+    const target=document.querySelector(a.getAttribute('href'));
+    if(target) setTimeout(()=>target.scrollIntoView(), 700);
+  });
+
   // header scroll state
   const header=document.querySelector('.header');
   const topBtn=document.querySelector('.fab .top');
