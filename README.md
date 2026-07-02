@@ -1,17 +1,17 @@
 # Salty Horizon — site web
 
-Site statique autonome (HTML/CSS/JS, sans framework), responsive, optimisé, prêt à héberger sur n'importe quelle plateforme.
+Site web codé à la main (HTML/CSS/JS, sans framework ni générateur), responsive, optimisé. Actuellement statique, mais la stack est amenée à évoluer (backend, build) à mesure du projet.
 
 ## ⚠️ Instructions pour Claude Code / toute instance Claude
 
 Ces règles s'appliquent à **toute session Claude Code** travaillant sur ce dépôt, quelle que soit la conversation qui l'a ouverte.
 
-- **Interdiction absolue de pousser, merger ou déployer sur `main` sans autorisation explicite de l'administrateur.** `main` est la branche de **production** : elle est servie en ligne via GitHub Pages avec un domaine personnalisé (fichier `CNAME`). Toute mise à jour du site en ligne passe par `main`.
+- **Interdiction absolue de pousser, merger ou déployer sur `main` sans autorisation explicite de l'administrateur.** `main` est la branche de **production** : elle est servie en ligne sur notre propre serveur, hébergé chez **Hostinger**, via déploiement Git (hPanel) branché sur cette branche. Toute mise à jour du site en ligne passe par `main`.
 - Le travail courant (features, corrections, réorganisation) se fait sur `dev` ou une branche dédiée, jamais directement sur `main`.
 - Avant tout push vers `main`, toute création/fermeture de pull request vers `main`, ou tout déploiement, **demander confirmation explicite à l'admin**, même si le travail semble prêt et testé.
-- Cette règle vaut aussi pour les actions irréversibles ou à fort impact : force push, suppression de branche, réécriture d'historique, modification du `CNAME`/domaine.
+- Cette règle vaut aussi pour les actions irréversibles ou à fort impact : force push, suppression de branche, réécriture d'historique, modification de la config d'hébergement/domaine.
 - Dépôt GitHub : `github.com/saltyhorizonscuba/salty-horizon-website`. Branches : `main` (prod, protégée par cette règle), `dev` (travail courant).
-- Stack : site statique pur (pas de build, pas de framework, pas de dépendances npm) — toute modification est directement visible en rechargeant les fichiers HTML.
+- Stack actuelle : code fait à la main (pas de build, pas de framework, pas de dépendances npm) — toute modification est directement visible en rechargeant les fichiers HTML. Ça n'est pas garanti de le rester : ne pas supposer que le site restera statique.
 
 ## Contenu du dossier
 - `index.html` — page d'accueil immersive (hero, à propos, expériences, Las Catalinas, galerie, équipe, avis, réservation, contact)
@@ -45,13 +45,11 @@ Les traductions FR/ES sont appliquées par JavaScript sur **une seule URL**. Goo
 
 ## À personnaliser avant / après la mise en ligne
 1. **Domaine** : mettre à jour l'adresse `saltyhorizondiving.com` dans les balises `canonical`, `og:url`, `og:image`, dans `sitemap.xml` et `robots.txt` avec ton domaine final.
-2. **Numéro WhatsApp** : `+506 8775 9641`, défini dans `script.js` (`WA_PHONE`) et les liens `wa.me/50687759641`.
+2. **Numéro WhatsApp** : `+506 8775 9641`, défini dans `js/script.js` (`WA_PHONE`) et les liens `wa.me/50687759641`.
 3. **Avis clients** : 4 témoignages d'exemple (sauf le premier, réel). À remplacer par de vrais avis Google au fil du temps.
 4. **Tarifs** : Initiation piscine 80 $, Discover Scuba 170 $, Fun Dive Catalinas 130 $, Bat Islands 350 $, Snorkeling 80 $ — vérifie qu'ils sont à jour.
 
-## Mise en ligne (gratuit)
-- **Netlify** : glisse-dépose le dossier sur app.netlify.com/drop.
-- **Vercel** ou **Cloudflare Pages** : importe le dossier.
-- **GitHub Pages** : pousse le dossier dans un dépôt.
+## Hébergement
+Le site tourne sur notre propre serveur, chez **Hostinger**. Le déploiement se fait via la fonctionnalité Git de hPanel, connectée à la branche `main` de ce dépôt : chaque mise à jour de `main` est déployée en production (auto-déploiement si activé côté hPanel, sinon déploiement manuel depuis hPanel).
 
-Ensuite, pointe ton domaine vers le nouvel hébergeur, puis connecte **Google Search Console** et soumets le `sitemap.xml`.
+Les options d'hébergement gratuit (Netlify, Vercel, GitHub Pages) ne sont plus d'actualité pour ce projet.
