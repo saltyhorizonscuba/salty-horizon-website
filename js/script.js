@@ -358,13 +358,22 @@ document.addEventListener('DOMContentLoaded', ()=>{
   applyLang(saved);
   document.querySelectorAll('.lang button').forEach(b=> b.addEventListener('click', ()=>applyLang(b.dataset.lang)));
 
-  // re-align to the URL hash: translated text just replaced empty placeholders above,
-  // which shifts section heights and throws off the browser's initial anchor scroll
+  // re-align to the URL hash once the whole page (images, fonts, translated
+  // text) has finished loading and settled — page content loading after the
+  // browser's initial anchor jump shifts section heights and throws it off.
+  // Scroll instantly (bypassing the global smooth scroll-behavior) so it
+  // doesn't visibly animate past the target on arrival.
   if(location.hash){
-    requestAnimationFrame(()=>{
+    const landOnHash=()=>{
       const target=document.querySelector(location.hash);
-      if(target) target.scrollIntoView();
-    });
+      if(!target) return;
+      const prevBehavior=document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior='auto';
+      target.scrollIntoView();
+      document.documentElement.style.scrollBehavior=prevBehavior;
+    };
+    window.addEventListener('load', landOnHash);
+    setTimeout(landOnHash, 400);
   }
 
   // header scroll state
