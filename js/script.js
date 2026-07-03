@@ -115,7 +115,7 @@ const I18N = {
     'contact.title':'Let’s plan your dive',
     'contact.lead':'Questions, custom requests or large groups, we are happy to help in English, French or Spanish.',
     'contact.locT':'Location','contact.loc':'Playa Langosta, Tamarindo, Costa Rica',
-    'contact.phoneT':'WhatsApp','contact.emailT':'Email','contact.hoursT':'Languages','contact.hours':'English · Français · Español',
+    'contact.phoneT':'WhatsApp','contact.emailT':'Email','contact.instaT':'Instagram','contact.hoursT':'Languages','contact.hours':'English · Français · Español',
 
     'footer.tagline':'Private, personalized scuba diving in Tamarindo, Costa Rica. Quality over quantity, every dive designed around you.',
     'footer.explore':'Explore','footer.contactH':'Contact','footer.rights':'All rights reserved.','footer.made':'Designed for the ocean.',
@@ -261,7 +261,7 @@ const I18N = {
     'contact.title':'Planifions votre plongée',
     'contact.lead':'Questions, demandes sur mesure ou grands groupes, avec plaisir, en français, anglais ou espagnol.',
     'contact.locT':'Lieu','contact.loc':'Playa Langosta, Tamarindo, Costa Rica',
-    'contact.phoneT':'WhatsApp','contact.emailT':'E-mail','contact.hoursT':'Langues','contact.hours':'English · Français · Español',
+    'contact.phoneT':'WhatsApp','contact.emailT':'E-mail','contact.instaT':'Instagram','contact.hoursT':'Langues','contact.hours':'English · Français · Español',
 
     'footer.tagline':'Plongée sous-marine privée et personnalisée à Tamarindo, Costa Rica. La qualité avant la quantité, chaque plongée pensée pour vous.',
     'footer.explore':'Explorer','footer.contactH':'Contact','footer.rights':'Tous droits réservés.','footer.made':'Conçu pour l’océan',
@@ -406,7 +406,7 @@ const I18N = {
     'contact.title':'Planeemos tu inmersión',
     'contact.lead':'Preguntas, peticiones a medida o grupos grandes, con gusto, en español, inglés o francés.',
     'contact.locT':'Ubicación','contact.loc':'Playa Langosta, Tamarindo, Costa Rica',
-    'contact.phoneT':'WhatsApp','contact.emailT':'Correo','contact.hoursT':'Idiomas','contact.hours':'English · Français · Español',
+    'contact.phoneT':'WhatsApp','contact.emailT':'Correo','contact.instaT':'Instagram','contact.hoursT':'Idiomas','contact.hours':'English · Français · Español',
 
     'footer.tagline':'Buceo privado y personalizado en Tamarindo, Costa Rica. Calidad antes que cantidad, cada inmersión pensada para ti.',
     'footer.explore':'Explorar','footer.contactH':'Contacto','footer.rights':'Todos los derechos reservados.','footer.made':'Diseñado para el océano.',

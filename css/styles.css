@@ -356,7 +356,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .exp-row__media img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover}
 .price-pill{display:inline-flex;align-items:baseline;gap:.4rem;background:var(--cream);border:1px solid #e7ddc7;color:var(--ink);font-family:var(--font-display);font-weight:700;padding:.5rem 1rem;border-radius:999px;margin:.4rem 0 1.1rem}
 .price-pill small{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.exp-row > div > p{color:var(--teal);background:rgba(231,201,138,.16);border:2px solid var(--sand);border-radius:12px;padding:1rem 1.2rem;margin:.2rem 0 1.3rem;line-height:1.62}
+.exp-row > div > p{font-family:var(--font-serif);color:var(--teal);font-weight:500;line-height:1.5;margin:.2rem 0 1.3rem}
 .course-block{margin-bottom:clamp(2rem,4vw,3rem)}
 .course-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start;scroll-margin-top:110px}
 .course-grid .course-left,.course-grid .course-right{display:flex;flex-direction:column}
