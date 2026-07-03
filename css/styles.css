@@ -214,8 +214,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .exp-card:hover p{max-height:170px;opacity:1;margin-top:.3rem}
 .exp-card .price{font-family:var(--font-display);font-weight:700;color:var(--sand);font-size:1.05rem;margin-top:.9rem;display:inline-flex;align-items:baseline;gap:.3rem}
 .exp-card .price small{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:#cdd9de;font-weight:600}
-.exp-card .tag{position:absolute;top:1rem;left:1rem;z-index:1;background:rgba(255,255,255,.16);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.25);font-family:var(--font-display);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .7rem;border-radius:999px}
-.exp-card .tag.season{background:rgba(231,201,138,.92);color:#3a2a06;border-color:transparent}
+.exp-card .tag{position:absolute;top:1rem;left:1rem;z-index:1;background:rgba(231,201,138,.92);color:#3a2a06;border:1px solid transparent;font-family:var(--font-display);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .7rem;border-radius:999px}
 
 /* ---------- Stats ---------- */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center}
@@ -343,13 +342,62 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .btn--outline:hover{background:rgba(31,163,181,.08);box-shadow:none;transform:translateY(-2px)}
 .exp-details{margin-top:1.3rem;padding-top:1.3rem;border-top:1px solid #e7ddc7}
 .exp-details a{color:var(--teal);text-decoration:underline}
+.exp-details h3{font-family:var(--font-display);font-weight:800;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin:1.3rem 0 .6rem}
+.exp-details h3:first-child{margin-top:0}
+.exp-details ul{margin-bottom:.8rem}
+.exp-details li{list-style:none;padding-left:1rem;position:relative;margin-bottom:.4rem;font-size:.92rem;line-height:1.5}
+.exp-details li::before{content:"•";position:absolute;left:0;color:var(--sand-deep)}
+.course-day{margin-bottom:1rem}
+.course-day b{display:block;font-family:var(--font-display);font-weight:800;font-size:.95rem;color:var(--ink);margin-bottom:.4rem}
+.exp-details .note{margin-top:.2rem;font-size:.85rem;font-style:italic;color:var(--muted)}
+.schedule-toggle summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:.6rem}
+.schedule-toggle summary::-webkit-details-marker{display:none}
+.schedule-toggle summary h3{margin:0}
+.schedule-toggle summary::after{content:"+";font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--teal);flex-shrink:0}
+.schedule-toggle[open] summary::after{content:"\2212"}
+.schedule-toggle .schedule-content{padding-top:.6rem}
+@media (min-width:981px){
+  .schedule-toggle summary{cursor:default;pointer-events:none}
+  .schedule-toggle summary::after{display:none}
+  .schedule-toggle:not([open]) .schedule-content{display:block!important}
+}
 .pdf-link{color:var(--teal);font-weight:600;text-decoration:underline;text-underline-offset:2px;background:rgba(31,163,181,.13);padding:.08em .4em;border-radius:5px;transition:background .25s,color .25s;white-space:nowrap}
 .pdf-link:hover{background:rgba(31,163,181,.26);color:var(--deep)}
 .exp-row:nth-child(even) .exp-row__media{order:2}
 .exp-row__media img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover}
-.exp-row .price-pill{display:inline-flex;align-items:baseline;gap:.4rem;background:var(--cream);border:1px solid #e7ddc7;color:var(--ink);font-family:var(--font-display);font-weight:700;padding:.5rem 1rem;border-radius:999px;margin:.4rem 0 1.1rem}
-.exp-row .price-pill small{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.exp-row > div > p{color:var(--teal);background:rgba(231,201,138,.16);border:2px solid var(--sand);border-radius:12px;padding:1rem 1.2rem;margin:.2rem 0 1.3rem;line-height:1.62}
+.price-pill{display:inline-flex;align-items:baseline;gap:.4rem;background:var(--cream);border:1px solid #e7ddc7;color:var(--ink);font-family:var(--font-display);font-weight:700;padding:.5rem 1rem;border-radius:999px;margin:.4rem 0 1.1rem}
+.price-pill small{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.exp-row > div > p{font-family:var(--font-serif);font-size:1.25rem;color:var(--teal);font-weight:500;line-height:1.5;margin:.2rem 0 1.3rem}
+.course-block{margin-bottom:clamp(2rem,4vw,3rem)}
+.course-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start;scroll-margin-top:110px}
+.course-grid .course-left,.course-grid .course-right{display:flex;flex-direction:column}
+.course-heading .price-pill{margin-bottom:.5rem}
+@media (max-width:980px){
+  .course-grid{display:flex;flex-direction:column;grid-template-columns:none}
+  .course-grid .course-left,.course-grid .course-right{display:contents}
+  .course-grid .course-heading{order:1}
+  .course-grid .about-media{order:2}
+  .course-grid .about-copy{order:3}
+  .course-grid .course-schedule{order:4}
+  .course-grid .course-buttons{order:5}
+}
+.wave-section{background:#fff;padding-bottom:calc(clamp(4.5rem,9vw,8rem) + 1rem)}
+.wave-divider{position:absolute;left:0;right:0;bottom:-1px;line-height:0;pointer-events:none}
+.wave-divider svg{width:100%;height:70px;display:block}
+.wave-divider path{fill:var(--navy)}
+.section--dark .list-label,.section--dark .exp-details h3,.section--dark .course-day b{color:var(--sand)}
+.section--dark .feature-list b{color:#fff}
+.section--dark .bullet-list li{color:#dce7eb}
+.section--dark .about-copy>p:not(.lead){color:#c4d6db}
+.section--dark .exp-details{border-top-color:rgba(255,255,255,.15)}
+.course-lead{font-size:1.25rem}
+.course-cols{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.2rem 0}
+.course-cols .feature-list{margin:0}
+.list-label{display:block;font-family:var(--font-display);font-weight:800;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:.7rem}
+.bullet-list li{list-style:none;padding-left:1rem;position:relative;margin-bottom:.8rem;font-size:.92rem;line-height:1.5}
+.bullet-list li::before{content:"•";position:absolute;left:0;color:var(--sand-deep)}
+.bullet-list li .pdf-link{margin-top:.3rem;display:inline-block}
+@media (max-width:760px){.course-cols{grid-template-columns:1fr}}
 .incl{display:grid;gap:.5rem;margin:1rem 0 1.4rem}
 .incl li{display:flex;gap:.6rem;align-items:flex-start}
 .incl svg{width:18px;height:18px;color:var(--teal);flex:none;margin-top:3px}
