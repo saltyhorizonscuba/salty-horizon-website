@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=8">
+<link rel="stylesheet" href="css/styles.css?v=9">
 </head>
 <body>
 
@@ -51,14 +51,16 @@
     <p class="lead center" style="max-width:820px;margin:0 auto 3.5rem" data-reveal data-i18n="padi.page.intro">Grow your diving skills at your own pace with our PADI certification courses, taught by professional instructors.</p>
 
     <!-- Open Water Diver -->
-    <div class="exp-row" id="open-water" data-reveal>
+    <div class="exp-row course-row" id="open-water" data-reveal>
       <div class="exp-row__media"><img loading="lazy" src="images/courses.jpg?v=3" alt="PADI Open Water Diver course pool session in Tamarindo, Costa Rica"></div>
       <div>
         <span class="eyebrow" data-i18n="label.certification">Certification</span>
         <h2 class="h-title" data-i18n="course.ow.t">Open Water Diver</h2>
         <div class="price-pill"><small data-i18n="course.startingAt">Starting at</small> $550</div>
-        <p data-i18n="course.ow.lead">Ready to become a certified diver? The PADI Open Water Diver course is your first full scuba certification, designed to teach you the essential skills, safety procedures, and confidence needed to dive independently with a buddy.</p>
-        <p data-i18n="course.ow.d">This 3-day course includes theory, 1 pool session, and 4 open water dives. During the course, you will learn how to use scuba equipment, control your buoyancy, manage basic underwater situations, and explore the ocean safely under the guidance of a PADI instructor.</p>
+        <div class="exp-note">
+          <p data-i18n="course.ow.lead">Ready to become a certified diver? The PADI Open Water Diver course is your first full scuba certification, designed to teach you the essential skills, safety procedures, and confidence needed to dive independently with a buddy.</p>
+          <p data-i18n="course.ow.d">This 3-day course includes theory, 1 pool session, and 4 open water dives. During the course, you will learn how to use scuba equipment, control your buoyancy, manage basic underwater situations, and explore the ocean safely under the guidance of a PADI instructor.</p>
+        </div>
         <ul class="incl">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="course.ow.incl1">E-learning</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="course.ow.incl2">PADI certification fee</span></li>
@@ -66,49 +68,52 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="course.ow.incl4">Snacks & drinks</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="course.ow.incl5">All equipment</span></li>
         </ul>
-        <a href="index.html#bookForm" class="btn" data-i18n="cta.book">Book a dive</a>
+        <a href="index.html#bookForm" class="btn" data-i18n="cta.bookCourse">Book a course</a>
 
-        <div class="exp-details">
-          <h3 data-i18n="course.schedule">Schedule</h3>
-          <p class="muted" data-i18n="course.ow.schedIntro">Before we meet, please complete your PADI e-learning.</p>
-          <div class="course-day">
-            <b data-i18n="course.ow.day1">Day 1 — Flexible hours / Approx. 4 hours</b>
-            <ul>
-              <li data-i18n="course.ow.day1a">Theory knowledge review</li>
-              <li data-i18n="course.ow.day1b">Pool session and scuba skills practice</li>
-            </ul>
+        <div class="exp-details course-split">
+          <div>
+            <h3 data-i18n="course.schedule">Schedule</h3>
+            <p class="muted" data-i18n="course.ow.schedIntro">Before we meet, please complete your PADI e-learning.</p>
+            <div class="course-day">
+              <b data-i18n="course.ow.day1">Day 1 — Flexible hours / Approx. 4 hours</b>
+              <ul>
+                <li data-i18n="course.ow.day1a">Theory knowledge review</li>
+                <li data-i18n="course.ow.day1b">Pool session and scuba skills practice</li>
+              </ul>
+            </div>
+            <div class="course-day">
+              <b data-i18n="course.ow.day2">Day 2 — 6:45am to 12:00pm</b>
+              <ul>
+                <li data-i18n="course.ow.day2a">Open Water Dives 1 & 2 at Las Catalinas</li>
+                <li data-i18n="course.ow.day2b">Approx. 40-minute boat ride</li>
+              </ul>
+            </div>
+            <div class="course-day">
+              <b data-i18n="course.ow.day3">Day 3 — 6:45am to 12:00pm</b>
+              <ul>
+                <li data-i18n="course.ow.day3a">Open Water Dives 3 & 4 at Las Catalinas</li>
+              </ul>
+            </div>
           </div>
-          <div class="course-day">
-            <b data-i18n="course.ow.day2">Day 2 — 6:45am to 12:00pm</b>
+          <div>
+            <h3 data-i18n="course.requirements">Requirements</h3>
             <ul>
-              <li data-i18n="course.ow.day2a">Open Water Dives 1 & 2 at Las Catalinas</li>
-              <li data-i18n="course.ow.day2b">Approx. 40-minute boat ride</li>
+              <li data-i18n="course.ow.req1">Minimum age: 10 years old</li>
+              <li data-i18n="course.ow.req2">Comfortable in the water</li>
+              <li data-i18n="course.ow.req3">Physically and medically fit to dive. Medical form must be completed before the course.</li>
             </ul>
-          </div>
-          <div class="course-day">
-            <b data-i18n="course.ow.day3">Day 3 — 6:45am to 12:00pm</b>
+
+            <h3 data-i18n="course.bring">What to Bring</h3>
             <ul>
-              <li data-i18n="course.ow.day3a">Open Water Dives 3 & 4 at Las Catalinas</li>
+              <li data-i18n="course.ow.bring1">Swimsuit</li>
+              <li data-i18n="course.ow.bring2">Hat</li>
+              <li data-i18n="course.ow.bring3">Reef-safe sunscreen</li>
+              <li data-i18n="course.ow.bring4">Sunglasses</li>
             </ul>
+
+            <h3 data-i18n="course.important">Important Information</h3>
+            <p class="note" data-i18n="course.ow.note">You must wait a minimum of 24 hours after your last dive before flying.</p>
           </div>
-
-          <h3 data-i18n="course.requirements">Requirements</h3>
-          <ul>
-            <li data-i18n="course.ow.req1">Minimum age: 10 years old</li>
-            <li data-i18n="course.ow.req2">Comfortable in the water</li>
-            <li data-i18n="course.ow.req3">Physically and medically fit to dive. Medical form must be completed before the course.</li>
-          </ul>
-
-          <h3 data-i18n="course.bring">What to Bring</h3>
-          <ul>
-            <li data-i18n="course.ow.bring1">Swimsuit</li>
-            <li data-i18n="course.ow.bring2">Hat</li>
-            <li data-i18n="course.ow.bring3">Reef-safe sunscreen</li>
-            <li data-i18n="course.ow.bring4">Sunglasses</li>
-          </ul>
-
-          <h3 data-i18n="course.important">Important Information</h3>
-          <p class="note" data-i18n="course.ow.note">You must wait a minimum of 24 hours after your last dive before flying.</p>
         </div>
       </div>
     </div>
@@ -128,6 +133,6 @@
   <button class="top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 </div>
 
-<script src="js/script.js?v=6"></script>
+<script src="js/script.js?v=7"></script>
 </body>
 </html>

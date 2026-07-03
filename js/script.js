@@ -7,7 +7,7 @@ const WA_PHONE = '50687759641'; // WhatsApp number, international format
 const I18N = {
   en:{
     'nav.experiences':'Experiences','nav.charters':'Private Charters','nav.courses':'PADI Courses','nav.about':'About',
-    'nav.gallery':'Gallery','nav.reviews':'Reviews','nav.contact':'Contact','cta.book':'Book a dive',
+    'nav.gallery':'Gallery','nav.reviews':'Reviews','nav.contact':'Contact','cta.book':'Book a dive','cta.bookCourse':'Book a course',
 
     'hero.eyebrow':'Tamarindo · Costa Rica',
     'hero.sub':'Exclusive Scuba Diving',
@@ -140,7 +140,7 @@ const I18N = {
 
   fr:{
     'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.about':'À propos',
-    'nav.gallery':'Galerie','nav.reviews':'Avis','nav.contact':'Contact','cta.book':'Réserver',
+    'nav.gallery':'Galerie','nav.reviews':'Avis','nav.contact':'Contact','cta.book':'Réserver','cta.bookCourse':'Réserver un cours',
 
     'hero.eyebrow':'Tamarindo · Costa Rica',
     'hero.sub':'Plongée sous-marine exclusive',
@@ -272,7 +272,7 @@ const I18N = {
 
   es:{
     'nav.experiences':'Experiencias','nav.charters':'Charters privados','nav.courses':'Cursos PADI','nav.about':'Nosotros',
-    'nav.gallery':'Galería','nav.reviews':'Reseñas','nav.contact':'Contacto','cta.book':'Reservar',
+    'nav.gallery':'Galería','nav.reviews':'Reseñas','nav.contact':'Contacto','cta.book':'Reservar','cta.bookCourse':'Reservar un curso',
 
     'hero.eyebrow':'Tamarindo · Costa Rica',
     'hero.sub':'Buceo exclusivo',
