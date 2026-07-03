@@ -350,6 +350,17 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .course-day{margin-bottom:1rem}
 .course-day b{display:block;font-family:var(--font-display);font-weight:800;font-size:.95rem;color:var(--ink);margin-bottom:.4rem}
 .exp-details .note{margin-top:.2rem;font-size:.85rem;font-style:italic;color:var(--muted)}
+.schedule-toggle summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:.6rem}
+.schedule-toggle summary::-webkit-details-marker{display:none}
+.schedule-toggle summary h3{margin:0}
+.schedule-toggle summary::after{content:"+";font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--teal);flex-shrink:0}
+.schedule-toggle[open] summary::after{content:"\2212"}
+.schedule-toggle .schedule-content{padding-top:.6rem}
+@media (min-width:981px){
+  .schedule-toggle summary{cursor:default;pointer-events:none}
+  .schedule-toggle summary::after{display:none}
+  .schedule-toggle:not([open]) .schedule-content{display:block!important}
+}
 .pdf-link{color:var(--teal);font-weight:600;text-decoration:underline;text-underline-offset:2px;background:rgba(31,163,181,.13);padding:.08em .4em;border-radius:5px;transition:background .25s,color .25s;white-space:nowrap}
 .pdf-link:hover{background:rgba(31,163,181,.26);color:var(--deep)}
 .exp-row:nth-child(even) .exp-row__media{order:2}
