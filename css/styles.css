@@ -364,11 +364,11 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   background:var(--teal);color:#eaf1f3;border-radius:var(--radius);
   margin-top:clamp(1.5rem,3vw,2.2rem);padding:clamp(1.5rem,3vw,2.2rem);
   display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;
+  text-align:center;
 }
 .course-banner h3{font-family:var(--font-display);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sand);margin-bottom:.7rem}
 .course-banner ul{margin:0}
-.course-banner li{list-style:none;padding-left:1rem;position:relative;margin-bottom:.4rem;font-size:.88rem;line-height:1.5}
-.course-banner li::before{content:"•";position:absolute;left:0;color:var(--sand)}
+.course-banner li{list-style:none;margin-bottom:.4rem;font-size:.88rem;line-height:1.5}
 .course-banner .note{font-size:.88rem;font-style:italic;color:#cfe3e8}
 @media (max-width:760px){.course-banner{grid-template-columns:1fr}}
 .incl{display:grid;gap:.5rem;margin:1rem 0 1.4rem}
