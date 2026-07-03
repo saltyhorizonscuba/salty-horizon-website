@@ -57,7 +57,7 @@ const I18N = {
     'course.ow.day1':'Day 1 — Flexible hours / Approx. 4 hours','course.ow.day1a':'Theory knowledge review','course.ow.day1b':'Pool session and scuba skills practice',
     'course.ow.day2':'Day 2 — 6:45am to 12:00pm','course.ow.day2a':'Open Water Dives 1 & 2 at Las Catalinas','course.ow.day2b':'Approx. 40-minute boat ride',
     'course.ow.day3':'Day 3 — 6:45am to 12:00pm','course.ow.day3a':'Open Water Dives 3 & 4 at Las Catalinas',
-    'course.ow.req1':'Minimum age: 10 years old','course.ow.req2':'Comfortable in the water','course.ow.req3':'Physically and medically fit to dive. Medical form must be completed before the course.',
+    'course.ow.req1':'Minimum age: 10 years old','course.ow.req2':'Comfortable in the water','course.ow.req3':'Physically and medically fit to dive. Medical form must be completed before the course.','course.ow.medFormLink':'📄 Medical form',
     'course.ow.bring1':'Swimsuit','course.ow.bring2':'Hat','course.ow.bring3':'Reef-safe sunscreen','course.ow.bring4':'Sunglasses',
     'course.ow.note':'You must wait a minimum of 24 hours after your last dive before flying.',
 
@@ -199,7 +199,7 @@ const I18N = {
     'course.ow.day1':'Jour 1 — Horaires flexibles / environ 4 heures','course.ow.day1a':'Révision de la théorie','course.ow.day1b':'Séance en piscine et pratique des compétences de plongée',
     'course.ow.day2':'Jour 2 — 6h45 à 12h00','course.ow.day2a':'Plongées en milieu naturel 1 et 2 aux îles Catalinas','course.ow.day2b':'Environ 40 minutes de bateau',
     'course.ow.day3':'Jour 3 — 6h45 à 12h00','course.ow.day3a':'Plongées en milieu naturel 3 et 4 aux îles Catalinas',
-    'course.ow.req1':'Âge minimum : 10 ans','course.ow.req2':'À l’aise dans l’eau','course.ow.req3':'En bonne condition physique et médicale pour plonger. Le formulaire médical doit être complété avant la formation.',
+    'course.ow.req1':'Âge minimum : 10 ans','course.ow.req2':'À l’aise dans l’eau','course.ow.req3':'En bonne condition physique et médicale pour plonger. Le formulaire médical doit être complété avant la formation.','course.ow.medFormLink':'📄 Formulaire médical',
     'course.ow.bring1':'Maillot de bain','course.ow.bring2':'Casquette ou chapeau','course.ow.bring3':'Crème solaire respectueuse des récifs','course.ow.bring4':'Lunettes de soleil',
     'course.ow.note':'Un délai minimum de 24 heures après votre dernière plongée est requis avant de prendre l’avion.',
 
@@ -340,7 +340,7 @@ const I18N = {
     'course.ow.day1':'Día 1 — Horario flexible / aprox. 4 horas','course.ow.day1a':'Repaso de la teoría','course.ow.day1b':'Sesión en piscina y práctica de habilidades de buceo',
     'course.ow.day2':'Día 2 — 6:45am a 12:00pm','course.ow.day2a':'Inmersiones en aguas abiertas 1 y 2 en las Islas Catalinas','course.ow.day2b':'Aprox. 40 minutos en bote',
     'course.ow.day3':'Día 3 — 6:45am a 12:00pm','course.ow.day3a':'Inmersiones en aguas abiertas 3 y 4 en las Islas Catalinas',
-    'course.ow.req1':'Edad mínima: 10 años','course.ow.req2':'Sentirse cómodo en el agua','course.ow.req3':'Estar física y médicamente apto para bucear. El formulario médico debe completarse antes del curso.',
+    'course.ow.req1':'Edad mínima: 10 años','course.ow.req2':'Sentirse cómodo en el agua','course.ow.req3':'Estar física y médicamente apto para bucear. El formulario médico debe completarse antes del curso.','course.ow.medFormLink':'📄 Formulario médico',
     'course.ow.bring1':'Traje de baño','course.ow.bring2':'Gorra o sombrero','course.ow.bring3':'Protector solar biodegradable','course.ow.bring4':'Gafas de sol',
     'course.ow.note':'Debes esperar un mínimo de 24 horas después de tu última inmersión antes de volar.',
 
