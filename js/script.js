@@ -613,5 +613,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
     b.addEventListener('click',()=>{ const p=document.getElementById(b.dataset.learnmore); if(p){ p.hidden=!p.hidden; b.classList.toggle('is-open'); } });
   });
 
+  // course schedule toggle (mobile)
+  document.querySelectorAll('[data-schedule-toggle]').forEach(b=>{
+    b.addEventListener('click',()=>{
+      const content=b.parentElement.querySelector('.schedule-content');
+      if(!content) return;
+      content.hidden=!content.hidden;
+      b.classList.toggle('is-open');
+      b.setAttribute('aria-expanded', String(!content.hidden));
+    });
+  });
+
   document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 });

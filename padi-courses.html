@@ -59,9 +59,11 @@
           </div>
           <div class="course-schedule">
             <div class="exp-details">
-              <details class="schedule-toggle">
-                <summary><h3 data-i18n="course.schedule">Schedule</h3></summary>
-                <div class="schedule-content">
+              <div class="schedule-toggle">
+                <button type="button" class="schedule-summary" data-schedule-toggle aria-expanded="false">
+                  <h3 data-i18n="course.schedule">Schedule</h3>
+                </button>
+                <div class="schedule-content" hidden>
                   <p class="muted" data-i18n="course.ow.schedIntro">Before we meet, please complete your PADI e-learning.</p>
                   <div class="course-day">
                     <b data-i18n="course.ow.day1">Day 1 — Flexible hours / Approx. 4 hours</b>
@@ -84,7 +86,7 @@
                     </ul>
                   </div>
                 </div>
-              </details>
+              </div>
 
               <h3 data-i18n="course.important">Important Information</h3>
               <p class="note" data-i18n="course.ow.note">You must wait a minimum of 24 hours after your last dive before flying.</p>
