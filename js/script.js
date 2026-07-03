@@ -67,6 +67,8 @@ const I18N = {
     'course.aow.d2':'You will complete two mandatory dives: Deep Diving and Underwater Navigation.',
     'course.aow.d3':'You will also choose three elective dives, such as Boat Diving, Search and Recovery, Drift Diving, Fish Identification, Peak Performance Buoyancy, or Night Diving.',
     'course.aow.schedNote':'Possibility to complete the course in 2 or 3 days.',
+    'course.aow.contactOptions':'Contact us to know more about the different options.',
+    'course.aow.req1':'Open Water certification','course.aow.req2':'Minimum 12 years old',
     'course.aow.incl1':'E-learning','course.aow.incl2':'PADI certification fee','course.aow.incl3':'Snacks & drinks','course.aow.incl4':'All equipment',
     'course.aow.contact':'Contact us for more information.',
 
@@ -209,6 +211,8 @@ const I18N = {
     'course.aow.d2':'Vous réaliserez deux plongées obligatoires : plongée profonde et navigation sous-marine.',
     'course.aow.d3':'Vous choisirez également trois plongées optionnelles, parmi : plongée depuis un bateau, recherche et récupération, plongée dérivante, identification des poissons, maîtrise de la flottabilité, ou plongée de nuit.',
     'course.aow.schedNote':'Possibilité de suivre la formation sur 2 ou 3 jours.',
+    'course.aow.contactOptions':'Contactez-nous pour en savoir plus sur les différentes options.',
+    'course.aow.req1':'Certification Open Water','course.aow.req2':'Âge minimum : 12 ans',
     'course.aow.incl1':'E-learning','course.aow.incl2':'Frais de certification PADI','course.aow.incl3':'Collations & boissons','course.aow.incl4':'Tout l’équipement',
     'course.aow.contact':'Contactez-nous pour plus d’informations.',
 
@@ -350,6 +354,8 @@ const I18N = {
     'course.aow.d2':'Realizarás dos inmersiones obligatorias: inmersión profunda y navegación subacuática.',
     'course.aow.d3':'También elegirás tres inmersiones opcionales, entre ellas: buceo desde bote, búsqueda y recuperación, buceo a la deriva, identificación de peces, control de flotabilidad, o buceo nocturno.',
     'course.aow.schedNote':'Posibilidad de completar el curso en 2 o 3 días.',
+    'course.aow.contactOptions':'Contáctanos para conocer más sobre las diferentes opciones.',
+    'course.aow.req1':'Certificación Open Water','course.aow.req2':'Edad mínima: 12 años',
     'course.aow.incl1':'E-learning','course.aow.incl2':'Tarifa de certificación PADI','course.aow.incl3':'Snacks y bebidas','course.aow.incl4':'Todo el equipo',
     'course.aow.contact':'Contáctanos para más información.',
 

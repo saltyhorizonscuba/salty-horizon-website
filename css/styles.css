@@ -358,19 +358,16 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .price-pill small{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .exp-row > div > p{color:var(--teal);background:rgba(231,201,138,.16);border:2px solid var(--sand);border-radius:12px;padding:1rem 1.2rem;margin:.2rem 0 1.3rem;line-height:1.62}
 .course-block{margin-bottom:clamp(2rem,4vw,3rem)}
-.course-grid{
-  display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,5vw,4.5rem);
-  align-items:start;scroll-margin-top:110px;
-  grid-template-areas:"media title" "media rest";
-}
-.course-grid .course-heading{grid-area:title}
-.course-grid .about-media{grid-area:media}
-.course-grid .about-copy{grid-area:rest}
-.course-grid--schedule-last{grid-template-areas:"media title" "media rest" "schedule rest"}
-.course-grid--schedule-last .course-schedule{grid-area:schedule}
+.course-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start;scroll-margin-top:110px}
+.course-grid .course-left,.course-grid .course-right{display:flex;flex-direction:column}
+.course-heading .price-pill{margin-bottom:.5rem}
 @media (max-width:980px){
-  .course-grid{grid-template-columns:1fr;grid-template-areas:"title" "media" "rest"}
-  .course-grid--schedule-last{grid-template-areas:"title" "media" "rest" "schedule"}
+  .course-grid{display:flex;flex-direction:column;grid-template-columns:none}
+  .course-grid .course-left,.course-grid .course-right{display:contents}
+  .course-grid .course-heading{order:1}
+  .course-grid .about-media{order:2}
+  .course-grid .about-copy{order:3}
+  .course-grid .course-schedule{order:4}
 }
 .wave-section{background:#fff;padding-bottom:calc(clamp(4.5rem,9vw,8rem) + 1rem)}
 .wave-divider{position:absolute;left:0;right:0;bottom:-1px;line-height:0;pointer-events:none}
