@@ -47,7 +47,7 @@ const I18N = {
 
     'padi.page.h1':'PADI Courses',
     'padi.page.intro':'Grow your diving skills at your own pace with our PADI certification courses, taught by professional instructors.',
-    'course.schedule':'Schedule','course.requirements':'Requirements','course.bring':'What to Bring','course.important':'Important Information','course.startingAt':'Starting at',
+    'course.schedule':'Schedule','course.requirements':'Requirements','course.bring':'What to Bring','course.important':'Important Information','course.startingAt':'Starting at','course.included':'Included',
 
     'course.ow.t':'Open Water Diver',
     'course.ow.lead':'Ready to become a certified diver? The PADI Open Water Diver course is your first full scuba certification, designed to teach you the essential skills, safety procedures, and confidence needed to dive independently with a buddy.',
@@ -189,7 +189,7 @@ const I18N = {
 
     'padi.page.h1':'Formations PADI',
     'padi.page.intro':'Progressez à votre rythme grâce à nos formations de certification PADI, encadrées par des instructeurs professionnels.',
-    'course.schedule':'Programme','course.requirements':'Prérequis','course.bring':'Quoi apporter','course.important':'Informations importantes','course.startingAt':'À partir de',
+    'course.schedule':'Programme','course.requirements':'Prérequis','course.bring':'Quoi apporter','course.important':'Informations importantes','course.startingAt':'À partir de','course.included':'Inclus',
 
     'course.ow.t':'Open Water Diver',
     'course.ow.lead':'Prêt à devenir plongeur certifié ? La formation PADI Open Water Diver est votre première certification complète de plongée, conçue pour vous enseigner les compétences essentielles, les procédures de sécurité et la confiance nécessaires pour plonger en autonomie avec un binôme.',
@@ -330,7 +330,7 @@ const I18N = {
 
     'padi.page.h1':'Cursos PADI',
     'padi.page.intro':'Progresa a tu propio ritmo con nuestros cursos de certificación PADI, guiados por instructores profesionales.',
-    'course.schedule':'Programa','course.requirements':'Requisitos','course.bring':'Qué llevar','course.important':'Información importante','course.startingAt':'Desde',
+    'course.schedule':'Programa','course.requirements':'Requisitos','course.bring':'Qué llevar','course.important':'Información importante','course.startingAt':'Desde','course.included':'Incluye',
 
     'course.ow.t':'Open Water Diver',
     'course.ow.lead':'¿Listo para certificarte como buceador? El curso PADI Open Water Diver es tu primera certificación completa de buceo, diseñada para enseñarte las habilidades esenciales, los procedimientos de seguridad y la confianza necesarios para bucear de forma independiente con un compañero.',
