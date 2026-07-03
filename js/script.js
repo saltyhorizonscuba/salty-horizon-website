@@ -146,7 +146,8 @@ const I18N = {
     'charters.f3t':'Made for you','charters.f3d':'Flexible itinerary, your music, your pace, your people.',
     'charters.cta':'Plan my charter on WhatsApp',
     'charters.book':'Request a private charter',
-    'wa.charter':'Hi Salty Horizon! I would like to organize a PRIVATE CHARTER from Tamarindo. Could you share availability and pricing?'
+    'wa.charter':'Hi Salty Horizon! I would like to organize a PRIVATE CHARTER from Tamarindo. Could you share availability and pricing?',
+    'wa.aowInfo':'Hi Salty Horizon! I would like more information about the Advanced Open Water Diver course.'
   },
 
   fr:{
@@ -289,7 +290,8 @@ const I18N = {
     'charters.f3t':'Sur mesure','charters.f3d':'Itinéraire flexible, votre musique, votre rythme, vos proches.',
     'charters.cta':'Organiser mon charter sur WhatsApp',
     'charters.book':'Demander un charter privé',
-    'wa.charter':'Bonjour Salty Horizon ! J’aimerais organiser un CHARTER PRIVÉ au départ de Tamarindo. Pouvez-vous m’indiquer les disponibilités et tarifs ?'
+    'wa.charter':'Bonjour Salty Horizon ! J’aimerais organiser un CHARTER PRIVÉ au départ de Tamarindo. Pouvez-vous m’indiquer les disponibilités et tarifs ?',
+    'wa.aowInfo':'Bonjour Salty Horizon ! J’aimerais avoir plus d’informations sur la formation Advanced Open Water Diver.'
   },
 
   es:{
@@ -432,7 +434,8 @@ const I18N = {
     'charters.f3t':'Hecho para ti','charters.f3d':'Itinerario flexible, tu música, tu ritmo, tu gente.',
     'charters.cta':'Organizar mi charter por WhatsApp',
     'charters.book':'Solicitar un charter privado',
-    'wa.charter':'¡Hola Salty Horizon! Me gustaría organizar un CHARTER PRIVADO desde Tamarindo. ¿Podrían indicarme disponibilidad y precios?'
+    'wa.charter':'¡Hola Salty Horizon! Me gustaría organizar un CHARTER PRIVADO desde Tamarindo. ¿Podrían indicarme disponibilidad y precios?',
+    'wa.aowInfo':'¡Hola Salty Horizon! Me gustaría tener más información sobre el curso Advanced Open Water Diver.'
   }
 };
 
@@ -583,6 +586,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
   // charter WhatsApp buttons
   document.querySelectorAll('[data-wa-charter]').forEach(b=>{
     b.addEventListener('click',(e)=>{ e.preventDefault(); window.open('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.charter')),'_blank'); });
+  });
+
+  // Advanced Open Water "more info" WhatsApp button
+  document.querySelectorAll('[data-wa-aowinfo]').forEach(b=>{
+    b.addEventListener('click',(e)=>{ e.preventDefault(); window.open('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.aowInfo')),'_blank'); });
   });
 
   // generic "book this experience" links: prefill select + scroll
