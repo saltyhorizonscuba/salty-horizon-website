@@ -92,6 +92,13 @@ const I18N = {
 
     'footer.tagline':'Private, personalized scuba diving in Tamarindo, Costa Rica. Quality over quantity, every dive designed around you.',
     'footer.explore':'Explore','footer.contactH':'Contact','footer.rights':'All rights reserved.','footer.made':'Designed for the ocean.',
+    'footer.cancelH':'Cancellation Policy',
+    'footer.cancel1':'100% refund if we are cancelling for weather conditions or if the minimum of people (3) is not reached.',
+    'footer.cancel2':'100% refund on cancellations received 7 days or more before the tour’s starting time.',
+    'footer.cancel3':'50% refund on cancellations received 3-6 days before the tour’s starting time.',
+    'footer.cancel4':'0% refund on cancellations received within 48 hours of the tour’s starting time.',
+    'footer.cancel5':'0% refund if the customer misses the departure of a confirmed tour.',
+    'footer.cancel6':'0% refund in case customers do not fulfill requirements as described in the tour description (i.e. medical condition, physical fitness, certification level).',
 
     /* subpages */
     'exp.page.h1':'Experiences',
@@ -202,6 +209,13 @@ const I18N = {
 
     'footer.tagline':'Plongée sous-marine privée et personnalisée à Tamarindo, Costa Rica. La qualité avant la quantité, chaque plongée pensée pour vous.',
     'footer.explore':'Explorer','footer.contactH':'Contact','footer.rights':'Tous droits réservés.','footer.made':'Conçu pour l’océan',
+    'footer.cancelH':'Politique d’annulation',
+    'footer.cancel1':'Remboursement à 100 % si nous annulons pour cause de météo ou si le minimum de participants (3) n’est pas atteint.',
+    'footer.cancel2':'Remboursement à 100 % pour toute annulation reçue 7 jours ou plus avant le départ de la sortie.',
+    'footer.cancel3':'Remboursement à 50 % pour toute annulation reçue 3 à 6 jours avant le départ de la sortie.',
+    'footer.cancel4':'Aucun remboursement pour toute annulation reçue dans les 48 heures précédant le départ de la sortie.',
+    'footer.cancel5':'Aucun remboursement si le client ne se présente pas au départ d’une sortie confirmée.',
+    'footer.cancel6':'Aucun remboursement si le client ne remplit pas les conditions décrites dans la sortie (ex. : condition médicale, forme physique, niveau de certification).',
 
     'exp.page.h1':'Expériences',
     'exp.page.intro':'100 % privé, 100 % flexible. Grâce à nos partenariats de confiance avec des centres sélectionnés, nous adaptons lieux, horaires et formats à vous, et chaque sortie inclut des photos et vidéos non retouchées.',
@@ -311,6 +325,13 @@ const I18N = {
 
     'footer.tagline':'Buceo privado y personalizado en Tamarindo, Costa Rica. Calidad antes que cantidad, cada inmersión pensada para ti.',
     'footer.explore':'Explorar','footer.contactH':'Contacto','footer.rights':'Todos los derechos reservados.','footer.made':'Diseñado para el océano.',
+    'footer.cancelH':'Política de cancelación',
+    'footer.cancel1':'Reembolso del 100 % si cancelamos por condiciones climáticas o si no se alcanza el mínimo de participantes (3).',
+    'footer.cancel2':'Reembolso del 100 % en cancelaciones recibidas 7 días o más antes de la hora de inicio del tour.',
+    'footer.cancel3':'Reembolso del 50 % en cancelaciones recibidas entre 3 y 6 días antes de la hora de inicio del tour.',
+    'footer.cancel4':'Sin reembolso en cancelaciones recibidas dentro de las 48 horas previas a la hora de inicio del tour.',
+    'footer.cancel5':'Sin reembolso si el cliente no se presenta a la salida de un tour confirmado.',
+    'footer.cancel6':'Sin reembolso si el cliente no cumple con los requisitos descritos en el tour (por ejemplo: condición médica, aptitud física, nivel de certificación).',
 
     'exp.page.h1':'Experiencias',
     'exp.page.intro':'100 % privado, 100 % flexible. Gracias a alianzas de confianza con centros seleccionados, adaptamos lugares, horarios y formatos a ti, y cada salida incluye fotos y videos sin editar.',
