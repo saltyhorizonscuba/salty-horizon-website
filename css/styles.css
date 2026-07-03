@@ -360,7 +360,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .exp-row > div > p{color:var(--teal);background:rgba(231,201,138,.16);border:2px solid var(--sand);border-radius:12px;padding:1rem 1.2rem;margin:.2rem 0 1.3rem;line-height:1.62}
 .course-block{margin-bottom:clamp(3rem,6vw,5rem)}
 .course-row{align-items:start;scroll-margin-top:110px}
-.course-lead{font-size:1.05rem}
+.course-lead{font-size:1.25rem}
 .course-cols{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.2rem 0}
 .course-cols .feature-list{margin:0}
 .list-label{display:block;font-family:var(--font-display);font-weight:800;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:.7rem}
