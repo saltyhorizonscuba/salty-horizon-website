@@ -6,7 +6,7 @@ const WA_PHONE = '50687759641'; // WhatsApp number, international format
 /* ---------------- Translations ---------------- */
 const I18N = {
   en:{
-    'nav.experiences':'Experiences','nav.charters':'Private Charters','nav.about':'About',
+    'nav.experiences':'Experiences','nav.charters':'Private Charters','nav.courses':'PADI Courses','nav.about':'About',
     'nav.gallery':'Gallery','nav.reviews':'Reviews','nav.contact':'Contact','cta.book':'Book a dive',
 
     'hero.eyebrow':'Tamarindo · Costa Rica',
@@ -43,7 +43,23 @@ const I18N = {
     'card.bat.t':'Fun Dive · Bat Islands','card.bat.d':'The Bat Islands (Islas Murciélagos), off Santa Rosa National Park in Guanacaste, offer one of Costa Rica’s most legendary dives. Accessible from May to November, they let experienced divers observe the impressive bull sharks in their natural habitat. An intense experience in the heart of exceptional marine life.',
     'card.snorkel.t':'Snorkeling','card.snorkel.d':'Discover the seabed of the Catalina Islands during two snorkeling sessions of 45 minutes to 1 hour, accompanied by a guide. Explore crystal-clear waters home to tropical fish, sea turtles, rays and, depending on the season, the majestic manta rays. An activity accessible to everyone, ideal for observing the richness of Costa Rica’s marine life.',
     'card.courses.t':'PADI Courses','card.courses.d':'Develop your skills and progress at your own pace with our PADI courses, from Open Water Diver to Rescue Diver. Whether you want to earn your first certification, gain more independence or deepen your knowledge, our instructors guide you throughout your training to make you a more confident, skilled and experienced diver.',
-    'label.beginner':'Beginner','label.popular':'Most popular','label.advanced':'Advanced','label.season':'May–Nov','label.allLevels':'All levels','label.certified':'Certified',
+    'label.beginner':'Beginner','label.popular':'Most popular','label.advanced':'Advanced','label.season':'May–Nov','label.allLevels':'All levels','label.certified':'Certified','label.certification':'Certification',
+
+    'padi.page.h1':'PADI Courses',
+    'padi.page.intro':'Grow your diving skills at your own pace with our PADI certification courses, taught by professional instructors.',
+    'course.schedule':'Schedule','course.requirements':'Requirements','course.bring':'What to Bring','course.important':'Important Information','course.startingAt':'Starting at',
+
+    'course.ow.t':'Open Water Diver',
+    'course.ow.lead':'Ready to become a certified diver? The PADI Open Water Diver course is your first full scuba certification, designed to teach you the essential skills, safety procedures, and confidence needed to dive independently with a buddy.',
+    'course.ow.d':'This 3-day course includes theory, 1 pool session, and 4 open water dives. During the course, you will learn how to use scuba equipment, control your buoyancy, manage basic underwater situations, and explore the ocean safely under the guidance of a PADI instructor.',
+    'course.ow.incl1':'E-learning','course.ow.incl2':'PADI certification fee','course.ow.incl3':'PADI instructor','course.ow.incl4':'Snacks & drinks','course.ow.incl5':'All equipment',
+    'course.ow.schedIntro':'Before we meet, please complete your PADI e-learning.',
+    'course.ow.day1':'Day 1 — Flexible hours / Approx. 4 hours','course.ow.day1a':'Theory knowledge review','course.ow.day1b':'Pool session and scuba skills practice',
+    'course.ow.day2':'Day 2 — 6:45am to 12:00pm','course.ow.day2a':'Open Water Dives 1 & 2 at Las Catalinas','course.ow.day2b':'Approx. 40-minute boat ride',
+    'course.ow.day3':'Day 3 — 6:45am to 12:00pm','course.ow.day3a':'Open Water Dives 3 & 4 at Las Catalinas',
+    'course.ow.req1':'Minimum age: 10 years old','course.ow.req2':'Comfortable in the water','course.ow.req3':'Physically and medically fit to dive. Medical form must be completed before the course.',
+    'course.ow.bring1':'Swimsuit','course.ow.bring2':'Hat','course.ow.bring3':'Reef-safe sunscreen','course.ow.bring4':'Sunglasses',
+    'course.ow.note':'You must wait a minimum of 24 hours after your last dive before flying.',
 
     'stat.dives':'Dive sites','stat.langs':'Languages','stat.private':'Private dives','stat.rating':'Guest rating',
 
@@ -123,7 +139,7 @@ const I18N = {
   },
 
   fr:{
-    'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.about':'À propos',
+    'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.about':'À propos',
     'nav.gallery':'Galerie','nav.reviews':'Avis','nav.contact':'Contact','cta.book':'Réserver',
 
     'hero.eyebrow':'Tamarindo · Costa Rica',
@@ -160,7 +176,23 @@ const I18N = {
     'card.bat.t':'Fun Dive · Bat Islands','card.bat.d':'Bat Islands (Islas Murciélagos), au large du parc national Santa Rosa (Guanacaste), offrent l’une des plongées les plus mythiques du Costa Rica. Accessibles de mai à novembre, elles permettent aux plongeurs expérimentés d’observer les impressionnants requins bouledogues dans leur habitat naturel. Une expérience intense au cœur d’une vie marine exceptionnelle.',
     'card.snorkel.t':'Snorkeling','card.snorkel.d':'Découvrez les fonds marins des îles Catalina lors de deux sessions de snorkeling de 45 minutes à 1 heure, accompagnées d’un guide. Explorez des eaux cristallines où évoluent poissons tropicaux, tortues marines, raies et, selon la saison, les majestueuses raies manta. Une activité accessible à tous, idéale pour observer la richesse de la vie marine du Costa Rica.',
     'card.courses.t':'Cours PADI','card.courses.d':'Développez vos compétences et progressez à votre rythme grâce à nos formations PADI, du Open Water Diver au Rescue Diver. Que vous souhaitiez obtenir votre première certification, gagner en autonomie ou renforcer vos connaissances, nos instructeurs vous accompagnent tout au long de votre apprentissage pour faire de vous un plongeur plus confiant, compétent et expérimenté.',
-    'label.beginner':'Débutant','label.popular':'Le plus prisé','label.advanced':'Confirmé','label.season':'Mai–Nov','label.allLevels':'Tous niveaux','label.certified':'Certifié',
+    'label.beginner':'Débutant','label.popular':'Le plus prisé','label.advanced':'Confirmé','label.season':'Mai–Nov','label.allLevels':'Tous niveaux','label.certified':'Certifié','label.certification':'Certification',
+
+    'padi.page.h1':'Formations PADI',
+    'padi.page.intro':'Progressez à votre rythme grâce à nos formations de certification PADI, encadrées par des instructeurs professionnels.',
+    'course.schedule':'Programme','course.requirements':'Prérequis','course.bring':'Quoi apporter','course.important':'Informations importantes','course.startingAt':'À partir de',
+
+    'course.ow.t':'Open Water Diver',
+    'course.ow.lead':'Prêt à devenir plongeur certifié ? La formation PADI Open Water Diver est votre première certification complète de plongée, conçue pour vous enseigner les compétences essentielles, les procédures de sécurité et la confiance nécessaires pour plonger en autonomie avec un binôme.',
+    'course.ow.d':'Cette formation de 3 jours comprend de la théorie, 1 séance en piscine et 4 plongées en milieu naturel. Vous apprendrez à utiliser l’équipement de plongée, à maîtriser votre flottabilité, à gérer les situations sous-marines de base et à explorer l’océan en toute sécurité sous la supervision d’un instructeur PADI.',
+    'course.ow.incl1':'E-learning','course.ow.incl2':'Frais de certification PADI','course.ow.incl3':'Instructeur PADI','course.ow.incl4':'Collations & boissons','course.ow.incl5':'Tout l’équipement',
+    'course.ow.schedIntro':'Avant notre rencontre, merci de terminer votre e-learning PADI.',
+    'course.ow.day1':'Jour 1 — Horaires flexibles / environ 4 heures','course.ow.day1a':'Révision de la théorie','course.ow.day1b':'Séance en piscine et pratique des compétences de plongée',
+    'course.ow.day2':'Jour 2 — 6h45 à 12h00','course.ow.day2a':'Plongées en milieu naturel 1 et 2 aux îles Catalinas','course.ow.day2b':'Environ 40 minutes de bateau',
+    'course.ow.day3':'Jour 3 — 6h45 à 12h00','course.ow.day3a':'Plongées en milieu naturel 3 et 4 aux îles Catalinas',
+    'course.ow.req1':'Âge minimum : 10 ans','course.ow.req2':'À l’aise dans l’eau','course.ow.req3':'En bonne condition physique et médicale pour plonger. Le formulaire médical doit être complété avant la formation.',
+    'course.ow.bring1':'Maillot de bain','course.ow.bring2':'Casquette ou chapeau','course.ow.bring3':'Crème solaire respectueuse des récifs','course.ow.bring4':'Lunettes de soleil',
+    'course.ow.note':'Un délai minimum de 24 heures après votre dernière plongée est requis avant de prendre l’avion.',
 
     'stat.dives':'Sites de plongée','stat.langs':'Langues','stat.private':'Plongées privées','stat.rating':'Note clients',
 
@@ -239,7 +271,7 @@ const I18N = {
   },
 
   es:{
-    'nav.experiences':'Experiencias','nav.charters':'Charters privados','nav.about':'Nosotros',
+    'nav.experiences':'Experiencias','nav.charters':'Charters privados','nav.courses':'Cursos PADI','nav.about':'Nosotros',
     'nav.gallery':'Galería','nav.reviews':'Reseñas','nav.contact':'Contacto','cta.book':'Reservar',
 
     'hero.eyebrow':'Tamarindo · Costa Rica',
@@ -276,7 +308,23 @@ const I18N = {
     'card.bat.t':'Fun Dive · Bat Islands','card.bat.d':'Las Islas Murciélagos, frente al Parque Nacional Santa Rosa (Guanacaste), ofrecen una de las inmersiones más míticas de Costa Rica. Accesibles de mayo a noviembre, permiten a los buzos experimentados observar los impresionantes tiburones toro en su hábitat natural. Una experiencia intensa en el corazón de una vida marina excepcional.',
     'card.snorkel.t':'Snorkeling','card.snorkel.d':'Descubre los fondos marinos de las Islas Catalinas durante dos sesiones de snorkel de 45 minutos a 1 hora, acompañado por un guía. Explora aguas cristalinas donde nadan peces tropicales, tortugas marinas, rayas y, según la temporada, las majestuosas mantarrayas. Una actividad accesible para todos, ideal para observar la riqueza de la vida marina de Costa Rica.',
     'card.courses.t':'Cursos PADI','card.courses.d':'Desarrolla tus habilidades y progresa a tu propio ritmo con nuestros cursos PADI, desde Open Water Diver hasta Rescue Diver. Ya sea que quieras obtener tu primera certificación, ganar autonomía o ampliar tus conocimientos, nuestros instructores te acompañan durante toda tu formación para convertirte en un buceador más seguro, competente y experimentado.',
-    'label.beginner':'Principiante','label.popular':'Más popular','label.advanced':'Avanzado','label.season':'Mayo–Nov','label.allLevels':'Todos los niveles','label.certified':'Certificado',
+    'label.beginner':'Principiante','label.popular':'Más popular','label.advanced':'Avanzado','label.season':'Mayo–Nov','label.allLevels':'Todos los niveles','label.certified':'Certificado','label.certification':'Certificación',
+
+    'padi.page.h1':'Cursos PADI',
+    'padi.page.intro':'Progresa a tu propio ritmo con nuestros cursos de certificación PADI, guiados por instructores profesionales.',
+    'course.schedule':'Programa','course.requirements':'Requisitos','course.bring':'Qué llevar','course.important':'Información importante','course.startingAt':'Desde',
+
+    'course.ow.t':'Open Water Diver',
+    'course.ow.lead':'¿Listo para certificarte como buceador? El curso PADI Open Water Diver es tu primera certificación completa de buceo, diseñada para enseñarte las habilidades esenciales, los procedimientos de seguridad y la confianza necesarios para bucear de forma independiente con un compañero.',
+    'course.ow.d':'Este curso de 3 días incluye teoría, 1 sesión en piscina y 4 inmersiones en aguas abiertas. Durante el curso aprenderás a usar el equipo de buceo, controlar tu flotabilidad, manejar situaciones básicas bajo el agua y explorar el océano de forma segura bajo la guía de un instructor PADI.',
+    'course.ow.incl1':'E-learning','course.ow.incl2':'Tarifa de certificación PADI','course.ow.incl3':'Instructor PADI','course.ow.incl4':'Snacks y bebidas','course.ow.incl5':'Todo el equipo',
+    'course.ow.schedIntro':'Antes de nuestro encuentro, completa tu e-learning de PADI.',
+    'course.ow.day1':'Día 1 — Horario flexible / aprox. 4 horas','course.ow.day1a':'Repaso de la teoría','course.ow.day1b':'Sesión en piscina y práctica de habilidades de buceo',
+    'course.ow.day2':'Día 2 — 6:45am a 12:00pm','course.ow.day2a':'Inmersiones en aguas abiertas 1 y 2 en las Islas Catalinas','course.ow.day2b':'Aprox. 40 minutos en bote',
+    'course.ow.day3':'Día 3 — 6:45am a 12:00pm','course.ow.day3a':'Inmersiones en aguas abiertas 3 y 4 en las Islas Catalinas',
+    'course.ow.req1':'Edad mínima: 10 años','course.ow.req2':'Sentirse cómodo en el agua','course.ow.req3':'Estar física y médicamente apto para bucear. El formulario médico debe completarse antes del curso.',
+    'course.ow.bring1':'Traje de baño','course.ow.bring2':'Gorra o sombrero','course.ow.bring3':'Protector solar biodegradable','course.ow.bring4':'Gafas de sol',
+    'course.ow.note':'Debes esperar un mínimo de 24 horas después de tu última inmersión antes de volar.',
 
     'stat.dives':'Puntos de buceo','stat.langs':'Idiomas','stat.private':'Inmersiones privadas','stat.rating':'Valoración',
 
