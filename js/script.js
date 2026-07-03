@@ -70,7 +70,7 @@ const I18N = {
     'course.aow.contactOptions':'Contact us to know more about the different options.',
     'course.aow.req1':'Open Water certification','course.aow.req2':'Minimum 12 years old',
     'course.aow.incl1':'E-learning','course.aow.incl2':'PADI certification fee','course.aow.incl3':'Snacks & drinks','course.aow.incl4':'All equipment',
-    'course.aow.contact':'Contact us for more information.',
+    'course.contactInfo':'Contact us for more information.',
 
     'stat.dives':'Dive sites','stat.langs':'Languages','stat.private':'Private dives','stat.rating':'Guest rating',
 
@@ -147,7 +147,8 @@ const I18N = {
     'charters.cta':'Plan my charter on WhatsApp',
     'charters.book':'Request a private charter',
     'wa.charter':'Hi Salty Horizon! I would like to organize a PRIVATE CHARTER from Tamarindo. Could you share availability and pricing?',
-    'wa.aowInfo':'Hi Salty Horizon! I would like more information about the Advanced Open Water Diver course.'
+    'wa.aowInfo':'Hi Salty Horizon! I would like more information about the Advanced Open Water Diver course.',
+    'wa.owInfo':'Hi Salty Horizon! I would like more information about the Open Water Diver course.'
   },
 
   fr:{
@@ -215,7 +216,7 @@ const I18N = {
     'course.aow.contactOptions':'Contactez-nous pour en savoir plus sur les différentes options.',
     'course.aow.req1':'Certification Open Water','course.aow.req2':'Âge minimum : 12 ans',
     'course.aow.incl1':'E-learning','course.aow.incl2':'Frais de certification PADI','course.aow.incl3':'Collations & boissons','course.aow.incl4':'Tout l’équipement',
-    'course.aow.contact':'Contactez-nous pour plus d’informations.',
+    'course.contactInfo':'Contactez-nous pour plus d’informations.',
 
     'stat.dives':'Sites de plongée','stat.langs':'Langues','stat.private':'Plongées privées','stat.rating':'Note clients',
 
@@ -291,7 +292,8 @@ const I18N = {
     'charters.cta':'Organiser mon charter sur WhatsApp',
     'charters.book':'Demander un charter privé',
     'wa.charter':'Bonjour Salty Horizon ! J’aimerais organiser un CHARTER PRIVÉ au départ de Tamarindo. Pouvez-vous m’indiquer les disponibilités et tarifs ?',
-    'wa.aowInfo':'Bonjour Salty Horizon ! J’aimerais avoir plus d’informations sur la formation Advanced Open Water Diver.'
+    'wa.aowInfo':'Bonjour Salty Horizon ! J’aimerais avoir plus d’informations sur la formation Advanced Open Water Diver.',
+    'wa.owInfo':'Bonjour Salty Horizon ! J’aimerais avoir plus d’informations sur la formation Open Water Diver.'
   },
 
   es:{
@@ -359,7 +361,7 @@ const I18N = {
     'course.aow.contactOptions':'Contáctanos para conocer más sobre las diferentes opciones.',
     'course.aow.req1':'Certificación Open Water','course.aow.req2':'Edad mínima: 12 años',
     'course.aow.incl1':'E-learning','course.aow.incl2':'Tarifa de certificación PADI','course.aow.incl3':'Snacks y bebidas','course.aow.incl4':'Todo el equipo',
-    'course.aow.contact':'Contáctanos para más información.',
+    'course.contactInfo':'Contáctanos para más información.',
 
     'stat.dives':'Puntos de buceo','stat.langs':'Idiomas','stat.private':'Inmersiones privadas','stat.rating':'Valoración',
 
@@ -435,7 +437,8 @@ const I18N = {
     'charters.cta':'Organizar mi charter por WhatsApp',
     'charters.book':'Solicitar un charter privado',
     'wa.charter':'¡Hola Salty Horizon! Me gustaría organizar un CHARTER PRIVADO desde Tamarindo. ¿Podrían indicarme disponibilidad y precios?',
-    'wa.aowInfo':'¡Hola Salty Horizon! Me gustaría tener más información sobre el curso Advanced Open Water Diver.'
+    'wa.aowInfo':'¡Hola Salty Horizon! Me gustaría tener más información sobre el curso Advanced Open Water Diver.',
+    'wa.owInfo':'¡Hola Salty Horizon! Me gustaría tener más información sobre el curso Open Water Diver.'
   }
 };
 
@@ -588,9 +591,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
     b.addEventListener('click',(e)=>{ e.preventDefault(); window.open('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.charter')),'_blank'); });
   });
 
-  // Advanced Open Water "more info" WhatsApp button
+  // Course "more info" WhatsApp buttons
   document.querySelectorAll('[data-wa-aowinfo]').forEach(b=>{
     b.addEventListener('click',(e)=>{ e.preventDefault(); window.open('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.aowInfo')),'_blank'); });
+  });
+  document.querySelectorAll('[data-wa-owinfo]').forEach(b=>{
+    b.addEventListener('click',(e)=>{ e.preventDefault(); window.open('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.owInfo')),'_blank'); });
   });
 
   // generic "book this experience" links: prefill select + scroll
