@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=22">
+<link rel="stylesheet" href="css/styles.css?v=23">
 </head>
 <body>
 
@@ -59,9 +59,11 @@
           </div>
           <div class="course-schedule">
             <div class="exp-details">
-              <details class="schedule-toggle">
-                <summary><h3 data-i18n="course.schedule">Schedule</h3></summary>
-                <div class="schedule-content">
+              <div class="schedule-toggle">
+                <button type="button" class="schedule-summary" data-schedule-toggle aria-expanded="false">
+                  <h3 data-i18n="course.schedule">Schedule</h3>
+                </button>
+                <div class="schedule-content" hidden>
                   <p class="muted" data-i18n="course.ow.schedIntro">Before we meet, please complete your PADI e-learning.</p>
                   <div class="course-day">
                     <b data-i18n="course.ow.day1">Day 1 — Flexible hours / Approx. 4 hours</b>
@@ -84,7 +86,7 @@
                     </ul>
                   </div>
                 </div>
-              </details>
+              </div>
 
               <h3 data-i18n="course.important">Important Information</h3>
               <p class="note" data-i18n="course.ow.note">You must wait a minimum of 24 hours after your last dive before flying.</p>
@@ -206,6 +208,6 @@
   <button class="top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 </div>
 
-<script src="js/script.js?v=13"></script>
+<script src="js/script.js?v=14"></script>
 </body>
 </html>
