@@ -368,6 +368,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   .course-grid .about-media{order:2}
   .course-grid .about-copy{order:3}
   .course-grid .course-schedule{order:4}
+  .course-grid .course-buttons{order:5}
 }
 .wave-section{background:#fff;padding-bottom:calc(clamp(4.5rem,9vw,8rem) + 1rem)}
 .wave-divider{position:absolute;left:0;right:0;bottom:-1px;line-height:0;pointer-events:none}
