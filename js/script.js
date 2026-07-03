@@ -61,6 +61,15 @@ const I18N = {
     'course.ow.bring1':'Swimsuit','course.ow.bring2':'Hat','course.ow.bring3':'Reef-safe sunscreen','course.ow.bring4':'Sunglasses',
     'course.ow.note':'You must wait a minimum of 24 hours after your last dive before flying.',
 
+    'course.aow.t':'Advanced Open Water Diver',
+    'course.aow.lead':'Already certified as a PADI Open Water Diver or equivalent? The PADI Advanced Open Water Diver course is designed to sharpen your skills, build your confidence, and expand your depth limit to 30m / 100 ft.',
+    'course.aow.d1':'The course includes a short theory section and 5 adventure dives.',
+    'course.aow.d2':'You will complete two mandatory dives: Deep Diving and Underwater Navigation.',
+    'course.aow.d3':'You will also choose three elective dives, such as Boat Diving, Search and Recovery, Drift Diving, Fish Identification, Peak Performance Buoyancy, or Night Diving.',
+    'course.aow.schedNote':'Possibility to complete the course in 2 or 3 days.',
+    'course.aow.incl1':'E-learning','course.aow.incl2':'PADI certification fee','course.aow.incl3':'Snacks & drinks','course.aow.incl4':'All equipment',
+    'course.aow.contact':'Contact us for more information.',
+
     'stat.dives':'Dive sites','stat.langs':'Languages','stat.private':'Private dives','stat.rating':'Guest rating',
 
     'gallery.eyebrow':'In the water',
@@ -194,6 +203,15 @@ const I18N = {
     'course.ow.bring1':'Maillot de bain','course.ow.bring2':'Casquette ou chapeau','course.ow.bring3':'Crème solaire respectueuse des récifs','course.ow.bring4':'Lunettes de soleil',
     'course.ow.note':'Un délai minimum de 24 heures après votre dernière plongée est requis avant de prendre l’avion.',
 
+    'course.aow.t':'Advanced Open Water Diver',
+    'course.aow.lead':'Déjà certifié PADI Open Water Diver ou équivalent ? La formation PADI Advanced Open Water Diver est conçue pour affiner vos compétences, renforcer votre confiance et étendre votre limite de profondeur à 30 m.',
+    'course.aow.d1':'La formation comprend une courte session théorique et 5 plongées d’aventure.',
+    'course.aow.d2':'Vous réaliserez deux plongées obligatoires : plongée profonde et navigation sous-marine.',
+    'course.aow.d3':'Vous choisirez également trois plongées optionnelles, parmi : plongée depuis un bateau, recherche et récupération, plongée dérivante, identification des poissons, maîtrise de la flottabilité, ou plongée de nuit.',
+    'course.aow.schedNote':'Possibilité de suivre la formation sur 2 ou 3 jours.',
+    'course.aow.incl1':'E-learning','course.aow.incl2':'Frais de certification PADI','course.aow.incl3':'Collations & boissons','course.aow.incl4':'Tout l’équipement',
+    'course.aow.contact':'Contactez-nous pour plus d’informations.',
+
     'stat.dives':'Sites de plongée','stat.langs':'Langues','stat.private':'Plongées privées','stat.rating':'Note clients',
 
     'gallery.eyebrow':'Sous l’eau',
@@ -325,6 +343,15 @@ const I18N = {
     'course.ow.req1':'Edad mínima: 10 años','course.ow.req2':'Sentirse cómodo en el agua','course.ow.req3':'Estar física y médicamente apto para bucear. El formulario médico debe completarse antes del curso.',
     'course.ow.bring1':'Traje de baño','course.ow.bring2':'Gorra o sombrero','course.ow.bring3':'Protector solar biodegradable','course.ow.bring4':'Gafas de sol',
     'course.ow.note':'Debes esperar un mínimo de 24 horas después de tu última inmersión antes de volar.',
+
+    'course.aow.t':'Advanced Open Water Diver',
+    'course.aow.lead':'¿Ya estás certificado como PADI Open Water Diver o equivalente? El curso PADI Advanced Open Water Diver está diseñado para perfeccionar tus habilidades, aumentar tu confianza y ampliar tu límite de profundidad a 30 m.',
+    'course.aow.d1':'El curso incluye una breve sección teórica y 5 inmersiones de aventura.',
+    'course.aow.d2':'Realizarás dos inmersiones obligatorias: inmersión profunda y navegación subacuática.',
+    'course.aow.d3':'También elegirás tres inmersiones opcionales, entre ellas: buceo desde bote, búsqueda y recuperación, buceo a la deriva, identificación de peces, control de flotabilidad, o buceo nocturno.',
+    'course.aow.schedNote':'Posibilidad de completar el curso en 2 o 3 días.',
+    'course.aow.incl1':'E-learning','course.aow.incl2':'Tarifa de certificación PADI','course.aow.incl3':'Snacks y bebidas','course.aow.incl4':'Todo el equipo',
+    'course.aow.contact':'Contáctanos para más información.',
 
     'stat.dives':'Puntos de buceo','stat.langs':'Idiomas','stat.private':'Inmersiones privadas','stat.rating':'Valoración',
 
