@@ -369,10 +369,15 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 @media (max-width:980px){
   .course-grid{grid-template-columns:1fr;grid-template-areas:"title" "media" "rest"}
 }
-.wave-section{background:#e3f3f6;padding-bottom:calc(clamp(4.5rem,9vw,8rem) + 3.5rem)}
+.wave-section{background:#fff;padding-bottom:calc(clamp(4.5rem,9vw,8rem) + 1rem)}
 .wave-divider{position:absolute;left:0;right:0;bottom:-1px;line-height:0;pointer-events:none}
 .wave-divider svg{width:100%;height:70px;display:block}
-.wave-divider path{fill:var(--cream)}
+.wave-divider path{fill:var(--navy)}
+.section--dark .list-label,.section--dark .exp-details h3,.section--dark .course-day b{color:var(--sand)}
+.section--dark .feature-list b{color:#fff}
+.section--dark .bullet-list li{color:#dce7eb}
+.section--dark .about-copy>p:not(.lead){color:#c4d6db}
+.section--dark .exp-details{border-top-color:rgba(255,255,255,.15)}
 .course-lead{font-size:1.25rem}
 .course-cols{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.2rem 0}
 .course-cols .feature-list{margin:0}
