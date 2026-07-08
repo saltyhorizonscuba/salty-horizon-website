@@ -48,7 +48,7 @@ Les traductions FR/ES sont appliquées par JavaScript sur **une seule URL**. Goo
 1. **Domaine** : mettre à jour l'adresse `saltyhorizondiving.com` dans les balises `canonical`, `og:url`, `og:image`, dans `sitemap.xml` et `robots.txt` avec ton domaine final.
 2. **Numéro WhatsApp** : `+506 8775 9641`, défini dans `js/script.js` (`WA_PHONE`) et les liens `wa.me/50687759641`.
 3. **Avis clients** : 4 témoignages d'exemple (sauf le premier, réel). À remplacer par de vrais avis Google au fil du temps.
-4. **Tarifs** : Initiation piscine 80 $, Discover Scuba 170 $, Fun Dive Catalinas 130 $, Bat Islands 350 $, Snorkeling 80 $ — vérifie qu'ils sont à jour.
+4. **Tarifs** : Initiation piscine 80 $, Discover Scuba 170 $, Fun Dive Catalinas 130 $, Bat Islands sur devis (Contact us), Snorkeling 80 $ — vérifie qu'ils sont à jour.
 
 ## Hébergement
 Le site tourne sur notre propre serveur, chez **Hostinger**. Le déploiement se fait via la fonctionnalité Git de hPanel, connectée à la branche `main` de ce dépôt : chaque mise à jour de `main` est déployée en production (auto-déploiement si activé côté hPanel, sinon déploiement manuel depuis hPanel).
