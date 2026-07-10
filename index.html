@@ -267,7 +267,11 @@
       <h2 class="h-title" data-i18n="rev.title">Loved by our divers</h2>
     </div>
     <!-- Featured reviews: always present in the HTML, readable without JavaScript -->
-    <div class="review-grid" data-reveal>
+    <div class="review-carousel" data-reveal>
+      <button type="button" class="review-nav review-nav--prev" data-review-prev aria-label="Previous reviews">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="review-grid">
       <figure class="review-card">
         <div class="stars" aria-hidden="true">★★★★★</div>
         <blockquote>Amazing experience with Camille, great photographer to capture the memories forever. Safety oriented and knows the sites like the back of her hand. She was also very patient with my son for his discover scuba trip. Thank you</blockquote>
@@ -298,6 +302,10 @@
         <blockquote>We had an incredible diving experience with this dive center. From start to finish, everything was well organized and professional. A special thanks to Julien, our French-speaking instructor, who made the experience even better — knowledgeable, patient, and genuinely passionate about diving. We encountered sharks, large schools of rays, barracudas, and an amazing variety of marine life. Every moment underwater was unforgettable.</blockquote>
         <figcaption>Hugo <span>· Google review</span></figcaption>
       </figure>
+      </div>
+      <button type="button" class="review-nav review-nav--next" data-review-next aria-label="Next reviews">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
     </div>
 
     <div class="center" style="margin-top:2rem" data-reveal>

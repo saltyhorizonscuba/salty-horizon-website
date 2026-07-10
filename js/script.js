@@ -1029,5 +1029,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
   });
 
+  // reviews carousel prev/next buttons
+  document.querySelectorAll('.review-carousel').forEach(carousel=>{
+    const grid=carousel.querySelector('.review-grid');
+    const prev=carousel.querySelector('[data-review-prev]');
+    const next=carousel.querySelector('[data-review-next]');
+    if(!grid || !prev || !next) return;
+    const step=()=>{
+      const card=grid.querySelector('.review-card');
+      const gap=parseFloat(getComputedStyle(grid).columnGap) || 0;
+      return card ? card.offsetWidth + gap : grid.clientWidth * 0.8;
+    };
+    prev.addEventListener('click', ()=> grid.scrollBy({left:-step(), behavior:'smooth'}));
+    next.addEventListener('click', ()=> grid.scrollBy({left:step(), behavior:'smooth'}));
+  });
+
   document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 });
