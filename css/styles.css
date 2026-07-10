@@ -49,6 +49,10 @@ ul{list-style:none}
 .section--dark{background:var(--navy);color:#dce7eb}
 .section--deep{background:linear-gradient(160deg,#0c3140,#0a2733);color:#dce7eb}
 .center{text-align:center}
+.center .btn+.btn{margin-left:.9rem}
+@media (max-width:600px){
+  .center .btn+.btn{margin-left:0;margin-top:.8rem}
+}
 
 .eyebrow{
   font-family:var(--font-display);
@@ -350,15 +354,17 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .course-day{margin-bottom:1rem}
 .course-day b{display:block;font-family:var(--font-display);font-weight:800;font-size:.95rem;color:var(--ink);margin-bottom:.4rem}
 .exp-details .note{margin-top:.2rem;font-size:.85rem;font-style:italic;color:var(--muted)}
-.schedule-summary{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:.6rem;width:100%}
-.schedule-summary h3{margin:0}
-.schedule-summary::after{content:"+";font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--teal);flex-shrink:0}
-.schedule-summary.is-open::after{content:"\2212"}
-.schedule-toggle .schedule-content{padding-top:.6rem}
+.schedule-summary,.incl-summary{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:.6rem;width:100%}
+.schedule-summary h3,.incl-summary h3{margin:0}
+.schedule-summary::after,.incl-summary::after{content:"+";font-family:var(--font-display);font-weight:800;font-size:1.1rem;color:var(--teal);flex-shrink:0}
+.schedule-summary.is-open::after,.incl-summary.is-open::after{content:"\2212"}
+.schedule-toggle .schedule-content,.incl-toggle .incl-content{padding-top:.6rem}
+.incl-toggle{margin-bottom:1.6rem}
 @media (min-width:981px){
-  .schedule-summary{cursor:default;pointer-events:none}
-  .schedule-summary::after{display:none}
-  .schedule-toggle .schedule-content{display:block!important}
+  .schedule-summary,.incl-summary{cursor:default;pointer-events:none}
+  .schedule-summary::after,.incl-summary::after{display:none}
+  .schedule-toggle .schedule-content,.incl-toggle .incl-content{display:block!important}
+  .incl-toggle{margin-bottom:0}
 }
 @media (max-width:980px){
   .course-schedule .exp-details{border-top:none;margin-top:0;padding-top:0}

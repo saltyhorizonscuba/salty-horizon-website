@@ -138,7 +138,6 @@ const I18N = {
     'tfaq.h9':'Health and Safety','tfaq.h9intro':'Common health and safety questions from first-time and returning divers.',
     'tfaq.h10':'Planning Your Dive in Tamarindo','tfaq.h10intro':'Practical details for booking and preparing for a dive with Salty Horizon.',
     'tfaq.h11':'Snorkeling and Private Charters',
-    'tfaq.sources':'Marine life, seasonal and biological information on this page references SINAC (Costa Rica\'s Sistema Nacional de Áreas de Conservación), NOAA Fisheries, the Manta Trust / MigraMar research network, and peer-reviewed research on the Gulf of Papagayo published in the Revista de Biología Tropical and related journals.',
 
     'tfaq.q1':'Where are the Catalina Islands and how do you get there?',
     'tfaq.a1':"The Catalina Islands are a chain of about twenty volcanic islets in the Gulf of Papagayo, off Costa Rica's Guanacaste coast. Dive boats reach them from Tamarindo in around 40 minutes.",
@@ -155,19 +154,20 @@ const I18N = {
     'tfaq.a6':'The Catalina Islands are known for a dense concentration of marine life, including whitetip reef sharks, eagle rays, devil rays, cownose rays, sea turtles, moray eels, pufferfish, octopus, seahorses, and large schools of jacks.',
 
     'tfaq.q7':'Can I see manta rays or sea turtles while diving in Tamarindo?',
-    'tfaq.a7':'Divers may encounter manta rays and sea turtles in the Tamarindo area, particularly during the Discover Scuba Diving and Catalina Islands experiences. Manta ray sightings are most commonly reported from December to May, though as with all wildlife, encounters depend on season and natural conditions.',
+    'tfaq.a7':'Divers may encounter manta rays and sea turtles in the Tamarindo area. Manta ray sightings are most commonly reported from December to May, though as with all wildlife, encounters depend on season and natural conditions.',
     'tfaq.q8':'Can you see manta rays at the Catalina Islands?',
-    'tfaq.a8':"The Catalina Islands are a commonly reported sighting location for giant oceanic manta rays (Mobula birostris), the world's largest ray, with a wingspan of up to 8 metres (26 feet) according to NOAA Fisheries. Sightings along Costa Rica's Pacific coast are most commonly reported from December to May. Their movements are tracked by the Mantas Costa Rica project, affiliated with the international Manta Trust / MigraMar research network, using acoustic telemetry and photo identification. As with any wild animal, a sighting is never guaranteed on a given dive.",
+    'tfaq.a8':"The Catalina Islands are a commonly reported sighting location for giant oceanic manta rays (Mobula birostris), the world's largest ray, with a wingspan of up to 8 metres (26 feet). Sightings along Costa Rica's Pacific coast are most commonly reported from December to May. Their movements are tracked by the Mantas Costa Rica project, affiliated with the international Manta Trust / MigraMar research network, using acoustic telemetry and photo identification. As with any wild animal, a sighting is never guaranteed on a given dive.",
 
     'tfaq.q9':'Can you see whales near Tamarindo, and when is whale season?',
-    'tfaq.a9':'According to NOAA Fisheries, two distinct humpback whale populations pass through Costa Rican waters to breed and calve: one from the North Pacific, present December to March, and one from the Southern Hemisphere, present July to mid-November — one of the longest migrations recorded for the species. Whale activity is possible in Guanacaste waters across much of the year, though sightings are opportunistic rather than a planned part of any dive.',
+    'tfaq.a9':'Two distinct humpback whale populations pass through Costa Rican waters to breed and calve: one from the North Pacific, present December to March, and one from the Southern Hemisphere, present July to mid-November — one of the longest migrations recorded for the species. Whale activity is possible in Guanacaste waters across much of the year, though sightings are opportunistic rather than a planned part of any dive.',
     'tfaq.q10':'Are whale or manta ray sightings guaranteed on a dive trip?',
     'tfaq.a10':'No. Whales, manta rays, and all other marine wildlife are wild animals, and encounters depend on natural conditions, animal movement, and season. Sightings are commonly reported at certain times of year, but no dive operator can guarantee them on any single trip.',
 
     'tfaq.q11':'When is the best time of year to dive in Tamarindo?',
-    'tfaq.a11':'The dry season, roughly December to April, tends to bring calmer seas and is generally considered the more popular diving period. The green season, May to November, sees more rain but remains diveable, with fewer visitors on the water.',
+    'tfaq.a11season1':'December–May','tfaq.a11text1':'Best for: Oceanic manta rays (peak season), eagle rays, reef sharks, clear visibility of 15-30 m (50-100ft).',
+    'tfaq.a11season2':'June–October','tfaq.a11text2':"Best for: Warm water, abundant marine life, schooling fish, turtles, occasional mantas. Bonus: Humpback whales migrate through Costa Rica's Pacific coast during parts of this season, and whale songs can sometimes be heard underwater.",
     'tfaq.q12':'What is the water temperature like in Tamarindo, and does it change during the year?',
-    'tfaq.a12':'Water temperature in the Gulf of Papagayo varies more than many visitors expect. Research on the Papagayo upwelling system shows that seasonal upwelling, driven by strong offshore winds during the dry season, brings cooler, nutrient-rich water to the surface roughly between December and April, with average sea temperatures dropping to around 23°C and occasional drops well below that during peak upwelling events. Waters are warmer, generally in the high 20s °C, from around May to November.',
+    'tfaq.a12':'Water temperature in the Gulf of Papagayo stays warm most of the year, generally in the 25-30°C range, with a milder, slightly cooler spell possible during the dry season upwelling.',
     'tfaq.q13':'What causes the seasonal upwelling near Tamarindo, and how does it affect diving?',
     'tfaq.a13':"The Gulf of Papagayo is one of a small number of seasonal wind-driven upwelling zones in the region. During the Northern Hemisphere winter, strong winds funnel through gaps in the Central American mountain range and push surface water offshore, drawing cooler, nutrient-rich water up from depth. This process, documented by oceanographic research in the Gulf of Papagayo, is part of what supports the area's marine productivity, alongside cooler water temperatures during the dry season.",
 
@@ -183,20 +183,20 @@ const I18N = {
     'tfaq.q18':'Do I need experience to try scuba diving in Tamarindo?',
     'tfaq.a18':'No. The Discover Scuba Diving experience requires no prior certification or experience.',
     'tfaq.q19':'What is Discover Scuba Diving, and how does it work?',
-    'tfaq.a19':'It starts with a private briefing with a PADI instructor, followed by two guided dives of roughly 45 minutes to 1 hour each.',
+    'tfaq.a19':'It starts with a private briefing with a PADI instructor, followed by two guided dives of roughly 45 minutes to 1 hour each. A pool session is also possible on demand before heading out to the ocean.',
     'tfaq.q20':"What's the minimum age to try scuba diving?",
     'tfaq.a20':'10 years old, for both the Discover Scuba Diving experience and the Open Water Diver course.',
     'tfaq.q21':'Do I need to be a strong swimmer to dive?',
     'tfaq.a21':'No competitive swimming ability is required; being comfortable in the water is enough.',
     'tfaq.q22':'How deep do beginners go on a first dive?',
-    'tfaq.a22':'Depth is kept within what feels comfortable for the diver, adjusted continuously by the instructor rather than following a fixed target.',
+    'tfaq.a22':'For non-certified divers, depth is limited to a maximum of 12 metres, kept within what feels comfortable for the diver and adjusted continuously by the instructor.',
 
     'tfaq.q23':'How long does the PADI Open Water Diver course take?',
     'tfaq.a23':'3 days: theory and pool sessions followed by 4 open water dives at the Catalina Islands.',
     'tfaq.q24':'How much does the Open Water Diver course cost?',
     'tfaq.a24':'The course starts at $540.',
     'tfaq.q25':"What's included in the Open Water Diver course price?",
-    'tfaq.a25':'E-learning, PADI certification fees, all equipment, and snacks and drinks.',
+    'tfaq.a25':'Theory course, pool session skills, 4 ocean dives at the Catalina Islands, all equipment, PADI certification fees, and snacks and drinks.',
     'tfaq.q26':'What is the Advanced Open Water Diver course, and who is it for?',
     'tfaq.a26':"It's for divers already certified as Open Water Diver who want to build confidence and extend their depth limit to 30m/100ft, through 5 adventure dives.",
     'tfaq.q27':'How much does the Advanced Open Water course cost?',
@@ -214,8 +214,6 @@ const I18N = {
     'tfaq.a32':'In many cases yes, if it is well controlled, but medical clearance is required; this should be discussed with a doctor before your trip.',
     'tfaq.q33':'Can I dive if I wear glasses?',
     'tfaq.a33':"Not with glasses directly, since they don't fit under a mask, but contact lenses or a prescription dive mask both work well.",
-    'tfaq.q34':"What if I can't equalize my ears?",
-    'tfaq.a34':'You stop, ascend slightly, and try again gently rather than forcing it; instructors guide new divers through this step by step.',
     'tfaq.q35':'Will I get seasick on the boat?',
     'tfaq.a35':"It's possible in rougher conditions; guidance is given before departure and boat rides to local sites are short.",
     'tfaq.q36':'Is there a risk of dangerous sharks while diving in Costa Rica?',
@@ -228,7 +226,7 @@ const I18N = {
     'tfaq.q38':'What is the cancellation policy?',
     'tfaq.a38':"Cancellations are handled on a sliding scale: 100% refund if the tour is cancelled due to weather or because the minimum of 3 people isn't reached, and 100% refund for cancellations made 7 or more days before the start time. Refunds drop to 50% for cancellations 3-6 days before, and to 0% within 48 hours, for a missed departure, or if a customer doesn't meet the stated requirements (medical condition, physical fitness, certification level).",
     'tfaq.q39':'Are dives private, or in large groups?',
-    'tfaq.a39':'Always private or in very small groups, at your pace.',
+    'tfaq.a39':'With Salty Horizon you will always have a private guide for you or your group.',
     'tfaq.q40':'Do you speak English, French and Spanish?',
     'tfaq.a40':'Yes. Camille and Julien are trilingual and teach and guide in all three languages.',
     'tfaq.q41':'What should I bring on the day of my dive?',
@@ -260,7 +258,7 @@ const I18N = {
     /* subpages */
     'exp.page.h1':'Experiences',
     'exp.page.intro':'Fully private, fully flexible. Thanks to trusted partnerships with selected dive centers, we adapt locations, schedules and formats to you, and every session includes unedited photos and videos.',
-    'exp.incl.dives':'guided dives','exp.incl.gear':'All scuba equipment included','exp.incl.snacks':'Snacks & drinks included','exp.incl.private':'Fully private experience','exp.incl.photos':'Photos & videos included','exp.incl.pool':'Private pool session included','exp.incl.certonly':'For certified divers only','exp.incl.advancedOnly':'For Advanced Open Water divers only',
+    'exp.incl.dives':'guided dives','exp.incl.gear':'All scuba equipment included','exp.incl.snacks':'Snacks & drinks included','exp.incl.private':'Fully private experience','exp.incl.photos':'Photos & videos included','exp.incl.pool':'Private pool session included','exp.incl.certonly':'For certified divers only','exp.incl.advancedOnly':'For Advanced Open Water divers only','exp.whatsIncluded':"What's included",
     'exp.discover.faqLink':'Common questions about scuba diving for beginners','exp.catalinas.faqLink':'More about diving at the Catalina Islands','exp.bat.faqLink':'Questions about diving with bull sharks at the Bat Islands',
     'cta.learn':'Learn more',
     'exp.incl.age10':'10 years & up','exp.incl.kids':'Fun for kids','exp.incl.nocert':'No certification needed',
@@ -415,7 +413,6 @@ const I18N = {
     'tfaq.h9':'Santé et sécurité','tfaq.h9intro':'Les questions de santé et de sécurité les plus fréquentes chez les plongeurs, débutants comme confirmés.',
     'tfaq.h10':'Organiser sa plongée à Tamarindo','tfaq.h10intro':'Les informations pratiques pour réserver et préparer une plongée avec Salty Horizon.',
     'tfaq.h11':'Snorkeling et charters privés',
-    'tfaq.sources':"Les informations sur la vie marine, les saisons et l'océanographie de cette page s'appuient sur le SINAC (Sistema Nacional de Áreas de Conservación du Costa Rica), la NOAA Fisheries, le réseau de recherche Manta Trust / MigraMar, ainsi que des recherches publiées dans la Revista de Biología Tropical et d'autres revues scientifiques sur le golfe de Papagayo.",
 
     'tfaq.q1':'Où se trouvent les îles Catalinas et comment y accède-t-on ?',
     'tfaq.a1':"Les îles Catalinas forment une chaîne d'une vingtaine d'îlots volcaniques dans le golfe de Papagayo, au large du Guanacaste. Les bateaux de plongée les rejoignent depuis Tamarindo en environ 40 minutes.",
@@ -432,19 +429,20 @@ const I18N = {
     'tfaq.a6':'Les îles Catalinas sont réputées pour une concentration dense de vie marine : requins pointe-blanche, raies aigle, raies diable, raies vaches, tortues marines, murènes, poissons-globe, poulpes, hippocampes et grands bancs de carangues.',
 
     'tfaq.q7':'Peut-on voir des raies manta ou des tortues en plongeant à Tamarindo ?',
-    'tfaq.a7':"Les plongeurs peuvent croiser des raies manta et des tortues marines dans la région de Tamarindo, notamment lors du Discover Scuba Diving et des sorties aux Catalinas. Les observations de raies manta sont le plus souvent rapportées de décembre à mai, même si, comme pour toute faune sauvage, les rencontres dépendent de la saison et des conditions naturelles.",
+    'tfaq.a7':"Les plongeurs peuvent croiser des raies manta et des tortues marines dans la région de Tamarindo. Les observations de raies manta sont le plus souvent rapportées de décembre à mai, même si, comme pour toute faune sauvage, les rencontres dépendent de la saison et des conditions naturelles.",
     'tfaq.q8':'Peut-on voir des raies manta aux îles Catalinas ?',
-    'tfaq.a8':"Les îles Catalinas sont un lieu d'observation fréquemment rapporté pour les raies manta géantes (Mobula birostris), la plus grande raie au monde, avec une envergure pouvant atteindre 8 mètres selon la NOAA Fisheries. Les observations le long de la côte Pacifique du Costa Rica sont le plus souvent rapportées de décembre à mai. Leurs déplacements sont suivis par le projet Mantas Costa Rica, affilié au réseau international Manta Trust / MigraMar, par télémétrie acoustique et photo-identification. Comme pour tout animal sauvage, une observation n'est jamais garantie lors d'une plongée donnée.",
+    'tfaq.a8':"Les îles Catalinas sont un lieu d'observation fréquemment rapporté pour les raies manta géantes (Mobula birostris), la plus grande raie au monde, avec une envergure pouvant atteindre 8 mètres. Les observations le long de la côte Pacifique du Costa Rica sont le plus souvent rapportées de décembre à mai. Leurs déplacements sont suivis par le projet Mantas Costa Rica, affilié au réseau international Manta Trust / MigraMar, par télémétrie acoustique et photo-identification. Comme pour tout animal sauvage, une observation n'est jamais garantie lors d'une plongée donnée.",
 
     'tfaq.q9':'Peut-on voir des baleines près de Tamarindo, et quelle est la saison des baleines ?',
-    'tfaq.a9':"D'après la NOAA Fisheries, deux populations distinctes de baleines à bosse traversent les eaux du Costa Rica pour se reproduire et mettre bas : celles du Pacifique Nord, présentes de décembre à mars, et celles de l'hémisphère sud, présentes de juillet à mi-novembre — l'une des plus longues migrations connues pour cette espèce. Une activité baleinière est possible dans les eaux du Guanacaste sur une grande partie de l'année, mais les observations restent opportunistes et ne font pas partie du programme prévu d'une plongée.",
+    'tfaq.a9':"Deux populations distinctes de baleines à bosse traversent les eaux du Costa Rica pour se reproduire et mettre bas : celles du Pacifique Nord, présentes de décembre à mars, et celles de l'hémisphère sud, présentes de juillet à mi-novembre — l'une des plus longues migrations connues pour cette espèce. Une activité baleinière est possible dans les eaux du Guanacaste sur une grande partie de l'année, mais les observations restent opportunistes et ne font pas partie du programme prévu d'une plongée.",
     'tfaq.q10':'Les observations de baleines ou de raies manta sont-elles garanties lors d\'une sortie ?',
     'tfaq.a10':"Non. Les baleines, les raies manta et toute la faune marine sont des animaux sauvages, et les rencontres dépendent des conditions naturelles, des déplacements des animaux et de la saison. Les observations sont fréquemment rapportées à certaines périodes de l'année, mais aucun centre de plongée ne peut les garantir lors d'une sortie donnée.",
 
     'tfaq.q11':'Quelle est la meilleure période de l\'année pour plonger à Tamarindo ?',
-    'tfaq.a11':"La saison sèche, environ de décembre à avril, apporte généralement une mer plus calme et est considérée comme la période la plus prisée pour la plongée. La saison verte, de mai à novembre, apporte plus de pluie mais reste tout à fait praticable, avec moins de monde sur l'eau.",
+    'tfaq.a11season1':'Décembre–Mai','tfaq.a11text1':'Idéal pour : les raies manta océaniques (pic de saison), les raies aigle, les requins de récif, une visibilité claire de 15 à 30 m.',
+    'tfaq.a11season2':'Juin–Octobre','tfaq.a11text2':"Idéal pour : une eau chaude, une vie marine abondante, des bancs de poissons, des tortues, et parfois des raies manta. Bonus : les baleines à bosse migrent le long de la côte Pacifique du Costa Rica durant une partie de cette saison, et leur chant peut parfois s'entendre sous l'eau.",
     'tfaq.q12':'Quelle est la température de l\'eau à Tamarindo, et varie-t-elle dans l\'année ?',
-    'tfaq.a12':"La température de l'eau dans le golfe de Papagayo varie plus que ce à quoi s'attendent beaucoup de visiteurs. Les recherches sur le phénomène d'upwelling de Papagayo montrent que cette remontée d'eau saisonnière, provoquée par de forts vents au large pendant la saison sèche, ramène en surface une eau plus froide et riche en nutriments environ de décembre à avril, avec une température moyenne autour de 23°C et des baisses ponctuelles bien plus marquées lors des pics d'upwelling. L'eau est plus chaude, généralement proche de 28°C, de mai à novembre environ.",
+    'tfaq.a12':"La température de l'eau dans le golfe de Papagayo reste chaude la majeure partie de l'année, généralement entre 25 et 30°C, avec une période plus douce et légèrement plus fraîche possible pendant l'upwelling de la saison sèche.",
     'tfaq.q13':'Qu\'est-ce qui cause l\'upwelling saisonnier près de Tamarindo, et quel est son effet sur la plongée ?',
     'tfaq.a13':"Le golfe de Papagayo est l'une des rares zones d'upwelling saisonnier entraîné par le vent dans la région. Pendant l'hiver de l'hémisphère nord, de forts vents s'engouffrent par des trouées du relief montagneux d'Amérique centrale et repoussent l'eau de surface vers le large, ce qui fait remonter une eau plus froide et riche en nutriments depuis les profondeurs. Ce phénomène, documenté par des recherches océanographiques sur le golfe de Papagayo, contribue à la productivité marine de la zone, en plus des eaux plus fraîches de la saison sèche.",
 
@@ -460,20 +458,20 @@ const I18N = {
     'tfaq.q18':'Faut-il de l\'expérience pour essayer la plongée à Tamarindo ?',
     'tfaq.a18':"Non. L'expérience Discover Scuba Diving ne nécessite aucune certification ni expérience préalable.",
     'tfaq.q19':'Qu\'est-ce que le Discover Scuba Diving, et comment ça se passe ?',
-    'tfaq.a19':"Cela commence par un briefing privé avec un instructeur PADI, suivi de deux plongées encadrées d'environ 45 minutes à 1 heure chacune.",
+    'tfaq.a19':"Cela commence par un briefing privé avec un instructeur PADI, suivi de deux plongées encadrées d'environ 45 minutes à 1 heure chacune. Une séance en piscine est aussi possible sur demande avant de partir en mer.",
     'tfaq.q20':'Quel est l\'âge minimum pour essayer la plongée ?',
     'tfaq.a20':"10 ans, aussi bien pour le Discover Scuba Diving que pour le cours Open Water Diver.",
     'tfaq.q21':'Faut-il être un bon nageur pour plonger ?',
     'tfaq.a21':"Aucun niveau de nage sportif n'est requis ; être à l'aise dans l'eau suffit.",
     'tfaq.q22':'À quelle profondeur vont les débutants lors d\'une première plongée ?',
-    'tfaq.a22':"La profondeur reste dans les limites du confort du plongeur, ajustée en continu par l'instructeur plutôt que fixée à l'avance.",
+    'tfaq.a22':"Pour les plongeurs non certifiés, la profondeur est limitée à 12 mètres maximum, dans les limites du confort du plongeur et ajustée en continu par l'instructeur.",
 
     'tfaq.q23':'Combien de temps dure le cours PADI Open Water Diver ?',
     'tfaq.a23':'3 jours : théorie et piscine, puis 4 plongées en mer aux îles Catalinas.',
     'tfaq.q24':'Combien coûte le cours Open Water Diver ?',
     'tfaq.a24':'Le cours démarre à 540 $.',
     'tfaq.q25':'Qu\'est-ce qui est inclus dans le prix du cours Open Water Diver ?',
-    'tfaq.a25':"L'e-learning, les frais de certification PADI, tout l'équipement, ainsi que collations et boissons.",
+    'tfaq.a25':"Le cours théorique, l'entraînement aux compétences en piscine, 4 plongées en mer aux îles Catalinas, tout l'équipement, les frais de certification PADI, ainsi que collations et boissons.",
     'tfaq.q26':'Qu\'est-ce que le cours Advanced Open Water Diver, et pour qui est-il fait ?',
     'tfaq.a26':"Il s'adresse aux plongeurs déjà certifiés Open Water Diver qui veulent gagner en confiance et étendre leur profondeur limite à 30 m, à travers 5 plongées d'aventure.",
     'tfaq.q27':'Combien coûte le cours Advanced Open Water ?',
@@ -491,8 +489,6 @@ const I18N = {
     'tfaq.a32':"Souvent oui, si l'asthme est bien contrôlé, mais une autorisation médicale est nécessaire ; à voir avec un médecin avant votre séjour.",
     'tfaq.q33':'Peut-on plonger avec des lunettes ?',
     'tfaq.a33':"Pas directement avec des lunettes, qui ne tiennent pas sous un masque, mais des lentilles de contact ou un masque à correction fonctionnent très bien.",
-    'tfaq.q34':'Que faire si je n\'arrive pas à équilibrer mes oreilles ?',
-    'tfaq.a34':"On s'arrête, on remonte légèrement, et on réessaie doucement plutôt que de forcer ; les instructeurs accompagnent les nouveaux plongeurs pas à pas sur ce point.",
     'tfaq.q35':'Risque-t-on d\'avoir le mal de mer sur le bateau ?',
     'tfaq.a35':"C'est possible par mer agitée ; des conseils sont donnés avant le départ, et les trajets vers les sites locaux sont courts.",
     'tfaq.q36':'Y a-t-il un risque de requins dangereux en plongeant au Costa Rica ?',
@@ -505,7 +501,7 @@ const I18N = {
     'tfaq.q38':'Quelle est la politique d\'annulation ?',
     'tfaq.a38':"L'annulation suit un barème dégressif : remboursement à 100 % si la sortie est annulée pour cause météo ou faute d'atteindre le minimum de 3 personnes, et à 100 % pour toute annulation reçue 7 jours ou plus avant le départ. Le remboursement passe à 50 % entre 3 et 6 jours avant, et à 0 % dans les 48 heures précédant le départ, en cas d'absence au départ, ou si le client ne remplit pas les conditions requises (état de santé, condition physique, niveau de certification).",
     'tfaq.q39':'Les plongées sont-elles privées, ou en grand groupe ?',
-    'tfaq.a39':'Toujours privées ou en très petit groupe, à votre rythme.',
+    'tfaq.a39':'Avec Salty Horizon, vous avez toujours un guide privé, seul ou en groupe.',
     'tfaq.q40':'Parlez-vous anglais, français et espagnol ?',
     'tfaq.a40':'Oui. Camille et Julien sont trilingues et encadrent dans les trois langues.',
     'tfaq.q41':'Que faut-il apporter le jour de la plongée ?',
@@ -536,7 +532,7 @@ const I18N = {
 
     'exp.page.h1':'Expériences',
     'exp.page.intro':'100 % privé, 100 % flexible. Grâce à nos partenariats de confiance avec des centres sélectionnés, nous adaptons lieux, horaires et formats à vous, et chaque sortie inclut des photos et vidéos non retouchées.',
-    'exp.incl.dives':'plongées guidées','exp.incl.gear':'Tout l’équipement de plongée inclus','exp.incl.snacks':'Snacks & boissons inclus','exp.incl.private':'Expérience 100 % privée','exp.incl.photos':'Photos & vidéos incluses','exp.incl.pool':'Séance privée en piscine incluse','exp.incl.certonly':'Réservé aux plongeurs certifiés','exp.incl.advancedOnly':'Réservé aux plongeurs Advanced Open Water',
+    'exp.incl.dives':'plongées guidées','exp.incl.gear':'Tout l’équipement de plongée inclus','exp.incl.snacks':'Snacks & boissons inclus','exp.incl.private':'Expérience 100 % privée','exp.incl.photos':'Photos & vidéos incluses','exp.incl.pool':'Séance privée en piscine incluse','exp.incl.certonly':'Réservé aux plongeurs certifiés','exp.incl.advancedOnly':'Réservé aux plongeurs Advanced Open Water','exp.whatsIncluded':'Ce qui est inclus',
     'exp.discover.faqLink':'Questions fréquentes sur la plongée pour débutants','exp.catalinas.faqLink':'En savoir plus sur la plongée aux îles Catalinas','exp.bat.faqLink':'Questions sur la plongée avec les requins-taureaux aux Bat Islands',
     'cta.learn':'En savoir plus',
     'exp.incl.age10':'10 ans et +','exp.incl.kids':'Ludique pour les enfants','exp.incl.nocert':'Aucun brevet requis',
@@ -691,7 +687,6 @@ const I18N = {
     'tfaq.h9':'Salud y seguridad','tfaq.h9intro':'Las preguntas de salud y seguridad más frecuentes entre buzos principiantes y experimentados.',
     'tfaq.h10':'Planifica tu inmersión en Tamarindo','tfaq.h10intro':'Información práctica para reservar y prepararte para una inmersión con Salty Horizon.',
     'tfaq.h11':'Snorkel y charters privados',
-    'tfaq.sources':'La información sobre vida marina, temporadas y oceanografía en esta página se basa en el SINAC (Sistema Nacional de Áreas de Conservación de Costa Rica), NOAA Fisheries, la red de investigación Manta Trust / MigraMar, y estudios publicados en la Revista de Biología Tropical y otras revistas científicas sobre el golfo de Papagayo.',
 
     'tfaq.q1':'¿Dónde están las Islas Catalinas y cómo se llega?',
     'tfaq.a1':'Las Islas Catalinas son una cadena de unos veinte islotes volcánicos en el golfo de Papagayo, frente a la costa de Guanacaste. Los barcos de buceo llegan desde Tamarindo en unos 40 minutos.',
@@ -708,19 +703,20 @@ const I18N = {
     'tfaq.a6':'Las Islas Catalinas son conocidas por una alta concentración de vida marina: tiburones punta blanca, rayas águila, rayas diablo, rayas vaca, tortugas marinas, morenas, peces globo, pulpos, caballitos de mar y grandes bancos de jureles.',
 
     'tfaq.q7':'¿Puedo ver rayas manta o tortugas buceando en Tamarindo?',
-    'tfaq.a7':'Los buzos pueden encontrarse con rayas manta y tortugas marinas en la zona de Tamarindo, sobre todo durante el Discover Scuba Diving y las salidas a las Catalinas. Los avistamientos de rayas manta se reportan con mayor frecuencia de diciembre a mayo, aunque, como con toda la fauna salvaje, los encuentros dependen de la temporada y las condiciones naturales.',
+    'tfaq.a7':'Los buzos pueden encontrarse con rayas manta y tortugas marinas en la zona de Tamarindo. Los avistamientos de rayas manta se reportan con mayor frecuencia de diciembre a mayo, aunque, como con toda la fauna salvaje, los encuentros dependen de la temporada y las condiciones naturales.',
     'tfaq.q8':'¿Se pueden ver rayas manta en las Islas Catalinas?',
-    'tfaq.a8':'Las Islas Catalinas son un lugar de avistamiento frecuentemente reportado para las rayas manta gigantes (Mobula birostris), la raya más grande del mundo, con una envergadura de hasta 8 metros según NOAA Fisheries. Los avistamientos a lo largo de la costa Pacífica de Costa Rica se reportan con mayor frecuencia de diciembre a mayo. Sus movimientos son rastreados por el proyecto Mantas Costa Rica, afiliado a la red internacional de investigación Manta Trust / MigraMar, mediante telemetría acústica y foto-identificación. Como con cualquier animal salvaje, un avistamiento nunca está garantizado en una inmersión concreta.',
+    'tfaq.a8':'Las Islas Catalinas son un lugar de avistamiento frecuentemente reportado para las rayas manta gigantes (Mobula birostris), la raya más grande del mundo, con una envergadura de hasta 8 metros. Los avistamientos a lo largo de la costa Pacífica de Costa Rica se reportan con mayor frecuencia de diciembre a mayo. Sus movimientos son rastreados por el proyecto Mantas Costa Rica, afiliado a la red internacional de investigación Manta Trust / MigraMar, mediante telemetría acústica y foto-identificación. Como con cualquier animal salvaje, un avistamiento nunca está garantizado en una inmersión concreta.',
 
     'tfaq.q9':'¿Se pueden ver ballenas cerca de Tamarindo, y cuál es la temporada de ballenas?',
-    'tfaq.a9':'Según NOAA Fisheries, dos poblaciones distintas de ballenas jorobadas atraviesan las aguas de Costa Rica para reproducirse y parir: una del Pacífico Norte, presente de diciembre a marzo, y otra del hemisferio sur, presente de julio a mediados de noviembre, una de las migraciones más largas registradas para la especie. La actividad de ballenas es posible en aguas de Guanacaste durante gran parte del año, aunque los avistamientos son oportunistas y no forman parte del plan de ninguna inmersión.',
+    'tfaq.a9':'Dos poblaciones distintas de ballenas jorobadas atraviesan las aguas de Costa Rica para reproducirse y parir: una del Pacífico Norte, presente de diciembre a marzo, y otra del hemisferio sur, presente de julio a mediados de noviembre, una de las migraciones más largas registradas para la especie. La actividad de ballenas es posible en aguas de Guanacaste durante gran parte del año, aunque los avistamientos son oportunistas y no forman parte del plan de ninguna inmersión.',
     'tfaq.q10':'¿Los avistamientos de ballenas o rayas manta están garantizados en una salida de buceo?',
     'tfaq.a10':'No. Las ballenas, las rayas manta y toda la fauna marina son animales salvajes, y los encuentros dependen de las condiciones naturales, el movimiento de los animales y la temporada. Los avistamientos se reportan con frecuencia en ciertas épocas del año, pero ningún centro de buceo puede garantizarlos en una salida concreta.',
 
     'tfaq.q11':'¿Cuál es la mejor época del año para bucear en Tamarindo?',
-    'tfaq.a11':'La temporada seca, aproximadamente de diciembre a abril, suele traer un mar más tranquilo y se considera generalmente la época más popular para bucear. La temporada verde, de mayo a noviembre, trae más lluvia pero sigue siendo perfectamente practicable, con menos visitantes en el agua.',
+    'tfaq.a11season1':'Diciembre–Mayo','tfaq.a11text1':'Ideal para: rayas manta oceánicas (temporada alta), rayas águila, tiburones de arrecife, visibilidad clara de 15 a 30 m.',
+    'tfaq.a11season2':'Junio–Octubre','tfaq.a11text2':'Ideal para: agua cálida, vida marina abundante, bancos de peces, tortugas, y ocasionalmente rayas manta. Extra: las ballenas jorobadas migran por la costa Pacífica de Costa Rica durante parte de esta temporada, y a veces se puede escuchar su canto bajo el agua.',
     'tfaq.q12':'¿Cómo es la temperatura del agua en Tamarindo, y cambia durante el año?',
-    'tfaq.a12':'La temperatura del agua en el golfo de Papagayo varía más de lo que muchos visitantes esperan. Las investigaciones sobre el sistema de surgencia (upwelling) de Papagayo muestran que este fenómeno estacional, impulsado por fuertes vientos en la temporada seca, trae a la superficie agua más fría y rica en nutrientes aproximadamente entre diciembre y abril, con una temperatura media alrededor de 23°C y caídas puntuales mucho más marcadas durante los picos de surgencia. El agua está más cálida, generalmente cerca de 28°C, de mayo a noviembre aproximadamente.',
+    'tfaq.a12':'La temperatura del agua en el golfo de Papagayo se mantiene cálida la mayor parte del año, generalmente entre 25 y 30°C, con un período más suave y ligeramente más fresco posible durante la surgencia de la temporada seca.',
     'tfaq.q13':'¿Qué causa la surgencia estacional cerca de Tamarindo, y cómo afecta al buceo?',
     'tfaq.a13':'El golfo de Papagayo es una de las pocas zonas de surgencia estacional impulsada por el viento en la región. Durante el invierno del hemisferio norte, fuertes vientos se canalizan por pasos del relieve montañoso centroamericano y empujan el agua superficial mar adentro, haciendo subir agua más fría y rica en nutrientes desde las profundidades. Este proceso, documentado por investigaciones oceanográficas en el golfo de Papagayo, contribuye a la productividad marina de la zona, junto con las aguas más frías de la temporada seca.',
 
@@ -736,20 +732,20 @@ const I18N = {
     'tfaq.q18':'¿Necesito experiencia para probar el buceo en Tamarindo?',
     'tfaq.a18':'No. La experiencia Discover Scuba Diving no requiere certificación ni experiencia previa.',
     'tfaq.q19':'¿Qué es el Discover Scuba Diving, y cómo funciona?',
-    'tfaq.a19':'Comienza con una charla privada con un instructor PADI, seguida de dos inmersiones guiadas de aproximadamente 45 minutos a 1 hora cada una.',
+    'tfaq.a19':'Comienza con una charla privada con un instructor PADI, seguida de dos inmersiones guiadas de aproximadamente 45 minutos a 1 hora cada una. También es posible una sesión en piscina bajo pedido antes de salir al mar.',
     'tfaq.q20':'¿Cuál es la edad mínima para probar el buceo?',
     'tfaq.a20':'10 años, tanto para el Discover Scuba Diving como para el curso Open Water Diver.',
     'tfaq.q21':'¿Hay que ser buen nadador para bucear?',
     'tfaq.a21':'No se requiere ningún nivel de natación competitivo; basta con sentirse cómodo en el agua.',
     'tfaq.q22':'¿A qué profundidad llegan los principiantes en una primera inmersión?',
-    'tfaq.a22':'La profundidad se mantiene dentro de lo que resulte cómodo para el buzo, ajustada continuamente por el instructor en lugar de seguir un objetivo fijo.',
+    'tfaq.a22':'Para los buzos no certificados, la profundidad está limitada a un máximo de 12 metros, dentro de lo que resulte cómodo para el buzo y ajustada continuamente por el instructor.',
 
     'tfaq.q23':'¿Cuánto dura el curso PADI Open Water Diver?',
     'tfaq.a23':'3 días: teoría y piscina, seguidos de 4 inmersiones en mar abierto en las Islas Catalinas.',
     'tfaq.q24':'¿Cuánto cuesta el curso Open Water Diver?',
     'tfaq.a24':'El curso empieza en $540.',
     'tfaq.q25':'¿Qué incluye el precio del curso Open Water Diver?',
-    'tfaq.a25':'El e-learning, las tasas de certificación PADI, todo el equipo, y snacks y bebidas.',
+    'tfaq.a25':'El curso teórico, la práctica de habilidades en piscina, 4 inmersiones en mar abierto en las Islas Catalinas, todo el equipo, las tasas de certificación PADI, y snacks y bebidas.',
     'tfaq.q26':'¿Qué es el curso Advanced Open Water Diver, y para quién es?',
     'tfaq.a26':'Está pensado para buzos ya certificados como Open Water Diver que quieren ganar confianza y ampliar su límite de profundidad a 30 m, a través de 5 inmersiones de aventura.',
     'tfaq.q27':'¿Cuánto cuesta el curso Advanced Open Water?',
@@ -767,8 +763,6 @@ const I18N = {
     'tfaq.a32':'En muchos casos sí, si está bien controlada, pero se requiere autorización médica; conviene consultarlo con un médico antes del viaje.',
     'tfaq.q33':'¿Puedo bucear si uso lentes?',
     'tfaq.a33':'No directamente con lentes, ya que no caben bajo la máscara, pero los lentes de contacto o una máscara con corrección óptica funcionan muy bien.',
-    'tfaq.q34':'¿Qué pasa si no logro igualar la presión en mis oídos?',
-    'tfaq.a34':'Te detienes, subes un poco y lo intentas de nuevo con suavidad en lugar de forzar; los instructores acompañan a los buzos nuevos paso a paso en esto.',
     'tfaq.q35':'¿Puedo marearme en el barco?',
     'tfaq.a35':'Es posible en condiciones de mar agitado; se dan indicaciones antes de zarpar y los trayectos a los sitios locales son cortos.',
     'tfaq.q36':'¿Hay riesgo de tiburones peligrosos al bucear en Costa Rica?',
@@ -781,7 +775,7 @@ const I18N = {
     'tfaq.q38':'¿Cuál es la política de cancelación?',
     'tfaq.a38':"Las cancelaciones siguen una escala decreciente: reembolso del 100 % si la salida se cancela por mal tiempo o por no alcanzar el mínimo de 3 personas, y reembolso del 100 % para cancelaciones recibidas 7 días o más antes de la salida. El reembolso baja al 50 % entre 3 y 6 días antes, y al 0 % dentro de las 48 horas previas, si el cliente falta a la salida confirmada, o si no cumple los requisitos indicados (condición médica, aptitud física, nivel de certificación).",
     'tfaq.q39':'¿Las inmersiones son privadas, o en grupos grandes?',
-    'tfaq.a39':'Siempre privadas o en grupos muy pequeños, a tu ritmo.',
+    'tfaq.a39':'Con Salty Horizon siempre tendrás un guía privado para ti o tu grupo.',
     'tfaq.q40':'¿Hablan inglés, francés y español?',
     'tfaq.a40':'Sí. Camille y Julien son trilingües y guían en los tres idiomas.',
     'tfaq.q41':'¿Qué debo llevar el día de mi inmersión?',
@@ -812,7 +806,7 @@ const I18N = {
 
     'exp.page.h1':'Experiencias',
     'exp.page.intro':'100 % privado, 100 % flexible. Gracias a alianzas de confianza con centros seleccionados, adaptamos lugares, horarios y formatos a ti, y cada salida incluye fotos y videos sin editar.',
-    'exp.incl.dives':'inmersiones guiadas','exp.incl.gear':'Todo el equipo de buceo incluido','exp.incl.snacks':'Snacks y bebidas incluidos','exp.incl.private':'Experiencia 100 % privada','exp.incl.photos':'Fotos y videos incluidos','exp.incl.pool':'Sesión privada en piscina incluida','exp.incl.certonly':'Solo para buceadores certificados','exp.incl.advancedOnly':'Solo para buceadores Advanced Open Water',
+    'exp.incl.dives':'inmersiones guiadas','exp.incl.gear':'Todo el equipo de buceo incluido','exp.incl.snacks':'Snacks y bebidas incluidos','exp.incl.private':'Experiencia 100 % privada','exp.incl.photos':'Fotos y videos incluidos','exp.incl.pool':'Sesión privada en piscina incluida','exp.incl.certonly':'Solo para buceadores certificados','exp.incl.advancedOnly':'Solo para buceadores Advanced Open Water','exp.whatsIncluded':'Qué incluye',
     'exp.discover.faqLink':'Preguntas frecuentes sobre el buceo para principiantes','exp.catalinas.faqLink':'Más información sobre el buceo en las Islas Catalinas','exp.bat.faqLink':'Preguntas sobre el buceo con tiburones toro en las Bat Islands',
     'cta.learn':'Saber más',
     'exp.incl.age10':'10 años en adelante','exp.incl.kids':'Divertido para niños','exp.incl.nocert':'Sin certificación necesaria',
@@ -1010,6 +1004,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
   document.querySelectorAll('[data-schedule-toggle]').forEach(b=>{
     b.addEventListener('click',()=>{
       const content=b.parentElement.querySelector('.schedule-content');
+      if(!content) return;
+      content.hidden=!content.hidden;
+      b.classList.toggle('is-open');
+      b.setAttribute('aria-expanded', String(!content.hidden));
+    });
+  });
+
+  // "what's included" toggle (mobile)
+  document.querySelectorAll('[data-incl-toggle]').forEach(b=>{
+    b.addEventListener('click',()=>{
+      const content=b.parentElement.querySelector('.incl-content');
       if(!content) return;
       content.hidden=!content.hidden;
       b.classList.toggle('is-open');
