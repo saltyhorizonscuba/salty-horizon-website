@@ -6,6 +6,16 @@ const WA_PHONE = '50687759641'; // WhatsApp number, international format
 /* ---------------- Translations ---------------- */
 const I18N = {
   en:{
+    'meta.home.title':'Private Scuba Diving in Tamarindo, Costa Rica | Salty Horizon',
+    'meta.home.desc':'Private, personalized scuba diving in Tamarindo with PADI instructors Camille & Julien. Discover Scuba, fun dives at Catalina & Bat Islands. Book now!',
+    'meta.exp.title':'Scuba Diving Experiences in Tamarindo | Salty Horizon',
+    'meta.exp.desc':'Private scuba in Tamarindo: Discover Scuba, fun dives at Las Catalinas & Bat Island, PADI courses & snorkeling. Photos and gear included on every dive.',
+    'meta.padi.title':'PADI Courses in Tamarindo, Costa Rica | Salty Horizon',
+    'meta.padi.desc':'Private PADI courses in Tamarindo: Open Water Diver and Advanced Open Water Diver. Learn at your own pace with a professional PADI instructor.',
+    'meta.charters.title':'Private Boat Charters in Tamarindo, Costa Rica | Salty Horizon',
+    'meta.charters.desc':'Book a private day at sea in Tamarindo: scuba, snorkeling, paddle boarding, e-foil & jet ski. Fully customized charters designed around you.',
+    'meta.faq.title':'Scuba Diving in Tamarindo, Costa Rica: FAQ | Salty Horizon',
+    'meta.faq.desc':'Real answers about scuba diving in Tamarindo and the Catalina Islands: marine life, manta ray and whale season, diving conditions, and PADI certification with Salty Horizon.',
     'nav.experiences':'Experiences','nav.charters':'Private Charters','nav.courses':'PADI Courses','nav.faq':'FAQ','nav.about':'About',
     'nav.gallery':'Gallery','nav.reviews':'Reviews','nav.contact':'Contact','cta.book':'Book a dive','cta.bookCourse':'Book a course','cta.learnMore':'Learn more',
 
@@ -29,6 +39,7 @@ const I18N = {
     'exp.title':'Our experiences',
     'exp.lead':'From your very first breath underwater to advanced shark dives, privately guided, every time.',
     'exp.cta':'See all experiences & prices',
+    'exp.charterLink':'Want the whole boat to yourself? See our private charters','exp.charterCta':'Or book a private charter',
     'nav.catalinas':'Catalinas',
     'cat.eyebrow':'Where we dive','cat.title':'Las Catalinas & its ecosystem',
     'cat.lead':'A cluster of volcanic islands off Tamarindo, one of Costa Rica’s richest dive playgrounds.',
@@ -42,7 +53,7 @@ const I18N = {
     'card.catalinas.t':'Fun Dive · Las Catalinas','card.catalinas.d':'Two private guided dives at the Las Catalinas Islands, one of Costa Rica’s most iconic dive destinations. Explore the volcanic rock formations and encounter incredible marine life including giant manta rays (seasonal), eagle rays, reef sharks, sea turtles, schools of tropical fish, and countless macro species. Perfect for certified divers looking for unforgettable underwater adventures.',
     'card.bat.t':'Fun Dive · Bat Islands','card.bat.d':'The Bat Islands (Islas Murciélagos), off Santa Rosa National Park in Guanacaste, offer one of Costa Rica’s most legendary dives. Accessible from May to November, they let experienced divers observe the impressive bull sharks in their natural habitat. An intense experience in the heart of exceptional marine life.',
     'card.snorkel.t':'Snorkeling','card.snorkel.d':'Discover the seabed of the Catalina Islands during two snorkeling sessions of 45 minutes to 1 hour, accompanied by a guide. Explore crystal-clear waters home to tropical fish, sea turtles, rays and, depending on the season, the majestic manta rays. An activity accessible to everyone, ideal for observing the richness of Costa Rica’s marine life.',
-    'card.courses.t':'PADI Courses','card.courses.d':'Develop your skills and progress at your own pace with our PADI courses, from Open Water Diver to Rescue Diver. Whether you want to earn your first certification, gain more independence or deepen your knowledge, our instructors guide you throughout your training to make you a more confident, skilled and experienced diver.',
+    'card.courses.t':'PADI Courses','card.courses.d':'Develop your skills and progress at your own pace with our PADI courses, from Open Water Diver to Advanced Open Water Diver. Whether you want to earn your first certification or gain more independence underwater, our instructors guide you throughout your training to make you a more confident, skilled and experienced diver.',
     'label.beginner':'Beginner','label.popular':'Most popular','label.advanced':'Advanced','label.season':'May–Nov','label.allLevels':'All levels','label.certified':'Certified','label.certification':'Certification',
 
     'padi.page.h1':'PADI Courses',
@@ -246,7 +257,7 @@ const I18N = {
     'contact.phoneT':'WhatsApp','contact.emailT':'Email','contact.instaT':'Instagram','contact.hoursT':'Languages','contact.hours':'English · Français · Español',
 
     'footer.tagline':'Private, personalized scuba diving in Tamarindo, Costa Rica. Quality over quantity, every dive designed around you.',
-    'footer.explore':'Explore','footer.contactH':'Contact','footer.rights':'All rights reserved.','footer.made':'Designed for the ocean.',
+    'footer.explore':'Explore','footer.contactH':'Contact','footer.rights':'All rights reserved.','footer.made':'Designed for the ocean.','footer.home':'Home',
     'footer.cancelH':'Cancellation Policy',
     'footer.cancel1':'100% refund if we are cancelling for weather conditions or if the minimum of people (3) is not reached.',
     'footer.cancel2':'100% refund on cancellations received 7 days or more before the tour’s starting time.',
@@ -281,6 +292,16 @@ const I18N = {
   },
 
   fr:{
+    'meta.home.title':'Plongée sous-marine privée à Tamarindo, Costa Rica | Salty Horizon',
+    'meta.home.desc':'Plongée sous-marine privée et personnalisée à Tamarindo avec les instructeurs PADI Camille & Julien. Baptême de plongée, sorties aux îles Catalinas & Bat Islands. Réservez maintenant !',
+    'meta.exp.title':'Expériences de plongée à Tamarindo | Salty Horizon',
+    'meta.exp.desc':'Plongée privée à Tamarindo : baptême de plongée, sorties aux îles Catalinas & Bat Islands, formations PADI et snorkeling. Photos et matériel inclus à chaque plongée.',
+    'meta.padi.title':'Formations PADI à Tamarindo, Costa Rica | Salty Horizon',
+    'meta.padi.desc':'Formations PADI privées à Tamarindo : Open Water Diver et Advanced Open Water Diver. Progressez à votre rythme avec un instructeur PADI professionnel.',
+    'meta.charters.title':'Charters privés à Tamarindo, Costa Rica | Salty Horizon',
+    'meta.charters.desc':'Réservez une journée privée en mer à Tamarindo : plongée, snorkeling, paddle, e-foil et jet-ski. Des charters entièrement personnalisés, construits autour de vous.',
+    'meta.faq.title':'Plongée sous-marine à Tamarindo, Costa Rica : FAQ | Salty Horizon',
+    'meta.faq.desc':'Des réponses concrètes sur la plongée à Tamarindo et aux îles Catalinas : vie marine, saison des raies manta et des baleines, conditions de plongée, certification PADI avec Salty Horizon.',
     'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.faq':'FAQ','nav.about':'À propos',
     'nav.gallery':'Galerie','nav.reviews':'Avis','nav.contact':'Contact','cta.book':'Réserver','cta.bookCourse':'Réserver un cours','cta.learnMore':'En savoir plus',
 
@@ -304,6 +325,7 @@ const I18N = {
     'exp.title':'Nos expériences',
     'exp.lead':'De votre toute première respiration sous l’eau aux plongées avec requins, toujours guidées en privé.',
     'exp.cta':'Voir toutes les expériences & tarifs',
+    'exp.charterLink':'Envie du bateau rien que pour vous ? Découvrez nos charters privés','exp.charterCta':'Ou réservez un charter privé',
     'nav.catalinas':'Catalinas',
     'cat.eyebrow':'Où nous plongeons','cat.title':'Las Catalinas & son écosystème',
     'cat.lead':'Un archipel volcanique au large de Tamarindo, l’un des plus beaux terrains de plongée du Costa Rica.',
@@ -317,7 +339,7 @@ const I18N = {
     'card.catalinas.t':'Fun Dive · Las Catalinas','card.catalinas.d':'Deux plongées privées guidées aux îles Las Catalinas, l’une des destinations de plongée les plus emblématiques du Costa Rica. Explorez les formations rocheuses volcaniques et rencontrez une vie marine incroyable : raies mantas géantes (selon la saison), raies aigles, requins de récif, tortues de mer, bancs de poissons tropicaux et une multitude d’espèces macro. Parfait pour les plongeurs certifiés en quête d’aventures sous-marines inoubliables.',
     'card.bat.t':'Fun Dive · Bat Islands','card.bat.d':'Bat Islands (Islas Murciélagos), au large du parc national Santa Rosa (Guanacaste), offrent l’une des plongées les plus mythiques du Costa Rica. Accessibles de mai à novembre, elles permettent aux plongeurs expérimentés d’observer les impressionnants requins bouledogues dans leur habitat naturel. Une expérience intense au cœur d’une vie marine exceptionnelle.',
     'card.snorkel.t':'Snorkeling','card.snorkel.d':'Découvrez les fonds marins des îles Catalina lors de deux sessions de snorkeling de 45 minutes à 1 heure, accompagnées d’un guide. Explorez des eaux cristallines où évoluent poissons tropicaux, tortues marines, raies et, selon la saison, les majestueuses raies manta. Une activité accessible à tous, idéale pour observer la richesse de la vie marine du Costa Rica.',
-    'card.courses.t':'Cours PADI','card.courses.d':'Développez vos compétences et progressez à votre rythme grâce à nos formations PADI, du Open Water Diver au Rescue Diver. Que vous souhaitiez obtenir votre première certification, gagner en autonomie ou renforcer vos connaissances, nos instructeurs vous accompagnent tout au long de votre apprentissage pour faire de vous un plongeur plus confiant, compétent et expérimenté.',
+    'card.courses.t':'Cours PADI','card.courses.d':'Développez vos compétences et progressez à votre rythme grâce à nos formations PADI, du Open Water Diver au Advanced Open Water Diver. Que vous souhaitiez obtenir votre première certification ou gagner en autonomie sous l’eau, nos instructeurs vous accompagnent tout au long de votre apprentissage pour faire de vous un plongeur plus confiant, compétent et expérimenté.',
     'label.beginner':'Débutant','label.popular':'Le plus prisé','label.advanced':'Confirmé','label.season':'Mai–Nov','label.allLevels':'Tous niveaux','label.certified':'Certifié','label.certification':'Certification',
 
     'padi.page.h1':'Formations PADI',
@@ -521,7 +543,7 @@ const I18N = {
     'contact.phoneT':'WhatsApp','contact.emailT':'E-mail','contact.instaT':'Instagram','contact.hoursT':'Langues','contact.hours':'English · Français · Español',
 
     'footer.tagline':'Plongée sous-marine privée et personnalisée à Tamarindo, Costa Rica. La qualité avant la quantité, chaque plongée pensée pour vous.',
-    'footer.explore':'Explorer','footer.contactH':'Contact','footer.rights':'Tous droits réservés.','footer.made':'Conçu pour l’océan',
+    'footer.explore':'Explorer','footer.contactH':'Contact','footer.rights':'Tous droits réservés.','footer.made':'Conçu pour l’océan','footer.home':'Accueil',
     'footer.cancelH':'Politique d’annulation',
     'footer.cancel1':'Remboursement à 100 % si nous annulons pour cause de météo ou si le minimum de participants (3) n’est pas atteint.',
     'footer.cancel2':'Remboursement à 100 % pour toute annulation reçue 7 jours ou plus avant le départ de la sortie.',
@@ -555,6 +577,16 @@ const I18N = {
   },
 
   es:{
+    'meta.home.title':'Buceo privado en Tamarindo, Costa Rica | Salty Horizon',
+    'meta.home.desc':'Buceo privado y personalizado en Tamarindo con los instructores PADI Camille & Julien. Bautismo de buceo, inmersiones en las Islas Catalinas y Bat Islands. ¡Reserva ahora!',
+    'meta.exp.title':'Experiencias de buceo en Tamarindo | Salty Horizon',
+    'meta.exp.desc':'Buceo privado en Tamarindo: bautismo de buceo, inmersiones en las Islas Catalinas y Bat Island, cursos PADI y snorkel. Fotos y equipo incluidos en cada inmersión.',
+    'meta.padi.title':'Cursos PADI en Tamarindo, Costa Rica | Salty Horizon',
+    'meta.padi.desc':'Cursos PADI privados en Tamarindo: Open Water Diver y Advanced Open Water Diver. Aprende a tu propio ritmo con un instructor PADI profesional.',
+    'meta.charters.title':'Charters privados en Tamarindo, Costa Rica | Salty Horizon',
+    'meta.charters.desc':'Reserva un día privado en el mar en Tamarindo: buceo, snorkel, paddle, e-foil y jet ski. Charters totalmente personalizados, diseñados a tu medida.',
+    'meta.faq.title':'Buceo en Tamarindo, Costa Rica: preguntas frecuentes | Salty Horizon',
+    'meta.faq.desc':'Respuestas reales sobre el buceo en Tamarindo y las Islas Catalinas: vida marina, temporada de rayas manta y ballenas, condiciones de buceo y certificación PADI con Salty Horizon.',
     'nav.experiences':'Experiencias','nav.charters':'Charters privados','nav.courses':'Cursos PADI','nav.faq':'FAQ','nav.about':'Nosotros',
     'nav.gallery':'Galería','nav.reviews':'Reseñas','nav.contact':'Contacto','cta.book':'Reservar','cta.bookCourse':'Reservar un curso','cta.learnMore':'Saber más',
 
@@ -578,6 +610,7 @@ const I18N = {
     'exp.title':'Nuestras experiencias',
     'exp.lead':'Desde tu primera respiración bajo el agua hasta inmersiones con tiburones, siempre guiadas en privado.',
     'exp.cta':'Ver todas las experiencias y precios',
+    'exp.charterLink':'¿Quieres el barco solo para ti? Descubre nuestros charters privados','exp.charterCta':'O reserva un charter privado',
     'nav.catalinas':'Catalinas',
     'cat.eyebrow':'Dónde buceamos','cat.title':'Las Catalinas y su ecosistema',
     'cat.lead':'Un archipiélago volcánico frente a Tamarindo, uno de los mejores destinos de buceo de Costa Rica.',
@@ -591,7 +624,7 @@ const I18N = {
     'card.catalinas.t':'Fun Dive · Las Catalinas','card.catalinas.d':'Dos inmersiones privadas guiadas en las Islas Las Catalinas, uno de los destinos de buceo más icónicos de Costa Rica. Explora las formaciones rocosas volcánicas y encuentra una vida marina increíble: mantarrayas gigantes (según la temporada), rayas águila, tiburones de arrecife, tortugas marinas, cardúmenes de peces tropicales y un sinfín de especies macro. Perfecto para buceadores certificados que buscan aventuras submarinas inolvidables.',
     'card.bat.t':'Fun Dive · Bat Islands','card.bat.d':'Las Islas Murciélagos, frente al Parque Nacional Santa Rosa (Guanacaste), ofrecen una de las inmersiones más míticas de Costa Rica. Accesibles de mayo a noviembre, permiten a los buzos experimentados observar los impresionantes tiburones toro en su hábitat natural. Una experiencia intensa en el corazón de una vida marina excepcional.',
     'card.snorkel.t':'Snorkeling','card.snorkel.d':'Descubre los fondos marinos de las Islas Catalinas durante dos sesiones de snorkel de 45 minutos a 1 hora, acompañado por un guía. Explora aguas cristalinas donde nadan peces tropicales, tortugas marinas, rayas y, según la temporada, las majestuosas mantarrayas. Una actividad accesible para todos, ideal para observar la riqueza de la vida marina de Costa Rica.',
-    'card.courses.t':'Cursos PADI','card.courses.d':'Desarrolla tus habilidades y progresa a tu propio ritmo con nuestros cursos PADI, desde Open Water Diver hasta Rescue Diver. Ya sea que quieras obtener tu primera certificación, ganar autonomía o ampliar tus conocimientos, nuestros instructores te acompañan durante toda tu formación para convertirte en un buceador más seguro, competente y experimentado.',
+    'card.courses.t':'Cursos PADI','card.courses.d':'Desarrolla tus habilidades y progresa a tu propio ritmo con nuestros cursos PADI, desde Open Water Diver hasta Advanced Open Water Diver. Ya sea que quieras obtener tu primera certificación o ganar autonomía bajo el agua, nuestros instructores te acompañan durante toda tu formación para convertirte en un buceador más seguro, competente y experimentado.',
     'label.beginner':'Principiante','label.popular':'Más popular','label.advanced':'Avanzado','label.season':'Mayo–Nov','label.allLevels':'Todos los niveles','label.certified':'Certificado','label.certification':'Certificación',
 
     'padi.page.h1':'Cursos PADI',
@@ -795,7 +828,7 @@ const I18N = {
     'contact.phoneT':'WhatsApp','contact.emailT':'Correo','contact.instaT':'Instagram','contact.hoursT':'Idiomas','contact.hours':'English · Français · Español',
 
     'footer.tagline':'Buceo privado y personalizado en Tamarindo, Costa Rica. Calidad antes que cantidad, cada inmersión pensada para ti.',
-    'footer.explore':'Explorar','footer.contactH':'Contacto','footer.rights':'Todos los derechos reservados.','footer.made':'Diseñado para el océano.',
+    'footer.explore':'Explorar','footer.contactH':'Contacto','footer.rights':'Todos los derechos reservados.','footer.made':'Diseñado para el océano.','footer.home':'Inicio',
     'footer.cancelH':'Política de cancelación',
     'footer.cancel1':'Reembolso del 100 % si cancelamos por condiciones climáticas o si no se alcanza el mínimo de participantes (3).',
     'footer.cancel2':'Reembolso del 100 % en cancelaciones recibidas 7 días o más antes de la hora de inicio del tour.',
@@ -841,6 +874,7 @@ function applyLang(lang){
   document.querySelectorAll('[data-i18n-html]').forEach(el=>{ el.innerHTML = t(el.dataset.i18nHtml); });
   document.querySelectorAll('[data-i18n-ph]').forEach(el=>{ el.setAttribute('placeholder', t(el.dataset.i18nPh)); });
   document.querySelectorAll('[data-i18n-aria]').forEach(el=>{ el.setAttribute('aria-label', t(el.dataset.i18nAria)); });
+  document.querySelectorAll('[data-i18n-content]').forEach(el=>{ el.setAttribute('content', t(el.dataset.i18nContent)); });
   document.querySelectorAll('.lang button').forEach(b=> b.classList.toggle('active', b.dataset.lang===lang));
 }
 
