@@ -378,7 +378,13 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .review-card figcaption{font-family:var(--font-display);font-weight:700;font-size:.82rem;letter-spacing:.03em;color:#fff}
 .review-card figcaption span{color:#7FA3A8;font-weight:500}
 @media (max-width:760px){
-  .review-grid{grid-template-columns:1fr}
+  .review-grid{
+    display:flex;grid-template-columns:unset;gap:1rem;
+    overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;margin-inline:-5%;padding-inline:5%;padding-bottom:.3rem;
+  }
+  .review-grid::-webkit-scrollbar{display:none}
+  .review-card{flex:0 0 86%;scroll-snap-align:center}
 }
 .pdf-link{color:var(--teal);font-weight:600;text-decoration:underline;text-underline-offset:2px;background:rgba(31,163,181,.13);padding:.08em .4em;border-radius:5px;transition:background .25s,color .25s;white-space:nowrap}
 .pdf-link:hover{background:rgba(31,163,181,.26);color:var(--deep)}
