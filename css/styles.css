@@ -317,6 +317,9 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .socials a:hover{background:var(--sand);color:#1a2c12;transform:translateY(-3px)}
 .socials svg{width:20px;height:20px}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.82rem}
+.footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 1.6rem;margin-bottom:1.4rem;font-size:.85rem}
+.footer-links a{display:inline;padding:0;color:#9fb4bc}
+.footer-links a:hover{color:var(--sand)}
 
 /* ---------- Floating buttons ---------- */
 .fab{position:fixed;right:1.4rem;bottom:1.4rem;z-index:80;display:flex;flex-direction:column;gap:.8rem}
