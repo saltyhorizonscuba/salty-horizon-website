@@ -66,13 +66,18 @@
         <h2 class="h-title" data-i18n="card.intro.t">Intro to Scuba (Pool)</h2>
         <div class="price-pill"><small data-i18n="price.from">from</small> $80</div>
         <p data-i18n="card.intro.d">Experience the sensations of scuba diving during a pool introduction, ideal for a safe first approach. With an instructor by your side, you’ll learn to use the equipment, breathe underwater and master the basics of diving in a calm, secure environment. A fun and reassuring experience, perfect before heading out to sea.</p>
-        <ul class="incl">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.private">Fully private experience</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.pool">Private pool session included</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.gear">All scuba equipment included</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.age10">10 years &amp; up</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.kids">Fun for kids</span></li>
-        </ul>
+        <div class="incl-toggle">
+          <button type="button" class="incl-summary" data-incl-toggle aria-expanded="false" aria-controls="incl-intro" id="inclbtn-intro"><h3 data-i18n="exp.whatsIncluded">What's included</h3></button>
+          <div class="incl-content" id="incl-intro" role="region" aria-labelledby="inclbtn-intro" hidden>
+            <ul class="incl">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.private">Fully private experience</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.pool">Private pool session included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.gear">All scuba equipment included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.age10">10 years &amp; up</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.kids">Fun for kids</span></li>
+            </ul>
+          </div>
+        </div>
         <a href="index.html#bookForm" class="btn" data-i18n="cta.book">Book a dive</a>
       </div>
     </div>
@@ -85,16 +90,21 @@
         <h2 class="h-title" data-i18n="card.discover.t">Discover Scuba Diving</h2>
         <div class="price-pill"><small data-i18n="price.from">from</small> $170</div>
         <p data-i18n="card.discover.d">Discover scuba diving with the Discover Scuba Diving program, a beginner-friendly introduction with no prior certification required. After a briefing with your instructor, enjoy two dives of about 45 minutes to 1 hour to explore the seabed and observe the richness of Costa Rica’s marine life: tropical fish, sea turtles, rays, moray eels and, depending on the season, the majestic manta rays. An unforgettable first experience, in complete safety.</p>
-        <ul class="incl">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.nocert">No certification needed</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.age10">10 years &amp; up</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.pool">Private pool session included</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>2 <span data-i18n="exp.incl.dives">guided dives</span></span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.snacks">Snacks & drinks included</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.gear">All scuba equipment included</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="dsd.tour">Half-day tour (approx. 6:45 am – 12:00 pm)</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><span data-i18n="dsd.fit">Participants must be medically and physically fit to dive.</span> <a href="docs/DSD-Medical-Statement.pdf" class="pdf-link" target="_blank" rel="noopener" data-i18n="dsd.fitLink">Review the DSD participant statement</a></span></li>
-        </ul>
+        <div class="incl-toggle">
+          <button type="button" class="incl-summary" data-incl-toggle aria-expanded="false" aria-controls="incl-discover" id="inclbtn-discover"><h3 data-i18n="exp.whatsIncluded">What's included</h3></button>
+          <div class="incl-content" id="incl-discover" role="region" aria-labelledby="inclbtn-discover" hidden>
+            <ul class="incl">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.nocert">No certification needed</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.age10">10 years &amp; up</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.pool">Private pool session included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>2 <span data-i18n="exp.incl.dives">guided dives</span></span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.snacks">Snacks & drinks included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.gear">All scuba equipment included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="dsd.tour">Half-day tour (approx. 6:45 am – 12:00 pm)</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><span data-i18n="dsd.fit">Participants must be medically and physically fit to dive.</span> <a href="docs/DSD-Medical-Statement.pdf" class="pdf-link" target="_blank" rel="noopener" data-i18n="dsd.fitLink">Review the DSD participant statement</a></span></li>
+            </ul>
+          </div>
+        </div>
         <p class="muted" style="font-size:.85rem;margin:-.4rem 0 1rem"><a href="scuba-diving-tamarindo-faq.html#beginners" data-i18n="exp.discover.faqLink">Common questions about scuba diving for beginners</a></p>
         <a href="index.html#bookForm" class="btn" data-i18n="cta.book">Book a dive</a>
       </div>
@@ -108,14 +118,19 @@
         <h2 class="h-title" data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</h2>
         <div class="price-pill"><small data-i18n="price.from">from</small> $130</div>
         <p data-i18n="card.catalinas.d">Two private guided dives at the Las Catalinas Islands, one of Costa Rica’s most iconic dive destinations. Explore the volcanic rock formations and encounter incredible marine life including giant manta rays (seasonal), eagle rays, reef sharks, sea turtles, schools of tropical fish, and countless macro species. Perfect for certified divers looking for unforgettable underwater adventures.</p>
-        <ul class="incl">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.certonly">For certified divers only</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>2 <span data-i18n="exp.incl.dives">guided dives</span></span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.snacks">Snacks & drinks included</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.gear">All scuba equipment included</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.photos">Photos & videos included</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="dsd.tour">Half-day tour (approx. 6:45 am – 12:00 pm)</span></li>
-        </ul>
+        <div class="incl-toggle">
+          <button type="button" class="incl-summary" data-incl-toggle aria-expanded="false" aria-controls="incl-catalinas" id="inclbtn-catalinas"><h3 data-i18n="exp.whatsIncluded">What's included</h3></button>
+          <div class="incl-content" id="incl-catalinas" role="region" aria-labelledby="inclbtn-catalinas" hidden>
+            <ul class="incl">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.certonly">For certified divers only</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>2 <span data-i18n="exp.incl.dives">guided dives</span></span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.snacks">Snacks & drinks included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.gear">All scuba equipment included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.photos">Photos & videos included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="dsd.tour">Half-day tour (approx. 6:45 am – 12:00 pm)</span></li>
+            </ul>
+          </div>
+        </div>
         <p class="muted" style="font-size:.85rem;margin:-.4rem 0 1rem"><a href="scuba-diving-tamarindo-faq.html#diving-tamarindo-catalinas" data-i18n="exp.catalinas.faqLink">More about diving at the Catalina Islands</a></p>
         <a href="index.html#bookForm" class="btn" data-i18n="cta.book">Book a dive</a>
       </div>
@@ -129,13 +144,18 @@
         <h2 class="h-title" data-i18n="card.bat.t">Fun Dive · Bat Islands</h2>
         <div class="price-pill" data-i18n="price.contact">Contact us</div>
         <p data-i18n="card.bat.d">The Bat Islands (Islas Murciélagos), off Santa Rosa National Park in Guanacaste, offer one of Costa Rica’s most legendary dives. Accessible from May to November, they let experienced divers observe the impressive bull sharks in their natural habitat. An intense experience in the heart of exceptional marine life.</p>
-        <ul class="incl">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>3 <span data-i18n="exp.incl.dives">guided dives</span></span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.snacks">Snacks & drinks included</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.gear">All scuba equipment included</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.photos">Photos & videos included</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.advancedOnly">For Advanced Open Water divers only</span></li>
-        </ul>
+        <div class="incl-toggle">
+          <button type="button" class="incl-summary" data-incl-toggle aria-expanded="false" aria-controls="incl-bat" id="inclbtn-bat"><h3 data-i18n="exp.whatsIncluded">What's included</h3></button>
+          <div class="incl-content" id="incl-bat" role="region" aria-labelledby="inclbtn-bat" hidden>
+            <ul class="incl">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>3 <span data-i18n="exp.incl.dives">guided dives</span></span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.snacks">Snacks & drinks included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.gear">All scuba equipment included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.photos">Photos & videos included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.advancedOnly">For Advanced Open Water divers only</span></li>
+            </ul>
+          </div>
+        </div>
         <p class="muted" style="font-size:.85rem;margin:-.4rem 0 1rem"><a href="scuba-diving-tamarindo-faq.html#bat-islands" data-i18n="exp.bat.faqLink">Questions about diving with bull sharks at the Bat Islands</a></p>
         <a href="index.html#bookForm" class="btn" data-i18n="cta.book">Book a dive</a>
       </div>
@@ -149,10 +169,15 @@
         <h2 class="h-title" data-i18n="card.snorkel.t">Private Snorkeling</h2>
         <div class="price-pill"><small data-i18n="price.from">from</small> $80</div>
         <p data-i18n="card.snorkel.d">Discover the seabed of the Catalina Islands during two snorkeling sessions of 45 minutes to 1 hour, accompanied by a guide. Explore crystal-clear waters home to tropical fish, sea turtles, rays and, depending on the season, the majestic manta rays. An activity accessible to everyone, ideal for observing the richness of Costa Rica’s marine life.</p>
-        <ul class="incl">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.private">Fully private experience</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.snacks">Snacks & drinks included</span></li>
-        </ul>
+        <div class="incl-toggle">
+          <button type="button" class="incl-summary" data-incl-toggle aria-expanded="false" aria-controls="incl-snorkel" id="inclbtn-snorkel"><h3 data-i18n="exp.whatsIncluded">What's included</h3></button>
+          <div class="incl-content" id="incl-snorkel" role="region" aria-labelledby="inclbtn-snorkel" hidden>
+            <ul class="incl">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.private">Fully private experience</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.snacks">Snacks & drinks included</span></li>
+            </ul>
+          </div>
+        </div>
         <a href="index.html#bookForm" class="btn" data-i18n="cta.book">Book a dive</a>
       </div>
     </div>
@@ -165,10 +190,15 @@
         <h2 class="h-title" data-i18n="card.courses.t">PADI Courses</h2>
         <div class="price-pill" data-i18n="price.request">on request</div>
         <p data-i18n="card.courses.d">Develop your skills and progress at your own pace with our PADI courses, from Open Water Diver to Rescue Diver. Whether you want to earn your first certification, gain more independence or deepen your knowledge, our instructors guide you throughout your training to make you a more confident, skilled and experienced diver.</p>
-        <ul class="incl">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.private">Fully private experience</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.gear">All scuba equipment included</span></li>
-        </ul>
+        <div class="incl-toggle">
+          <button type="button" class="incl-summary" data-incl-toggle aria-expanded="false" aria-controls="incl-courses" id="inclbtn-courses"><h3 data-i18n="exp.whatsIncluded">What's included</h3></button>
+          <div class="incl-content" id="incl-courses" role="region" aria-labelledby="inclbtn-courses" hidden>
+            <ul class="incl">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.private">Fully private experience</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="exp.incl.gear">All scuba equipment included</span></li>
+            </ul>
+          </div>
+        </div>
         <a href="index.html#bookForm" class="btn" data-i18n="cta.bookCourse">Book a course</a>
         <a href="padi-courses.html" class="btn btn--teal" data-i18n="cta.learnMore">Learn more</a>
       </div>
