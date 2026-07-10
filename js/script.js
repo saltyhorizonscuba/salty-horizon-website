@@ -111,6 +111,18 @@ const I18N = {
     'book.step1':'1 · Pick','book.step2':'2 · Send','book.step3':'3 · We confirm',
     'book.alert':'Please choose an experience first.',
 
+    'faq.eyebrow':'Good to know','faq.title':'Frequently asked questions',
+    'faq.q1':'Do I need to be certified to try scuba diving in Tamarindo?',
+    'faq.a1':'No certification is required for the Discover Scuba Diving experience. After a private briefing with a PADI instructor, you complete two guided dives, 45 minutes to 1 hour each, from age 10 and up.',
+    'faq.q2':'How much does the PADI Open Water Diver course cost?',
+    'faq.a2':'The Open Water Diver course starts at $540 and runs over 3 days, including e-learning, certification fees, all equipment, and snacks and drinks.',
+    'faq.q3':'Can you see bull sharks at the Bat Islands?',
+    'faq.a3':'Yes. The Bat Islands are accessible from May to November and are known for bull shark sightings. This dive is for certified Advanced Open Water divers only.',
+    'faq.q4':'Are dives and courses offered in French and Spanish?',
+    'faq.a4':'Yes. Camille and Julien are trilingual and teach and guide in English, French and Spanish.',
+    'faq.q5':'Do I need a medical form to dive?',
+    'faq.a5':'Yes, for the Open Water and Advanced Open Water courses you need to confirm you are medically fit to dive; a medical form is available to download and must be completed before the course.',
+
     'contact.eyebrow':'Get in touch',
     'contact.title':'Let’s plan your dive',
     'contact.lead':'Questions, custom requests or large groups, we are happy to help in English, French or Spanish.',
@@ -257,6 +269,18 @@ const I18N = {
     'book.step1':'1 · Choisir','book.step2':'2 · Envoyer','book.step3':'3 · On confirme',
     'book.alert':'Veuillez d’abord choisir une expérience.',
 
+    'faq.eyebrow':'Bon à savoir','faq.title':'Questions fréquentes',
+    'faq.q1':'Faut-il être certifié pour essayer la plongée à Tamarindo ?',
+    'faq.a1':'Non, aucune certification n’est nécessaire pour le baptême de plongée (Discover Scuba Diving). Après un briefing privé avec un instructeur PADI, vous réalisez deux plongées encadrées de 45 minutes à 1 heure, dès 10 ans.',
+    'faq.q2':'Combien coûte le cours PADI Open Water Diver ?',
+    'faq.a2':'Le cours Open Water Diver démarre à 540 $ et se déroule sur 3 jours, incluant l’e-learning, les frais de certification, tout l’équipement, ainsi que les collations et boissons.',
+    'faq.q3':'Peut-on voir des requins-taureaux aux Bat Islands ?',
+    'faq.a3':'Oui. Les Bat Islands sont accessibles de mai à novembre et sont réputées pour leurs requins-taureaux. Cette plongée est réservée aux plongeurs certifiés Advanced Open Water.',
+    'faq.q4':'Les cours et plongées sont-ils proposés en français et en espagnol ?',
+    'faq.a4':'Oui. Camille et Julien sont trilingues et encadrent en anglais, français et espagnol.',
+    'faq.q5':'Faut-il un certificat médical pour plonger ?',
+    'faq.a5':'Oui, pour les cours Open Water et Advanced Open Water, vous devez confirmer votre aptitude médicale à la plongée ; un formulaire médical est disponible à télécharger et doit être complété avant le cours.',
+
     'contact.eyebrow':'Contactez-nous',
     'contact.title':'Planifions votre plongée',
     'contact.lead':'Questions, demandes sur mesure ou grands groupes, avec plaisir, en français, anglais ou espagnol.',
@@ -401,6 +425,18 @@ const I18N = {
     'book.perk1':'Cancelación gratis hasta 24h antes','book.perk2':'Fotos y videos incluidos','book.perk3':'Respondemos en pocas horas',
     'book.step1':'1 · Elige','book.step2':'2 · Envía','book.step3':'3 · Confirmamos',
     'book.alert':'Por favor elige una experiencia primero.',
+
+    'faq.eyebrow':'Es bueno saberlo','faq.title':'Preguntas frecuentes',
+    'faq.q1':'¿Necesito estar certificado para probar el buceo en Tamarindo?',
+    'faq.a1':'No, no se necesita certificación para el bautismo de buceo (Discover Scuba Diving). Después de una charla privada con un instructor PADI, realizas dos inmersiones guiadas de 45 minutos a 1 hora, desde los 10 años.',
+    'faq.q2':'¿Cuánto cuesta el curso PADI Open Water Diver?',
+    'faq.a2':'El curso Open Water Diver empieza en $540 y dura 3 días, incluyendo el e-learning, la certificación, todo el equipo, y snacks y bebidas.',
+    'faq.q3':'¿Se pueden ver tiburones toro en las Islas Murciélago?',
+    'faq.a3':'Sí. Las Islas Murciélago son accesibles de mayo a noviembre y son conocidas por sus tiburones toro. Esta inmersión es solo para buzos certificados Advanced Open Water.',
+    'faq.q4':'¿Los cursos e inmersiones se ofrecen en francés y español?',
+    'faq.a4':'Sí. Camille y Julien son trilingües y enseñan y guían en inglés, francés y español.',
+    'faq.q5':'¿Necesito un formulario médico para bucear?',
+    'faq.a5':'Sí, para los cursos Open Water y Advanced Open Water debes confirmar tu aptitud médica para bucear; hay un formulario médico disponible para descargar que debe completarse antes del curso.',
 
     'contact.eyebrow':'Contáctanos',
     'contact.title':'Planeemos tu inmersión',
@@ -617,6 +653,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
   document.querySelectorAll('[data-schedule-toggle]').forEach(b=>{
     b.addEventListener('click',()=>{
       const content=b.parentElement.querySelector('.schedule-content');
+      if(!content) return;
+      content.hidden=!content.hidden;
+      b.classList.toggle('is-open');
+      b.setAttribute('aria-expanded', String(!content.hidden));
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('[data-faq-toggle]').forEach(b=>{
+    b.addEventListener('click',()=>{
+      const content=b.parentElement.querySelector('.faq-a');
       if(!content) return;
       content.hidden=!content.hidden;
       b.classList.toggle('is-open');
