@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "name": "Salty Horizon Exclusive Scuba Diving",
+  "description": "Private, personalized PADI scuba diving in Tamarindo, Costa Rica, with instructors Camille Segonne (PADI OWSI, MSDT) and Julien Escales (PADI OWSI). Trilingual: English, French, Spanish. Offers Discover Scuba Diving, fun dives at the Catalina Islands and Bat Islands, PADI Open Water and Advanced Open Water certification courses, private snorkeling, and private boat charters.",
+  "url": "https://www.saltyhorizondiving.com/",
+  "capabilities": ["contact", "booking"],
+  "contact": "saltyhorizon.scuba@gmail.com"
+}

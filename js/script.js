@@ -896,10 +896,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const landOnHash=()=>{
       const target=document.querySelector(location.hash);
       if(!target) return;
-      const prevBehavior=document.documentElement.style.scrollBehavior;
-      document.documentElement.style.scrollBehavior='auto';
-      target.scrollIntoView();
-      document.documentElement.style.scrollBehavior=prevBehavior;
+      target.scrollIntoView({behavior:'instant'});
     };
     window.addEventListener('load', landOnHash);
     setTimeout(landOnHash, 400);
