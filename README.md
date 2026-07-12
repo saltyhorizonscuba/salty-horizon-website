@@ -18,12 +18,17 @@ Ces règles s'appliquent à **toute session Claude Code** travaillant sur ce dé
 - `index.html` — page d'accueil immersive (hero, à propos, expériences, Las Catalinas, galerie, équipe, avis, réservation, contact)
 - `experiences.html` — détail des expériences + tarifs
 - `private-charters.html` — charters privés
+- `padi-courses.html` — cours PADI (Open Water, Advanced Open Water)
+- `scuba-diving-tamarindo-faq.html` — FAQ complète (plongée, faune, saisons, sécurité, réservation)
 - `css/styles.css` — tout le design (identité océan/sable) + responsive
 - `js/script.js` — trilingue EN/FR/ES, galerie lightbox, carrousel d'avis, réservation → WhatsApp, animations
 - `images/` — toutes les photos, **en local et optimisées** (plus aucune dépendance à Wix)
 - `docs/DSD-Medical-Statement.pdf` — déclaration médicale du participant DSD
 - `favicon.png` / `favicon.svg` — icône d'onglet
-- `sitemap.xml` + `robots.txt` — pour le référencement Google
+- `sitemap.xml` + `robots.txt` — pour le référencement Google (incl. règles explicites pour les bots IA : GPTBot, ClaudeBot, PerplexityBot, etc.)
+- `.htaccess` — compression + en-têtes de cache navigateur (images 1 an, css/js 1 mois)
+- `.well-known/agents.json` — fiche de découverte du site pour les agents IA (convention émergente, hors `llms.txt`)
+- `AMELIORATIONS.md` — chantiers possibles envisagés mais pas encore lancés (idées à garder de côté)
 
 ## Aperçu
 Ouvre `index.html` dans un navigateur (double-clic). **Garde tout le dossier** (y compris `images/`) tel quel — les fichiers se référencent entre eux.
@@ -36,10 +41,13 @@ Ouvre `index.html` dans un navigateur (double-clic). **Garde tout le dossier** (
 
 ## Optimisations en place
 - **Responsive** ordinateur + mobile (menu hamburger, grilles adaptatives 3→2→1 colonnes).
-- **Images optimisées** (~3,3 Mo au total) ; le hero utilise `srcset` (version légère servie sur mobile).
-- **Chargement différé** (`loading="lazy"`) des images sous la ligne de flottaison.
+- **Images optimisées** ; le hero utilise `srcset`/`<picture>` (version légère servie sur mobile), et chaque `<img>` du site a des attributs `width`/`height` explicites (évite les décalages de mise en page au chargement).
+- **Chargement différé** (`loading="lazy"`) des images sous la ligne de flottaison, préchargement (`rel="preload"`) de l'image principale (LCP) de chaque page.
+- **Polices Google Fonts en chargement asynchrone** (`preload` + `onload`) pour ne pas bloquer le premier rendu.
+- **Cache navigateur & compression** via `.htaccess` (images 1 an, CSS/JS 1 mois, gzip).
 - **Filet de sécurité** : le contenu s'affiche même si le JavaScript ne se charge pas.
-- **SEO technique** : titres + meta optimisés, Open Graph, données structurées (LocalBusiness / SportsActivityLocation), HTML sémantique, textes alternatifs, favicon, sitemap, robots.
+- **SEO technique** : titres + meta optimisés, Open Graph, données structurées (SportsActivityLocation, FAQPage, Course, BreadcrumbList, Person), HTML sémantique (`<main>`), textes alternatifs, favicon, sitemap, robots, URLs internes toutes en `.html` (canonical/hreflang/sitemap alignés sur les vrais chemins de fichiers).
+- **GEO / AEO (référencement pour les moteurs IA)** : `robots.txt` autorise explicitement les bots IA connus, `.well-known/agents.json` décrit le site pour les agents IA, entités JSON-LD reliées entre pages via des `@id` partagés.
 
 ## Bon à savoir — SEO multilingue
 Les traductions FR/ES sont appliquées par JavaScript sur **une seule URL**. Google indexe donc la version **anglaise**. C'est un choix volontaire (simple à gérer, parfait pour l'expérience visiteur et pour Google Ads). Pour être référencé séparément en français/espagnol, il faudrait un jour des pages dédiées `/fr/` et `/es/` — pas nécessaire pour démarrer.
