@@ -20,6 +20,7 @@ Ces règles s'appliquent à **toute session Claude Code** travaillant sur ce dé
 - `private-charters.html` — charters privés
 - `padi-courses.html` — cours PADI (Open Water, Advanced Open Water)
 - `scuba-diving-tamarindo-faq.html` — FAQ complète (plongée, faune, saisons, sécurité, réservation)
+- `blog/` — "The Journal", blog SEO en style éditorial/newspaper (masthead, drop cap, sources sourcées en bas de chaque article). `blog/index.html` liste les articles, un fichier HTML par article (ex. `blog/mantas-costa-rica-manta-ray-research.html`). Contenu en anglais uniquement (pas de traduction JS pour le corps des articles, cohérent avec le fait que Google indexe la version anglaise du site).
 - `css/styles.css` — tout le design (identité océan/sable) + responsive
 - `js/script.js` — trilingue EN/FR/ES, galerie lightbox, carrousel d'avis, réservation → WhatsApp, animations
 - `images/` — toutes les photos, **en local et optimisées** (plus aucune dépendance à Wix)
