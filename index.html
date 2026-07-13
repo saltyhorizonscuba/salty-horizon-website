@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="css/styles.css?v=34">
+<link rel="stylesheet" href="css/styles.css?v=35">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -300,11 +300,14 @@
 
 <!-- BOOKING & CONTACT -->
 <section class="section section--deep" id="contact">
-  <div class="container book-grid">
-    <div class="book-side" data-reveal>
+  <div class="container">
+    <div class="title-block center" data-reveal>
       <span class="eyebrow" data-i18n="book.eyebrow">Reserve your spot</span>
       <h2 class="h-title" data-i18n="book.title">Book your experience</h2>
       <p class="lead" data-i18n="book.lead">Tell us what you would like to do and we will confirm on WhatsApp.</p>
+    </div>
+    <div class="book-grid">
+    <div class="book-side" data-reveal>
       <div class="steps"><span data-i18n="book.step1">1 · Pick</span><span data-i18n="book.step2">2 · Send</span><span data-i18n="book.step3">3 · We confirm</span></div>
       <ul class="book-perks">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12.5" r="3.2"/></svg><span data-i18n="book.perk2">Photos & videos included</span></li>
@@ -317,9 +320,6 @@
         <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><div><b data-i18n="contact.instaT">Instagram</b><a href="https://www.instagram.com/saltyhorizondiving" target="_blank" rel="noopener">@saltyhorizondiving</a></div></li>
         <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><div><b data-i18n="contact.hoursT">Languages</b><span data-i18n="contact.hours">English · Français · Español</span></div></li>
       </ul>
-      <div class="map-wrap" data-reveal data-delay="1">
-        <iframe title="Salty Horizon Diving on Google Maps" loading="lazy" src="https://www.google.com/maps?q=Salty+Horizon+Diving,+Playa+Langosta,+Tamarindo,+Costa+Rica&output=embed"></iframe>
-      </div>
     </div>
     <div class="book-card" data-reveal data-delay="1">
       <form id="bookForm">
@@ -351,6 +351,10 @@
           <span data-i18n="book.email">Contact us by email</span>
         </a>
       </form>
+    </div>
+    </div>
+    <div class="map-wrap" data-reveal data-delay="2" style="margin-top:2.2rem">
+      <iframe title="Salty Horizon Diving on Google Maps" loading="lazy" src="https://www.google.com/maps?q=Salty+Horizon+Diving,+Playa+Langosta,+Tamarindo,+Costa+Rica&output=embed"></iframe>
     </div>
   </div>
 </section>
