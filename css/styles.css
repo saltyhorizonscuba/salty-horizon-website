@@ -139,7 +139,9 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .nav-item{position:relative}
 .nav-dropdown{
   position:absolute;top:100%;left:50%;min-width:230px;
-  background:#fff;border-radius:12px;box-shadow:0 20px 45px -15px rgba(0,0,0,.4);
+  background:rgba(8,28,37,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:12px;box-shadow:0 20px 45px -15px rgba(0,0,0,.55);
   padding:.6rem;margin-top:.5rem;
   opacity:0;visibility:hidden;transform:translate(-50%,8px);
   transition:opacity .25s,transform .25s,visibility .25s;z-index:80;
@@ -148,10 +150,10 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .nav-dropdown a{
   display:block;padding:.6rem .85rem;border-radius:8px;
   font-family:var(--font-display);font-weight:600;font-size:.8rem;letter-spacing:.02em;
-  color:var(--ink);white-space:nowrap;
+  color:#eaf1f3;white-space:nowrap;
 }
 .nav-dropdown a::after{display:none}
-.nav-dropdown a:hover{background:rgba(31,163,181,.1);color:var(--teal)}
+.nav-dropdown a:hover{background:rgba(255,255,255,.1);color:#fff}
 
 .nav-actions{display:flex;align-items:center;gap:1rem}
 
