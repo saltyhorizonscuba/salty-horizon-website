@@ -114,7 +114,7 @@ const I18N = {
 
     'book.eyebrow':'Reserve your spot',
     'book.title':'Book your experience',
-    'book.lead':'Tell us what you would like to do and we will confirm everything personally on WhatsApp.',
+    'book.lead':'Tell us what you would like to do and we will confirm everything personally on WhatsApp — questions, custom requests or large groups are always welcome.',
     'book.fexp':'Experience','book.fexpPh':'Choose an experience…',
     'book.fdate':'Preferred date','book.fpeople':'People','book.fname':'Your name','book.fnamePh':'First & last name',
     'book.fmsg':'Anything else?','book.fmsgPh':'Level, questions, special requests…',
@@ -404,7 +404,7 @@ const I18N = {
 
     'book.eyebrow':'Réservez votre place',
     'book.title':'Réservez votre expérience',
-    'book.lead':'Dites-nous ce que vous aimeriez faire, et nous confirmons tout personnellement sur WhatsApp.',
+    'book.lead':'Dites-nous ce que vous aimeriez faire, et nous confirmons tout personnellement sur WhatsApp — questions, demandes sur mesure ou grands groupes sont toujours les bienvenus.',
     'book.fexp':'Expérience','book.fexpPh':'Choisissez une expérience…',
     'book.fdate':'Date souhaitée','book.fpeople':'Personnes','book.fname':'Votre nom','book.fnamePh':'Prénom & nom',
     'book.fmsg':'Autre chose ?','book.fmsgPh':'Niveau, questions, demandes particulières…',
@@ -693,7 +693,7 @@ const I18N = {
 
     'book.eyebrow':'Reserva tu lugar',
     'book.title':'Reserva tu experiencia',
-    'book.lead':'Cuéntanos qué te gustaría hacer y lo confirmamos personalmente por WhatsApp.',
+    'book.lead':'Cuéntanos qué te gustaría hacer y lo confirmamos personalmente por WhatsApp — preguntas, peticiones a medida o grupos grandes son siempre bienvenidos.',
     'book.fexp':'Experiencia','book.fexpPh':'Elige una experiencia…',
     'book.fdate':'Fecha preferida','book.fpeople':'Personas','book.fname':'Tu nombre','book.fnamePh':'Nombre y apellido',
     'book.fmsg':'¿Algo más?','book.fmsgPh':'Nivel, preguntas, peticiones especiales…',
@@ -1093,6 +1093,24 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const step=()=>{ if(cachedStep===null) measureStep(); return cachedStep; };
     prev.addEventListener('click', ()=> grid.scrollBy({left:-step(), behavior:'smooth'}));
     next.addEventListener('click', ()=> grid.scrollBy({left:step(), behavior:'smooth'}));
+  });
+
+  // gallery carousel prev/next buttons
+  document.querySelectorAll('.gallery').forEach(carousel=>{
+    const track=carousel.querySelector('.gallery-track');
+    const prev=carousel.querySelector('[data-gallery-prev]');
+    const next=carousel.querySelector('[data-gallery-next]');
+    if(!track || !prev || !next) return;
+    let cachedStep=null;
+    const measureStep=()=>{
+      const item=track.querySelector('figure');
+      const gap=parseFloat(getComputedStyle(track).columnGap) || 0;
+      cachedStep = item ? item.offsetWidth + gap : track.clientWidth * 0.8;
+    };
+    window.addEventListener('resize', ()=>{ cachedStep=null; }, {passive:true});
+    const step=()=>{ if(cachedStep===null) measureStep(); return cachedStep; };
+    prev.addEventListener('click', ()=> track.scrollBy({left:-step(), behavior:'smooth'}));
+    next.addEventListener('click', ()=> track.scrollBy({left:step(), behavior:'smooth'}));
   });
 
   document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());

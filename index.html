@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="css/styles.css?v=33">
+<link rel="stylesheet" href="css/styles.css?v=34">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -106,8 +106,8 @@
       <a href="#about" data-i18n="nav.about">About</a>
       <a href="#catalinas" data-i18n="nav.catalinas">Catalinas</a>
       <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
-      <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
     </nav>
     <div class="nav-actions">
       <div class="lang" role="group" aria-label="Language">
@@ -256,6 +256,10 @@
       <p class="lead" data-i18n="gallery.lead">A glimpse of the reefs, rays and sharks waiting for you off Tamarindo.</p>
     </div>
     <div class="gallery" data-reveal>
+      <button type="button" class="gallery-nav gallery-nav--prev" data-gallery-prev aria-label="Previous photos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="gallery-track">
       <figure><img loading="lazy" src="images/g4.jpg?v=4" width="1500" height="844" alt="Whale shark swimming off the coast of Costa Rica"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
       <figure><img loading="lazy" src="images/bull-shark.jpg?v=2" width="1000" height="1500" alt="Bull shark at the Bat Islands"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
       <figure><img loading="lazy" src="images/g1.jpg?v=4" width="1500" height="844" alt="Spotted eagle ray gliding over the reef near Tamarindo"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
@@ -265,6 +269,10 @@
       <figure><img loading="lazy" src="images/whitetip-pair.jpg?v=2" width="1138" height="1500" alt="Diver above two whitetip reef sharks resting on the sea floor"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
       <figure><img loading="lazy" src="images/school-fish.jpg?v=2" width="1500" height="1001" alt="Large school of tropical fish off Tamarindo"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
       <figure><img loading="lazy" src="images/barracuda.jpg?v=2" width="972" height="1500" alt="School of barracuda off Tamarindo, Costa Rica"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
+      </div>
+      <button type="button" class="gallery-nav gallery-nav--next" data-gallery-next aria-label="Next photos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
     </div>
   </div>
 </section>
@@ -286,6 +294,63 @@
         <img loading="lazy" src="images/julien.jpg?v=3" width="1000" height="1500" alt="Julien Escales, PADI OWSI scuba instructor in Tamarindo">
         <div class="member__body"><h3>Julien Escales</h3><div class="role" data-i18n="julien.role">PADI OWSI</div><p class="member-spec" data-i18n="julien.spec">Specialties</p><p data-i18n="julien.bio">Coming from a family of dive instructors.</p></div>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING & CONTACT -->
+<section class="section section--deep" id="contact">
+  <div class="container book-grid">
+    <div class="book-side" data-reveal>
+      <span class="eyebrow" data-i18n="book.eyebrow">Reserve your spot</span>
+      <h2 class="h-title" data-i18n="book.title">Book your experience</h2>
+      <p class="lead" data-i18n="book.lead">Tell us what you would like to do and we will confirm on WhatsApp.</p>
+      <div class="steps"><span data-i18n="book.step1">1 · Pick</span><span data-i18n="book.step2">2 · Send</span><span data-i18n="book.step3">3 · We confirm</span></div>
+      <ul class="book-perks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12.5" r="3.2"/></svg><span data-i18n="book.perk2">Photos & videos included</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"/></svg><span data-i18n="book.perk3">We reply within a few hours</span></li>
+      </ul>
+      <ul class="contact-info">
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><b data-i18n="contact.locT">Location</b><span data-i18n="contact.loc">Tamarindo, Guanacaste, Costa Rica</span></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"/></svg></span><div><b data-i18n="contact.phoneT">WhatsApp</b><a href="https://wa.me/50687759641">+506 8775 9641</a></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><b data-i18n="contact.emailT">Email</b><a href="mailto:saltyhorizon.scuba@gmail.com">saltyhorizon.scuba@gmail.com</a></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><div><b data-i18n="contact.instaT">Instagram</b><a href="https://www.instagram.com/saltyhorizondiving" target="_blank" rel="noopener">@saltyhorizondiving</a></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><div><b data-i18n="contact.hoursT">Languages</b><span data-i18n="contact.hours">English · Français · Español</span></div></li>
+      </ul>
+      <div class="map-wrap" data-reveal data-delay="1">
+        <iframe title="Salty Horizon Diving on Google Maps" loading="lazy" src="https://www.google.com/maps?q=Salty+Horizon+Diving,+Playa+Langosta,+Tamarindo,+Costa+Rica&output=embed"></iframe>
+      </div>
+    </div>
+    <div class="book-card" data-reveal data-delay="1">
+      <form id="bookForm">
+        <div class="field">
+          <label data-i18n="book.fexp">Experience</label>
+          <select name="experience" required>
+            <option value="" data-i18n="book.fexpPh">Choose an experience…</option>
+            <option value="Intro to Scuba (Pool) – $80" data-i18n="card.intro.t">Intro to Scuba (Pool)</option>
+            <option value="Discover Scuba Diving – $170" data-i18n="card.discover.t">Discover Scuba Diving</option>
+            <option value="Fun Dive · Las Catalinas – $130" data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</option>
+            <option value="Fun Dive · Bat Islands" data-i18n="card.bat.t">Fun Dive · Bat Islands</option>
+            <option value="Snorkeling – $80" data-i18n="card.snorkel.t">Private Snorkeling</option>
+            <option value="PADI Courses" data-i18n="card.courses.t">PADI Courses</option>
+            <option value="Private Charter" data-i18n="nav.charters">Private Charter</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <div class="field"><label data-i18n="book.fdate">Preferred date</label><input type="date" name="date"></div>
+          <div class="field"><label data-i18n="book.fpeople">People</label><input type="number" name="people" min="1" max="12" value="2"></div>
+        </div>
+        <div class="field"><label data-i18n="book.fname">Your name</label><input type="text" name="name" data-i18n-ph="book.fnamePh" placeholder="First & last name"></div>
+        <div class="field"><label data-i18n="book.fmsg">Anything else?</label><textarea name="note" rows="3" data-i18n-ph="book.fmsgPh" placeholder="Level, questions…"></textarea></div>
+        <button type="submit" class="btn btn--wa btn--block btn--lg">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span data-i18n="book.submit">Send booking on WhatsApp</span>
+        </button>
+        <a href="mailto:saltyhorizon.scuba@gmail.com?subject=Booking%20request%20-%20Salty%20Horizon" class="btn btn--block" style="margin-top:.7rem;background:transparent;color:var(--teal);border:1.5px solid var(--teal);box-shadow:none">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <span data-i18n="book.email">Contact us by email</span>
+        </a>
+      </form>
     </div>
   </div>
 </section>
@@ -345,53 +410,6 @@
   </div>
 </section>
 
-<!-- BOOKING -->
-<section class="section section--deep" id="book">
-  <div class="container book-grid">
-    <div class="book-side" data-reveal>
-      <span class="eyebrow" data-i18n="book.eyebrow">Reserve your spot</span>
-      <h2 class="h-title" data-i18n="book.title">Book your experience</h2>
-      <p class="lead" data-i18n="book.lead">Tell us what you would like to do and we will confirm on WhatsApp.</p>
-      <div class="steps"><span data-i18n="book.step1">1 · Pick</span><span data-i18n="book.step2">2 · Send</span><span data-i18n="book.step3">3 · We confirm</span></div>
-      <ul class="book-perks">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12.5" r="3.2"/></svg><span data-i18n="book.perk2">Photos & videos included</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"/></svg><span data-i18n="book.perk3">We reply within a few hours</span></li>
-      </ul>
-    </div>
-    <div class="book-card" data-reveal data-delay="1">
-      <form id="bookForm">
-        <div class="field">
-          <label data-i18n="book.fexp">Experience</label>
-          <select name="experience" required>
-            <option value="" data-i18n="book.fexpPh">Choose an experience…</option>
-            <option value="Intro to Scuba (Pool) – $80" data-i18n="card.intro.t">Intro to Scuba (Pool)</option>
-            <option value="Discover Scuba Diving – $170" data-i18n="card.discover.t">Discover Scuba Diving</option>
-            <option value="Fun Dive · Las Catalinas – $130" data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</option>
-            <option value="Fun Dive · Bat Islands" data-i18n="card.bat.t">Fun Dive · Bat Islands</option>
-            <option value="Snorkeling – $80" data-i18n="card.snorkel.t">Private Snorkeling</option>
-            <option value="PADI Courses" data-i18n="card.courses.t">PADI Courses</option>
-            <option value="Private Charter" data-i18n="nav.charters">Private Charter</option>
-          </select>
-        </div>
-        <div class="field-row">
-          <div class="field"><label data-i18n="book.fdate">Preferred date</label><input type="date" name="date"></div>
-          <div class="field"><label data-i18n="book.fpeople">People</label><input type="number" name="people" min="1" max="12" value="2"></div>
-        </div>
-        <div class="field"><label data-i18n="book.fname">Your name</label><input type="text" name="name" data-i18n-ph="book.fnamePh" placeholder="First & last name"></div>
-        <div class="field"><label data-i18n="book.fmsg">Anything else?</label><textarea name="note" rows="3" data-i18n-ph="book.fmsgPh" placeholder="Level, questions…"></textarea></div>
-        <button type="submit" class="btn btn--wa btn--block btn--lg">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          <span data-i18n="book.submit">Send booking on WhatsApp</span>
-        </button>
-        <a href="mailto:saltyhorizon.scuba@gmail.com?subject=Booking%20request%20-%20Salty%20Horizon" class="btn btn--block" style="margin-top:.7rem;background:transparent;color:var(--teal);border:1.5px solid var(--teal);box-shadow:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-          <span data-i18n="book.email">Contact us by email</span>
-        </a>
-      </form>
-    </div>
-  </div>
-</section>
-
 <!-- FAQ -->
 <section class="section" id="faq">
   <div class="container">
@@ -422,29 +440,6 @@
       </div>
       <div class="center" style="margin-top:1.6rem">
         <a href="scuba-diving-tamarindo-faq.html" class="btn btn--teal" data-i18n="faq.seeMore">See the full Tamarindo diving FAQ</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section" id="contact">
-  <div class="container">
-    <div class="title-block center" data-reveal>
-      <span class="eyebrow" data-i18n="contact.eyebrow">Get in touch</span>
-      <h2 class="h-title" data-i18n="contact.title">Let’s plan your dive</h2>
-      <p class="lead" data-i18n="contact.lead">Questions or custom requests, we’re happy to help.</p>
-    </div>
-    <div class="contact-grid">
-      <ul class="contact-info" data-reveal>
-        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><b data-i18n="contact.locT">Location</b><span data-i18n="contact.loc">Tamarindo, Guanacaste, Costa Rica</span></div></li>
-        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"/></svg></span><div><b data-i18n="contact.phoneT">WhatsApp</b><a href="https://wa.me/50687759641">+506 8775 9641</a></div></li>
-        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><b data-i18n="contact.emailT">Email</b><a href="mailto:saltyhorizon.scuba@gmail.com">saltyhorizon.scuba@gmail.com</a></div></li>
-        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><div><b data-i18n="contact.instaT">Instagram</b><a href="https://www.instagram.com/saltyhorizondiving" target="_blank" rel="noopener">@saltyhorizondiving</a></div></li>
-        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><div><b data-i18n="contact.hoursT">Languages</b><span data-i18n="contact.hours">English · Français · Español</span></div></li>
-      </ul>
-      <div class="map-wrap" data-reveal data-delay="1">
-        <iframe title="Salty Horizon Diving on Google Maps" loading="lazy" src="https://www.google.com/maps?q=Salty+Horizon+Diving,+Playa+Langosta,+Tamarindo,+Costa+Rica&output=embed"></iframe>
       </div>
     </div>
   </div>
@@ -515,6 +510,6 @@
   <button class="lb-btn lb-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
 </div>
 
-<script src="js/script.js?v=26"></script>
+<script src="js/script.js?v=27"></script>
 </body>
 </html>
