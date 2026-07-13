@@ -23,7 +23,7 @@ const I18N = {
     'hero.sub':'Exclusive Scuba Diving',
     'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Book your dive','hero.cta2':'Explore experiences','hero.scroll':'Scroll',
-    'strip.private':'Fully private','strip.padi':'PADI instructors','strip.langs':'EN · FR · ES','strip.photos':'Photos included',
+    'strip.private':'Only Privately Guided Dives','strip.padi':'PADI instructors','strip.langs':'EN · FR · ES','strip.photos':'Photos included',
 
     'about.eyebrow':'Who we are',
     'about.title':'Diving done the right way',
@@ -313,7 +313,7 @@ const I18N = {
     'hero.sub':'Plongée sous-marine exclusive',
     'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Réserver ma plongée','hero.cta2':'Voir les expériences','hero.scroll':'Défiler',
-    'strip.private':'100 % privé','strip.padi':'Instructeurs PADI','strip.langs':'EN · FR · ES','strip.photos':'Photos incluses',
+    'strip.private':'Uniquement des plongées guidées en privé','strip.padi':'Instructeurs PADI','strip.langs':'EN · FR · ES','strip.photos':'Photos incluses',
 
     'about.eyebrow':'Qui sommes-nous',
     'about.title':'La plongée comme elle devrait être',
@@ -602,7 +602,7 @@ const I18N = {
     'hero.sub':'Buceo exclusivo',
     'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Reserva tu inmersión','hero.cta2':'Ver experiencias','hero.scroll':'Desplázate',
-    'strip.private':'100 % privado','strip.padi':'Instructores PADI','strip.langs':'EN · FR · ES','strip.photos':'Fotos incluidas',
+    'strip.private':'Solo inmersiones guiadas en privado','strip.padi':'Instructores PADI','strip.langs':'EN · FR · ES','strip.photos':'Fotos incluidas',
 
     'about.eyebrow':'Quiénes somos',
     'about.title':'Bucear como se debe',
