@@ -1071,11 +1071,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const prev=carousel.querySelector('[data-review-prev]');
     const next=carousel.querySelector('[data-review-next]');
     if(!grid || !prev || !next) return;
-    const step=()=>{
+    let cachedStep=null;
+    const measureStep=()=>{
       const card=grid.querySelector('.review-card');
       const gap=parseFloat(getComputedStyle(grid).columnGap) || 0;
-      return card ? card.offsetWidth + gap : grid.clientWidth * 0.8;
+      cachedStep = card ? card.offsetWidth + gap : grid.clientWidth * 0.8;
     };
+    window.addEventListener('resize', ()=>{ cachedStep=null; }, {passive:true});
+    const step=()=>{ if(cachedStep===null) measureStep(); return cachedStep; };
     prev.addEventListener('click', ()=> grid.scrollBy({left:-step(), behavior:'smooth'}));
     next.addEventListener('click', ()=> grid.scrollBy({left:step(), behavior:'smooth'}));
   });
