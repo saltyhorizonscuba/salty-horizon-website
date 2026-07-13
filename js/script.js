@@ -23,13 +23,13 @@ const I18N = {
     'hero.sub':'Exclusive Scuba Diving',
     'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Book your dive','hero.cta2':'Explore experiences','hero.scroll':'Scroll',
-    'strip.private':'Fully private','strip.padi':'PADI instructors','strip.langs':'EN · FR · ES','strip.photos':'Photos included',
+    'strip.private':'Only Privately Guided Dives','strip.padi':'PADI instructors','strip.langs':'EN · FR · ES','strip.photos':'Photos included',
 
     'about.eyebrow':'Who we are',
     'about.title':'Diving done the right way',
     'about.lead':'We are Camille & Julien, two PADI instructors who turned a lifelong love of the ocean into a different kind of dive experience.',
     'about.p1':'Trilingual in English, French and Spanish, we welcome travelers from all over the world and adapt every session to your comfort, goals and pace. No rushed schedules, just small, fully private groups and our full attention.',
-    'about.f1t':'Fully private','about.f1d':'Small groups, your pace, maximum safety and comfort.',
+    'about.f1t':'Fully private','about.f1d':'Privately guided dives, small groups, your pace, maximum safety and comfort.',
     'about.f2t':'PADI certified','about.f2d':'Two professional PADI instructors who live and breathe the ocean.',
     'about.f3t':'Memories included','about.f3d':'Unedited photos & videos with every session, free.',
     'about.cta':'Meet the team',
@@ -114,7 +114,7 @@ const I18N = {
 
     'book.eyebrow':'Reserve your spot',
     'book.title':'Book your experience',
-    'book.lead':'Tell us what you would like to do and we will confirm everything personally on WhatsApp.',
+    'book.lead':'Tell us what you would like to do and we will confirm everything personally on WhatsApp — questions, custom requests or large groups are always welcome.',
     'book.fexp':'Experience','book.fexpPh':'Choose an experience…',
     'book.fdate':'Preferred date','book.fpeople':'People','book.fname':'Your name','book.fnamePh':'First & last name',
     'book.fmsg':'Anything else?','book.fmsgPh':'Level, questions, special requests…',
@@ -313,13 +313,13 @@ const I18N = {
     'hero.sub':'Plongée sous-marine exclusive',
     'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Réserver ma plongée','hero.cta2':'Voir les expériences','hero.scroll':'Défiler',
-    'strip.private':'100 % privé','strip.padi':'Instructeurs PADI','strip.langs':'EN · FR · ES','strip.photos':'Photos incluses',
+    'strip.private':'Uniquement des plongées guidées en privé','strip.padi':'Instructeurs PADI','strip.langs':'EN · FR · ES','strip.photos':'Photos incluses',
 
     'about.eyebrow':'Qui sommes-nous',
     'about.title':'La plongée comme elle devrait être',
     'about.lead':'Nous sommes Camille & Julien, deux instructeurs PADI qui ont transformé une passion de toujours pour l’océan en une expérience de plongée différente.',
     'about.p1':'Trilingues (français, anglais, espagnol), nous accueillons des voyageurs du monde entier et adaptons chaque sortie à votre niveau, vos envies et votre rythme. Pas d’horaires pressés, juste de petits groupes 100 % privés et toute notre attention.',
-    'about.f1t':'100 % privé','about.f1d':'Petits groupes, votre rythme, sécurité et confort maximum.',
+    'about.f1t':'100 % privé','about.f1d':'Plongées guidées en privé, petits groupes, votre rythme, sécurité et confort maximum.',
     'about.f2t':'Certifiés PADI','about.f2d':'Deux instructeurs PADI professionnels, passionnés par l’océan',
     'about.f3t':'Souvenirs inclus','about.f3d':'Photos & vidéos non retouchées à chaque sortie, offertes.',
     'about.cta':'Rencontrer l’équipe',
@@ -404,7 +404,7 @@ const I18N = {
 
     'book.eyebrow':'Réservez votre place',
     'book.title':'Réservez votre expérience',
-    'book.lead':'Dites-nous ce que vous aimeriez faire, et nous confirmons tout personnellement sur WhatsApp.',
+    'book.lead':'Dites-nous ce que vous aimeriez faire, et nous confirmons tout personnellement sur WhatsApp — questions, demandes sur mesure ou grands groupes sont toujours les bienvenus.',
     'book.fexp':'Expérience','book.fexpPh':'Choisissez une expérience…',
     'book.fdate':'Date souhaitée','book.fpeople':'Personnes','book.fname':'Votre nom','book.fnamePh':'Prénom & nom',
     'book.fmsg':'Autre chose ?','book.fmsgPh':'Niveau, questions, demandes particulières…',
@@ -602,13 +602,13 @@ const I18N = {
     'hero.sub':'Buceo exclusivo',
     'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Reserva tu inmersión','hero.cta2':'Ver experiencias','hero.scroll':'Desplázate',
-    'strip.private':'100 % privado','strip.padi':'Instructores PADI','strip.langs':'EN · FR · ES','strip.photos':'Fotos incluidas',
+    'strip.private':'Solo inmersiones guiadas en privado','strip.padi':'Instructores PADI','strip.langs':'EN · FR · ES','strip.photos':'Fotos incluidas',
 
     'about.eyebrow':'Quiénes somos',
     'about.title':'Bucear como se debe',
     'about.lead':'Somos Camille & Julien, dos instructores PADI que convirtieron un amor de toda la vida por el océano en una forma distinta de bucear.',
     'about.p1':'Trilingües (español, inglés y francés), recibimos viajeros de todo el mundo y adaptamos cada salida a tu comodidad, tus metas y tu ritmo. Sin horarios apresurados, solo grupos pequeños 100 % privados y toda nuestra atención.',
-    'about.f1t':'100 % privado','about.f1d':'Grupos pequeños, tu ritmo, máxima seguridad y comodidad.',
+    'about.f1t':'100 % privado','about.f1d':'Inmersiones guiadas en privado, grupos pequeños, tu ritmo, máxima seguridad y comodidad.',
     'about.f2t':'Certificados PADI','about.f2d':'Dos instructores PADI profesionales, apasionados por el océano.',
     'about.f3t':'Recuerdos incluidos','about.f3d':'Fotos y videos sin editar en cada salida, gratis.',
     'about.cta':'Conoce al equipo',
@@ -693,7 +693,7 @@ const I18N = {
 
     'book.eyebrow':'Reserva tu lugar',
     'book.title':'Reserva tu experiencia',
-    'book.lead':'Cuéntanos qué te gustaría hacer y lo confirmamos personalmente por WhatsApp.',
+    'book.lead':'Cuéntanos qué te gustaría hacer y lo confirmamos personalmente por WhatsApp — preguntas, peticiones a medida o grupos grandes son siempre bienvenidos.',
     'book.fexp':'Experiencia','book.fexpPh':'Elige una experiencia…',
     'book.fdate':'Fecha preferida','book.fpeople':'Personas','book.fname':'Tu nombre','book.fnamePh':'Nombre y apellido',
     'book.fmsg':'¿Algo más?','book.fmsgPh':'Nivel, preguntas, peticiones especiales…',
@@ -1093,6 +1093,24 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const step=()=>{ if(cachedStep===null) measureStep(); return cachedStep; };
     prev.addEventListener('click', ()=> grid.scrollBy({left:-step(), behavior:'smooth'}));
     next.addEventListener('click', ()=> grid.scrollBy({left:step(), behavior:'smooth'}));
+  });
+
+  // gallery carousel prev/next buttons
+  document.querySelectorAll('.gallery').forEach(carousel=>{
+    const track=carousel.querySelector('.gallery-track');
+    const prev=carousel.querySelector('[data-gallery-prev]');
+    const next=carousel.querySelector('[data-gallery-next]');
+    if(!track || !prev || !next) return;
+    let cachedStep=null;
+    const measureStep=()=>{
+      const item=track.querySelector('figure');
+      const gap=parseFloat(getComputedStyle(track).columnGap) || 0;
+      cachedStep = item ? item.offsetWidth + gap : track.clientWidth * 0.8;
+    };
+    window.addEventListener('resize', ()=>{ cachedStep=null; }, {passive:true});
+    const step=()=>{ if(cachedStep===null) measureStep(); return cachedStep; };
+    prev.addEventListener('click', ()=> track.scrollBy({left:-step(), behavior:'smooth'}));
+    next.addEventListener('click', ()=> track.scrollBy({left:step(), behavior:'smooth'}));
   });
 
   document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
