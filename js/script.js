@@ -887,17 +887,16 @@ function applyLang(lang){
   document.querySelectorAll('[data-i18n-ph]').forEach(el=>{ el.setAttribute('placeholder', t(el.dataset.i18nPh)); });
   document.querySelectorAll('[data-i18n-aria]').forEach(el=>{ el.setAttribute('aria-label', t(el.dataset.i18nAria)); });
   document.querySelectorAll('[data-i18n-content]').forEach(el=>{ el.setAttribute('content', t(el.dataset.i18nContent)); });
-  document.querySelectorAll('.lang button').forEach(b=> b.classList.toggle('active', b.dataset.lang===lang));
 }
 
 /* ---------------- Init ---------------- */
 document.addEventListener('DOMContentLoaded', ()=>{
-  // language
-  let saved='en';
-  try{ saved = localStorage.getItem('sh_lang') || (navigator.language||'en').slice(0,2); }catch(e){}
-  if(!I18N[saved]) saved='en';
-  applyLang(saved);
-  document.querySelectorAll('.lang button').forEach(b=> b.addEventListener('click', ()=>applyLang(b.dataset.lang)));
+  // language: each language now lives at its own URL (/, /fr/, /es/), so the
+  // page's own lang attribute is the source of truth, not browser/localStorage.
+  // applyLang() re-applies that same language on load as a safety net for any
+  // static-content typo, rather than switching it.
+  const pageLang = I18N[document.documentElement.lang] ? document.documentElement.lang : 'en';
+  applyLang(pageLang);
 
   // re-align to the URL hash once the whole page (images, fonts, translated
   // text) has finished loading and settled — page content loading after the
