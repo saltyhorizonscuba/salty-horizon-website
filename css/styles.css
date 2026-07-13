@@ -529,13 +529,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   }
   .nav-links.open{transform:none}
   .nav-links a{font-size:1.1rem}
-  .nav-item{display:flex;flex-direction:column;align-items:flex-start;gap:.8rem}
-  .nav-dropdown{
-    position:static;opacity:1;visibility:visible;transform:none;
-    background:transparent;box-shadow:none;padding:0 0 0 1rem;margin:0;
-    display:flex;flex-direction:column;gap:.7rem;min-width:0;
-  }
-  .nav-dropdown a{padding:0;color:#cdd9de;font-size:.9rem}
+  .nav-dropdown{display:none}
   .burger{display:flex;z-index:70}
   .field-row{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
