@@ -343,7 +343,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .crumbs a:hover{color:var(--sand)}
 
 /* experience detail rows */
-.exp-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center;margin-bottom:clamp(2.5rem,5vw,4.5rem);scroll-margin-top:110px}
+.exp-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:start;margin-bottom:clamp(2.5rem,5vw,4.5rem);scroll-margin-top:110px}
 .exp-actions{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
 .btn--outline{background:transparent;color:var(--teal);border:1.5px solid var(--teal);box-shadow:none}
 .btn--outline:hover{background:rgba(31,163,181,.08);box-shadow:none;transform:translateY(-2px)}
@@ -368,7 +368,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   .schedule-summary,.incl-summary{cursor:default;pointer-events:none}
   .schedule-summary::after,.incl-summary::after{display:none}
   .schedule-toggle .schedule-content,.incl-toggle .incl-content{display:block!important}
-  .incl-toggle{margin-bottom:0}
+  .incl-toggle{margin-bottom:1.4rem}
 }
 @media (max-width:980px){
   .course-schedule .exp-details{border-top:none;margin-top:0;padding-top:0}
