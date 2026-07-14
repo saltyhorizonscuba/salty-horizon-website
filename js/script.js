@@ -3,6 +3,29 @@
    ============================================================ */
 const WA_PHONE = '50687759641'; // WhatsApp number, international format
 
+/* ---------------- Google Ads conversion tracking (WhatsApp clicks) ---------------- */
+// Fires a Google Ads conversion event, then redirects to `url`. If gtag.js
+// didn't load (ad blockers, network) or its callback never fires, a short
+// timeout still lets the user through — a lost conversion beats a dead link.
+function gtag_report_conversion(url, openInNewTab){
+  let navigated = false;
+  const go = ()=>{
+    if(navigated) return;
+    navigated = true;
+    if(openInNewTab) window.open(url, '_blank');
+    else window.location = url;
+  };
+  if(typeof gtag !== 'function'){ go(); return false; }
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18323127988/lGLDCLXTuNAcELT9kqFE',
+    'value': 1.0,
+    'currency': 'USD',
+    'event_callback': go
+  });
+  setTimeout(go, 1000);
+  return false;
+}
+
 /* ---------------- Translations ---------------- */
 const I18N = {
   en:{
@@ -1011,21 +1034,31 @@ document.addEventListener('DOMContentLoaded', ()=>{
       if(name) msg+='\n'+L.name+': '+name;
       if(note) msg+='\n'+L.note+': '+note;
       const waUrl='https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(msg);
-      const waLink=document.createElement('a');waLink.href=waUrl;waLink.target='_blank';waLink.rel='noopener';document.body.appendChild(waLink);waLink.click();waLink.remove();
+      gtag_report_conversion(waUrl, true);
     });
   }
 
   // charter WhatsApp buttons
   document.querySelectorAll('[data-wa-charter]').forEach(b=>{
-    b.addEventListener('click',(e)=>{ e.preventDefault(); window.open('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.charter')),'_blank'); });
+    b.addEventListener('click',(e)=>{ e.preventDefault(); gtag_report_conversion('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.charter')), true); });
   });
 
   // Course "more info" WhatsApp buttons
   document.querySelectorAll('[data-wa-aowinfo]').forEach(b=>{
-    b.addEventListener('click',(e)=>{ e.preventDefault(); window.open('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.aowInfo')),'_blank'); });
+    b.addEventListener('click',(e)=>{ e.preventDefault(); gtag_report_conversion('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.aowInfo')), true); });
   });
   document.querySelectorAll('[data-wa-owinfo]').forEach(b=>{
-    b.addEventListener('click',(e)=>{ e.preventDefault(); window.open('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.owInfo')),'_blank'); });
+    b.addEventListener('click',(e)=>{ e.preventDefault(); gtag_report_conversion('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.owInfo')), true); });
+  });
+
+  // Every static WhatsApp link in the page markup (floating button, footer,
+  // contact section, etc.) — one delegated listener catches all of them,
+  // including any added to the DOM later, so no per-link wiring is needed.
+  document.addEventListener('click', (e)=>{
+    const a = e.target.closest('a[href^="https://wa.me/"]');
+    if(!a) return;
+    e.preventDefault();
+    gtag_report_conversion(a.href, a.target === '_blank');
   });
 
   // generic "book this experience" links: prefill select + scroll
