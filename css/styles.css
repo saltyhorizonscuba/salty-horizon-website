@@ -159,12 +159,12 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 
 /* language switch */
 .lang{display:flex;align-items:center;gap:.15rem;background:rgba(255,255,255,.12);border-radius:999px;padding:.2rem}
-.lang button{
+.lang a{
   font-family:var(--font-display);font-weight:600;font-size:.7rem;letter-spacing:.05em;
-  color:#dfeaee;background:transparent;border:0;cursor:pointer;
+  color:#dfeaee;background:transparent;border:0;cursor:pointer;text-decoration:none;
   padding:.34rem .6rem;border-radius:999px;transition:background .25s,color .25s;
 }
-.lang button.active{background:var(--sand);color:#1a2c12}
+.lang a.active{background:var(--sand);color:#1a2c12}
 
 .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:.4rem}
 .burger span{width:26px;height:2px;background:#fff;border-radius:2px;transition:transform .3s,opacity .3s}
