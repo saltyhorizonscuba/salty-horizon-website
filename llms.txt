@@ -5,10 +5,26 @@
 ## Pages
 
 - [Home](https://www.saltyhorizondiving.com/): overview, about the instructors, gallery, guest reviews, booking form, contact details
-- [Experiences](https://www.saltyhorizondiving.com/experiences): Intro to Scuba (Pool) from $80, Discover Scuba Diving from $170, Fun Dive at the Catalina Islands from $130, Fun Dive at the Bat Islands (bull sharks, contact for pricing), Private Snorkeling from $80
-- [PADI Courses](https://www.saltyhorizondiving.com/padi-courses): PADI Open Water Diver certification from $540, PADI Advanced Open Water Diver from $500
-- [Private Charters](https://www.saltyhorizondiving.com/private-charters): fully customized private boat days combining scuba, snorkeling, paddle boarding, e-foil and jet ski
-- [Scuba Diving in Tamarindo FAQ](https://www.saltyhorizondiving.com/scuba-diving-tamarindo-faq): 43 questions and answers on diving at the Catalina Islands and Bat Islands, marine life, manta ray and whale season, diving conditions, certification and booking
+- [Experiences](https://www.saltyhorizondiving.com/experiences.html): Intro to Scuba (Pool) from $80, Discover Scuba Diving from $170, Fun Dive at the Catalina Islands from $130, Fun Dive at the Bat Islands (bull sharks, contact for pricing), Private Snorkeling from $80
+- [PADI Courses](https://www.saltyhorizondiving.com/padi-courses.html): PADI Open Water Diver certification from $540, PADI Advanced Open Water Diver from $500
+- [Private Charters](https://www.saltyhorizondiving.com/private-charters.html): fully customized private boat days combining scuba, snorkeling, paddle boarding, e-foil and jet ski
+- [Scuba Diving in Tamarindo FAQ](https://www.saltyhorizondiving.com/scuba-diving-tamarindo-faq.html): 43 questions and answers on diving at the Catalina Islands and Bat Islands, marine life, manta ray and whale season, diving conditions, certification and booking
+
+## Other languages
+
+The pages above are also available in full, natively, in French and Spanish, at their own URLs:
+- French: https://www.saltyhorizondiving.com/fr/ (and /fr/experiences.html, /fr/padi-courses.html, /fr/private-charters.html, /fr/scuba-diving-tamarindo-faq.html)
+- Spanish: https://www.saltyhorizondiving.com/es/ (and /es/experiences.html, /es/padi-courses.html, /es/private-charters.html, /es/scuba-diving-tamarindo-faq.html)
+
+## Journal (blog)
+
+Sourced articles on diving, marine life and Tamarindo, in English only: [The Salty Horizon Journal](https://www.saltyhorizondiving.com/blog/index.html)
+
+- [Where to Dive in Costa Rica: Comparing Its Very Different Underwater Worlds](https://www.saltyhorizondiving.com/blog/costa-rica-dive-destinations-comparison.html): Isla del Coco, Caño Island, the Catalinas and the Bat Islands compared — distance, cost, certification requirements and what you'll actually see.
+- [The Scientists Tracking Costa Rica's Giant Manta Rays](https://www.saltyhorizondiving.com/blog/mantas-costa-rica-manta-ray-research.html): inside the Mantas Costa Rica research project — acoustic telemetry, photo-ID and satellite tags, and why the species was just uplisted to Endangered.
+- [What to Do in Tamarindo Beyond Diving](https://www.saltyhorizondiving.com/blog/things-to-do-tamarindo-beyond-diving.html): for the non-diver in your group — leatherback turtles at Las Baulas National Marine Park, surf breaks, mangrove estuary kayaking, sunset sailing.
+- [How to Photograph Whitetip Reef Sharks and Sea Turtles](https://www.saltyhorizondiving.com/blog/photographing-whitetip-sharks-sea-turtles.html): a sourced guide to shooting Tamarindo's two most-photographed, most-forgiving dive subjects responsibly.
+- [The Sea Turtles You Might Meet Diving Off Tamarindo](https://www.saltyhorizondiving.com/blog/sea-turtles-tamarindo-species-guide.html): olive ridley, green and hawksbill turtles — diet, nesting season and habits.
 
 ## Facts
 
