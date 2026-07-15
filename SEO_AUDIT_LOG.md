@@ -30,4 +30,33 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 
 ---
 
+## 2026-07-13/14 — Architecture multilingue réelle, tracking, hygiène technique
+
+**Contexte** : partie de cette période n'a pas été menée par le sous-agent `head-of-seo-geo` lui-même mais par la session principale (l'agent n'était pas invocable via l'outil Agent pendant cette session — problème connu, à revérifier). Cette entrée reconstitue le travail a posteriori lors de la première revue hebdomadaire du SEO Lead (2026-07-14), pour que l'historique reste complet malgré ça.
+
+**Déclencheur** : l'utilisateur a signalé que les 4 balises hreflang (en/fr/es/x-default) pointaient toutes vers la même URL anglaise — confirmé par `curl` sur le site en prod.
+
+**Corrections appliquées (2026-07-13)** :
+1. Construction d'une vraie architecture multilingue statique : `fr/` et `es/` créés en miroir des 5 pages EN (`index.html`, `experiences.html`, `padi-courses.html`, `private-charters.html`, `scuba-diving-tamarindo-faq.html`), avec `<html lang>` correct, canonical propre, hreflang réciproque et résolutif, JSON-LD traduit (`WebPage`/`BreadcrumbList`/`FAQPage`/`Course`), et chemins d'assets corrigés pour le sous-répertoire.
+2. Décision : `reviewBody` (avis clients) reste non traduit dans les 3 langues — citations attribuées à de vraies personnes. FAQ (43 Q/R) entièrement traduite. Blog reste anglais uniquement (décision utilisateur), lien nav fr/es vers `../blog/`.
+3. Sélecteur de langue transformé de bouton JS (changement en place) en vrais liens `<a href>` vers l'URL sœur.
+4. `js/script.js` : `applyLang()`/`I18N` conservés comme filet de sécurité (ré-applique la langue de la page au chargement) plutôt que supprimés — réduit le risque par rapport à une réécriture complète.
+5. `sitemap.xml` : 10 nouvelles URLs (5 fr + 5 es) ajoutées, puis 6 pages du blog qui n'y figuraient pas du tout (repéré lors d'une vérification demandée par l'utilisateur le 2026-07-13, corrigé le même jour).
+6. Bug détecté et corrigé en cours de route : le script de traduction mécanique ratait silencieusement les valeurs du dictionnaire `I18N` écrites entre guillemets doubles (nécessaire quand le texte contient une apostrophe) — corrigé avant que ça n'affecte les pages déjà générées (vérifié : seule la page FAQ utilisait ces clés).
+
+**Corrections appliquées (2026-07-14)** :
+7. Tracking GA4 (`G-MGJK95GCH7`) ajouté sur les 21 pages, puis conversion Google Ads (`AW-18323127988/lGLDCLXTuNAcELT9kqFE`) fusionnée dans le même chargement `gtag.js` (pas de second tag, conforme à la consigne Google "un seul tag par page"). `gtag_report_conversion()` ajouté dans `js/script.js`, avec repli automatique (redirection directe) si `gtag` n'est pas chargé ou si son callback ne répond jamais sous 1s — pour qu'un bloqueur de pub ne puisse jamais transformer un clic WhatsApp en lien mort. Couvre les 4 flux JS existants + un écouteur délégué unique pour les 54 liens `<a href="wa.me/...">` statiques du HTML (21 pages), plutôt que d'instrumenter chaque lien individuellement.
+8. Favicon remplacé : l'ancien `favicon.png` était le logo complet avec texte ("SALTY HORIZON EXCLUSIVE SCUBA DIVING"), illisible en taille favicon — cause probable de l'icône générique affichée par Google Search au lieu d'une vraie icône. Remplacé par un rendu du `favicon.svg` existant (vague + soleil/lune, déjà dans le repo mais jamais utilisé), testé visuellement lisible à 48×48px. `favicon.svg` ajouté en `<link rel="icon">` sur les 21 pages en plus du PNG.
+9. 9 images recompressées (qualité JPEG ramenée à 85, mêmes dimensions) : `intro-pool.jpg`, `catalinas.jpg`, `fundive-home.jpg`, `colby.jpg`, `courses.jpg`, `about.jpg`, `charter-sunset.jpg`, `julien.jpg`, `sunrays.jpg` — ~785 Ko économisés au total, aucune perte visible constatée. 11 autres images testées avec le même traitement n'ont montré aucun gain réel (1% ou moins, `hero.jpg` a même grossi) avec l'encodeur JPEG disponible (System.Drawing/GDI+, pas d'ImageMagick ni de outil équivalent sur la machine) — reverties pour éviter une perte de génération sans bénéfice.
+10. **Revue hebdomadaire SEO Lead (2026-07-14)** — 3 priorités identifiées :
+    - `llms.txt` corrigé : URLs sans extension `.html` (aucune règle de réécriture dans `.htaccess` pour les justifier) remplacées par les URLs `.html` vérifiées ; sections `/fr/`/`es/` et Journal (blog, 6 pages) ajoutées — absentes du fichier alors qu'il est lu directement par les assistants IA pour décider quoi citer.
+    - `SEO_PROJECT_CONTEXT.md`/`AMELIORATIONS.md` mis à jour pour refléter l'architecture multilingue réelle (étaient encore périmés, décrivaient l'ancien système JS mono-URL comme actuel).
+    - `preconnect` manquant vers `googletagmanager.com` et `wa.me` — identifié, **pas encore corrigé** (voir `AMELIORATIONS.md`).
+
+**Fichiers créés** : `fr/index.html`, `fr/experiences.html`, `fr/padi-courses.html`, `fr/private-charters.html`, `fr/scuba-diving-tamarindo-faq.html`, `es/index.html`, `es/experiences.html`, `es/padi-courses.html`, `es/private-charters.html`, `es/scuba-diving-tamarindo-faq.html`, `googlef4121f0e79961b40.html` (vérification Google Search Console, hors périmètre SEO technique).
+
+**Encore ouvert** : contenu de `private-charters.html` (inchangé, bloqué faute de données utilisateur), mise à jour périodique d'`aggregateRating`, statut avis par avis, `preconnect` googletagmanager.com/wa.me (point 10 ci-dessus).
+
+---
+
 *Format pour les prochaines entrées : date, contexte de la mission, constats (avec méthode de vérification), corrections appliquées, décisions documentées sans code, points laissés ouverts et pourquoi.*
