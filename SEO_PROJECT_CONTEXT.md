@@ -125,10 +125,13 @@ Corrigés le 2026-07-13/14 (détails dans `SEO_AUDIT_LOG.md`) :
 5. ~~**FR/ES invisibles au premier rendu HTML**~~ → même correction que le point 4 : le HTML brut de `fr/*.html`/`es/*.html` contient le contenu traduit complet, plus besoin d'exécuter le JS.
 6. ~~**`llms.txt` : URLs sans extension, pages fr/es et blog absentes**~~ → corrigé le 2026-07-14 (voir section 6). Repéré lors de la revue hebdomadaire, pas dans l'audit du 12/07.
 
-Encore ouverts (nécessitent une donnée ou une décision de l'utilisateur — voir backlog dans `AMELIORATIONS.md`) :
+Corrigé le 2026-07-14 (suite) :
 
-7. **`private-charters.html` nettement plus courte** que les 4 autres pages (une intro + 3 cartes courtes, pas de détails bateau/capacité/itinéraire/tarif indicatif) — confirmé par lecture complète du fichier. Toujours vrai au 2026-07-14, y compris sur ses versions fr/es (même structure clonée). Bloqué faute de données réelles (capacité bateau, itinéraires, tarif indicatif) que seul l'utilisateur peut fournir.
-8. **Pas de `preconnect` vers `googletagmanager.com` ni `wa.me`** (repéré 2026-07-14) — friction réseau évitable sur le chemin de conversion WhatsApp, qui est justement suivi par tracking depuis le 14/07. Faible effort, pas encore fait au moment de la rédaction de cette section (voir `SEO_AUDIT_LOG.md` pour le statut à jour).
+7. ~~**`preconnect` manquant vers `googletagmanager.com`/`wa.me`**~~ → `<link rel="preconnect">` ajouté vers les deux origines sur les 21 pages, juste après les préconnexions fonts existantes.
+
+Encore ouvert (nécessite une donnée de l'utilisateur — voir backlog dans `AMELIORATIONS.md`) :
+
+8. **`private-charters.html` nettement plus courte** que les 4 autres pages (une intro + 3 cartes courtes, pas de détails bateau/capacité/itinéraire/tarif indicatif) — confirmé par lecture complète du fichier. Toujours vrai au 2026-07-14, y compris sur ses versions fr/es (même structure clonée). Bloqué faute de données réelles (capacité bateau, itinéraires, tarif indicatif) que seul l'utilisateur peut fournir.
 
 *Remarque de fiabilité : un audit SEO/GEO antérieur avait été consigné uniquement dans la mémoire de session de Claude (hors dépôt). En comparant cette mémoire à l'état réel actuel des fichiers, deux écarts ont été trouvés : une date de commit citée comme "2026-07-13" qui n'existe pas dans l'historique Git réel (le commit correspondant, `6d7e1d7`, est daté du 2026-07-10), et un point classé "encore ouvert" (URLs canoniques soi-disant sans extension `.html`) qui s'est révélé faux — toutes les URLs vérifiées utilisent bien `.html`. D'où l'intérêt de ce fichier versionné dans le dépôt plutôt qu'une mémoire d'agent invisible et non diffable.*
 

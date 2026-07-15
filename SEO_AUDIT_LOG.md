@@ -51,11 +51,11 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 10. **Revue hebdomadaire SEO Lead (2026-07-14)** — 3 priorités identifiées :
     - `llms.txt` corrigé : URLs sans extension `.html` (aucune règle de réécriture dans `.htaccess` pour les justifier) remplacées par les URLs `.html` vérifiées ; sections `/fr/`/`es/` et Journal (blog, 6 pages) ajoutées — absentes du fichier alors qu'il est lu directement par les assistants IA pour décider quoi citer.
     - `SEO_PROJECT_CONTEXT.md`/`AMELIORATIONS.md` mis à jour pour refléter l'architecture multilingue réelle (étaient encore périmés, décrivaient l'ancien système JS mono-URL comme actuel).
-    - `preconnect` manquant vers `googletagmanager.com` et `wa.me` — identifié, **pas encore corrigé** (voir `AMELIORATIONS.md`).
+    - `preconnect` manquant vers `googletagmanager.com` et `wa.me` — identifié puis **corrigé le même jour** : `<link rel="preconnect">` ajouté vers les deux origines sur les 21 pages, juste après les préconnexions fonts existantes.
 
 **Fichiers créés** : `fr/index.html`, `fr/experiences.html`, `fr/padi-courses.html`, `fr/private-charters.html`, `fr/scuba-diving-tamarindo-faq.html`, `es/index.html`, `es/experiences.html`, `es/padi-courses.html`, `es/private-charters.html`, `es/scuba-diving-tamarindo-faq.html`, `googlef4121f0e79961b40.html` (vérification Google Search Console, hors périmètre SEO technique).
 
-**Encore ouvert** : contenu de `private-charters.html` (inchangé, bloqué faute de données utilisateur), mise à jour périodique d'`aggregateRating`, statut avis par avis, `preconnect` googletagmanager.com/wa.me (point 10 ci-dessus).
+**Encore ouvert** : contenu de `private-charters.html` (inchangé, bloqué faute de données utilisateur), mise à jour périodique d'`aggregateRating`, statut avis par avis.
 
 ---
 
