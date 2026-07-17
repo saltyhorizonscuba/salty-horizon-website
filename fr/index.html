@@ -110,7 +110,7 @@
 <!-- HEADER -->
 <header class="header">
   <div class="container nav">
-    <a href="#top" class="brand brand--logo" aria-label="Salty Horizon — Exclusive Scuba Diving"><img src="../images/logo.png?v=2" width="1074" height="400" alt="Salty Horizon — Exclusive Scuba Diving"></a>
+    <a href="#top" class="brand brand--logo" aria-label="Salty Horizon — Exclusive Scuba Diving"><picture><source type="image/webp" srcset="../images/logo.webp?v=1"><img src="../images/logo.png?v=2" width="1074" height="400" alt="Salty Horizon — Exclusive Scuba Diving"></picture></a>
     <nav class="nav-links" aria-label="Primary">
       <div class="nav-item">
         <a href="experiences.html" data-i18n="nav.experiences">Expériences</a>
@@ -146,11 +146,13 @@
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="hero__bg"><picture>
+    <source media="(max-width: 760px)" type="image/webp" srcset="../images/hero-mobile.webp?v=1">
     <source media="(max-width: 760px)" srcset="../images/hero-mobile.jpg?v=2">
+    <source type="image/webp" srcset="../images/manta.webp?v=1">
     <img src="../images/manta.jpg?v=2" fetchpriority="high" width="2400" height="1350" alt="Giant manta ray gliding through clear water off Tamarindo, Costa Rica">
   </picture></div>
   <div class="hero__inner">
-    <h1><img class="hero__logo" src="../images/hero-logo.png" width="1627" height="500" alt="Salty Horizon" fetchpriority="high"></h1>
+    <h1><picture><source type="image/webp" srcset="../images/hero-logo.webp?v=1"><img class="hero__logo" src="../images/hero-logo.png" width="1627" height="500" alt="Salty Horizon" fetchpriority="high"></picture></h1>
     <span class="eyebrow" data-i18n="hero.eyebrow">Tamarindo · Costa Rica</span>
     <p class="hero__sub" data-i18n="hero.sub">Plongée sous-marine exclusive</p>
     <p class="hero__tag" data-i18n="hero.tag">A rhythm defined by you.</p>
@@ -174,7 +176,7 @@
 <section class="section" id="about">
   <div class="container about-grid">
     <div class="about-media" data-reveal>
-      <img loading="lazy" src="../images/about.jpg?v=3" style="aspect-ratio:auto" width="1338" height="1175" alt="Camille and Julien, PADI dive instructors, diving together in Tamarindo, Costa Rica">
+      <picture><source type="image/webp" srcset="../images/about.webp?v=1"><img loading="lazy" src="../images/about.jpg?v=3" style="aspect-ratio:auto" width="1338" height="1175" alt="Camille and Julien, PADI dive instructors, diving together in Tamarindo, Costa Rica"></picture>
     </div>
     <div class="about-copy" data-reveal data-delay="1">
       <span class="eyebrow" data-i18n="about.eyebrow">Qui sommes-nous</span>
@@ -202,32 +204,32 @@
     <div class="exp-grid">
       <a class="exp-card" href="experiences.html#intro" data-reveal>
         <span class="tag" data-i18n="label.beginner">Débutant</span>
-        <img loading="lazy" src="../images/intro-pool.jpg?v=3" width="1500" height="1001" alt="Beginner trying scuba in a calm pool with a private instructor in Tamarindo">
+        <picture><source type="image/webp" srcset="../images/intro-pool.webp?v=1"><img loading="lazy" src="../images/intro-pool.jpg?v=3" width="1500" height="1001" alt="Beginner trying scuba in a calm pool with a private instructor in Tamarindo"></picture>
         <div class="exp-card__body"><h3 data-i18n="card.intro.t">Initiation Scuba (piscine)</h3><p data-i18n="card.intro.d">Découvrez les sensations de la plongée sous-marine lors d’une initiation en piscine, idéale pour une première approche en toute sécurité. Accompagné d’un instructeur, vous apprendrez à utiliser l’équipement, à respirer sous l’eau et à maîtriser les bases de la plongée dans un environnement calme et sécurisé. Une expérience ludique et rassurante, parfaite avant de se lancer en mer.</p><span class="price"><small data-i18n="price.from">dès</small> $80</span></div>
       </a>
       <a class="exp-card" href="experiences.html#discover" data-reveal data-delay="1">
         <span class="tag" data-i18n="label.popular">Le plus prisé</span>
-        <img loading="lazy" src="../images/dsd.jpg?v=2" width="1600" height="1114" alt="First-time diver on a guided ocean Discover Scuba dive in Tamarindo">
+        <picture><source type="image/webp" srcset="../images/dsd.webp?v=1"><img loading="lazy" src="../images/dsd.jpg?v=2" width="1600" height="1114" alt="First-time diver on a guided ocean Discover Scuba dive in Tamarindo"></picture>
         <div class="exp-card__body"><h3 data-i18n="card.discover.t">Baptême de plongée</h3><p data-i18n="card.discover.d">Découvrez la plongée sous-marine avec le Discover Scuba Diving, une initiation accessible aux débutants, sans certification préalable. Après un briefing avec votre instructeur, profitez de deux plongées d’environ 45 minutes à 1 heure pour explorer les fonds marins et observer la richesse de la vie marine du Costa Rica : poissons tropicaux, tortues marines, raies, murènes et, selon la saison, les majestueuses raies manta. Une première expérience inoubliable, en toute sécurité.</p><span class="price"><small data-i18n="price.from">dès</small> $170</span></div>
       </a>
       <a class="exp-card" href="experiences.html#catalinas" data-reveal data-delay="2">
         <span class="tag" data-i18n="label.certified">Certifié</span>
-        <img loading="lazy" src="../images/fundive-home.jpg?v=3" width="1206" height="1561" alt="Diver enjoying a private fun dive at the Catalina Islands, Costa Rica">
+        <picture><source type="image/webp" srcset="../images/fundive-home.webp?v=1"><img loading="lazy" src="../images/fundive-home.jpg?v=3" width="1206" height="1561" alt="Diver enjoying a private fun dive at the Catalina Islands, Costa Rica"></picture>
         <div class="exp-card__body"><h3 data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</h3><p data-i18n="card.catalinas.d">Deux plongées privées guidées aux îles Las Catalinas, l’une des destinations de plongée les plus emblématiques du Costa Rica. Explorez les formations rocheuses volcaniques et rencontrez une vie marine incroyable : raies mantas géantes (selon la saison), raies aigles, requins de récif, tortues de mer, bancs de poissons tropicaux et une multitude d’espèces macro. Parfait pour les plongeurs certifiés en quête d’aventures sous-marines inoubliables.</p><span class="price"><small data-i18n="price.from">dès</small> $130</span></div>
       </a>
       <a class="exp-card" href="experiences.html#bat" data-reveal>
         <span class="tag season" data-i18n="label.season">Mai–Nov</span>
-        <img loading="lazy" src="../images/bull-shark.jpg?v=2" width="1000" height="1500" alt="Bull shark at the Bat Islands, Costa Rica — advanced scuba dive">
+        <picture><source type="image/webp" srcset="../images/bull-shark.webp?v=1"><img loading="lazy" src="../images/bull-shark.jpg?v=2" width="1000" height="1500" alt="Bull shark at the Bat Islands, Costa Rica — advanced scuba dive"></picture>
         <div class="exp-card__body"><h3 data-i18n="card.bat.t">Fun Dive · Bat Islands</h3><p data-i18n="card.bat.d">Bat Islands (Islas Murciélagos), au large du parc national Santa Rosa (Guanacaste), offrent l’une des plongées les plus mythiques du Costa Rica. Accessibles de mai à novembre, elles permettent aux plongeurs expérimentés d’observer les impressionnants requins bouledogues dans leur habitat naturel. Une expérience intense au cœur d’une vie marine exceptionnelle.</p><span class="price" data-i18n="price.contact">Nous contacter</span></div>
       </a>
       <a class="exp-card" href="experiences.html#snorkel" data-reveal data-delay="1">
         <span class="tag" data-i18n="label.allLevels">Tous niveaux</span>
-        <img loading="lazy" src="../images/snorkel.jpg?v=2" width="1200" height="890" alt="Private snorkeling around the Catalina Islands near Tamarindo">
+        <picture><source type="image/webp" srcset="../images/snorkel.webp?v=1"><img loading="lazy" src="../images/snorkel.jpg?v=2" width="1200" height="890" alt="Private snorkeling around the Catalina Islands near Tamarindo"></picture>
         <div class="exp-card__body"><h3 data-i18n="card.snorkel.t">Snorkeling</h3><p data-i18n="card.snorkel.d">Découvrez les fonds marins des îles Catalina lors de deux sessions de snorkeling de 45 minutes à 1 heure, accompagnées d’un guide. Les eaux de l’océan Pacifique où évoluent poissons tropicaux, tortues marines, raies et, selon la saison, les majestueuses raies manta. Une activité accessible à tous, idéale pour observer la richesse de la vie marine du Costa Rica.</p><span class="price"><small data-i18n="price.from">dès</small> $80</span></div>
       </a>
       <a class="exp-card" href="padi-courses.html" data-reveal data-delay="2">
         <span class="tag" data-i18n="label.allLevels">Tous niveaux</span>
-        <img loading="lazy" src="../images/courses.jpg?v=3" width="1500" height="1000" alt="PADI scuba course in Tamarindo, Costa Rica">
+        <picture><source type="image/webp" srcset="../images/courses.webp?v=1"><img loading="lazy" src="../images/courses.jpg?v=3" width="1500" height="1000" alt="PADI scuba course in Tamarindo, Costa Rica"></picture>
         <div class="exp-card__body"><h3 data-i18n="card.courses.t">Cours PADI</h3><p data-i18n="card.courses.d">Développez vos compétences et progressez à votre rythme grâce à nos formations PADI, du Open Water Diver au Advanced Open Water Diver. Que vous souhaitiez obtenir votre première certification ou gagner en autonomie sous l’eau, nos instructeurs vous accompagnent tout au long de votre apprentissage pour faire de vous un plongeur plus confiant, compétent et expérimenté.</p><span class="price" data-i18n="price.request">sur demande</span></div>
       </a>
     </div>
@@ -255,7 +257,7 @@
       </div>
     </div>
     <div class="about-media" data-reveal data-delay="1">
-      <img loading="lazy" src="../images/g2.jpg?v=2" width="1100" height="1955" alt="Giant manta ray with divers at the Catalina Islands, Costa Rica">
+      <picture><source type="image/webp" srcset="../images/g2.webp?v=1"><img loading="lazy" src="../images/g2.jpg?v=2" width="1100" height="1955" alt="Giant manta ray with divers at the Catalina Islands, Costa Rica"></picture>
     </div>
   </div>
 </section>
@@ -282,15 +284,15 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
       </button>
       <div class="gallery-track">
-      <figure><img loading="lazy" src="../images/g4.jpg?v=4" width="1500" height="844" alt="Whale shark swimming off the coast of Costa Rica"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
-      <figure><img loading="lazy" src="../images/bull-shark.jpg?v=2" width="1000" height="1500" alt="Bull shark at the Bat Islands"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
-      <figure><img loading="lazy" src="../images/g1.jpg?v=4" width="1500" height="844" alt="Spotted eagle ray gliding over the reef near Tamarindo"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
-      <figure><img loading="lazy" src="../images/g2.jpg?v=2" width="1100" height="1955" alt="Giant manta ray with divers, Catalina Islands"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
-      <figure><img loading="lazy" src="../images/g3.jpg?v=4" width="1500" height="935" alt="Diver and nurse shark on a reef in Costa Rica"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
-      <figure><img loading="lazy" src="../images/sunrays.jpg?v=3" width="1500" height="903" alt="Sun rays through clear blue water off Tamarindo"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
-      <figure><img loading="lazy" src="../images/whitetip-pair.jpg?v=2" width="1138" height="1500" alt="Diver above two whitetip reef sharks resting on the sea floor"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
-      <figure><img loading="lazy" src="../images/school-fish.jpg?v=2" width="1500" height="1001" alt="Large school of tropical fish off Tamarindo"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
-      <figure><img loading="lazy" src="../images/barracuda.jpg?v=2" width="972" height="1500" alt="School of barracuda off Tamarindo, Costa Rica"><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
+      <figure><picture><source type="image/webp" srcset="../images/g4.webp?v=1"><img loading="lazy" src="../images/g4.jpg?v=4" width="1500" height="844" alt="Whale shark swimming off the coast of Costa Rica"></picture><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
+      <figure><picture><source type="image/webp" srcset="../images/bull-shark.webp?v=1"><img loading="lazy" src="../images/bull-shark.jpg?v=2" width="1000" height="1500" alt="Bull shark at the Bat Islands"></picture><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
+      <figure><picture><source type="image/webp" srcset="../images/g1.webp?v=1"><img loading="lazy" src="../images/g1.jpg?v=4" width="1500" height="844" alt="Spotted eagle ray gliding over the reef near Tamarindo"></picture><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
+      <figure><picture><source type="image/webp" srcset="../images/g2.webp?v=1"><img loading="lazy" src="../images/g2.jpg?v=2" width="1100" height="1955" alt="Giant manta ray with divers, Catalina Islands"></picture><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
+      <figure><picture><source type="image/webp" srcset="../images/g3.webp?v=1"><img loading="lazy" src="../images/g3.jpg?v=4" width="1500" height="935" alt="Diver and nurse shark on a reef in Costa Rica"></picture><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
+      <figure><picture><source type="image/webp" srcset="../images/sunrays.webp?v=1"><img loading="lazy" src="../images/sunrays.jpg?v=3" width="1500" height="903" alt="Sun rays through clear blue water off Tamarindo"></picture><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
+      <figure><picture><source type="image/webp" srcset="../images/whitetip-pair.webp?v=1"><img loading="lazy" src="../images/whitetip-pair.jpg?v=2" width="1138" height="1500" alt="Diver above two whitetip reef sharks resting on the sea floor"></picture><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
+      <figure><picture><source type="image/webp" srcset="../images/school-fish.webp?v=1"><img loading="lazy" src="../images/school-fish.jpg?v=2" width="1500" height="1001" alt="Large school of tropical fish off Tamarindo"></picture><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
+      <figure><picture><source type="image/webp" srcset="../images/barracuda.webp?v=1"><img loading="lazy" src="../images/barracuda.jpg?v=2" width="972" height="1500" alt="School of barracuda off Tamarindo, Costa Rica"></picture><span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4M11 8v6M8 11h6"/></svg></span></figure>
       </div>
       <button type="button" class="gallery-nav gallery-nav--next" data-gallery-next aria-label="Next photos">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
@@ -309,11 +311,11 @@
     </div>
     <div class="team-grid">
       <article class="member" data-reveal>
-        <img loading="lazy" src="../images/camille.jpg?v=4" width="918" height="1500" alt="Camille Segonne, PADI OWSI scuba instructor in Tamarindo">
+        <picture><source type="image/webp" srcset="../images/camille.webp?v=1"><img loading="lazy" src="../images/camille.jpg?v=4" width="918" height="1500" alt="Camille Segonne, PADI OWSI scuba instructor in Tamarindo"></picture>
         <div class="member__body"><h3>Camille Segonne</h3><div class="role" data-i18n="camille.role">PADI OWSI & MSDT</div><p class="member-spec" data-i18n="camille.spec">Spécialités : AWARE Shark Conservation, Deep, Digital Underwater Photography, Dive Against Debris, Nitrox, Wreck, AWARE Coral Reef Conservation, PADI AWARE, Peak Performance Buoyancy, EFR</p><p data-i18n="camille.bio">Élevée entre la jungle et l’océan du Costa Rica, Camille plonge depuis l’âge de 14 ans. Passionnée par les requins et la conservation marine, elle adore partager le monde sous-marin tout en inspirant les autres à le protéger</p></div>
       </article>
       <article class="member" data-reveal data-delay="1">
-        <img loading="lazy" src="../images/julien.jpg?v=3" width="1000" height="1500" alt="Julien Escales, PADI OWSI scuba instructor in Tamarindo">
+        <picture><source type="image/webp" srcset="../images/julien.webp?v=1"><img loading="lazy" src="../images/julien.jpg?v=3" width="1000" height="1500" alt="Julien Escales, PADI OWSI scuba instructor in Tamarindo"></picture>
         <div class="member__body"><h3>Julien Escales</h3><div class="role" data-i18n="julien.role">PADI OWSI</div><p class="member-spec" data-i18n="julien.spec">Spécialités : AWARE Coral Reef Conservation Instructor, Dive Against Debris, Emergency Oxygen Provider Instructor, Nitrox, PADI AWARE, Peak Performance Buoyancy Instructor</p><p data-i18n="julien.bio">Issu d’une famille d’instructeurs de plongée en France et en Guadeloupe, Julien baigne dans l’univers de la plongée depuis tout petit. Il a pris sa première respiration sous l’eau à 13 ans et se passionne depuis pour l’exploration et le partage de l’océan</p></div>
       </article>
     </div>
