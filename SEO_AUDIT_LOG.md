@@ -75,7 +75,25 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 
 **Fichiers modifiés** : `index.html`, `fr/index.html`, `es/index.html` (priorité LCP + picture hero), les 21 pages HTML (balisage picture/webp), `css/styles.css` (`picture{display:contents}`), 29 nouveaux fichiers `images/*.webp`.
 
-**Encore ouvert** : redirection double (nécessite hPanel), séparation du dictionnaire `I18N` par langue (refactor plus large, pas scopé), contenu `private-charters.html`, mise à jour périodique `aggregateRating`.
+**Encore ouvert** : redirection double (nécessite hPanel), contenu `private-charters.html`, mise à jour périodique `aggregateRating`.
+
+---
+
+## 2026-07-17 (suite) — Séparation du dictionnaire I18N (network-dependency-tree-insight)
+
+**Contexte** : suite directe du point "encore ouvert" ci-dessus. `js/script.js` (123 Ko) était le maillon le plus long de la chaîne critique (2.5s) mesurée par Lighthouse — ~80% de son poids était le dictionnaire de traduction complet EN+FR+ES, chargé en entier sur chaque page alors qu'une seule langue est utilisée par page depuis le passage au multilingue statique (13/07).
+
+**Correction appliquée** : `js/script.js` supprimé, remplacé par :
+- `js/core.js` (14 Ko) : toute la logique interactive (nav, formulaire, animations, carrousels, tracking conversion), sans aucune donnée de traduction.
+- `js/i18n-en.js`, `js/i18n-fr.js`, `js/i18n-es.js` : un dictionnaire plat par langue (386 clés chacun, compte vérifié identique).
+
+`applyLang()`/`t()` simplifiées pour lire directement `I18N_DATA` (un seul objet, plus d'indexation par code langue) puisque chaque page ne charge plus que sa propre langue. Les 21 pages mises à jour pour charger `js/i18n-XX.js` puis `js/core.js` (blog → `i18n-en.js`). Poids JS par page : ~123 Ko → ~48-52 Ko selon la langue (-57% à -61%).
+
+**Vérification** : script Puppeteer sur les 21 pages (aucune erreur console/page, hors échecs attendus des balises gtag sous origine `file://`), traduction confirmée correcte sur les home EN/FR/ES et une sous-page (`experiences.html`/`fr/experiences.html`), capture d'écran pleine page après défilement sur `index.html` — rien de cassé visuellement.
+
+**Fichiers modifiés** : `js/core.js` (nouveau), `js/i18n-en.js`/`i18n-fr.js`/`i18n-es.js` (nouveaux), `js/script.js` (supprimé), les 21 pages HTML (balises `<script>`).
+
+**Encore ouvert** : redirection double (nécessite hPanel), contenu `private-charters.html`, mise à jour périodique `aggregateRating`.
 
 ---
 
