@@ -59,4 +59,42 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 
 ---
 
+## 2026-07-16/17 — Audit Core Web Vitals réel (Lighthouse) + conversion WebP
+
+**Contexte** : l'utilisateur a signalé un mauvais score PageSpeed/Hostinger mobile (plusieurs points à 0 : "Document request latency", "Improve image delivery", "Network dependency tree", "Reduce unused JavaScript", "Avoid multiple page redirects", "Forced reflow", "LCP request discovery"). Analyse d'abord faite par lecture de code (redirect testé en direct via `curl`, hypothèses sur le reste), puis l'utilisateur a installé Node.js, ce qui a permis d'installer Lighthouse et de lancer un vrai audit contre la prod (`https://www.saltyhorizondiving.com/`, mobile) plutôt que de deviner.
+
+**Résultat réel (Lighthouse, score performance mobile : 59/100)** :
+- **`redirects` = 1 (bon)** en testant l'URL canonique directement — contredit le test `curl` initial. Explication : Hostinger applique son propre forçage HTTPS *avant* que `.htaccess` ne s'exécute (redirige vers du non-www), notre règle rajoute ensuite le www — donc 2 sauts réels seulement pour une entrée par URL nue/http/non-www, invisibles quand on teste l'URL finale directement. **Toujours pas corrigé** — nécessite de vérifier dans hPanel Hostinger un éventuel réglage "Force WWW" combinable, hors de portée depuis le dépôt.
+- **`lcp-discovery-insight` = 0, confirmé et corrigé** : le vrai élément LCP mobile n'est pas l'image de fond du hero mais `hero-logo.png` (le logo texte "SALTY HORIZON" dans le `<h1>`), sans aucune priorité — 4.03s de `resourceLoadDuration` sur les 5.0s de LCP total. Corrigé : `fetchpriority="high"` + `<link rel="preload">` ajoutés sur les 3 variantes de la home (EN/FR/ES).
+- **`image-delivery-insight` = 0, confirmé** : ex. `intro-pool.jpg` gaspillait 365 Ko (format non moderne + dimensions surdimensionnées pour son usage). A motivé la conversion WebP ci-dessous.
+- **`forced-reflow-insight` = 0** : 864ms non attribuables (très probablement des scripts tiers Google) contre seulement 70ms venant de notre propre `js/script.js`. Pas d'action prise — peu de marge sans dégrader le tracking.
+- **`network-dependency-tree-insight` = 0** : `js/script.js` est le maillon le plus long de la chaîne critique (2.5s). Confirme l'hypothèse déjà notée : le dictionnaire `I18N` complet (3 langues) alourdit chaque page alors qu'une seule langue est utilisée par page depuis le passage au multilingue statique. **Pas corrigé** — refactor plus large (séparer le dictionnaire par langue, toucherait les 21 pages), signalé mais pas exécuté.
+- **`unused-javascript` = 1 (bon)**, contrairement à l'hypothèse initiale (avant d'avoir la vraie donnée) que le dictionnaire I18N remonterait comme "JS inutile" — l'audit de couverture V8 ne le voit pas ainsi (la création de l'objet littéral compte comme "exécutée" même si peu de propriétés sont lues). Corrigé dans le raisonnement, pas dans le code.
+
+**Conversion WebP (2026-07-17)** : Node.js maintenant disponible → bloquant historique levé (voir `AMELIORATIONS.md`). Les 29 images du site (27 JPEG + 2 PNG) converties via `sharp` : qualité 80 par défaut, qualité 92 pour `manta.jpg`/`hero-mobile.jpg` (bandes de compression visibles à 80 sur ces dégradés ciel/océan lisses — vérifié visuellement avant/après), qualité 90 pour les 2 PNG (canal alpha vérifié préservé : 4 canaux, `hasAlpha:true` avant et après). `hero.jpg` volontairement exclu (JPEG-only) : utilisé uniquement en `og:image`/JSON-LD, jamais affiché sur la page. Total : 7.4 Mo → 4.3 Mo (-42%). 93 balises `<img>` simples réécrites en `<picture><source type="image/webp">` par script, plus les 3 blocs `<picture>` du hero (ajout de sources webp respectant l'ordre média mobile/desktop) et les logos (nav + hero) traités manuellement. Ajout de `picture{display:contents}` dans `css/styles.css` — nécessaire car plusieurs composants (`.exp-card img` en `position:absolute`, `.gallery-track img`, `.member img`) dépendent de l'`<img>` comme enfant direct de leur conteneur ; sans ce correctif, le wrapper `<picture>` (`display:inline` par défaut) aurait pu perturber leur mise en page. Vérifié par capture d'écran pleine page après défilement (déclenche les animations `data-reveal` par `IntersectionObserver`) sur `index.html` et `experiences.html` — rien de cassé.
+
+**Fichiers modifiés** : `index.html`, `fr/index.html`, `es/index.html` (priorité LCP + picture hero), les 21 pages HTML (balisage picture/webp), `css/styles.css` (`picture{display:contents}`), 29 nouveaux fichiers `images/*.webp`.
+
+**Encore ouvert** : redirection double (nécessite hPanel), contenu `private-charters.html`, mise à jour périodique `aggregateRating`.
+
+---
+
+## 2026-07-17 (suite) — Séparation du dictionnaire I18N (network-dependency-tree-insight)
+
+**Contexte** : suite directe du point "encore ouvert" ci-dessus. `js/script.js` (123 Ko) était le maillon le plus long de la chaîne critique (2.5s) mesurée par Lighthouse — ~80% de son poids était le dictionnaire de traduction complet EN+FR+ES, chargé en entier sur chaque page alors qu'une seule langue est utilisée par page depuis le passage au multilingue statique (13/07).
+
+**Correction appliquée** : `js/script.js` supprimé, remplacé par :
+- `js/core.js` (14 Ko) : toute la logique interactive (nav, formulaire, animations, carrousels, tracking conversion), sans aucune donnée de traduction.
+- `js/i18n-en.js`, `js/i18n-fr.js`, `js/i18n-es.js` : un dictionnaire plat par langue (386 clés chacun, compte vérifié identique).
+
+`applyLang()`/`t()` simplifiées pour lire directement `I18N_DATA` (un seul objet, plus d'indexation par code langue) puisque chaque page ne charge plus que sa propre langue. Les 21 pages mises à jour pour charger `js/i18n-XX.js` puis `js/core.js` (blog → `i18n-en.js`). Poids JS par page : ~123 Ko → ~48-52 Ko selon la langue (-57% à -61%).
+
+**Vérification** : script Puppeteer sur les 21 pages (aucune erreur console/page, hors échecs attendus des balises gtag sous origine `file://`), traduction confirmée correcte sur les home EN/FR/ES et une sous-page (`experiences.html`/`fr/experiences.html`), capture d'écran pleine page après défilement sur `index.html` — rien de cassé visuellement.
+
+**Fichiers modifiés** : `js/core.js` (nouveau), `js/i18n-en.js`/`i18n-fr.js`/`i18n-es.js` (nouveaux), `js/script.js` (supprimé), les 21 pages HTML (balises `<script>`).
+
+**Encore ouvert** : redirection double (nécessite hPanel), contenu `private-charters.html`, mise à jour périodique `aggregateRating`.
+
+---
+
 *Format pour les prochaines entrées : date, contexte de la mission, constats (avec méthode de vérification), corrections appliquées, décisions documentées sans code, points laissés ouverts et pourquoi.*
