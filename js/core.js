@@ -7,7 +7,7 @@ const WA_PHONE = '50687759641'; // WhatsApp number, international format
 // Fires a Google Ads conversion event, then redirects to `url`. If gtag.js
 // didn't load (ad blockers, network) or its callback never fires, a short
 // timeout still lets the user through — a lost conversion beats a dead link.
-function gtag_report_conversion(url, openInNewTab){
+function gtag_report_conversion(url, openInNewTab, source){
   let navigated = false;
   const go = ()=>{
     if(navigated) return;
@@ -21,6 +21,13 @@ function gtag_report_conversion(url, openInNewTab){
     'value': 1.0,
     'currency': 'USD',
     'event_callback': go
+  });
+  // Same click, also logged as a GA4 event (Ads' send_to above keeps it out of
+  // GA4 otherwise) so WhatsApp engagement is visible by page/source in GA4.
+  gtag('event', 'whatsapp_click', {
+    'send_to': 'G-MGJK95GCH7',
+    'link_url': url,
+    'source': source || 'whatsapp'
   });
   setTimeout(go, 1000);
   return false;
@@ -160,21 +167,21 @@ document.addEventListener('DOMContentLoaded', ()=>{
       if(name) msg+='\n'+L.name+': '+name;
       if(note) msg+='\n'+L.note+': '+note;
       const waUrl='https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(msg);
-      gtag_report_conversion(waUrl, true);
+      gtag_report_conversion(waUrl, true, 'booking_form');
     });
   }
 
   // charter WhatsApp buttons
   document.querySelectorAll('[data-wa-charter]').forEach(b=>{
-    b.addEventListener('click',(e)=>{ e.preventDefault(); gtag_report_conversion('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.charter')), true); });
+    b.addEventListener('click',(e)=>{ e.preventDefault(); gtag_report_conversion('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.charter')), true, 'charter'); });
   });
 
   // Course "more info" WhatsApp buttons
   document.querySelectorAll('[data-wa-aowinfo]').forEach(b=>{
-    b.addEventListener('click',(e)=>{ e.preventDefault(); gtag_report_conversion('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.aowInfo')), true); });
+    b.addEventListener('click',(e)=>{ e.preventDefault(); gtag_report_conversion('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.aowInfo')), true, 'aow_info'); });
   });
   document.querySelectorAll('[data-wa-owinfo]').forEach(b=>{
-    b.addEventListener('click',(e)=>{ e.preventDefault(); gtag_report_conversion('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.owInfo')), true); });
+    b.addEventListener('click',(e)=>{ e.preventDefault(); gtag_report_conversion('https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(t('wa.owInfo')), true, 'ow_info'); });
   });
 
   // Every static WhatsApp link in the page markup (floating button, footer,
@@ -184,7 +191,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const a = e.target.closest('a[href^="https://wa.me/"]');
     if(!a) return;
     e.preventDefault();
-    gtag_report_conversion(a.href, a.target === '_blank');
+    gtag_report_conversion(a.href, a.target === '_blank', a.closest('.fab') ? 'floating_button' : 'inline_link');
   });
 
   // generic "book this experience" links: prefill select + scroll
