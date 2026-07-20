@@ -120,7 +120,7 @@ const I18N_DATA = {
 
     'faq.eyebrow':'Es bueno saberlo','faq.title':'Preguntas frecuentes','faq.seeMore':'Ver todas las preguntas sobre buceo en Tamarindo',
     'faq.q1':'¿Necesito estar certificado para probar el buceo en Tamarindo?',
-    'faq.a1':'No, no se necesita certificación para el bautismo de buceo (Discover Scuba Diving). Después de una charla privada con un instructor PADI, realizas dos inmersiones guiadas de 45 minutos a 1 hora, desde los 10 años.',
+    'faq.a1':'No, no se necesita certificación para el bautismo de buceo (Discover Scuba Diving). Después de una charla privada con un instructor PADI y algunas prácticas de habilidades requeridas, realizas dos inmersiones guiadas de 45 minutos a 1 hora, desde los 10 años.',
     'faq.q2':'¿Cuánto cuesta el curso PADI Open Water Diver?',
     'faq.a2':'El curso Open Water Diver empieza en $540 y dura 3 días, incluyendo el e-learning, la certificación, todo el equipo, y snacks y bebidas.',
     'faq.q3':'¿Se pueden ver tiburones toro en las Islas Murciélago?',
@@ -128,7 +128,7 @@ const I18N_DATA = {
     'faq.q4':'¿Los cursos e inmersiones se ofrecen en francés y español?',
     'faq.a4':'Sí. Camille y Julien son trilingües y enseñan y guían en inglés, francés y español.',
     'faq.q5':'¿Necesito un formulario médico para bucear?',
-    'faq.a5':'Sí, para los cursos Open Water y Advanced Open Water debes confirmar tu aptitud médica para bucear; hay un formulario médico disponible para descargar que debe completarse antes del curso.',
+    'faq.a5':'Sí, para el bautismo de buceo (Discover Scuba Diving), los cursos Open Water y Advanced Open Water debes confirmar tu aptitud médica para bucear; hay un formulario médico disponible para descargar que debe completarse antes del curso.',
 
     'tfaq.crumb':'FAQ de buceo',
     'tfaq.page.h1':'Buceo en Tamarindo, Costa Rica: preguntas frecuentes',
@@ -170,7 +170,7 @@ const I18N_DATA = {
     'tfaq.a10':'No. Las ballenas, las rayas manta y toda la fauna marina son animales salvajes, y los encuentros dependen de las condiciones naturales, el movimiento de los animales y la temporada. Los avistamientos se reportan con frecuencia en ciertas épocas del año, pero ningún centro de buceo puede garantizarlos en una salida concreta.',
 
     'tfaq.q11':'¿Cuál es la mejor época del año para bucear en Tamarindo?',
-    'tfaq.a11season1':'Diciembre–Mayo','tfaq.a11text1':'Ideal para: rayas manta oceánicas (temporada alta), rayas águila, tiburones de arrecife, visibilidad clara de 15 a 30 m.',
+    'tfaq.a11season1':'Diciembre–Mayo','tfaq.a11text1':'Ideal para: rayas manta oceánicas (temporada alta), rayas águila, tiburones de arrecife.',
     'tfaq.a11season2':'Junio–Octubre','tfaq.a11text2':'Ideal para: agua cálida, vida marina abundante, bancos de peces, tortugas, y ocasionalmente rayas manta. Extra: las ballenas jorobadas migran por la costa Pacífica de Costa Rica durante parte de esta temporada, y a veces se puede escuchar su canto bajo el agua.',
     'tfaq.q12':'¿Cómo es la temperatura del agua en Tamarindo, y cambia durante el año?',
     'tfaq.a12':'La temperatura del agua en el golfo de Papagayo se mantiene cálida la mayor parte del año, generalmente entre 25 y 30°C, con un período más suave y ligeramente más fresco posible durante la surgencia de la temporada seca.',
@@ -184,7 +184,7 @@ const I18N_DATA = {
     'tfaq.q16':'¿Hay que estar certificado para bucear con tiburones toro?',
     'tfaq.a16':'Sí. El buceo en las Bat Islands está reservado a buzos certificados Advanced Open Water, debido a la profundidad y las corrientes del sitio.',
     'tfaq.q17':'¿Son peligrosas estas inmersiones con tiburones toro?',
-    'tfaq.a17':'Estas inmersiones requieren un nivel de certificación confirmado debido a la profundidad y las corrientes del sitio, pero nunca se ha registrado un incidente con estos tiburones en este lugar; los encuentros son sin alimentación y los animales suelen verse a una distancia respetuosa.',
+    'tfaq.a17':'Las inmersiones con tiburones toro requieren un nivel de certificación adecuado, ya que el sitio puede ser profundo y estar sujeto a fuertes corrientes. Los encuentros son completamente sin cebo, y los tiburones se reúnen de forma natural en una estación de limpieza, donde peces más pequeños les retiran parásitos y piel muerta del cuerpo. Aunque bucear con grandes tiburones siempre requiere precaución y estrictos protocolos de seguridad, no se ha registrado ningún incidente relacionado con tiburones en este sitio de buceo.',
 
     'tfaq.q18':'¿Necesito experiencia para probar el buceo en Tamarindo?',
     'tfaq.a18':'No. La experiencia Discover Scuba Diving no requiere certificación ni experiencia previa.',
@@ -215,7 +215,7 @@ const I18N_DATA = {
     'tfaq.q30':'¿Es segura la práctica del buceo?',
     'tfaq.a30':'El buceo es una actividad segura cuando se practica siguiendo los protocolos de formación estándar, por lo que se exige un formulario médico y la supervisión de un instructor PADI certificado en cada curso.',
     'tfaq.q31':'¿Necesito un formulario médico para bucear?',
-    'tfaq.a31':'Sí, para los cursos Open Water y Advanced Open Water, que debe completarse antes de comenzar el curso.',
+    'tfaq.a31':'Sí, para el bautismo de buceo (Discover Scuba Diving), los cursos Open Water y Advanced Open Water debes confirmar tu aptitud médica para bucear; hay un formulario médico disponible para descargar que debe completarse antes del curso.',
     'tfaq.q32':'¿Puedo bucear si tengo asma?',
     'tfaq.a32':'En muchos casos sí, si está bien controlada, pero se requiere autorización médica; conviene consultarlo con un médico antes del viaje.',
     'tfaq.q33':'¿Puedo bucear si uso lentes?',

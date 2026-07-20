@@ -120,7 +120,7 @@ const I18N_DATA = {
 
     'faq.eyebrow':'Bon à savoir','faq.title':'Questions fréquentes','faq.seeMore':'Voir toute la FAQ plongée à Tamarindo',
     'faq.q1':'Faut-il être certifié pour essayer la plongée à Tamarindo ?',
-    'faq.a1':'Non, aucune certification n’est nécessaire pour le baptême de plongée (Discover Scuba Diving). Après un briefing privé avec un instructeur PADI, vous réalisez deux plongées encadrées de 45 minutes à 1 heure, dès 10 ans.',
+    'faq.a1':'Non, aucune certification n’est nécessaire pour le baptême de plongée (Discover Scuba Diving). Après un briefing privé avec un instructeur PADI et quelques exercices pratiques requis, vous réalisez deux plongées encadrées de 45 minutes à 1 heure, dès 10 ans.',
     'faq.q2':'Combien coûte le cours PADI Open Water Diver ?',
     'faq.a2':'Le cours Open Water Diver démarre à 540 $ et se déroule sur 3 jours, incluant l’e-learning, les frais de certification, tout l’équipement, ainsi que les collations et boissons.',
     'faq.q3':'Peut-on voir des requins-taureaux aux Bat Islands ?',
@@ -128,7 +128,7 @@ const I18N_DATA = {
     'faq.q4':'Les cours et plongées sont-ils proposés en français et en espagnol ?',
     'faq.a4':'Oui. Camille et Julien sont trilingues et encadrent en anglais, français et espagnol.',
     'faq.q5':'Faut-il un certificat médical pour plonger ?',
-    'faq.a5':'Oui, pour les cours Open Water et Advanced Open Water, vous devez confirmer votre aptitude médicale à la plongée ; un formulaire médical est disponible à télécharger et doit être complété avant le cours.',
+    'faq.a5':'Oui, pour le baptême de plongée (Discover Scuba Diving), les cours Open Water et Advanced Open Water, vous devez confirmer votre aptitude médicale à la plongée ; un formulaire médical est disponible à télécharger et doit être complété avant le cours.',
 
     'tfaq.crumb':'FAQ plongée',
     'tfaq.page.h1':'Plongée sous-marine à Tamarindo, Costa Rica : questions fréquentes',
@@ -170,7 +170,7 @@ const I18N_DATA = {
     'tfaq.a10':"Non. Les baleines, les raies manta et toute la faune marine sont des animaux sauvages, et les rencontres dépendent des conditions naturelles, des déplacements des animaux et de la saison. Les observations sont fréquemment rapportées à certaines périodes de l'année, mais aucun centre de plongée ne peut les garantir lors d'une sortie donnée.",
 
     'tfaq.q11':'Quelle est la meilleure période de l\'année pour plonger à Tamarindo ?',
-    'tfaq.a11season1':'Décembre–Mai','tfaq.a11text1':'Idéal pour : les raies manta océaniques (pic de saison), les raies aigle, les requins de récif, une visibilité claire de 15 à 30 m.',
+    'tfaq.a11season1':'Décembre–Mai','tfaq.a11text1':'Idéal pour : les raies manta océaniques (pic de saison), les raies aigle, les requins de récif.',
     'tfaq.a11season2':'Juin–Octobre','tfaq.a11text2':"Idéal pour : une eau chaude, une vie marine abondante, des bancs de poissons, des tortues, et parfois des raies manta. Bonus : les baleines à bosse migrent le long de la côte Pacifique du Costa Rica durant une partie de cette saison, et leur chant peut parfois s'entendre sous l'eau.",
     'tfaq.q12':'Quelle est la température de l\'eau à Tamarindo, et varie-t-elle dans l\'année ?',
     'tfaq.a12':"La température de l'eau dans le golfe de Papagayo reste chaude la majeure partie de l'année, généralement entre 25 et 30°C, avec une période plus douce et légèrement plus fraîche possible pendant l'upwelling de la saison sèche.",
@@ -184,7 +184,7 @@ const I18N_DATA = {
     'tfaq.q16':'Faut-il être certifié pour plonger avec les requins-taureaux ?',
     'tfaq.a16':'Oui. La plongée aux Bat Islands est réservée aux plongeurs certifiés Advanced Open Water, en raison de la profondeur et des courants du site.',
     'tfaq.q17':'Ces plongées avec requins-taureaux sont-elles dangereuses ?',
-    'tfaq.a17':"Ces plongées demandent un niveau de certification confirmé en raison de la profondeur et des courants du site, mais aucun incident impliquant ces requins n'a jamais été recensé sur ce site ; les rencontres se font sans nourrissage, à distance respectueuse.",
+    'tfaq.a17':"Les plongées avec les requins bouledogues nécessitent un niveau de certification adapté, car le site peut être profond et soumis à de forts courants. Les rencontres se font entièrement sans nourrissage, et les requins se rassemblent naturellement sur une station de nettoyage, où de plus petits poissons retirent parasites et peau morte de leur corps. Bien que la plongée avec de grands requins exige toujours prudence et des procédures de sécurité strictes, aucun incident lié aux requins n'a été recensé sur ce site de plongée.",
 
     'tfaq.q18':'Faut-il de l\'expérience pour essayer la plongée à Tamarindo ?',
     'tfaq.a18':"Non. L'expérience Discover Scuba Diving ne nécessite aucune certification ni expérience préalable.",
@@ -215,7 +215,7 @@ const I18N_DATA = {
     'tfaq.q30':'La plongée sous-marine est-elle sûre ?',
     'tfaq.a30':"La plongée est une activité sûre lorsqu'elle est pratiquée selon les protocoles de formation standards, ce qui explique qu'un formulaire médical et l'encadrement d'un instructeur PADI certifié soient exigés pour chaque cours.",
     'tfaq.q31':'Faut-il un formulaire médical pour plonger ?',
-    'tfaq.a31':'Oui, pour les cours Open Water et Advanced Open Water, à compléter avant le début du cours.',
+    'tfaq.a31':'Oui, pour le baptême de plongée (Discover Scuba Diving), les cours Open Water et Advanced Open Water, vous devez confirmer votre aptitude médicale à la plongée ; un formulaire médical est disponible à télécharger et doit être complété avant le cours.',
     'tfaq.q32':'Peut-on plonger avec de l\'asthme ?',
     'tfaq.a32':"Souvent oui, si l'asthme est bien contrôlé, mais une autorisation médicale est nécessaire ; à voir avec un médecin avant votre séjour.",
     'tfaq.q33':'Peut-on plonger avec des lunettes ?',

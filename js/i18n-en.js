@@ -120,7 +120,7 @@ const I18N_DATA = {
 
     'faq.eyebrow':'Good to know','faq.title':'Frequently asked questions','faq.seeMore':'See the full Tamarindo diving FAQ',
     'faq.q1':'Do I need to be certified to try scuba diving in Tamarindo?',
-    'faq.a1':'No certification is required for the Discover Scuba Diving experience. After a private briefing with a PADI instructor, you complete two guided dives, 45 minutes to 1 hour each, from age 10 and up.',
+    'faq.a1':'No certification is required for the Discover Scuba Diving experience. After a private briefing with a PADI instructor and some required skills practice, you complete two guided dives, 45 minutes to 1 hour each, from age 10 and up.',
     'faq.q2':'How much does the PADI Open Water Diver course cost?',
     'faq.a2':'The Open Water Diver course starts at $540 and runs over 3 days, including e-learning, certification fees, all equipment, and snacks and drinks.',
     'faq.q3':'Can you see bull sharks at the Bat Islands?',
@@ -128,7 +128,7 @@ const I18N_DATA = {
     'faq.q4':'Are dives and courses offered in French and Spanish?',
     'faq.a4':'Yes. Camille and Julien are trilingual and teach and guide in English, French and Spanish.',
     'faq.q5':'Do I need a medical form to dive?',
-    'faq.a5':'Yes, for the Open Water and Advanced Open Water courses you need to confirm you are medically fit to dive; a medical form is available to download and must be completed before the course.',
+    'faq.a5':'Yes, for the Discover Scuba Diving, Open Water and Advanced Open Water courses you need to confirm you are medically fit to dive; a medical form is available to download and must be completed before the course.',
 
     'tfaq.crumb':'Scuba Diving FAQ',
     'tfaq.page.h1':'Scuba Diving in Tamarindo, Costa Rica: Frequently Asked Questions',
@@ -170,7 +170,7 @@ const I18N_DATA = {
     'tfaq.a10':'No. Whales, manta rays, and all other marine wildlife are wild animals, and encounters depend on natural conditions, animal movement, and season. Sightings are commonly reported at certain times of year, but no dive operator can guarantee them on any single trip.',
 
     'tfaq.q11':'When is the best time of year to dive in Tamarindo?',
-    'tfaq.a11season1':'December–May','tfaq.a11text1':'Best for: Oceanic manta rays (peak season), eagle rays, reef sharks, clear visibility of 15-30 m (50-100ft).',
+    'tfaq.a11season1':'December–May','tfaq.a11text1':'Best for: Oceanic manta rays (peak season), eagle rays, reef sharks.',
     'tfaq.a11season2':'June–October','tfaq.a11text2':"Best for: Warm water, abundant marine life, schooling fish, turtles, occasional mantas. Bonus: Humpback whales migrate through Costa Rica's Pacific coast during parts of this season, and whale songs can sometimes be heard underwater.",
     'tfaq.q12':'What is the water temperature like in Tamarindo, and does it change during the year?',
     'tfaq.a12':'Water temperature in the Gulf of Papagayo stays warm most of the year, generally in the 25-30°C range, with a milder, slightly cooler spell possible during the dry season upwelling.',
@@ -184,7 +184,7 @@ const I18N_DATA = {
     'tfaq.q16':'Do you need to be certified to dive with bull sharks?',
     'tfaq.a16':'Yes. Diving at the Bat Islands is reserved for certified Advanced Open Water divers, given the depth and current conditions at the site.',
     'tfaq.q17':'Are bull shark dives dangerous?',
-    'tfaq.a17':"These dives require a confirmed level of certification because of the site's depth and currents, but no incident involving these sharks has been recorded at this site; encounters are unbaited and the animals are typically seen at a respectful distance.",
+    'tfaq.a17':"Bull shark dives require an appropriate certification level because the site can be deep and affected by strong currents. Encounters are completely unbaited, and the sharks naturally gather at a cleaning station, where smaller fish remove parasites and dead skin from their bodies. Although diving with large sharks always requires caution and strict safety procedures, no shark-related incidents have been recorded at this dive site.",
 
     'tfaq.q18':'Do I need experience to try scuba diving in Tamarindo?',
     'tfaq.a18':'No. The Discover Scuba Diving experience requires no prior certification or experience.',
@@ -215,7 +215,7 @@ const I18N_DATA = {
     'tfaq.q30':'Is scuba diving safe?',
     'tfaq.a30':'Diving is a safe activity when practiced within standard training protocols, which is why a medical form and supervision by a certified PADI instructor are required for every course.',
     'tfaq.q31':'Do I need a medical form to dive?',
-    'tfaq.a31':'Yes, for the Open Water and Advanced Open Water courses, completed before the course begins.',
+    'tfaq.a31':'Yes, for the Discover Scuba Diving, Open Water and Advanced Open Water courses you need to confirm you are medically fit to dive; a medical form is available to download and must be completed before the course.',
     'tfaq.q32':'Can I dive with asthma?',
     'tfaq.a32':'In many cases yes, if it is well controlled, but medical clearance is required; this should be discussed with a doctor before your trip.',
     'tfaq.q33':'Can I dive if I wear glasses?',
