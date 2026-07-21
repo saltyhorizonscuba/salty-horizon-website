@@ -570,31 +570,51 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   .lb-prev{left:1rem}.lb-next{right:1rem}
 }
 
-/* ---------- Blog (newspaper style) ---------- */
-.masthead{text-align:center;padding:clamp(7rem,14vw,9.5rem) 0 clamp(1.8rem,4vw,2.6rem);border-bottom:3px double var(--ink)}
-.masthead__kicker{display:block;font-family:var(--font-display);font-weight:700;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin-bottom:.7rem}
-.masthead__title{font-family:var(--font-serif);font-weight:600;font-size:clamp(2.6rem,7vw,4.4rem);line-height:1.02;color:var(--ink)}
-.masthead__tag{font-family:var(--font-serif);font-style:italic;font-size:1.05rem;color:var(--muted);margin-top:.7rem}
-
-.blog-feed{padding-block:clamp(2.5rem,5vw,4rem)}
-.blog-lead{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(1.8rem,4vw,3.2rem);align-items:center;padding-bottom:clamp(2rem,4vw,3rem);border-bottom:1px solid #e2d9c4;margin-bottom:clamp(2rem,4vw,3rem)}
-.blog-lead>*{min-width:0}
-.blog-grid>*{min-width:0}
-.blog-lead__media img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
+/* ---------- Blog (newspaper style, articles) ---------- */
 .blog-card__kicker{font-family:var(--font-display);font-weight:700;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal)}
-.blog-lead h2{font-family:var(--font-serif);font-weight:600;font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.08;margin:.5rem 0 .8rem;color:var(--ink)}
-.blog-lead h2 a{color:inherit}
-.blog-lead h2 a:hover{text-decoration:underline;text-decoration-color:var(--sand-deep)}
-.blog-dek{font-family:var(--font-serif);font-size:1.15rem;line-height:1.55;color:var(--text);margin-bottom:1rem}
-.blog-meta{font-family:var(--font-display);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.blog-meta span+span::before{content:"·";margin:0 .5em}
 
-.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem}
-.blog-card{border-top:2px solid var(--ink);padding-top:1rem}
-.blog-card h3{font-family:var(--font-serif);font-weight:600;font-size:1.35rem;line-height:1.2;margin:.4rem 0 .6rem;color:var(--ink)}
-.blog-card h3 a{color:inherit}
-.blog-card h3 a:hover{text-decoration:underline;text-decoration-color:var(--sand-deep)}
-.blog-card p{font-size:.92rem;color:var(--text);margin-bottom:.7rem;line-height:1.5}
+/* ---------- Journal (blog index) — bento layout, brand palette ---------- */
+.journal-hero{padding:clamp(7rem,14vw,9.5rem) 0 clamp(1.6rem,3vw,2.2rem);background:var(--navy)}
+.journal-hero__row{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;flex-wrap:wrap}
+.journal-hero__kicker{display:block;font-family:var(--font-display);font-weight:700;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--aqua);margin-bottom:.6rem}
+.journal-hero__title{font-family:var(--font-display);font-weight:800;font-size:clamp(2.6rem,8vw,4.6rem);line-height:.95;color:#fff;letter-spacing:-.01em}
+.journal-hero .btn{flex:none}
+
+.journal-grid-wrap{background:var(--navy)}
+/* Grid of post cards: every group of 3 forms a new row (1 wide "lead" card + 2 standard
+   cards), so the mosaic keeps growing in the same rhythm as posts are added — see the
+   HTML comment in blog/index.html for the pattern to follow when adding a new post. */
+.journal-grid{padding-block:clamp(2.2rem,5vw,3.6rem);display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:1.3rem}
+.journal-card{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);min-height:360px}
+.journal-card--lead{min-height:420px}
+.journal-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.journal-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,39,51,0) 40%,rgba(8,28,37,.9) 100%)}
+.journal-card__badge{position:absolute;top:1.1rem;left:1.1rem;z-index:2;width:38px;height:38px;border-radius:50%;background:rgba(8,28,37,.55);backdrop-filter:blur(4px);display:grid;place-items:center;color:var(--sand)}
+.journal-card__badge svg{width:18px;height:18px}
+.journal-card__body{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:1.4rem}
+.journal-card__cat{display:block;font-family:var(--font-display);font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sand);margin-bottom:.4rem}
+.journal-card--lead h2{font-family:var(--font-serif);font-weight:600;font-size:clamp(1.4rem,2.6vw,1.8rem);line-height:1.15}
+.journal-card--lead h2 a,.journal-card h3 a{color:#fff}
+.journal-card h3{font-family:var(--font-serif);font-weight:600;font-size:1.05rem;line-height:1.2}
+
+.journal-panel{margin-top:1.3rem;background:var(--navy);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:1.4rem 1.6rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.2rem}
+.journal-card__panelKicker{font-family:var(--font-display);font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sand);display:block;margin-bottom:.6rem}
+.journal-pills{display:flex;flex-wrap:wrap;gap:.5rem}
+.journal-pill{font-family:var(--font-display);font-size:.68rem;font-weight:600;letter-spacing:.02em;padding:.4rem .8rem;border-radius:999px;background:rgba(255,255,255,.1);color:#dce7eb}
+
+@media (max-width:900px){
+  .journal-grid{grid-template-columns:1fr 1fr}
+  .journal-card--lead{grid-column:1/3}
+}
+@media (max-width:640px){
+  .journal-grid{grid-template-columns:1fr}
+  .journal-card--lead{grid-column:1}
+}
+@media (max-width:640px){
+  .journal-hero__row{flex-direction:column;align-items:flex-start}
+  .journal-grid{grid-template-columns:1fr}
+  .journal-card--lead,.journal-card--feature,.journal-card--panel,.journal-card--image{grid-column:1;grid-row:auto}
+}
 
 .article-header{max-width:760px;margin:0 auto;text-align:center;padding-top:clamp(6.5rem,13vw,8.5rem)}
 .article-header h1{font-family:var(--font-serif);font-weight:600;font-size:clamp(2.1rem,5.5vw,3.4rem);line-height:1.08;color:var(--ink);margin:.6rem 0 .9rem}
@@ -634,11 +654,15 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .article-author{max-width:680px;margin:clamp(2.2rem,4vw,3rem) auto 0;padding:1.4rem 1.6rem;background:var(--cream);border-radius:var(--radius-sm);font-size:.9rem;color:var(--text)}
 .article-author b{font-family:var(--font-display);color:var(--ink)}
 
-@media (max-width:860px){
-  .blog-lead{grid-template-columns:1fr}
-  .blog-grid{grid-template-columns:1fr 1fr}
-}
+.beach-facts{list-style:none;display:flex;flex-direction:column;gap:.55rem;margin:1.1rem 0 1.3rem;padding:1rem 1.2rem;background:var(--cream);border-radius:var(--radius-sm);border:1px solid #e2d9c4}
+.beach-facts li{display:flex;align-items:flex-start;gap:.7rem;font-size:.92rem;color:var(--text);line-height:1.45}
+.beach-facts svg{flex:none;width:18px;height:18px;margin-top:.15rem;color:var(--aqua)}
+.beach-facts b{color:var(--ink);font-weight:600}
+
+.article-inline-figure{max-width:680px;margin:1.9rem auto;border-radius:var(--radius-sm);overflow:hidden;box-shadow:var(--shadow-sm)}
+.article-inline-figure img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block}
+.article-inline-figure figcaption{font-family:var(--font-serif);font-style:italic;font-size:.85rem;color:var(--muted);text-align:center;margin-top:.6rem}
+
 @media (max-width:560px){
-  .blog-grid{grid-template-columns:1fr}
   .article-body p:first-of-type::first-letter{font-size:3.2rem}
 }
