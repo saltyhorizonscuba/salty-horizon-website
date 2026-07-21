@@ -98,6 +98,7 @@ const I18N_DATA = {
     'rev.eyebrow':'Ils ont plongé avec nous',
     'rev.title':'Adoré par nos plongeurs',
     'rev.cta':'Laisser un avis sur Google',
+    'rev.more':'Lire la suite','rev.less':'Réduire',
     'rev.q1':'Camille et Julien ont offert une expérience exceptionnelle, adaptée à mes envies. Leur expertise et leur professionnalisme l’ont rendue inoubliable.',
     'rev.a1':'Luisa Martinez',
     'rev.q2':'La journée de plongée la plus détendue et personnelle de ma vie. Petit groupe, aucun stress, et les photos après étaient incroyables.',
