@@ -47,6 +47,15 @@ ul{list-style:none}
 /* ---------- Layout helpers ---------- */
 .container{width:min(92%,var(--maxw));margin-inline:auto}
 .section{padding:clamp(4.5rem,9vw,8rem) 0;position:relative}
+/* Tighter gaps between homepage sections (kept off .section itself so other pages are unaffected) */
+#about{padding-bottom:clamp(2rem,5vw,3.5rem)}
+#experiences{padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
+#stats{padding-block:clamp(1.75rem,4vw,2.75rem)}
+#gallery{padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
+#team{padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
+#contact{padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
+#reviews{padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
+#faq{padding-top:clamp(2rem,5vw,3.5rem)}
 .section--dark{background:var(--navy);color:#dce7eb}
 .section--deep{background:linear-gradient(160deg,#0c3140,#0a2733);color:#dce7eb}
 .center{text-align:center}
