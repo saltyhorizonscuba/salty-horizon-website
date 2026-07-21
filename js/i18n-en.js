@@ -98,6 +98,7 @@ const I18N_DATA = {
     'rev.eyebrow':'Guest stories',
     'rev.title':'Loved by our divers',
     'rev.cta':'Write a review on Google',
+    'rev.more':'Read more','rev.less':'Read less',
     'rev.q1':'Camille and Julien provided an exceptional diving experience, tailored to my preferences. Their expertise and professionalism made it truly memorable.',
     'rev.a1':'Luisa Martinez',
     'rev.q2':'The most relaxed, personal dive day I have ever had. Small group, no rush, and the photos afterwards were incredible.',

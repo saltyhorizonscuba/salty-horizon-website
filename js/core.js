@@ -242,6 +242,18 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
   });
 
+  // "read more" toggle for long reviews
+  document.querySelectorAll('[data-review-toggle]').forEach(b=>{
+    b.addEventListener('click',()=>{
+      const text=b.previousElementSibling;
+      if(!text) return;
+      const isOpen=text.classList.toggle('is-open');
+      text.classList.toggle('is-truncated', !isOpen);
+      b.textContent = isOpen ? t('rev.less') : t('rev.more');
+      b.setAttribute('aria-expanded', String(isOpen));
+    });
+  });
+
   // reviews carousel prev/next buttons
   document.querySelectorAll('.review-carousel').forEach(carousel=>{
     const grid=carousel.querySelector('.review-grid');

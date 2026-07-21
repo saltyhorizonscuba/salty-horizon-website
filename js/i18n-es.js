@@ -98,6 +98,7 @@ const I18N_DATA = {
     'rev.eyebrow':'Historias de buzos',
     'rev.title':'Amado por nuestros buzos',
     'rev.cta':'Escribe una reseña en Google',
+    'rev.more':'Leer más','rev.less':'Leer menos',
     'rev.q1':'Camille y Julien ofrecieron una experiencia excepcional, adaptada a mis preferencias. Su experiencia y profesionalismo la hicieron inolvidable.',
     'rev.a1':'Luisa Martinez',
     'rev.q2':'El día de buceo más relajado y personal de mi vida. Grupo pequeño, sin prisas, y las fotos después fueron increíbles.',
