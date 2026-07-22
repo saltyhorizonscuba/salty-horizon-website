@@ -11,7 +11,7 @@ const I18N_DATA = {
     'meta.charters.desc':'Réservez une journée privée en mer à Tamarindo : plongée, snorkeling, paddle, e-foil et jet-ski. Des charters entièrement personnalisés, construits autour de vous.',
     'meta.faq.title':'Plongée sous-marine à Tamarindo, Costa Rica : FAQ | Salty Horizon',
     'meta.faq.desc':'Des réponses concrètes sur la plongée à Tamarindo et aux îles Catalinas : vie marine, saison des raies manta et des baleines, conditions de plongée, certification PADI avec Salty Horizon.',
-    'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.faq':'FAQ','nav.about':'À propos','nav.blog':'Journal',
+    'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.faq':'FAQ','nav.about':'À propos','nav.blog':'The Blog',
     'nav.gallery':'Galerie','nav.reviews':'Avis','nav.contact':'Contact','cta.book':'Réserver','cta.bookCourse':'Réserver un cours','cta.learnMore':'En savoir plus',
 
     'hero.eyebrow':'Tamarindo · Costa Rica',

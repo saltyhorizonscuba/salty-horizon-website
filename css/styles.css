@@ -584,10 +584,10 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 /* Grid of post cards: every group of 3 forms a new row (1 wide "lead" card + 2 standard
    cards), so the mosaic keeps growing in the same rhythm as posts are added — see the
    HTML comment in blog/index.html for the pattern to follow when adding a new post. */
-.journal-grid{padding-block:clamp(2.2rem,5vw,3.6rem);display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:1.3rem}
-.journal-card{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);min-height:360px;transition:transform .25s ease,box-shadow .25s ease}
+.journal-grid{padding-block:clamp(2.2rem,5vw,3.6rem);display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:.7rem}
+.journal-card{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);min-height:280px;transition:transform .25s ease,box-shadow .25s ease}
 .journal-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(5,18,24,.3)}
-.journal-card--lead{min-height:420px}
+.journal-card--lead{min-height:320px}
 .journal-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .journal-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,39,51,0) 45%,rgba(8,28,37,.92) 100%)}
 /* Category pill, top-left corner — color keyed to topic so the grid reads at a glance */
