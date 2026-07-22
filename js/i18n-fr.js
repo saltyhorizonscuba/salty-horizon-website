@@ -24,9 +24,9 @@ const I18N_DATA = {
     'about.title':'La plongée comme elle devrait être',
     'about.lead':'Nous sommes Camille & Julien, deux instructeurs PADI qui ont transformé une passion de toujours pour l’océan en une expérience de plongée différente.',
     'about.p1':'Trilingues (français, anglais, espagnol), nous accueillons des voyageurs du monde entier et adaptons chaque sortie à votre niveau, vos envies et votre rythme. Pas d’horaires pressés, juste de petits groupes 100 % privés et toute notre attention.',
-    'about.f1t':'100 % privé','about.f1d':'Plongées guidées en privé, petits groupes, votre rythme, sécurité et confort maximum.',
-    'about.f2t':'Certifiés PADI','about.f2d':'Deux instructeurs PADI professionnels, passionnés par l’océan',
-    'about.f3t':'Souvenirs inclus','about.f3d':'Photos & vidéos non retouchées à chaque sortie, offertes.',
+    'about.f1t':'Guides trilingues','about.f1d':'Profitez d’un accompagnement privé en anglais, espagnol ou français.',
+    'about.f2t':'Experts locaux','about.f2d':'Découvrez nos petits secrets qui rendent chaque plongée unique.',
+    'about.f3t':'Souvenirs inclus','about.f3d':'Oubliez la quête de la photo parfaite. Profitez de votre plongée pendant que nous immortalisons l’expérience pour vous.',
     'about.cta':'Rencontrer l’équipe',
     'badge.b':'3e','badge.s':'génération de plongeurs',
 
