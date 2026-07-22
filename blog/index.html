@@ -33,7 +33,7 @@
 <link rel="preload" as="script" href="../js/core.js?v=1">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../css/styles.css?v=42">
+<link rel="stylesheet" href="../css/styles.css?v=43">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -100,7 +100,7 @@
   <div class="container journal-hero__row">
     <div>
       <span class="journal-hero__kicker">Salty Horizon · Tamarindo, Costa Rica</span>
-      <h1 class="journal-hero__title">The Blog</h1>
+      <h1 class="journal-hero__title">Journal</h1>
     </div>
     <a href="../index.html#bookForm" class="btn">Plan your dive
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -111,77 +111,81 @@
 <section class="journal-grid-wrap">
   <div class="container">
     <!-- The grid below repeats in rows of 3: one .journal-card--lead (wide, big
-         title) followed by two plain .journal-card entries. To add a new post,
-         copy the most recent .journal-card--lead block, drop it in first, and
-         demote the article that was previously the lead down into a plain
-         .journal-card in the same row (or start a new row of 3 if the current
-         row is already full). The .journal-panel strip always stays last. -->
+         card, same title size as the rest) followed by two plain .journal-card
+         entries. To add a new post, copy the most recent .journal-card--lead
+         block, drop it in first, and demote the article that was previously the
+         lead down into a plain .journal-card in the same row (or start a new row
+         of 3 if the current row is already full). Category pill color classes:
+         (none)=Travel & Planning, journal-cat--marine-life, journal-cat--marine-science,
+         journal-cat--photography. -->
     <div class="journal-grid">
 
       <article class="journal-card journal-card--lead">
-        <span class="journal-card__badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 6.9H22l-5.8 4.3 2.2 7L12 16.9 5.6 20.2l2.2-7L2 8.9h7.6z"/></svg></span>
-        <a href="best-beaches-near-tamarindo.html"><picture><source type="image/webp" srcset="../images/tamarindo-coast-beach.webp?v=1"><img src="../images/tamarindo-coast-beach.jpg?v=1" width="1200" height="899" loading="lazy" alt="Small boat anchored in a calm cove along the Guanacaste coast near Tamarindo"></picture></a>
+        <a href="best-beaches-near-tamarindo.html">
+          <span class="journal-card__cat">Travel &amp; Planning</span>
+          <picture><source type="image/webp" srcset="../images/tamarindo-coast-beach.webp?v=1"><img src="../images/tamarindo-coast-beach.jpg?v=1" width="1200" height="899" loading="lazy" alt="Small boat anchored in a calm cove along the Guanacaste coast near Tamarindo"></picture>
+        </a>
         <div class="journal-card__body">
-          <span class="journal-card__cat">Travel &amp; Planning · July 2026</span>
           <h2><a href="best-beaches-near-tamarindo.html">The 10 Best Beaches Near Tamarindo, Costa Rica</a></h2>
+          <span class="journal-card__meta">Salty Horizon · July 2026</span>
         </div>
       </article>
 
       <article class="journal-card">
-        <a href="sea-turtles-tamarindo-species-guide.html"><picture><source type="image/webp" srcset="../images/sea-turtle.webp?v=1"><img src="../images/sea-turtle.jpg?v=1" width="844" height="1500" loading="lazy" alt="Hawksbill sea turtle swimming over the reef off Tamarindo, Costa Rica"></picture></a>
+        <a href="sea-turtles-tamarindo-species-guide.html">
+          <span class="journal-card__cat journal-cat--marine-life">Marine Life</span>
+          <picture><source type="image/webp" srcset="../images/sea-turtle.webp?v=1"><img src="../images/sea-turtle.jpg?v=1" width="844" height="1500" loading="lazy" alt="Hawksbill sea turtle swimming over the reef off Tamarindo, Costa Rica"></picture>
+        </a>
         <div class="journal-card__body">
-          <span class="journal-card__cat">Marine Life</span>
           <h3><a href="sea-turtles-tamarindo-species-guide.html">The Sea Turtles You Might Meet Diving Off Tamarindo</a></h3>
+          <span class="journal-card__meta">Salty Horizon · July 2026</span>
         </div>
       </article>
 
       <article class="journal-card">
-        <a href="mantas-costa-rica-manta-ray-research.html"><picture><source type="image/webp" srcset="../images/manta.webp?v=1"><img src="../images/manta.jpg?v=2" width="2400" height="1350" loading="lazy" alt="Giant manta ray gliding through clear water off Tamarindo, Costa Rica"></picture></a>
+        <a href="mantas-costa-rica-manta-ray-research.html">
+          <span class="journal-card__cat journal-cat--marine-science">Marine Science</span>
+          <picture><source type="image/webp" srcset="../images/manta.webp?v=1"><img src="../images/manta.jpg?v=2" width="2400" height="1350" loading="lazy" alt="Giant manta ray gliding through clear water off Tamarindo, Costa Rica"></picture>
+        </a>
         <div class="journal-card__body">
-          <span class="journal-card__cat">Marine Science</span>
           <h3><a href="mantas-costa-rica-manta-ray-research.html">The Scientists Tracking Costa Rica's Giant Manta Rays</a></h3>
+          <span class="journal-card__meta">Salty Horizon · July 2026</span>
         </div>
       </article>
 
       <article class="journal-card journal-card--lead">
-        <a href="photographing-whitetip-sharks-sea-turtles.html"><picture><source type="image/webp" srcset="../images/whitetip-pair.webp?v=1"><img src="../images/whitetip-pair.jpg?v=2" width="1138" height="1500" loading="lazy" alt="Diver above two whitetip reef sharks resting on the sea floor"></picture></a>
+        <a href="photographing-whitetip-sharks-sea-turtles.html">
+          <span class="journal-card__cat journal-cat--photography">Photography</span>
+          <picture><source type="image/webp" srcset="../images/whitetip-pair.webp?v=1"><img src="../images/whitetip-pair.jpg?v=2" width="1138" height="1500" loading="lazy" alt="Diver above two whitetip reef sharks resting on the sea floor"></picture>
+        </a>
         <div class="journal-card__body">
-          <span class="journal-card__cat">Photography</span>
           <h2><a href="photographing-whitetip-sharks-sea-turtles.html">How to Photograph Whitetip Reef Sharks and Sea Turtles</a></h2>
+          <span class="journal-card__meta">Salty Horizon · July 2026</span>
         </div>
       </article>
 
       <article class="journal-card">
-        <a href="things-to-do-tamarindo-beyond-diving.html"><picture><source type="image/webp" srcset="../images/charter-sunset.webp?v=1"><img src="../images/charter-sunset.jpg?v=3" width="1124" height="1500" loading="lazy" alt="Private charter boat at sunset off Tamarindo, Costa Rica"></picture></a>
-        <div class="journal-card__body">
+        <a href="things-to-do-tamarindo-beyond-diving.html">
           <span class="journal-card__cat">Travel &amp; Planning</span>
+          <picture><source type="image/webp" srcset="../images/charter-sunset.webp?v=1"><img src="../images/charter-sunset.jpg?v=3" width="1124" height="1500" loading="lazy" alt="Private charter boat at sunset off Tamarindo, Costa Rica"></picture>
+        </a>
+        <div class="journal-card__body">
           <h3><a href="things-to-do-tamarindo-beyond-diving.html">What to Do in Tamarindo Beyond Diving</a></h3>
+          <span class="journal-card__meta">Salty Horizon · July 2026</span>
         </div>
       </article>
 
       <article class="journal-card">
-        <a href="costa-rica-dive-destinations-comparison.html"><picture><source type="image/webp" srcset="../images/whitetipshark.webp?v=1"><img src="../images/whitetipshark.jpg?v=2" width="2000" height="1382" loading="lazy" alt="Whitetip reef shark resting on the sea floor near Tamarindo, Costa Rica"></picture></a>
-        <div class="journal-card__body">
+        <a href="costa-rica-dive-destinations-comparison.html">
           <span class="journal-card__cat">Travel &amp; Planning</span>
+          <picture><source type="image/webp" srcset="../images/whitetipshark.webp?v=1"><img src="../images/whitetipshark.jpg?v=2" width="2000" height="1382" loading="lazy" alt="Whitetip reef shark resting on the sea floor near Tamarindo, Costa Rica"></picture>
+        </a>
+        <div class="journal-card__body">
           <h3><a href="costa-rica-dive-destinations-comparison.html">Where to Dive in Costa Rica: Comparing Its Very Different Underwater Worlds</a></h3>
+          <span class="journal-card__meta">Salty Horizon · July 2026</span>
         </div>
       </article>
 
-    </div>
-
-    <div class="journal-panel">
-      <div>
-        <span class="journal-card__panelKicker">Browse by topic</span>
-        <div class="journal-pills">
-          <span class="journal-pill">Marine Life</span>
-          <span class="journal-pill">Marine Science</span>
-          <span class="journal-pill">Photography</span>
-          <span class="journal-pill">Travel &amp; Planning</span>
-        </div>
-      </div>
-      <a href="../index.html#bookForm" class="btn btn--teal btn--sm">Plan your dive
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
     </div>
   </div>
 </section>
