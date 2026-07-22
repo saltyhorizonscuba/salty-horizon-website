@@ -24,9 +24,9 @@ const I18N_DATA = {
     'about.title':'Bucear como se debe',
     'about.lead':'Somos Camille & Julien, dos instructores PADI que convirtieron un amor de toda la vida por el océano en una forma distinta de bucear.',
     'about.p1':'Trilingües (español, inglés y francés), recibimos viajeros de todo el mundo y adaptamos cada salida a tu comodidad, tus metas y tu ritmo. Sin horarios apresurados, solo grupos pequeños 100 % privados y toda nuestra atención.',
-    'about.f1t':'100 % privado','about.f1d':'Inmersiones guiadas en privado, grupos pequeños, tu ritmo, máxima seguridad y comodidad.',
-    'about.f2t':'Certificados PADI','about.f2d':'Dos instructores PADI profesionales, apasionados por el océano.',
-    'about.f3t':'Recuerdos incluidos','about.f3d':'Fotos y videos sin editar en cada salida, gratis.',
+    'about.f1t':'Guías trilingües','about.f1d':'Disfruta de un acompañamiento privado en inglés, español o francés.',
+    'about.f2t':'Expertos locales','about.f2d':'Descubre nuestros pequeños secretos que hacen que cada inmersión sea única.',
+    'about.f3t':'Recuerdos incluidos','about.f3d':'Olvídate de conseguir la foto perfecta. Disfruta de tu inmersión mientras capturamos la experiencia por ti.',
     'about.cta':'Conoce al equipo',
     'badge.b':'3ª','badge.s':'generación de buzos',
 

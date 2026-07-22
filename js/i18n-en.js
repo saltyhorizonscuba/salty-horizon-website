@@ -24,9 +24,9 @@ const I18N_DATA = {
     'about.title':'Diving done the right way',
     'about.lead':'We are Camille & Julien, two PADI instructors who turned a lifelong love of the ocean into a different kind of dive experience.',
     'about.p1':'Trilingual in English, French and Spanish, we welcome travelers from all over the world and adapt every session to your comfort, goals and pace. No rushed schedules, just small, fully private groups and our full attention.',
-    'about.f1t':'Fully private','about.f1d':'Privately guided dives, small groups, your pace, maximum safety and comfort.',
-    'about.f2t':'PADI certified','about.f2d':'Two professional PADI instructors who live and breathe the ocean.',
-    'about.f3t':'Memories included','about.f3d':'Unedited photos & videos with every session, free.',
+    'about.f1t':'Trilingual Guides','about.f1d':'Enjoy private guidance in English, Spanish, or French.',
+    'about.f2t':'Local Experts','about.f2d':'Discover our little secrets that make every dive unique.',
+    'about.f3t':'Memories Included','about.f3d':'Forget about getting the perfect shot. Enjoy your dive while we capture the experience for you.',
     'about.cta':'Meet the team',
     'badge.b':'3rd','badge.s':'generation of dive pros',
 
