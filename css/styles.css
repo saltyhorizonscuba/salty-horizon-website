@@ -559,6 +559,11 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   .gallery figure{flex:0 0 80%;margin-bottom:0;scroll-snap-align:center}
   .gallery figure img{aspect-ratio:4/5;height:100%;object-fit:cover}
 }
+/* Mobile scroll hint: only shown when there's guaranteed clearance below the
+   hero CTA buttons (min-height gate) so it never overlaps them on short phones. */
+@media (max-width:760px) and (min-height:740px){
+  .hero__scroll{display:flex;bottom:1.75rem}
+}
 @media (max-width:560px){
   .exp-grid{grid-template-columns:1fr}
 }
