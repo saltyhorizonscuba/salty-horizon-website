@@ -42,7 +42,7 @@
 <link rel="preload" as="script" href="js/core.js?v=1">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="css/styles.css?v=46">
+<link rel="stylesheet" href="css/styles.css?v=47">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -350,8 +350,8 @@
     <div class="book-card" data-reveal data-delay="1">
       <form id="bookForm">
         <div class="field">
-          <label data-i18n="book.fexp">Experience</label>
-          <select name="experience" required>
+          <label for="book-experience" data-i18n="book.fexp">Experience</label>
+          <select id="book-experience" name="experience" required>
             <option value="" data-i18n="book.fexpPh">Choose an experience…</option>
             <option value="Intro to Scuba (Pool) – $80" data-i18n="card.intro.t">Intro to Scuba (Pool)</option>
             <option value="Discover Scuba Diving – $170" data-i18n="card.discover.t">Discover Scuba Diving</option>
@@ -363,11 +363,11 @@
           </select>
         </div>
         <div class="field-row">
-          <div class="field"><label data-i18n="book.fdate">Preferred date</label><input type="date" name="date"></div>
-          <div class="field"><label data-i18n="book.fpeople">People</label><input type="number" name="people" min="1" max="12" value="2"></div>
+          <div class="field"><label for="book-date" data-i18n="book.fdate">Preferred date</label><input id="book-date" type="date" name="date"></div>
+          <div class="field"><label for="book-people" data-i18n="book.fpeople">People</label><input id="book-people" type="number" name="people" min="1" max="12" value="2"></div>
         </div>
-        <div class="field"><label data-i18n="book.fname">Your name</label><input type="text" name="name" data-i18n-ph="book.fnamePh" placeholder="First & last name"></div>
-        <div class="field"><label data-i18n="book.fmsg">Anything else?</label><textarea name="note" rows="3" data-i18n-ph="book.fmsgPh" placeholder="Level, questions…"></textarea></div>
+        <div class="field"><label for="book-name" data-i18n="book.fname">Your name</label><input id="book-name" type="text" name="name" data-i18n-ph="book.fnamePh" placeholder="First & last name"></div>
+        <div class="field"><label for="book-note" data-i18n="book.fmsg">Anything else?</label><textarea id="book-note" name="note" rows="3" data-i18n-ph="book.fmsgPh" placeholder="Level, questions…"></textarea></div>
         <button type="submit" class="btn btn--wa btn--block btn--lg">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           <span data-i18n="book.submit">Send booking on WhatsApp</span>
@@ -507,7 +507,7 @@
         </div>
       </div>
       <div>
-        <h4 data-i18n="footer.explore">Explore</h4>
+        <h3 data-i18n="footer.explore">Explore</h4>
         <a href="experiences.html" data-i18n="nav.experiences">Experiences</a>
         <a href="private-charters.html" data-i18n="nav.charters">Private Charters</a>
         <a href="padi-courses.html" data-i18n="nav.courses">PADI Courses</a>
@@ -517,7 +517,7 @@
         <a href="#about" data-i18n="nav.about">About</a>
       </div>
       <div>
-        <h4 data-i18n="footer.contactH">Contact</h4>
+        <h3 data-i18n="footer.contactH">Contact</h4>
         <a href="https://wa.me/50687759641">+506 8775 9641</a>
         <a href="mailto:saltyhorizon.scuba@gmail.com">saltyhorizon.scuba@gmail.com</a>
         <a href="#contact" data-i18n="contact.loc">Tamarindo, Costa Rica</a>
