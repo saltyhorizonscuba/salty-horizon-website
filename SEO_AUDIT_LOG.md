@@ -97,4 +97,65 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 
 ---
 
+---
+
+## 2026-07-21 — Audit SEO/GEO complet (relance périodique), aucune correction appliquée
+
+**Contexte** : audit demandé par l'utilisateur après enrichissement récent du blog (2 nouveaux articles), refonte de la grille blog en mosaïque, corrections mineures (contraste bouton avis, indicateur de scroll mobile). Mission d'audit pur — constats seulement, pas de code modifié (sauf ce fichier et `SEO_PROJECT_CONTEXT.md`).
+
+**Méthode** : comparaison `origin/main` (prod réelle) vs `origin/dev` (git log/diff), lecture directe des fichiers, 4 audits Lighthouse réels contre `https://www.saltyhorizondiving.com/` (mobile, Node/Lighthouse 13.4.0 en CLI local — pas de simulation), tentative Semrush (`domain_overview`) — **échec : quota d'unités API épuisé**, aucune donnée de mots-clés/trafic/classement réelle disponible cette session, donc rien inventé sur ce plan.
+
+**Constats principaux** :
+1. **`image-delivery-insight` = 1 151 KiB de gaspillage, chiffre identique à l'audit du 2026-07-16/17** — confirmé toujours d'actualité malgré la conversion WebP de juillet : la conversion de format n'a pas réglé le vrai problème, qui est le **dimensionnement**. Vérifié précisément : `.exp-card img` (page d'accueil, ex. `intro-pool.webp` 1500×1001, `fundive-home.webp` 1206×1561, `bull-shark.webp`, `snorkel.webp`, `dsd.webp`) s'affiche dans une carte CSS de ~380-430px de large (`.exp-grid` 3 colonnes) mais est servi en une seule résolution ~1000-1600px de large, sans `srcset`/`sizes` responsive. Root cause confirmée par lecture croisée `css/styles.css` (`.exp-grid`, `.exp-card img`) + dimensions réelles des fichiers WebP (extraites par script Node, pas devinées).
+2. **Nouveau constat, jamais audité avant** : le gabarit des articles de blog (`blog/*.html`, les 7 pages) n'a jamais reçu le traitement priorité LCP appliqué aux pages produit en juillet (préchargement + `fetchpriority="high"` sur l'image héros). Confirmé par Lighthouse sur `blog/top-10-things-to-do-tamarindo.html` : `lcp-discovery-insight` score 0, item du checklist « fetchpriority=high should be applied » = `false`. C'est un défaut structurel binaire (pas du bruit de mesure), présent sur les 7 articles puisqu'ils partagent le même gabarit `<figure class="article-hero">` sans `<link rel="preload">` ni `fetchpriority`.
+3. **Variance de mesure notée** : 3 passes Lighthouse mobile sur la home le même jour ont donné des scores Performance de 59, 84 et 88 (LCP 8.1s vs 3.3s vs 3.3s) alors que rien n'avait changé dans le code entre les passes — cohérent avec de la variance réseau/hébergement réelle (Hostinger mutualisé), pas une régression de code. Les métriques stables sur les 3 passes (TBT ~190-310ms, `unused-javascript` = gtag.js à 128 KiB, `image-delivery-insight` = 1151 KiB identique) sont les chiffres fiables à retenir, pas la valeur LCP d'une passe isolée.
+4. **Bonne nouvelle constatée, pas une action à mener** : le contenu de `private-charters.html`, signalé comme trop court depuis le 2026-07-12, est déjà largement retravaillé sur `dev` (commit `ba97387`, WIP) — partenariat catamaran Playgrounds (51 pieds, 8 invités, 3 cabines, capitaine, observation des baleines juillet-novembre, pêche sportive), entièrement traduit EN/FR/ES (vérifié dans `js/i18n-{en,fr,es}.js`), photos réelles, CTA WhatsApp. **Non fusionné sur `main`, donc invisible en prod** — bloqué uniquement sur validation client (message de commit : « pending client sign-off »), pas sur un manque de donnée ou de code.
+5. **Rien de nouveau côté schéma structuré du blog** : `blog/index.html` référence bien les 7 articles par `@id` dans le `@graph` `Blog`/`blogPost` (pas de doublon, pas d'article manquant) ; chaque article a `BlogPosting`+`FAQPage`+`BreadcrumbList` correctement formés, liens internes vers `experiences.html#discover`/`#catalinas`/`private-charters.html`. `sitemap.xml` et `llms.txt` vérifiés à jour (7 articles + index, `lastmod` réalistes) — pas de régression malgré ce que le brief de relance laissait craindre.
+6. **Accessibilité (Lighthouse, score 85/100, pas encore auditée en détail avant)** : `color-contrast` insuffisant sur `.eyebrow`/`.muted`/labels de formulaire, un saut de niveau de titre (`<h4>` dans le footer), 2 champs de formulaire (`date`, `people`) sans `<label>` associé, `<select name="experience">` sans nom accessible. Mineur, pas retenu en priorité cette semaine, mais à garder à l'œil (positionnement premium = attention aux détails).
+7. **Toujours sans décision** : `robots.txt` autorise toujours `CCBot` par défaut (jamais tranché) ; pages dédiées Catalinas/Bat Islands toujours sans donnée de volume de recherche réelle pour trancher (Semrush indisponible cette session).
+
+**Corrections appliquées cette session** : aucune sur le code du site (mission d'audit). `SEO_PROJECT_CONTEXT.md` section 3 mise à jour (comptage pages/blog obsolète : 21→23 URLs, 6→7 articles).
+
+**Priorités recommandées à l'utilisateur** (voir réponse complète) : (1) préchargement LCP sur le gabarit des 7 articles de blog, (2) `srcset`/`sizes` responsive sur les images `.exp-card`, (3) décision de fusion de `private-charters.html` (dev→main) déjà prête, en attente de validation client uniquement.
+
+**Encore ouvert** : mise à jour périodique `aggregateRating` (actuellement 14 avis/5★, à confirmer que ce chiffre reste exact), statut avis par avis, décision `CCBot`, données de volume de recherche réelles (Semrush à réessayer quand le quota sera renouvelé).
+
+---
+
+## 2026-07-21 — Correction priorité 1 : préchargement LCP sur le gabarit des 7 articles de blog
+
+**Contexte** : suite directe de l'audit du même jour (ci-dessus), constat n°2. Correction demandée par l'utilisateur.
+
+**Correction appliquée** : sur les 7 pages `blog/*.html` (`top-10-things-to-do-tamarindo`, `best-beaches-near-tamarindo`, `mantas-costa-rica-manta-ray-research`, `costa-rica-dive-destinations-comparison`, `things-to-do-tamarindo-beyond-diving`, `photographing-whitetip-sharks-sea-turtles`, `sea-turtles-tamarindo-species-guide`), ajout dans le `<head>` (juste après `twitter:card`, avant les `preconnect`, même emplacement que sur `index.html`) d'un `<link rel="preload" as="image" href="../images/<hero>.webp?v=X" fetchpriority="high">` pointant vers l'image héros réelle de chaque article, plus `fetchpriority="high"` sur le `<img>` correspondant dans `.article-hero`. Pour `mantas-costa-rica-manta-ray-research.html`, qui n'a jamais eu de wrapper `<picture>`/source WebP (incohérence pré-existante, hors scope de cette correction), le preload cible directement le `.jpg` réellement servi plutôt que d'inventer une conversion WebP non demandée.
+
+**Vérification** : `grep` sur les 7 fichiers confirmant une paire preload+fetchpriority par article, chemin d'image identique entre le `<link rel="preload">` et le `<picture>`/`<img>` réel.
+
+**Fichiers modifiés** : les 7 pages `blog/*.html` listées ci-dessus.
+
+**Encore ouvert** : priorité 2 (`srcset`/`sizes` sur les images `.exp-card`) et priorité 3 (décision de fusion `private-charters.html`) restent à traiter séparément.
+
+---
+
+## 2026-07-21 — Correction priorité 2 : `srcset`/`sizes` responsive sur les images `.exp-card`, sans compromis qualité
+
+**Contexte** : suite directe de l'audit du même jour, constat n°1. L'utilisateur a explicitement insisté : la qualité visuelle est un point de différenciation primordial pour ses clients, la correction ne doit provoquer **aucun changement visuel perceptible**, ni sur desktop ni sur mobile haute densité (retina).
+
+**Diagnostic confirmé avant correction** : les 5 images (`intro-pool`, `dsd`, `fundive-home`, `bull-shark`, `snorkel`) s'affichent dans `.exp-card` à 398px de large maximum (3 colonnes, conteneur plafonné à 1240px) mais étaient servies à leur résolution native (1000-1600px), sans `srcset`. `dsd.jpg` et `snorkel.jpg` sont aussi réutilisés en grand format ailleurs (`experiences.html` `.exp-row__media`, `blog/index.html`, `blog/top-10-things-to-do-tamarindo.html` hero LCP) ; `bull-shark.jpg` est réutilisé dans la lightbox galerie en pleine résolution. Ces usages devaient rester inchangés.
+
+**Approche retenue (pas de compression agressive, ajout d'une variante, pas de remplacement)** :
+1. Génération via `sharp` d'une variante `-card` supplémentaire (900px de large, qualité JPEG 88 / WebP 85 — volontairement plus haute que la convention standard du site (~82-85) pour ce point précis) pour chacune des 5 images, sans toucher aux fichiers originaux : `intro-pool-card.jpg/.webp`, `dsd-card.jpg/.webp`, `fundive-home-card.jpg/.webp`, `bull-shark-card.jpg/.webp`, `snorkel-card.jpg/.webp`.
+2. Sur `index.html`, `fr/index.html`, `es/index.html` — uniquement les 5 balises `<picture>` dans `.exp-grid` (repérées précisément pour ne pas toucher à l'occurrence lightbox de `bull-shark` à la ligne ~291, ni aux usages dans `experiences.html`) — ajout d'un `srcset` à deux candidats (900w variante compacte + largeur native d'origine) sur le `<source webp>` et sur l'`<img>`, avec `sizes="(min-width:981px) 398px, (min-width:561px) 46vw, 92vw"` calculé à partir des points de rupture réels de `.exp-grid` (3/2/1 colonnes) dans `css/styles.css`.
+
+**Pourquoi c'est sans compromis qualité** : le navigateur choisit toujours le candidat dont la résolution native est ≥ à la résolution d'affichage réelle (taille CSS × densité de pixels de l'écran). Vérifié par mesure directe (`img.currentSrc`/`naturalWidth`) : à 1300px desktop (DPR 1), les 5 cartes chargent la variante 900w, affichée à 398px — 2,26x la définition d'affichage, largement au-dessus du seuil de netteté perceptible. À 390px mobile avec DPR 3 (résolution requise ≈1170px), la variante 900w est automatiquement écartée et le fichier ORIGINAL pleine résolution est chargé à sa place — comportement natif du navigateur (algorithme `srcset`), pas une règle codée à la main. Capture d'écran avant/après comparée visuellement : aucune différence perceptible.
+
+**Gains** : `-card.webp` pèse 40 à 234 Ko contre 165 à 454 Ko pour les fichiers originaux selon l'image (`bull-shark`, déjà proche de 1000px nativement, gain marginal ; les 4 autres, gain significatif) — sur desktop/tablette (la majorité des chargements de cette page), c'est ce fichier compact qui est effectivement transféré.
+
+**Vérification** : script Puppeteer avec deux profils d'écran (1300px DPR 1, 390px DPR 3) confirmant le fichier réellement chargé (`currentSrc`) par image ; capture d'écran pleine page de la section Experiences après défilement complet (déclenchement des animations `data-reveal`) — rendu identique à avant correction.
+
+**Fichiers modifiés** : `index.html`, `fr/index.html`, `es/index.html` (5 balises `<picture>` chacun) ; 10 nouveaux fichiers image (`*-card.jpg`/`.webp` ×5).
+
+**Encore ouvert** : priorité 3 (décision de fusion `private-charters.html`, dev→main) reste à traiter séparément, en attente de validation client uniquement.
+
+---
+
 *Format pour les prochaines entrées : date, contexte de la mission, constats (avec méthode de vérification), corrections appliquées, décisions documentées sans code, points laissés ouverts et pourquoi.*

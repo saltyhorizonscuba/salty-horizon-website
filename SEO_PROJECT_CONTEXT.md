@@ -39,7 +39,7 @@ Document de référence factuel pour le sous-agent `head-of-seo-geo`. Toute info
 
 ## 3. Inventaire des pages
 
-5 pages « produit » en anglais, chacune dupliquée nativement en `/fr/` et `/es/` (voir section 5), plus un blog anglais-only de 6 pages. 21 pages HTML au total dans le sitemap.
+5 pages « produit » en anglais, chacune dupliquée nativement en `/fr/` et `/es/` (voir section 5), plus un blog anglais-only. **Mise à jour 2026-07-21** : le blog compte maintenant 7 articles (2 nouveaux ajoutés le 2026-07-21 : « The Top 10 Things to Do in Tamarindo » et « The 10 Best Beaches Near Tamarindo », tous deux avec schéma `BlogPosting`+`FAQPage`+`BreadcrumbList`, liens internes vers les pages produit). 23 URLs au total dans `sitemap.xml` (vérifié à jour, `lastmod` cohérents avec les dates de publication réelles) — `llms.txt` également à jour avec les 7 articles.
 
 | Fichier (EN) | URL canonique | `<title>` (EN) | Rôle |
 |---|---|---|---|
