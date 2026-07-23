@@ -158,4 +158,22 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 
 ---
 
+## 2026-07-23 — Images restantes surdimensionnées : `logo.png` (23 pages) et `about.jpg` (home)
+
+**Contexte** : suite du chantier "images restantes" identifié lors du point sur les chantiers structurels SEO. Même méthode que le 2026-07-21 (priorité 2) : variante compacte ajoutée, fichier original conservé comme repli haute densité, aucune perte de qualité visée.
+
+**Corrections appliquées** :
+1. `logo.png`/`logo.webp` (logo du header, présent sur les 23 pages du site) : affiché à ~140-177px seulement contre 1074px servi. Nouvelle variante `logo-compact.png`/`.webp` à 600px de large (10-16 Ko contre 44 Ko), avec `srcset` à deux candidats (600w/1074w) et `sizes="(max-width:520px) 140px, 177px"` reflétant les deux tailles CSS réelles (`.brand--logo img{height:66px}`, `52px` en scrolled/mobile).
+2. `about.jpg`/`about.webp` (page À propos, les 3 langues) : affiché ~580-600px contre 1338px servi. Nouvelle variante `about-card.jpg`/`.webp` à 900px (117-187 Ko contre 336 Ko d'origine), `sizes="(min-width:981px) 601px, 92vw"` basé sur `.about-grid` (`1.05fr 1fr`, conteneur plafonné à 1240px).
+
+**Vérification** : mesure directe de `img.currentSrc` (fichier réellement chargé, pas une estimation) à deux profils d'écran — desktop 1300px DPR1 (charge bien les variantes compactes) et mobile 390px DPR3 (le logo reste sur la variante compacte car 600w suffit même à cette densité ; `about` bascule automatiquement sur le fichier original pleine résolution, la variante compacte étant insuffisante à cette densité). Capture d'écran avant/après sur le header et la section About — rendu identique. Aucune erreur console sur un échantillon de 4 pages parmi les 23 touchées (`blog/index.html`, `fr/experiences.html`, `es/private-charters.html`, `scuba-diving-tamarindo-faq.html`).
+
+**Fichiers modifiés** : 23 pages HTML (balise logo du header), `index.html`/`fr/index.html`/`es/index.html` (image About) ; 4 nouveaux fichiers image (`logo-compact.png`/`.webp`, `about-card.jpg`/`.webp`).
+
+**Décision documentée, pas une correction** : `hero-mobile.webp` et `hero-logo.webp` volontairement laissés tels quels. `hero-mobile.webp` (1200×2133) est en réalité déjà bien dimensionné pour son usage réel (photo plein écran mobile à haute densité) — le gaspillage détecté par Lighthouse vient de son test sur un appareil à densité modérée (Moto G4, DPR 1.75), pas d'un vrai problème pour la majorité du trafic mobile réel (iPhones, DPR 3). `hero-logo.webp` est l'élément LCP de la page (déjà préchargé avec `fetchpriority="high"`) : le gain potentiel (~38 Ko) ne justifiait pas le risque d'une mauvaise coordination entre le préchargement et l'usage réel, qui pourrait dégrader le premier affichage au lieu de l'améliorer.
+
+**Encore ouvert** : priorité 3 (décision de fusion `private-charters.html`, dev→main) ; décision `CCBot` ; données de volume de recherche réelles (Semrush).
+
+---
+
 *Format pour les prochaines entrées : date, contexte de la mission, constats (avec méthode de vérification), corrections appliquées, décisions documentées sans code, points laissés ouverts et pourquoi.*
