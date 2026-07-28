@@ -257,6 +257,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .stats--3{grid-template-columns:repeat(3,1fr);max-width:760px;margin-inline:auto}
 .stat b{font-family:var(--font-display);font-weight:800;font-size:clamp(2.2rem,5vw,3.4rem);color:var(--sand);display:block;line-height:1}
 .stat span{font-family:var(--font-display);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#bccdd4}
+.stats--3 .stat:first-child span{color:var(--sand)}
 
 /* ---------- Gallery (carousel, 3 at a time) ---------- */
 .gallery{position:relative}
