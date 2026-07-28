@@ -194,4 +194,67 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 
 ---
 
+## 2026-07-28 — Revue périodique post-synchronisation `main` (Playgrounds, Las Catalinas navy, suppression FAQ fabriquée, em dashes)
+
+**Contexte** : `main` vient d'absorber un lot important de changements développés sur `dev` : refonte de `private-charters.html` autour du partenariat catamaran Playgrounds, nouvelle section « Las Catalinas » à fond navy sur la home, suppression site-wide des tirets cadratins, suppression d'un FAQ fabriqué sur `private-charters.html`. Mission : revue de l'état des 15 points d'audit précédents + recherche de régressions introduites par ces changements. Audit pur, aucune correction de code appliquée (hors ce fichier et `SEO_PROJECT_CONTEXT.md`), conformément à la demande.
+
+**Méthode** : `git fetch` + comparaison directe `origin/main` vs `origin/dev` (`git diff --stat`, `git log`), extraction et lecture de fichiers réels tels que servis en prod (`git show origin/main:<fichier>`) plutôt que du répertoire de travail local (qui contient des fichiers non commités), validation JSON-LD par script Node (parse réel, pas visuel), diff structurel « squelette » (tags + classes, texte ignoré) entre versions EN/FR/ES pour détecter les écarts de structure de façon fiable. Tentative Semrush (`domain_overview`) : toujours en échec, quota d'unités API épuisé (3e audit consécutif sans données Semrush disponibles).
+
+**Confirmé sain, pas de régression** :
+- `sitemap.xml`/`llms.txt` sur `main` NE référencent PAS `catalina-islands-diving.html`/`bat-islands-diving.html` (contrairement à `dev`, qui les a déjà ajoutées dans le commit `d1b9528`) — c'est le comportement correct, ces 2 pages restent non commitées (fichiers non suivis en local), donc à raison absentes de la prod. Le seul écart de contenu réel entre `origin/main` et `origin/dev` est ces 2 lignes dans `sitemap.xml`/`llms.txt` (`git diff origin/main origin/dev --stat` : 2 fichiers, 4 lignes).
+- JSON-LD validé par parsing réel sur `index.html`, `private-charters.html` (EN/FR/ES) : tous les blocs parsent sans erreur. `index.html` : `SportsActivityLocation` (9 avis détaillés, `aggregateRating` 5★/14 avis inchangé depuis le 2026-07-21), `FAQPage` (5 Q/R, toujours présent — sans lien avec le FAQ fabriqué supprimé, voir plus bas), `Person`×2. `private-charters.html` (les 3 langues) : `WebPage`+`BreadcrumbList` propre, pas de schéma orphelin.
+- Le FAQ supprimé par le commit `a8df50a` (« remove fabricated FAQ ») était un accordéon de 10 Q/R + son `FAQPage` JSON-LD ajoutés uniquement sur `private-charters.html` (jamais sourcé du client) — suppression propre, aucun résidu (ni schéma orphelin, ni lien mort vers des ancres `#pc-qN` supprimées). Bonne décision, cohérente avec la règle « ne jamais inventer un fait ».
+- Suppression des tirets cadratins : recherche de l'octogramme UTF-8 `—` sur tous les fichiers `.html`/`.js` suivis par `origin/main` → 0 occurrence restante. Nettoyage complet, pas de régression.
+- `hreflang`/canonical toujours réciproques et résolutifs sur `private-charters.html` (3 langues) malgré la refonte.
+- `padi-courses.html` : schéma `Course`×2 + `Offer`×2 + `BreadcrumbList` intact, page seulement touchée par des commits cosmétiques du jour (logo mobile, bandeau stats) — aucune régression.
+- Diff structurel homepage EN vs FR vs ES : **un seul écart sur toute la page** (voir priorité 3 ci-dessous) — tout le reste (stats bar, ordre des sections, Experiences avant About, etc.) est resté parfaitement synchronisé entre les 3 langues malgré une dizaine de commits le jour même.
+
+**Régressions/écarts trouvés (détail des 3 priorités, voir réponse à l'utilisateur pour le format complet)** :
+1. **[CRITIQUE] Liens internes cassés vers des pages non publiées.** Le dropdown de navigation de `private-charters.html` sur `main` (lignes 80-81) contient `<a href="catalina-islands-diving.html">` et `<a href="bat-islands-diving.html">` — ces 2 fichiers n'existent nulle part sur `main` (confirmé : fichiers non suivis même en local). Ce sont donc 2 liens internes menant à une 404 en prod, actuellement en ligne. Recherche exhaustive sur toutes les pages HTML de `main` : **seule** `private-charters.html` est touchée — `index.html`, `experiences.html` et les autres utilisent toujours correctement les ancres `experiences.html#catalinas`/`#bat`. Fuite probable d'un renommage anticipé fait pendant la refonte, jamais isolé du reste comme l'ont été `sitemap.xml`/`llms.txt`.
+2. **[ÉLEVÉ] `private-charters.html` FR/ES très en retard sur la refonte EN.** La version EN a reçu 4 commits de contenu supplémentaires le 2026-07-28 (`fa0cb4f`, `a63e1c7`, `a8df50a`, `3e09999`) qui n'ont **jamais touché** `fr/private-charters.html` ni `es/private-charters.html` (confirmé par `git log -- <fichier>` : ces 2 fichiers n'apparaissent dans aucun de ces 4 commits, seulement dans des commits globaux de bump cache/mobile). Résultat mesuré : EN a 6 sections `h2` (« This isn't a dive trip »… jusqu'à « An Ocean That's Actually Alive » et « One Boat, No Compromises »), FR/ES n'en ont que 4 — il manque entièrement la section vie marine et la section « groupes mixtes », et le CTA de fin est un simple bouton au lieu du bandeau navy « Your Day on the Pacific Is Waiting ». En plus : `<title>`/`og:title`/`<h1>`/meta description FR-ES n'ont pas la mention « × Playgrounds » ni le nouveau positionnement (whale watching, surf) que l'EN affiche désormais — alors que le corps de page FR/ES contient bien du contenu Playgrounds (ajouté le 2026-07-20, `ba97387`, avant les 4 commits de raffinement).
+3. **[MOYEN] Section « Las Catalinas » de la home sans fond navy en FR/ES.** Diff structurel complet (tags+classes, 565 lignes identiques) entre `index.html`/`fr/index.html`/`es/index.html` : **un seul écart sur toute la page** — `<section class="section section--dark" id="catalinas">` en EN vs `<section class="section" id="catalinas">` en FR/ES. Pas de bug de contraste (les règles CSS `.section--dark` sont bien conditionnées à la classe, absente ici tout se replie proprement sur le style clair par défaut) mais rupture de cohérence visuelle/de marque entre langues sur une section volontairement mise en avant en EN.
+
+**Points de l'audit précédent, statut** :
+- Longueur de `private-charters.html` (ouvert depuis le 2026-07-12) → **résolu côté EN** (refonte Playgrounds, page nettement approfondie), **rouvert côté FR/ES** sous une forme différente (écart de contenu, voir priorité 2).
+- `hasCourseInstance`/`timeRequired` (Advanced Open Water) → décision documentée maintenue, rien de nouveau.
+- `aggregateRating` (14 avis, mis à jour le 2026-07-21) → toujours affiché tel quel, une semaine s'est écoulée ; **à confirmer** auprès de l'utilisateur si le chiffre réel a bougé, pas de preuve dans le dépôt qu'il faille le changer.
+- `CCBot` dans `robots.txt` → toujours autorisé par défaut, décision jamais tranchée, rien de nouveau cette semaine.
+- Redirection double (réglage Hostinger hPanel) → hors dépôt, toujours ouvert, non vérifiable depuis le code.
+- Données de volume de recherche réelles (Semrush) → toujours indisponible (quota épuisé), 3e tentative consécutive sans succès.
+- Statut avis par avis (réel vs exemple) → toujours **à confirmer**, aucune nouvelle information cette session.
+- Pages Catalina/Bat Islands dédiées → toujours non fusionnées, en attente de validation utilisateur (inchangé), mais **fuite de lien** détectée vers elles depuis `private-charters.html` (priorité 1 ci-dessus) — à corriger indépendamment de la décision de publication.
+
+**Corrections appliquées cette session** : aucune sur le code du site (mission d'audit demandée explicitement). `SEO_AUDIT_LOG.md` (ce fichier) et `SEO_PROJECT_CONTEXT.md` mis à jour.
+
+**Encore ouvert** : les 3 priorités ci-dessus (aucune corrigée), `CCBot`, redirection double hPanel, volume de recherche réel (Semrush), statut avis par avis, mise à jour périodique `aggregateRating`, décision de publication des pages Catalina/Bat Islands.
+
+---
+
+## 2026-07-28 (suite) — Correction des 3 priorités de l'audit précédent
+
+**Corrections appliquées** :
+1. **Liens cassés (priorité 1)** : `private-charters.html`, les 2 `<a href="catalina-islands-diving.html">`/`<a href="bat-islands-diving.html">` du dropdown de nav remplacés par `experiences.html#catalinas`/`#bat` (avec `data-i18n` restauré pour cohérence avec les autres entrées du menu), identique au reste du site.
+2. **FR/ES en retard (priorité 2)** : ajout des 2 sections manquantes (« Un océan bien vivant » / « Un océano realmente vivo », « Un seul bateau, aucun compromis » / « Un solo bote, sin concesiones ») et du bandeau CTA final navy, traduits (pas de raccourci de contenu par rapport à l'EN), sur `fr/private-charters.html` et `es/private-charters.html`. `<title>`, `og:title`, `og:description`, `og:image` (aligné sur `playgrounds-hero.jpg`), JSON-LD `name`/`description` et `<h1>` mis à jour pour mentionner le partenariat Playgrounds, sur les 2 fichiers HTML et dans `js/i18n-fr.js`/`js/i18n-es.js` (clés `meta.charters.title`, `meta.charters.desc`, `charters.h1`). Note : le reste de la page FR/ES (hero avec breadcrumb, disposition en cartes) n'a pas été refondu à l'identique de l'EN — seul l'écart de contenu signalé par l'audit a été comblé, pas une parité structurelle complète.
+3. **Fond navy manquant (priorité 3)** : `section--dark` ajouté à `<section id="catalinas">` sur `fr/index.html` et `es/index.html`.
+
+**Vérification** : balises `<section>` comptées ouvertes/fermées (8/8) sur les 3 versions de `private-charters.html` après édition ; JSON-LD des 2 pages FR/ES reparsé avec succès (script Node) ; toutes les images référencées dans les nouvelles sections confirmées présentes dans `images/`.
+
+**Encore ouvert** : `CCBot` ; redirection double hPanel ; volume de recherche réel (Semrush) ; statut avis par avis ; mise à jour périodique `aggregateRating` ; décision de publication des pages Catalina/Bat Islands.
+
+---
+
+## 2026-07-28 (suite 2) — Parité structurelle complète FR/ES sur `private-charters.html`, toutes pages du site vérifiées
+
+**Contexte** : l'utilisateur a signalé que la mise en page de `private-charters.html` restait visiblement différente entre langues malgré la correction précédente (qui n'avait comblé que l'écart de contenu, pas refondu la structure). Demande explicite : vérifier que les pages sont identiques quelle que soit la langue, sur n'importe quelle page du site.
+
+**Corrections appliquées** :
+- `fr/private-charters.html` et `es/private-charters.html` réécrites intégralement pour être structurellement identiques à l'EN, section par section (hero sans breadcrumb, bandeau stats séparé à fond navy, photo pleine largeur, galerie carrousel de 6 photos au lieu d'une grille 2 photos, grille `photo-grid-4` de 8 tuiles au lieu de `book-card`, sections « Un océan bien vivant »/« Un seul bateau, aucun compromis »/CTA final déjà ajoutées la session précédente). Tout le contenu FR/ES spécifique qui n'existait pas en EN (section dédiée observation des baleines, cartes `book-card`) a été retiré au profit d'une traduction fidèle de la structure EN actuelle.
+- **Bug fonctionnel trouvé en comparant les attributs `class` de toutes les pages EN vs FR/ES** : le composant `.lightbox` (zoom plein écran des photos de galerie) était absent de `fr/private-charters.html` et `es/private-charters.html` — présent partout ailleurs (`index.html` dans les 3 langues). Les icônes de zoom de la galerie ne fonctionnaient donc pas en FR/ES. Corrigé en ajoutant le même bloc qu'EN/`index.html` (labels ARIA non traduits, convention du site).
+
+**Vérification (méthode)** : comparaison du nombre de balises (`h2`, `section`, `figure`, `picture`, tuiles `.photo-tile`) EN vs FR vs ES — identiques sur `private-charters.html` (6/8/22/29/8 partout). Extraction et diff complet de tous les attributs `class="..."` EN vs FR/ES sur les 5 pages dupliquées du site (`index.html`, `experiences.html`, `padi-courses.html`, `scuba-diving-tamarindo-faq.html`, `private-charters.html`) : **aucun écart restant après le fix lightbox**. Équilibre des balises `<section>`/`<div>` vérifié (8/8, 50/50). JSON-LD reparsé avec succès (Node).
+
+**Encore ouvert** : `CCBot` ; redirection double hPanel ; volume de recherche réel (Semrush) ; statut avis par avis ; mise à jour périodique `aggregateRating` ; décision de publication des pages Catalina/Bat Islands.
+
+---
+
 *Format pour les prochaines entrées : date, contexte de la mission, constats (avec méthode de vérification), corrections appliquées, décisions documentées sans code, points laissés ouverts et pourquoi.*
