@@ -239,7 +239,21 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 
 **Vérification** : balises `<section>` comptées ouvertes/fermées (8/8) sur les 3 versions de `private-charters.html` après édition ; JSON-LD des 2 pages FR/ES reparsé avec succès (script Node) ; toutes les images référencées dans les nouvelles sections confirmées présentes dans `images/`.
 
-**Encore ouvert** : parité structurelle complète FR/ES vs EN sur `private-charters.html` (hero, disposition en cartes) si jugée utile plus tard ; `CCBot` ; redirection double hPanel ; volume de recherche réel (Semrush) ; statut avis par avis ; mise à jour périodique `aggregateRating` ; décision de publication des pages Catalina/Bat Islands.
+**Encore ouvert** : `CCBot` ; redirection double hPanel ; volume de recherche réel (Semrush) ; statut avis par avis ; mise à jour périodique `aggregateRating` ; décision de publication des pages Catalina/Bat Islands.
+
+---
+
+## 2026-07-28 (suite 2) — Parité structurelle complète FR/ES sur `private-charters.html`, toutes pages du site vérifiées
+
+**Contexte** : l'utilisateur a signalé que la mise en page de `private-charters.html` restait visiblement différente entre langues malgré la correction précédente (qui n'avait comblé que l'écart de contenu, pas refondu la structure). Demande explicite : vérifier que les pages sont identiques quelle que soit la langue, sur n'importe quelle page du site.
+
+**Corrections appliquées** :
+- `fr/private-charters.html` et `es/private-charters.html` réécrites intégralement pour être structurellement identiques à l'EN, section par section (hero sans breadcrumb, bandeau stats séparé à fond navy, photo pleine largeur, galerie carrousel de 6 photos au lieu d'une grille 2 photos, grille `photo-grid-4` de 8 tuiles au lieu de `book-card`, sections « Un océan bien vivant »/« Un seul bateau, aucun compromis »/CTA final déjà ajoutées la session précédente). Tout le contenu FR/ES spécifique qui n'existait pas en EN (section dédiée observation des baleines, cartes `book-card`) a été retiré au profit d'une traduction fidèle de la structure EN actuelle.
+- **Bug fonctionnel trouvé en comparant les attributs `class` de toutes les pages EN vs FR/ES** : le composant `.lightbox` (zoom plein écran des photos de galerie) était absent de `fr/private-charters.html` et `es/private-charters.html` — présent partout ailleurs (`index.html` dans les 3 langues). Les icônes de zoom de la galerie ne fonctionnaient donc pas en FR/ES. Corrigé en ajoutant le même bloc qu'EN/`index.html` (labels ARIA non traduits, convention du site).
+
+**Vérification (méthode)** : comparaison du nombre de balises (`h2`, `section`, `figure`, `picture`, tuiles `.photo-tile`) EN vs FR vs ES — identiques sur `private-charters.html` (6/8/22/29/8 partout). Extraction et diff complet de tous les attributs `class="..."` EN vs FR/ES sur les 5 pages dupliquées du site (`index.html`, `experiences.html`, `padi-courses.html`, `scuba-diving-tamarindo-faq.html`, `private-charters.html`) : **aucun écart restant après le fix lightbox**. Équilibre des balises `<section>`/`<div>` vérifié (8/8, 50/50). JSON-LD reparsé avec succès (Node).
+
+**Encore ouvert** : `CCBot` ; redirection double hPanel ; volume de recherche réel (Semrush) ; statut avis par avis ; mise à jour périodique `aggregateRating` ; décision de publication des pages Catalina/Bat Islands.
 
 ---
 
