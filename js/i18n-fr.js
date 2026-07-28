@@ -79,7 +79,7 @@ const I18N_DATA = {
     'course.aow.incl1':'E-learning','course.aow.incl2':'Frais de certification PADI','course.aow.incl3':'Collations & boissons','course.aow.incl4':'Tout l’équipement',
     'course.contactInfo':'Contactez-nous pour plus d’informations.',
 
-    'stat.dives':'Sites de plongée','stat.langs':'Langues','stat.private':'Plongées privées','stat.rating':'Note clients',
+    'stat.dives':'Sites de plongée','stat.langs':'EN · FR · ES','stat.private':'Plongées privées','stat.rating':'Note clients',
 
     'gallery.eyebrow':'Sous l’eau',
     'gallery.title':'Instants des profondeurs',

@@ -79,7 +79,7 @@ const I18N_DATA = {
     'course.aow.incl1':'E-learning','course.aow.incl2':'Tarifa de certificación PADI','course.aow.incl3':'Snacks y bebidas','course.aow.incl4':'Todo el equipo',
     'course.contactInfo':'Contáctanos para más información.',
 
-    'stat.dives':'Puntos de buceo','stat.langs':'Idiomas','stat.private':'Inmersiones privadas','stat.rating':'Valoración',
+    'stat.dives':'Puntos de buceo','stat.langs':'EN · FR · ES','stat.private':'Inmersiones privadas','stat.rating':'Valoración',
 
     'gallery.eyebrow':'Bajo el agua',
     'gallery.title':'Momentos de las profundidades',

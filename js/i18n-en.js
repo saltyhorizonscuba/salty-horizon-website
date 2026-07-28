@@ -79,7 +79,7 @@ const I18N_DATA = {
     'course.aow.incl1':'E-learning','course.aow.incl2':'PADI certification fee','course.aow.incl3':'Snacks & drinks','course.aow.incl4':'All equipment',
     'course.contactInfo':'Contact us for more information.',
 
-    'stat.dives':'Dive sites','stat.langs':'Languages','stat.private':'Private dives','stat.rating':'Guest rating',
+    'stat.dives':'Dive sites','stat.langs':'EN · FR · ES','stat.private':'Private dives','stat.rating':'Guest rating',
 
     'gallery.eyebrow':'In the water',
     'gallery.title':'Moments from the deep',
