@@ -50,7 +50,8 @@ ul{list-style:none}
 /* Tighter gaps between homepage sections (kept off .section itself so other pages are unaffected) */
 #about{padding-bottom:clamp(2rem,5vw,3.5rem)}
 #experiences{padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
-#stats{padding-block:clamp(1.75rem,4vw,2.75rem)}
+/* Mobile-only trust bandeau: desktop already shows the same signals in .hero__strip */
+#stats{display:none;padding-block:clamp(1.75rem,4vw,2.75rem)}
 #gallery{padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
 #team{padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
 #contact{padding-top:clamp(2rem,5vw,3.5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
@@ -260,7 +261,9 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .stats--3{grid-template-columns:repeat(3,1fr);max-width:760px;margin-inline:auto}
 .stat b{font-family:var(--font-display);font-weight:800;font-size:clamp(2.2rem,5vw,3.4rem);color:var(--sand);display:block;line-height:1}
 .stat span{font-family:var(--font-display);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#bccdd4}
-.stats--3 .stat:first-child span{color:var(--sand)}
+/* Homepage hero stats bandeau only (not the private-charters boat stats,
+   which share the same .stat markup but keep the original muted caption). */
+#stats .stat span{color:var(--sand)}
 .stat small{display:block;margin-top:.25rem;font-family:var(--font-display);font-size:.62rem;letter-spacing:.1em;color:#fff}
 
 /* ---------- Gallery (carousel, 3 at a time) ---------- */
@@ -557,6 +560,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   .nav-links a{font-size:1.1rem}
   .nav-dropdown{display:none}
   .burger{display:flex;z-index:70}
+  #stats{display:block}
   .field-row{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
   .hero__strip{display:none}
