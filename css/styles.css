@@ -564,7 +564,10 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   .field-row{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
   .hero__strip{display:none}
-  .hero__logo{width:100%}
+  .hero__logo{width:58%;max-width:240px}
+  .hero .eyebrow{margin-bottom:.25rem}
+  .hero__sub{margin-top:0}
+  .hero__tag{display:none}
   .hero__cta{justify-content:center;text-align:center}
   .gallery{
     display:flex;columns:unset;gap:1rem;
