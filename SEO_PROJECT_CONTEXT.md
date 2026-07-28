@@ -39,7 +39,7 @@ Document de référence factuel pour le sous-agent `head-of-seo-geo`. Toute info
 
 ## 3. Inventaire des pages
 
-5 pages « produit » en anglais, chacune dupliquée nativement en `/fr/` et `/es/` (voir section 5), plus un blog anglais-only. **Mise à jour 2026-07-21** : le blog compte maintenant 7 articles (2 nouveaux ajoutés le 2026-07-21 : « The Top 10 Things to Do in Tamarindo » et « The 10 Best Beaches Near Tamarindo », tous deux avec schéma `BlogPosting`+`FAQPage`+`BreadcrumbList`, liens internes vers les pages produit). 23 URLs au total dans `sitemap.xml` (vérifié à jour, `lastmod` cohérents avec les dates de publication réelles) — `llms.txt` également à jour avec les 7 articles.
+5 pages « produit » en anglais, chacune dupliquée nativement en `/fr/` et `/es/` (voir section 5), plus un blog anglais-only. **Mise à jour 2026-07-21** : le blog compte maintenant 7 articles (2 nouveaux ajoutés le 2026-07-21 : « The Top 10 Things to Do in Tamarindo » et « The 10 Best Beaches Near Tamarindo », tous deux avec schéma `BlogPosting`+`FAQPage`+`BreadcrumbList`, liens internes vers les pages produit). **Mise à jour 2026-07-23** : 2 nouvelles pages dédiées créées, **anglais uniquement pour l'instant** (pas encore de `fr`/`es`, donc pas de balises hreflang sur ces 2 pages — à ajouter si/quand les traductions sont faites) : `catalina-islands-diving.html` et `bat-islands-diving.html`, chacune avec schéma `WebPage`+`BreadcrumbList`+`FAQPage`, remplaçant les simples ancres `experiences.html#catalinas`/`#bat` par du contenu approfondi (contenu factuel repris et reformulé depuis la FAQ existante, pas dupliqué mot pour mot). 25 URLs au total dans `sitemap.xml`.
 
 | Fichier (EN) | URL canonique | `<title>` (EN) | Rôle |
 |---|---|---|---|
