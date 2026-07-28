@@ -1,12 +1,12 @@
 /* ============================================================
-   SALTY HORIZON — interactions, i18n (EN/FR/ES), booking
+   SALTY HORIZON: interactions, i18n (EN/FR/ES), booking
    ============================================================ */
 const WA_PHONE = '50687759641'; // WhatsApp number, international format
 
 /* ---------------- Google Ads conversion tracking (WhatsApp clicks) ---------------- */
 // Fires a Google Ads conversion event, then redirects to `url`. If gtag.js
 // didn't load (ad blockers, network) or its callback never fires, a short
-// timeout still lets the user through — a lost conversion beats a dead link.
+// timeout still lets the user through: a lost conversion beats a dead link.
 function gtag_report_conversion(url, openInNewTab, source){
   let navigated = false;
   const go = ()=>{
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   applyLang();
 
   // re-align to the URL hash once the whole page (images, fonts, translated
-  // text) has finished loading and settled — page content loading after the
+  // text) has finished loading and settled: page content loading after the
   // browser's initial anchor jump shifts section heights and throws it off.
   // Scroll instantly (bypassing the global smooth scroll-behavior) so it
   // doesn't visibly animate past the target on arrival.
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   });
 
   // Every static WhatsApp link in the page markup (floating button, footer,
-  // contact section, etc.) — one delegated listener catches all of them,
+  // contact section, etc.), one delegated listener catches all of them,
   // including any added to the DOM later, so no per-link wiring is needed.
   document.addEventListener('click', (e)=>{
     const a = e.target.closest('a[href^="https://wa.me/"]');
