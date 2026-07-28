@@ -576,12 +576,14 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   #stats{display:block}
   .field-row{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
+  .hero{align-items:flex-end}
+  .hero__inner{padding-top:0;padding-bottom:clamp(3rem,9vh,5rem);display:flex;flex-direction:column;min-height:62vh}
   .hero__strip{display:none}
   .hero__logo{width:58%;max-width:240px}
   .hero .eyebrow{margin-bottom:.25rem}
   .hero__sub{margin-top:0}
   .hero__tag{display:none}
-  .hero__cta{justify-content:center;text-align:center}
+  .hero__cta{justify-content:center;text-align:center;margin-top:auto;padding-top:1.8rem}
   .gallery{
     display:flex;columns:unset;gap:1rem;
     overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;

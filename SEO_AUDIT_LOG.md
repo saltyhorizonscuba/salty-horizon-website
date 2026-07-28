@@ -257,4 +257,24 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 
 ---
 
+## 2026-07-28 (suite 3) — Statut des avis confirmé par le propriétaire
+
+**Confirmation utilisateur** : les 14 avis affichés (JSON-LD `SportsActivityLocation`, `index.html`/`fr`/`es`) sont tous de vrais avis clients, aucun placeholder. Point ouvert depuis le 2026-07-12 (« à confirmer statut réel vs exemple, avis par avis ») — **clos**, aucune correction de code nécessaire. `SEO_PROJECT_CONTEXT.md` mis à jour en conséquence.
+
+**Encore ouvert** : `CCBot` ; redirection double hPanel ; mise à jour périodique `aggregateRating` (14 avis, dernière confirmation 2026-07-28) ; décision de publication des pages Catalina/Bat Islands.
+
+---
+
+## 2026-07-28 (suite 4) — Semrush retiré de l'audit, redirection double diagnostiquée, `CCBot` tranché
+
+**Semrush** : l'utilisateur confirme ne pas avoir de compte Semrush. Les 3 tentatives précédentes (« quota épuisé ») supposaient à tort un problème de quota. Retiré définitivement de la liste des points ouverts — voir `SEO_PROJECT_CONTEXT.md` pour la consigne de ne plus retenter cet outil.
+
+**Redirection double hPanel** : diagnostiquée avec des données réelles (`curl -IL` sur le domaine en prod), plus seulement listée comme « hors dépôt ». `http://saltyhorizondiving.com` fait 2 sauts (`http://` → `https://saltyhorizondiving.com/` → `https://www.saltyhorizondiving.com/`) alors que `.htaccess` (présent dans le dépôt) contient déjà une règle censée forcer HTTPS+www en un seul saut. Cause probable : le réglage « Force SSL » de Hostinger hPanel intercepte la requête avant que `.htaccess` ne s'applique, ne forçant que le HTTPS ; `.htaccess` doit alors rajouter un second saut pour le www. Recommandation documentée : désactiver le « Force SSL » automatique côté hPanel et laisser `.htaccess` gérer les deux redirections en un coup. Correction hors dépôt (config hPanel), reste ouverte en attente d'action de l'utilisateur sur l'hébergeur.
+
+**`CCBot`** : décision utilisateur — reste autorisé tel quel dans `robots.txt`. Clos, voir `SEO_PROJECT_CONTEXT.md`.
+
+**Encore ouvert** : redirection double hPanel (diagnostic fait, correction à faire côté hPanel) ; mise à jour périodique `aggregateRating` ; décision de publication des pages Catalina/Bat Islands.
+
+---
+
 *Format pour les prochaines entrées : date, contexte de la mission, constats (avec méthode de vérification), corrections appliquées, décisions documentées sans code, points laissés ouverts et pourquoi.*
