@@ -232,6 +232,8 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 
 /* ---------- Experiences cards ---------- */
 .exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.exp-grid--4{grid-template-columns:repeat(4,1fr)}
+.photo-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .exp-card{
   position:relative;border-radius:var(--radius);overflow:hidden;min-height:430px;
   display:flex;flex-direction:column;justify-content:flex-end;color:#fff;isolation:isolate;
@@ -531,6 +533,8 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   .exp-row,.exp-row:nth-child(even) .exp-row__media{grid-template-columns:1fr}
   .exp-row__media{order:0!important}
   .exp-grid{grid-template-columns:repeat(2,1fr)}
+  .exp-grid--4{grid-template-columns:repeat(2,1fr)}
+  .photo-grid-4{grid-template-columns:repeat(2,1fr)}
   .stats{grid-template-columns:repeat(2,1fr)}
   .stats--3{grid-template-columns:repeat(3,1fr)}
 }
