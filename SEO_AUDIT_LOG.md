@@ -176,4 +176,22 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 
 ---
 
+## 2026-07-23 — Création des pages dédiées Catalina Islands et Bat Islands
+
+**Contexte** : suite directe des recommandations du SEO Lead (même jour) — l'opportunité de pages dédiées pour "Catalina Islands diving" et "Bat Islands diving" restait ouverte depuis 3 audits précédents, jamais tranchée faute de justification concrète. Le SEO Lead a apporté une preuve qualitative (absence du site sur une recherche de marque directe, absence d'un annuaire local "best of", présence de 4 concurrents/tiers avec des pages dédiées sur "Catalina Islands diving"). L'utilisateur a demandé la création des 2 pages, avec exigence explicite : contenu professionnel, esthétique, avec de vraies photos et des informations qui donnent envie de réserver.
+
+**Contenu** : aucune donnée inventée. Tout le contenu factuel (géographie, profondeur, saisonnalité, statut de protection, espèces, sécurité) est repris et reformulé (pas dupliqué mot pour mot) depuis les 46 mentions Catalinas/Bat déjà publiées et vérifiées dans `scuba-diving-tamarindo-faq.html` (43 Q/R). Photos réelles déjà présentes dans `images/` (catalinas.jpg, puffer.jpg, manta.jpg, sea-turtle.jpg, whitetipshark.jpg pour Catalinas ; bat-bullshark.jpg, bull-shark.jpg pour Bat Islands) — aucune nouvelle image générée.
+
+**Pages créées** : `catalina-islands-diving.html`, `bat-islands-diving.html` — **anglais uniquement pour l'instant**, pas de version `fr`/`es` ni de balises hreflang (à ajouter si l'utilisateur valide et demande la traduction). Structure réutilisant les composants existants du site (`.pagehero`, `.wave-section`, `.exp-row`, `.book-card`, `.faq-list`+accordéon), schéma `WebPage`+`BreadcrumbList`+`FAQPage` par page (5 questions chacune, texte visible identique au JSON-LD). Liens croisés entre les deux pages et vers `experiences.html`/`padi-courses.html`. Ajoutées à `sitemap.xml` (25 URLs au total) et `llms.txt`.
+
+**Bug trouvé et corrigé avant livraison** : sur `catalina-islands-diving.html`, la section FAQ avait été placée par erreur dans `.section--deep` (fond sombre), alors que `.faq-q`/`.faq-item` n'ont pas de règle de contraste pour fond sombre (texte `--ink`, sombre, devient illisible sur fond marine). Repéré par capture d'écran (questions invisibles), confirmé par lecture de `getComputedStyle` (couleur du texte vs fond), corrigé en repassant la section en `.section` (fond clair), cohérent avec la page FAQ principale qui utilise le même composant sur fond clair.
+
+**Vérification** : JSON-LD validé (parse sans erreur, 3 entités par page) ; comptage des balises ouvertes/fermées (`h2`, `h3`, `picture`, `div`, `a`, `section`) identique sur les deux fichiers ; capture d'écran pleine page desktop + mobile après défilement complet (déclenchement `data-reveal`) ; aucune erreur console.
+
+**Pas encore fait** : mise à jour des menus de navigation des 23 autres pages du site (le dropdown "Experiences" pointe encore vers `experiences.html#catalinas`/`#bat`) et des CTA "En savoir plus" sur `experiences.html` lui-même vers les nouvelles pages dédiées — décision volontairement différée en attendant la validation des 2 nouvelles pages par l'utilisateur, pour ne pas propager un lien avant confirmation du contenu.
+
+**Encore ouvert** : validation utilisateur du contenu/design ; décision de traduire en `fr`/`es` ; mise à jour du maillage interne site-wide (nav dropdown, CTA `experiences.html`) une fois validé ; décision de fusion `private-charters.html` (déjà fusionné le 2026-07-23, à retirer des points ouverts) ; décision `CCBot` ; données de volume de recherche réelles (Semrush).
+
+---
+
 *Format pour les prochaines entrées : date, contexte de la mission, constats (avec méthode de vérification), corrections appliquées, décisions documentées sans code, points laissés ouverts et pourquoi.*
