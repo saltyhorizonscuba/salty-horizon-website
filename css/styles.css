@@ -137,7 +137,11 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .brand--logo{padding-left:0}
 .brand--logo img{display:block;height:66px;width:auto;transition:height .4s var(--ease)}
 .header.scrolled .brand--logo img{height:52px}
-@media (max-width:520px){.brand--logo img{height:52px}}
+@media (max-width:760px){
+  .header{padding:.85rem 0}
+  .header.scrolled{padding:.6rem 0}
+  .brand--logo img{height:52px}
+}
 .nav-links{display:flex;align-items:center;gap:1.9rem}
 .nav-links a{
   font-family:var(--font-display);font-weight:600;font-size:.82rem;letter-spacing:.06em;
