@@ -616,13 +616,13 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 }
 @media (max-width:560px){
   .exp-grid{grid-template-columns:repeat(2,1fr);gap:.7rem}
-  .exp-card{min-height:255px}
+  .exp-card{min-height:300px}
   .exp-card__body{padding:.9rem}
-  .exp-card h3{font-size:1.12rem;margin-bottom:.3rem;line-height:1.2}
+  .exp-card h3{font-size:1.32rem;margin-bottom:.35rem;line-height:1.2}
   .exp-card p{display:none}
-  .exp-card .price{font-size:.98rem;margin-top:.4rem}
-  .exp-card .price small{font-size:.68rem}
-  .exp-card .tag{font-size:.66rem;padding:.32rem .58rem;top:.6rem;left:.6rem}
+  .exp-card .price{font-size:1.14rem;margin-top:.45rem}
+  .exp-card .price small{font-size:.8rem}
+  .exp-card .tag{font-size:.78rem;padding:.36rem .64rem;top:.6rem;left:.6rem}
 }
 @media (max-width:520px){
   .stats{grid-template-columns:repeat(2,1fr)}
