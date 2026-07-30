@@ -152,6 +152,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
   // booking -> WhatsApp
   const bookForm=document.querySelector('#bookForm');
   if(bookForm){
+    if(bookForm.date && bookForm.date.showPicker){
+      bookForm.date.addEventListener('click',()=>{ try{ bookForm.date.showPicker(); }catch(err){} });
+    }
     bookForm.addEventListener('submit',(e)=>{
       e.preventDefault();
       const optEl=bookForm.experience.selectedOptions[0];
@@ -223,6 +226,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
   document.querySelectorAll('[data-incl-toggle]').forEach(b=>{
     b.addEventListener('click',()=>{
       const content=b.parentElement.querySelector('.incl-content');
+      if(!content) return;
+      content.hidden=!content.hidden;
+      b.classList.toggle('is-open');
+      b.setAttribute('aria-expanded', String(!content.hidden));
+    });
+  });
+
+  // instructor specialties toggle (mobile/tablet)
+  document.querySelectorAll('[data-spec-toggle]').forEach(b=>{
+    b.addEventListener('click',()=>{
+      const content=b.parentElement.querySelector('.spec-content');
       if(!content) return;
       content.hidden=!content.hidden;
       b.classList.toggle('is-open');
