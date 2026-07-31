@@ -588,6 +588,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   .course-grid--included-first .course-heading{display:contents}
   .course-grid--included-first .course-heading .eyebrow,
   .course-grid--included-first .course-heading h2{order:1}
+  .course-grid--included-first .about-copy>p.course-lead{order:1;margin:.3rem 0 0}
   .course-grid--included-first .price-row{order:2}
   .course-grid--included-first .about-copy{display:contents}
   .course-grid--included-first .course-cols{display:contents}
