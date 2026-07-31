@@ -9,10 +9,17 @@ const WA_PHONE = '50687759641'; // WhatsApp number, international format
 // timeout still lets the user through: a lost conversion beats a dead link.
 function gtag_report_conversion(url, openInNewTab, source){
   let navigated = false;
+  // Open the tab synchronously, while still inside the click handler, so
+  // browsers (Safari especially) don't block it as a popup once we later
+  // set its location from gtag's async event_callback / the fallback timer.
+  const newTab = openInNewTab ? window.open('', '_blank') : null;
   const go = ()=>{
     if(navigated) return;
     navigated = true;
-    if(openInNewTab) window.open(url, '_blank');
+    if(openInNewTab){
+      if(newTab) newTab.location = url;
+      else window.open(url, '_blank');
+    }
     else window.location = url;
   };
   if(typeof gtag !== 'function'){ go(); return false; }
