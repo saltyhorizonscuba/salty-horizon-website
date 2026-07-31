@@ -116,10 +116,13 @@ const I18N_DATA = {
     'book.fexp':'Expérience','book.fexpPh':'Choisissez une expérience…',
     'book.fdate':'Date souhaitée','book.fpeople':'Personnes','book.fname':'Votre nom','book.fnamePh':'Prénom & nom',
     'book.fmsg':'Autre chose ?','book.fmsgPh':'Niveau, questions, demandes particulières…',
-    'book.submit':'Envoyer ma réservation sur WhatsApp','book.email':'Nous contacter par e-mail',
+    'book.submit':'Envoyer ma réservation sur WhatsApp','book.quickadd':'Ajoutez des expériences à votre réservation','book.email':'Nous contacter par e-mail',
     'book.perk1':'Annulation gratuite jusqu’à 7 jours avant','book.perk2':'Photos & vidéos incluses','book.perk3':'Réponse en quelques heures',
     'book.step1':'1 · Choisir','book.step2':'2 · Envoyer','book.step3':'3 · On confirme',
     'book.alert':'Veuillez d’abord choisir une expérience.',
+    'cart.title':'Votre réservation','cart.empty':'Voir nos expériences','cart.add':'Ajouter au panier','cart.added':'Ajouté ✓','cart.remove':'Retirer',
+    'cart.subtotal':'Sous-total','cart.tax':'Taxe (13% IVA)','cart.total':'Total estimé','cart.onRequest':'Prix à confirmer',
+    'cart.onRequestNote':'Certains éléments sont sur devis et seront confirmés sur WhatsApp.',
 
     'faq.eyebrow':'Bon à savoir','faq.title':'Questions fréquentes','faq.seeMore':'Voir toute la FAQ plongée à Tamarindo',
     'faq.q1':'Faut-il être certifié pour essayer la plongée à Tamarindo ?',
@@ -242,7 +245,7 @@ const I18N_DATA = {
     'tfaq.a41':"Un maillot de bain et une serviette ; tout l'équipement de plongée est fourni.",
 
     'tfaq.q42':'Proposez-vous du snorkeling pour les non-plongeurs ?',
-    'tfaq.a42':'Oui, en privé, deux sessions de 45 minutes à 1 heure, à partir de 80 $.',
+    'tfaq.a42':'Oui, en privé, deux sessions de 45 minutes à 1 heure, à partir de 90 $.',
     'tfaq.q43':'Peut-on réserver un bateau privé ?',
     'tfaq.a43':'Oui, une journée en mer entièrement personnalisée combinant plongée, snorkeling, paddle, e-foil et jet-ski.',
     'tfaq.q44':'Qu\'est-ce qui est inclus dans un charter privé ?',

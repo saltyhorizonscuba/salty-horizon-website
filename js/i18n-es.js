@@ -116,10 +116,13 @@ const I18N_DATA = {
     'book.fexp':'Experiencia','book.fexpPh':'Elige una experiencia…',
     'book.fdate':'Fecha preferida','book.fpeople':'Personas','book.fname':'Tu nombre','book.fnamePh':'Nombre y apellido',
     'book.fmsg':'¿Algo más?','book.fmsgPh':'Nivel, preguntas, peticiones especiales…',
-    'book.submit':'Enviar reserva por WhatsApp','book.email':'Contáctanos por correo',
+    'book.submit':'Enviar reserva por WhatsApp','book.quickadd':'Añade experiencias a tu reserva','book.email':'Contáctanos por correo',
     'book.perk1':'Cancelación gratis hasta 7 días antes','book.perk2':'Fotos y videos incluidos','book.perk3':'Respondemos en pocas horas',
     'book.step1':'1 · Elige','book.step2':'2 · Envía','book.step3':'3 · Confirmamos',
     'book.alert':'Por favor elige una experiencia primero.',
+    'cart.title':'Tu reserva','cart.empty':'Ver nuestras experiencias','cart.add':'Añadir al carrito','cart.added':'Añadido ✓','cart.remove':'Quitar',
+    'cart.subtotal':'Subtotal','cart.tax':'Impuesto (13% IVA)','cart.total':'Total estimado','cart.onRequest':'Precio a confirmar',
+    'cart.onRequestNote':'Algunos elementos son a consultar y se confirmarán por WhatsApp.',
 
     'faq.eyebrow':'Es bueno saberlo','faq.title':'Preguntas frecuentes','faq.seeMore':'Ver todas las preguntas sobre buceo en Tamarindo',
     'faq.q1':'¿Necesito estar certificado para probar el buceo en Tamarindo?',
@@ -242,7 +245,7 @@ const I18N_DATA = {
     'tfaq.a41':'Traje de baño y toalla; todo el equipo de buceo está incluido.',
 
     'tfaq.q42':'¿Ofrecen snorkel para quienes no bucean?',
-    'tfaq.a42':'Sí, sesiones privadas de snorkel, dos salidas de 45 minutos a 1 hora, desde $80.',
+    'tfaq.a42':'Sí, sesiones privadas de snorkel, dos salidas de 45 minutos a 1 hora, desde $90.',
     'tfaq.q43':'¿Puedo reservar un charter privado en barco?',
     'tfaq.a43':'Sí, un día en el mar totalmente personalizado que combina buceo, snorkel, paddle, e-foil y jet ski.',
     'tfaq.q44':'¿Qué incluye un charter privado?',

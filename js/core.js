@@ -149,30 +149,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     go(0); reset();
   }
 
-  // booking -> WhatsApp
-  const bookForm=document.querySelector('#bookForm');
-  if(bookForm){
-    if(bookForm.date && bookForm.date.showPicker){
-      bookForm.date.addEventListener('click',()=>{ try{ bookForm.date.showPicker(); }catch(err){} });
-    }
-    bookForm.addEventListener('submit',(e)=>{
-      e.preventDefault();
-      const optEl=bookForm.experience.selectedOptions[0];
-      const exp=(optEl && optEl.value) ? optEl.textContent.trim() : '';
-      if(!exp){ alert(t('book.alert')); bookForm.experience.focus(); return; }
-      const date=bookForm.date.value, people=bookForm.people.value, name=bookForm.name.value, note=bookForm.note.value;
-      const L={en:{hi:'Hi Salty Horizon! I would like to book a dive.',exp:'Experience',date:'Preferred date',people:'People',name:'Name',note:'Notes'},
-               fr:{hi:'Bonjour Salty Horizon ! Je souhaite réserver une plongée.',exp:'Expérience',date:'Date souhaitée',people:'Personnes',name:'Nom',note:'Remarques'},
-               es:{hi:'¡Hola Salty Horizon! Quiero reservar una inmersión.',exp:'Experiencia',date:'Fecha',people:'Personas',name:'Nombre',note:'Notas'}}[LANG];
-      let msg=L.hi+'\n\n'+L.exp+': '+exp;
-      if(date) msg+='\n'+L.date+': '+date;
-      if(people) msg+='\n'+L.people+': '+people;
-      if(name) msg+='\n'+L.name+': '+name;
-      if(note) msg+='\n'+L.note+': '+note;
-      const waUrl='https://wa.me/'+WA_PHONE+'?text='+encodeURIComponent(msg);
-      gtag_report_conversion(waUrl, true, 'booking_form');
-    });
-  }
+  // The homepage's "Book your experience" section is now the same inline
+  // cart markup as the drawer (see js/cart.js) -- no separate form/handler
+  // needed here anymore.
 
   // charter WhatsApp buttons
   document.querySelectorAll('[data-wa-charter]').forEach(b=>{
