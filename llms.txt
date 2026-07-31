@@ -5,18 +5,23 @@
 ## Pages
 
 - [Home](https://www.saltyhorizondiving.com/): overview, about the instructors, gallery, guest reviews, booking form, contact details
-- [Experiences](https://www.saltyhorizondiving.com/experiences.html): Intro to Scuba (Pool) from $80, Discover Scuba Diving from $170, Fun Dive at the Catalina Islands from $130, Fun Dive at the Bat Islands (bull sharks, contact for pricing), Private Snorkeling from $80
+- [Experiences](https://www.saltyhorizondiving.com/experiences.html): Intro to Scuba (Pool) from $80, Discover Scuba Diving from $195, Fun Dive at the Catalina Islands from $140, Fun Dive at the Bat Islands (bull sharks, contact for pricing), Private Snorkeling from $90
 - [PADI Courses](https://www.saltyhorizondiving.com/padi-courses.html): PADI Open Water Diver certification from $540, PADI Advanced Open Water Diver from $500
 - [Private Charters](https://www.saltyhorizondiving.com/private-charters.html): fully customized private boat days combining scuba, snorkeling, paddle boarding, e-foil and jet ski
 - [Scuba Diving in Tamarindo FAQ](https://www.saltyhorizondiving.com/scuba-diving-tamarindo-faq.html): 43 questions and answers on diving at the Catalina Islands and Bat Islands, marine life, manta ray and whale season, diving conditions, certification and booking
 - [Diving at the Catalina Islands](https://www.saltyhorizondiving.com/catalina-islands-diving.html): dedicated guide to Salty Horizon's main dive site — geography, marine life, manta ray season (Dec–May), depth/level range, and what makes the dives private
 - [Diving at the Bat Islands](https://www.saltyhorizondiving.com/bat-islands-diving.html): dedicated guide to the advanced Bat Islands bull shark dive — season (May–Nov), Advanced Open Water requirement, safety record, location within Área de Conservación Guanacaste
+- [Fun Dive · Las Catalinas](https://www.saltyhorizondiving.com/fun-dive-catalina-islands.html): bookable fun dive activity for certified divers at the Catalina Islands, 2 privately guided dives, from $140
+- [Fun Dive · Bat Islands](https://www.saltyhorizondiving.com/fun-dive-bat-islands.html): bookable fun dive activity for Advanced Open Water divers at the Bat Islands, 3 privately guided bull shark dives, contact for pricing
+- [Discover Scuba Diving](https://www.saltyhorizondiving.com/discover-scuba-diving.html): beginner-friendly first ocean dive experience, no certification required, 2 privately guided dives, from $195
+- [Intro to Scuba (Pool)](https://www.saltyhorizondiving.com/intro-to-scuba-diving.html): private pool introduction to scuba diving, 10 years and up, no experience needed, from $80
+- [Private Snorkeling](https://www.saltyhorizondiving.com/snorkeling-tamarindo.html): privately guided snorkeling tours at the Catalina Islands, all levels, from $90
 
 ## Other languages
 
-The pages above are also available in full, natively, in French and Spanish, at their own URLs:
-- French: https://www.saltyhorizondiving.com/fr/ (and /fr/experiences.html, /fr/padi-courses.html, /fr/private-charters.html, /fr/scuba-diving-tamarindo-faq.html)
-- Spanish: https://www.saltyhorizondiving.com/es/ (and /es/experiences.html, /es/padi-courses.html, /es/private-charters.html, /es/scuba-diving-tamarindo-faq.html)
+All pages above are also available in full, natively, in French and Spanish, at their own URLs (same slugs under /fr/ and /es/):
+- French: https://www.saltyhorizondiving.com/fr/ (and /fr/experiences.html, /fr/padi-courses.html, /fr/private-charters.html, /fr/scuba-diving-tamarindo-faq.html, /fr/catalina-islands-diving.html, /fr/bat-islands-diving.html, /fr/fun-dive-catalina-islands.html, /fr/fun-dive-bat-islands.html, /fr/discover-scuba-diving.html, /fr/intro-to-scuba-diving.html, /fr/snorkeling-tamarindo.html)
+- Spanish: https://www.saltyhorizondiving.com/es/ (and /es/experiences.html, /es/padi-courses.html, /es/private-charters.html, /es/scuba-diving-tamarindo-faq.html, /es/catalina-islands-diving.html, /es/bat-islands-diving.html, /es/fun-dive-catalina-islands.html, /es/fun-dive-bat-islands.html, /es/discover-scuba-diving.html, /es/intro-to-scuba-diving.html, /es/snorkeling-tamarindo.html)
 
 ## The Blog
 

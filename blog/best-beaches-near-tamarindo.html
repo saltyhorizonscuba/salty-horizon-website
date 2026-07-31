@@ -83,11 +83,11 @@
       <div class="nav-item">
         <a href="../experiences.html" data-i18n="nav.experiences">Experiences</a>
         <div class="nav-dropdown">
-          <a href="../experiences.html#intro" data-i18n="card.intro.t">Intro to Scuba (Pool)</a>
-          <a href="../experiences.html#discover" data-i18n="card.discover.t">Discover Scuba Diving</a>
-          <a href="../experiences.html#catalinas" data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</a>
-          <a href="../experiences.html#bat" data-i18n="card.bat.t">Fun Dive · Bat Islands</a>
-          <a href="../experiences.html#snorkel" data-i18n="card.snorkel.t">Snorkeling</a>
+          <a href="../intro-to-scuba-diving.html" data-i18n="card.intro.t">Intro to Scuba (Pool)</a>
+          <a href="../discover-scuba-diving.html" data-i18n="card.discover.t">Discover Scuba Diving</a>
+          <a href="../fun-dive-catalina-islands.html" data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</a>
+          <a href="../fun-dive-bat-islands.html" data-i18n="card.bat.t">Fun Dive · Bat Islands</a>
+          <a href="../snorkeling-tamarindo.html" data-i18n="card.snorkel.t">Snorkeling</a>
           <a href="../padi-courses.html" data-i18n="card.courses.t">PADI Courses</a>
         </div>
       </div>
@@ -100,7 +100,7 @@
       <a href="index.html" data-i18n="nav.blog">The Blog</a>
     </nav>
     <div class="nav-actions">
-      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button type="button" class="cart-toggle" data-cart-toggle aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-toggle__count" data-cart-count hidden>0</span></button><button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -236,7 +236,7 @@
   </div>
 
   <div class="article-author">
-    <b>Salty Horizon</b> runs private dive and snorkel charters to the Catalina Islands from Tamarindo, a short trip from this same coastline. <a href="../experiences.html#catalinas">See the Catalina Islands fun dive</a> or <a href="../private-charters.html">ask about a private charter</a> if you'd rather explore this coast by boat.
+    <b>Salty Horizon</b> runs private dive and snorkel charters to the Catalina Islands from Tamarindo, a short trip from this same coastline. <a href="../fun-dive-catalina-islands.html">See the Catalina Islands fun dive</a> or <a href="../private-charters.html">ask about a private charter</a> if you'd rather explore this coast by boat.
   </div>
 </div>
 </article>
@@ -280,7 +280,29 @@
   <button class="top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 </div>
 
+<div class="cart-drawer" data-cart-drawer id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+  <div class="cart-drawer__backdrop" data-cart-close></div>
+  <div class="cart-drawer__panel">
+    <div class="cart-drawer__head">
+      <h2 id="cartDrawerTitle" data-i18n="cart.title">Your booking</h2>
+      <button type="button" class="cart-drawer__close" data-cart-close aria-label="Close">&times;</button>
+    </div>
+    <div class="cart-drawer__list" data-cart-list data-cart-empty-href="../experiences.html"></div>
+    <div class="cart-drawer__totals" data-cart-totals hidden>
+      <div class="cart-drawer__row"><span data-i18n="cart.subtotal">Subtotal</span><span data-cart-subtotal>$0.00</span></div>
+      <div class="cart-drawer__row"><span data-i18n="cart.tax">Tax (13% IVA)</span><span data-cart-tax>$0.00</span></div>
+      <div class="cart-drawer__row cart-drawer__row--total"><span data-i18n="cart.total">Estimated total</span><span data-cart-total>$0.00</span></div>
+    </div>
+    <p class="cart-drawer__note" data-cart-onrequest hidden data-i18n="cart.onRequestNote">Some items are priced on request and will be confirmed on WhatsApp.</p>
+    <div class="field"><label data-i18n="book.fdate">Preferred date</label><input type="date" name="cartDate"></div>
+    <div class="field"><label data-i18n="book.fname">Your name</label><input type="text" name="cartName" data-i18n-ph="book.fnamePh" placeholder="First &amp; last name"></div>
+    <div class="field"><label data-i18n="book.fmsg">Anything else?</label><textarea name="cartNote" rows="2" data-i18n-ph="book.fmsgPh" placeholder="Level, questions, special requests…"></textarea></div>
+    <button type="button" class="btn btn--wa btn--block btn--lg" data-cart-send data-i18n="book.submit">Send booking on WhatsApp</button>
+  </div>
+</div>
+
 <script src="../js/i18n-en.js?v=3"></script>
 <script src="../js/core.js?v=2"></script>
+<script src="../js/cart.js?v=1"></script>
 </body>
 </html>

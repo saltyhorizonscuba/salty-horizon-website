@@ -105,7 +105,7 @@
         {"@type":"Question","name":"Les plongées sont-elles privées, ou en grand groupe ?","acceptedAnswer":{"@type":"Answer","text":"Avec Salty Horizon, vous avez toujours un guide privé, seul ou en groupe."}},
         {"@type":"Question","name":"Parlez-vous anglais, français et espagnol ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Camille et Julien sont trilingues et encadrent dans les trois langues."}},
         {"@type":"Question","name":"Que faut-il apporter le jour de la plongée ?","acceptedAnswer":{"@type":"Answer","text":"Un maillot de bain et une serviette ; tout l'équipement de plongée est fourni."}},
-        {"@type":"Question","name":"Proposez-vous du snorkeling pour les non-plongeurs ?","acceptedAnswer":{"@type":"Answer","text":"Oui, en privé, deux sessions de 45 minutes à 1 heure, à partir de 80 $."}},
+        {"@type":"Question","name":"Proposez-vous du snorkeling pour les non-plongeurs ?","acceptedAnswer":{"@type":"Answer","text":"Oui, en privé, deux sessions de 45 minutes à 1 heure, à partir de 90 $."}},
         {"@type":"Question","name":"Peut-on réserver un bateau privé ?","acceptedAnswer":{"@type":"Answer","text":"Oui, une journée en mer entièrement personnalisée combinant plongée, snorkeling, paddle, e-foil et jet-ski."}},
         {"@type":"Question","name":"Qu'est-ce qui est inclus dans un charter privé ?","acceptedAnswer":{"@type":"Answer","text":"Un itinéraire flexible construit autour de vos envies, organisé pour votre groupe."}}
       ]
@@ -123,11 +123,11 @@
       <div class="nav-item">
         <a href="experiences.html" data-i18n="nav.experiences">Expériences</a>
         <div class="nav-dropdown">
-          <a href="experiences.html#intro" data-i18n="card.intro.t">Initiation Scuba (piscine)</a>
-          <a href="experiences.html#discover" data-i18n="card.discover.t">Baptême de plongée</a>
-          <a href="experiences.html#catalinas" data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</a>
-          <a href="experiences.html#bat" data-i18n="card.bat.t">Fun Dive · Bat Islands</a>
-          <a href="experiences.html#snorkel" data-i18n="card.snorkel.t">Snorkeling</a>
+          <a href="intro-to-scuba-diving.html" data-i18n="card.intro.t">Initiation Scuba (piscine)</a>
+          <a href="discover-scuba-diving.html" data-i18n="card.discover.t">Baptême de plongée</a>
+          <a href="fun-dive-catalina-islands.html" data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</a>
+          <a href="fun-dive-bat-islands.html" data-i18n="card.bat.t">Fun Dive · Bat Islands</a>
+          <a href="snorkeling-tamarindo.html" data-i18n="card.snorkel.t">Snorkeling</a>
           <a href="padi-courses.html" data-i18n="card.courses.t">Cours PADI</a>
         </div>
       </div>
@@ -145,7 +145,7 @@
         <a href="scuba-diving-tamarindo-faq.html" class="active" hreflang="fr">FR</a>
         <a href="../es/scuba-diving-tamarindo-faq.html" hreflang="es">ES</a>
       </div>
-      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button type="button" class="cart-toggle" data-cart-toggle aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-toggle__count" data-cart-count hidden>0</span></button><button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -416,7 +416,7 @@
       <div class="faq-list">
         <div class="faq-item">
           <h3><button type="button" class="faq-q" data-faq-toggle aria-expanded="false" aria-controls="tfaq-a42" id="tfaq-q42"><span data-i18n="tfaq.q42">Proposez-vous du snorkeling pour les non-plongeurs ?</span></button></h3>
-          <div class="faq-a" id="tfaq-a42" role="region" aria-labelledby="tfaq-q42" hidden><p data-i18n="tfaq.a42">Oui, en privé, deux sessions de 45 minutes à 1 heure, à partir de 80 $.</p></div>
+          <div class="faq-a" id="tfaq-a42" role="region" aria-labelledby="tfaq-q42" hidden><p data-i18n="tfaq.a42">Oui, en privé, deux sessions de 45 minutes à 1 heure, à partir de 90 $.</p></div>
         </div>
         <div class="faq-item">
           <h3><button type="button" class="faq-q" data-faq-toggle aria-expanded="false" aria-controls="tfaq-a43" id="tfaq-q43"><span data-i18n="tfaq.q43">Peut-on réserver un bateau privé ?</span></button></h3>
@@ -458,7 +458,29 @@
   <button class="top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 </div>
 
+<div class="cart-drawer" data-cart-drawer id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+  <div class="cart-drawer__backdrop" data-cart-close></div>
+  <div class="cart-drawer__panel">
+    <div class="cart-drawer__head">
+      <h2 id="cartDrawerTitle" data-i18n="cart.title">Votre réservation</h2>
+      <button type="button" class="cart-drawer__close" data-cart-close aria-label="Close">&times;</button>
+    </div>
+    <div class="cart-drawer__list" data-cart-list></div>
+    <div class="cart-drawer__totals" data-cart-totals hidden>
+      <div class="cart-drawer__row"><span data-i18n="cart.subtotal">Sous-total</span><span data-cart-subtotal>$0.00</span></div>
+      <div class="cart-drawer__row"><span data-i18n="cart.tax">Taxe (13% IVA)</span><span data-cart-tax>$0.00</span></div>
+      <div class="cart-drawer__row cart-drawer__row--total"><span data-i18n="cart.total">Total estimé</span><span data-cart-total>$0.00</span></div>
+    </div>
+    <p class="cart-drawer__note" data-cart-onrequest hidden data-i18n="cart.onRequestNote">Certains éléments sont sur devis et seront confirmés sur WhatsApp.</p>
+    <div class="field"><label data-i18n="book.fdate">Date souhaitée</label><input type="date" name="cartDate"></div>
+    <div class="field"><label data-i18n="book.fname">Nom</label><input type="text" name="cartName" data-i18n-ph="book.fnamePh" placeholder="Prénom &amp; nom"></div>
+    <div class="field"><label data-i18n="book.fmsg">Autre chose ?</label><textarea name="cartNote" rows="2" data-i18n-ph="book.fmsgPh" placeholder="Niveau, questions, demandes spéciales…"></textarea></div>
+    <button type="button" class="btn btn--wa btn--block btn--lg" data-cart-send data-i18n="book.submit">Envoyer la réservation sur WhatsApp</button>
+  </div>
+</div>
+
 <script src="../js/i18n-fr.js?v=3"></script>
 <script src="../js/core.js?v=2"></script>
+<script src="../js/cart.js?v=1"></script>
 </body>
 </html>

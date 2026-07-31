@@ -116,10 +116,13 @@ const I18N_DATA = {
     'book.fexp':'Experience','book.fexpPh':'Choose an experience…',
     'book.fdate':'Preferred date','book.fpeople':'People','book.fname':'Your name','book.fnamePh':'First & last name',
     'book.fmsg':'Anything else?','book.fmsgPh':'Level, questions, special requests…',
-    'book.submit':'Send booking on WhatsApp','book.email':'Contact us by email',
+    'book.submit':'Send booking on WhatsApp','book.quickadd':'Add experiences to your booking','book.email':'Contact us by email',
     'book.perk1':'Free cancellation up to 7 days before','book.perk2':'Photos & videos included','book.perk3':'We reply within a few hours',
     'book.step1':'1 · Pick','book.step2':'2 · Send','book.step3':'3 · We confirm',
     'book.alert':'Please choose an experience first.',
+    'cart.title':'Your booking','cart.empty':'See our experiences','cart.add':'Add to cart','cart.added':'Added ✓','cart.remove':'Remove',
+    'cart.subtotal':'Subtotal','cart.tax':'Tax (13% IVA)','cart.total':'Estimated total','cart.onRequest':'Price to confirm',
+    'cart.onRequestNote':'Some items are priced on request and will be confirmed on WhatsApp.',
 
     'faq.eyebrow':'Good to know','faq.title':'Frequently asked questions','faq.seeMore':'See the full Tamarindo diving FAQ',
     'faq.q1':'Do I need to be certified to try scuba diving in Tamarindo?',
@@ -242,7 +245,7 @@ const I18N_DATA = {
     'tfaq.a41':'A swimsuit and towel; all scuba equipment is provided.',
 
     'tfaq.q42':'Do you offer snorkeling for non-divers?',
-    'tfaq.a42':'Yes, private snorkeling sessions, two outings of 45 minutes to 1 hour, starting at $80.',
+    'tfaq.a42':'Yes, private snorkeling sessions, two outings of 45 minutes to 1 hour, starting at $90.',
     'tfaq.q43':'Can I book a private boat charter?',
     'tfaq.a43':'Yes, a fully customized day at sea combining scuba, snorkeling, paddle boarding, e-foil and jet ski.',
     'tfaq.q44':"What's included in a private charter?",

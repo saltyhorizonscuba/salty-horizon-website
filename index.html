@@ -42,7 +42,7 @@
 <link rel="preload" as="script" href="js/core.js?v=2">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="css/styles.css?v=57">
+<link rel="stylesheet" href="css/styles.css?v=64">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -120,11 +120,11 @@
       <div class="nav-item">
         <a href="experiences.html" data-i18n="nav.experiences">Experiences</a>
         <div class="nav-dropdown">
-          <a href="experiences.html#intro" data-i18n="card.intro.t">Intro to Scuba (Pool)</a>
-          <a href="experiences.html#discover" data-i18n="card.discover.t">Discover Scuba Diving</a>
-          <a href="experiences.html#catalinas" data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</a>
-          <a href="experiences.html#bat" data-i18n="card.bat.t">Fun Dive · Bat Islands</a>
-          <a href="experiences.html#snorkel" data-i18n="card.snorkel.t">Snorkeling</a>
+          <a href="intro-to-scuba-diving.html" data-i18n="card.intro.t">Intro to Scuba (Pool)</a>
+          <a href="discover-scuba-diving.html" data-i18n="card.discover.t">Discover Scuba Diving</a>
+          <a href="fun-dive-catalina-islands.html" data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</a>
+          <a href="fun-dive-bat-islands.html" data-i18n="card.bat.t">Fun Dive · Bat Islands</a>
+          <a href="snorkeling-tamarindo.html" data-i18n="card.snorkel.t">Snorkeling</a>
           <a href="padi-courses.html" data-i18n="card.courses.t">PADI Courses</a>
         </div>
       </div>
@@ -142,7 +142,7 @@
         <a href="fr/index.html" hreflang="fr">FR</a>
         <a href="es/index.html" hreflang="es">ES</a>
       </div>
-      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button type="button" class="cart-toggle" data-cart-toggle aria-haspopup="dialog" aria-expanded="false" aria-controls="cartDrawer" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-toggle__count" data-cart-count hidden>0</span></button><button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -194,36 +194,72 @@
       <p class="lead" data-i18n="exp.lead">From your first breath underwater to advanced shark dives.</p>
     </div>
     <div class="exp-grid">
-      <a class="exp-card" href="experiences.html#intro" data-reveal>
+      <div class="exp-card" data-reveal>
+        <a class="exp-card__cover" href="intro-to-scuba-diving.html" data-i18n-aria="card.intro.t" aria-label="Intro to Scuba (Pool)"></a>
         <span class="tag" data-i18n="label.beginner">Beginner</span>
         <picture><source type="image/webp" srcset="images/intro-pool-card.webp?v=1 900w, images/intro-pool.webp?v=1 1500w" sizes="(min-width:981px) 398px, (min-width:561px) 46vw, 92vw"><img loading="lazy" src="images/intro-pool.jpg?v=3" srcset="images/intro-pool-card.jpg?v=1 900w, images/intro-pool.jpg?v=3 1500w" sizes="(min-width:981px) 398px, (min-width:561px) 46vw, 92vw" width="1500" height="1001" alt="Beginner trying scuba in a calm pool with a private instructor in Tamarindo"></picture>
-        <div class="exp-card__body"><h3 data-i18n="card.intro.t">Intro to Scuba (Pool)</h3><p data-i18n="card.intro.d"></p><span class="price"><small data-i18n="price.from">from</small> $80</span></div>
-      </a>
-      <a class="exp-card" href="experiences.html#discover" data-reveal data-delay="1">
+        <div class="exp-card__body"><h3 data-i18n="card.intro.t">Intro to Scuba (Pool)</h3><p data-i18n="card.intro.d"></p>
+          <div class="exp-card__actions">
+            <span class="price"><small data-i18n="price.from">from</small> $80</span>
+            <button type="button" class="cart-add-btn" data-cart-add="intro"><span data-cart-label data-i18n="cart.add">Add to cart</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="exp-card" data-reveal data-delay="1">
+        <a class="exp-card__cover" href="discover-scuba-diving.html" data-i18n-aria="card.discover.t" aria-label="Discover Scuba Diving"></a>
         <span class="tag" data-i18n="label.popular">Most popular</span>
         <picture><source type="image/webp" srcset="images/dsd-card.webp?v=1 900w, images/dsd.webp?v=1 1600w" sizes="(min-width:981px) 398px, (min-width:561px) 46vw, 92vw"><img loading="lazy" src="images/dsd.jpg?v=2" srcset="images/dsd-card.jpg?v=1 900w, images/dsd.jpg?v=2 1600w" sizes="(min-width:981px) 398px, (min-width:561px) 46vw, 92vw" width="1600" height="1114" alt="First-time diver on a guided ocean Discover Scuba dive in Tamarindo"></picture>
-        <div class="exp-card__body"><h3 data-i18n="card.discover.t">Discover Scuba Diving</h3><p data-i18n="card.discover.d"></p><span class="price"><small data-i18n="price.from">from</small> $170</span></div>
-      </a>
-      <a class="exp-card" href="experiences.html#catalinas" data-reveal data-delay="2">
+        <div class="exp-card__body"><h3 data-i18n="card.discover.t">Discover Scuba Diving</h3><p data-i18n="card.discover.d"></p>
+          <div class="exp-card__actions">
+            <span class="price"><small data-i18n="price.from">from</small> $195</span>
+            <button type="button" class="cart-add-btn" data-cart-add="discover"><span data-cart-label data-i18n="cart.add">Add to cart</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="exp-card" data-reveal data-delay="2">
+        <a class="exp-card__cover" href="fun-dive-catalina-islands.html" data-i18n-aria="card.catalinas.t" aria-label="Fun Dive · Las Catalinas"></a>
         <span class="tag" data-i18n="label.certified">Certified</span>
         <picture><source type="image/webp" srcset="images/fundive-home-card.webp?v=1 900w, images/fundive-home.webp?v=1 1206w" sizes="(min-width:981px) 398px, (min-width:561px) 46vw, 92vw"><img loading="lazy" src="images/fundive-home.jpg?v=3" srcset="images/fundive-home-card.jpg?v=1 900w, images/fundive-home.jpg?v=3 1206w" sizes="(min-width:981px) 398px, (min-width:561px) 46vw, 92vw" width="1206" height="1561" alt="Diver enjoying a private fun dive at the Catalina Islands, Costa Rica"></picture>
-        <div class="exp-card__body"><h3 data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</h3><p data-i18n="card.catalinas.d"></p><span class="price"><small data-i18n="price.from">from</small> $130</span></div>
-      </a>
-      <a class="exp-card" href="experiences.html#bat" data-reveal>
+        <div class="exp-card__body"><h3 data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</h3><p data-i18n="card.catalinas.d"></p>
+          <div class="exp-card__actions">
+            <span class="price"><small data-i18n="price.from">from</small> $140</span>
+            <button type="button" class="cart-add-btn" data-cart-add="catalinas"><span data-cart-label data-i18n="cart.add">Add to cart</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="exp-card" data-reveal>
+        <a class="exp-card__cover" href="fun-dive-bat-islands.html" data-i18n-aria="card.bat.t" aria-label="Fun Dive · Bat Islands"></a>
         <span class="tag season" data-i18n="label.season">May–Nov</span>
         <picture><source type="image/webp" srcset="images/bull-shark-card.webp?v=5 900w, images/bull-shark.webp?v=5 1000w" sizes="(min-width:981px) 398px, (min-width:561px) 46vw, 92vw"><img loading="lazy" src="images/bull-shark.jpg?v=6" srcset="images/bull-shark-card.jpg?v=5 900w, images/bull-shark.jpg?v=6 1000w" sizes="(min-width:981px) 398px, (min-width:561px) 46vw, 92vw" width="1000" height="1222" alt="Bull shark at the Bat Islands, Costa Rica: advanced scuba dive"></picture>
-        <div class="exp-card__body"><h3 data-i18n="card.bat.t">Fun Dive · Bat Islands</h3><p data-i18n="card.bat.d"></p><span class="price" data-i18n="price.contact">Contact us</span></div>
-      </a>
-      <a class="exp-card" href="experiences.html#snorkel" data-reveal data-delay="1">
+        <div class="exp-card__body"><h3 data-i18n="card.bat.t">Fun Dive · Bat Islands</h3><p data-i18n="card.bat.d"></p>
+          <div class="exp-card__actions">
+            <span class="price" data-i18n="price.contact">Contact us</span>
+            <button type="button" class="cart-add-btn" data-cart-add="bat"><span data-cart-label data-i18n="cart.add">Add to cart</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="exp-card" data-reveal data-delay="1">
+        <a class="exp-card__cover" href="snorkeling-tamarindo.html" data-i18n-aria="card.snorkel.t" aria-label="Snorkeling"></a>
         <span class="tag" data-i18n="label.allLevels">All levels</span>
         <picture><source type="image/webp" srcset="images/snorkel-card.webp?v=1 900w, images/snorkel.webp?v=1 1200w" sizes="(min-width:981px) 398px, (min-width:561px) 46vw, 92vw"><img loading="lazy" src="images/snorkel.jpg?v=2" srcset="images/snorkel-card.jpg?v=1 900w, images/snorkel.jpg?v=2 1200w" sizes="(min-width:981px) 398px, (min-width:561px) 46vw, 92vw" width="1200" height="890" alt="Private snorkeling around the Catalina Islands near Tamarindo"></picture>
-        <div class="exp-card__body"><h3 data-i18n="card.snorkel.t">Snorkeling</h3><p data-i18n="card.snorkel.d"></p><span class="price"><small data-i18n="price.from">from</small> $80</span></div>
-      </a>
-      <a class="exp-card" href="padi-courses.html" data-reveal data-delay="2">
+        <div class="exp-card__body"><h3 data-i18n="card.snorkel.t">Snorkeling</h3><p data-i18n="card.snorkel.d"></p>
+          <div class="exp-card__actions">
+            <span class="price"><small data-i18n="price.from">from</small> $90</span>
+            <button type="button" class="cart-add-btn" data-cart-add="snorkel"><span data-cart-label data-i18n="cart.add">Add to cart</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="exp-card" data-reveal data-delay="2">
+        <a class="exp-card__cover" href="padi-courses.html" data-i18n-aria="card.courses.t" aria-label="PADI Courses"></a>
         <span class="tag" data-i18n="label.allLevels">All levels</span>
         <picture><source type="image/webp" srcset="images/courses.webp?v=1"><img loading="lazy" src="images/courses.jpg?v=3" width="1500" height="1000" alt="PADI scuba course in Tamarindo, Costa Rica"></picture>
-        <div class="exp-card__body"><h3 data-i18n="card.courses.t">PADI Courses</h3><p data-i18n="card.courses.d"></p><span class="price" data-i18n="price.request">on request</span></div>
-      </a>
+        <div class="exp-card__body"><h3 data-i18n="card.courses.t">PADI Courses</h3><p data-i18n="card.courses.d"></p>
+          <div class="exp-card__actions">
+            <span class="price" data-i18n="price.request">on request</span>
+            <button type="button" class="cart-add-btn" data-cart-add="course"><span data-cart-label data-i18n="cart.add">Add to cart</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="center" style="margin-top:2.6rem" data-reveal>
       <a href="experiences.html" class="btn" data-i18n="exp.cta">See all experiences & prices</a>
@@ -341,27 +377,37 @@
       </ul>
     </div>
     <div class="book-card" data-reveal data-delay="1">
-      <form id="bookForm">
-        <div class="field">
-          <label for="book-experience" data-i18n="book.fexp">Experience</label>
-          <select id="book-experience" name="experience" required>
-            <option value="" data-i18n="book.fexpPh">Choose an experience…</option>
-            <option value="Intro to Scuba (Pool) – $80" data-i18n="card.intro.t">Intro to Scuba (Pool)</option>
-            <option value="Discover Scuba Diving – $170" data-i18n="card.discover.t">Discover Scuba Diving</option>
-            <option value="Fun Dive · Las Catalinas – $130" data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</option>
-            <option value="Fun Dive · Bat Islands" data-i18n="card.bat.t">Fun Dive · Bat Islands</option>
-            <option value="Snorkeling – $80" data-i18n="card.snorkel.t">Private Snorkeling</option>
-            <option value="PADI Courses" data-i18n="card.courses.t">PADI Courses</option>
-            <option value="Private Charter" data-i18n="nav.charters">Private Charter</option>
-          </select>
+      <div id="bookForm" class="cart-inline">
+        <span class="list-label" data-i18n="book.quickadd">Add experiences to your booking</span>
+        <div class="cart-inline__quickadd">
+          <div class="field">
+            <select data-cart-quickadd>
+              <option value="" data-i18n="book.fexpPh">Choose an experience…</option>
+              <option value="intro" data-i18n="card.intro.t">Intro to Scuba (Pool)</option>
+              <option value="discover" data-i18n="card.discover.t">Discover Scuba Diving</option>
+              <option value="catalinas" data-i18n="card.catalinas.t">Fun Dive · Las Catalinas</option>
+              <option value="bat" data-i18n="card.bat.t">Fun Dive · Bat Islands</option>
+              <option value="snorkel" data-i18n="card.snorkel.t">Private Snorkeling</option>
+              <option value="course" data-i18n="card.courses.t">PADI Courses</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn--outline" data-cart-quickadd-add><span data-i18n="cart.add">Add to cart</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
         </div>
+
+        <div data-cart-list></div>
+        <div class="cart-drawer__totals" data-cart-totals hidden>
+          <div class="cart-drawer__row"><span data-i18n="cart.subtotal">Subtotal</span><span data-cart-subtotal>$0.00</span></div>
+          <div class="cart-drawer__row"><span data-i18n="cart.tax">Tax (13% IVA)</span><span data-cart-tax>$0.00</span></div>
+          <div class="cart-drawer__row cart-drawer__row--total"><span data-i18n="cart.total">Estimated total</span><span data-cart-total>$0.00</span></div>
+        </div>
+        <p class="cart-drawer__note" data-cart-onrequest hidden data-i18n="cart.onRequestNote">Some items are priced on request and will be confirmed on WhatsApp.</p>
+
         <div class="field-row">
-          <div class="field"><label for="book-date" data-i18n="book.fdate">Preferred date</label><input id="book-date" type="date" name="date"></div>
-          <div class="field"><label for="book-people" data-i18n="book.fpeople">People</label><input id="book-people" type="number" name="people" min="1" max="12" value="2"></div>
+          <div class="field"><label for="book-date" data-i18n="book.fdate">Preferred date</label><input id="book-date" type="date" name="cartDate"></div>
+          <div class="field"><label for="book-name" data-i18n="book.fname">Your name</label><input id="book-name" type="text" name="cartName" data-i18n-ph="book.fnamePh" placeholder="First & last name"></div>
         </div>
-        <div class="field"><label for="book-name" data-i18n="book.fname">Your name</label><input id="book-name" type="text" name="name" data-i18n-ph="book.fnamePh" placeholder="First & last name"></div>
-        <div class="field"><label for="book-note" data-i18n="book.fmsg">Anything else?</label><textarea id="book-note" name="note" rows="3" data-i18n-ph="book.fmsgPh" placeholder="Level, questions…"></textarea></div>
-        <button type="submit" class="btn btn--wa btn--block btn--lg">
+        <div class="field"><label for="book-note" data-i18n="book.fmsg">Anything else?</label><textarea id="book-note" name="cartNote" rows="3" data-i18n-ph="book.fmsgPh" placeholder="Level, questions…"></textarea></div>
+        <button type="button" class="btn btn--wa btn--block btn--lg" data-cart-send>
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           <span data-i18n="book.submit">Send booking on WhatsApp</span>
         </button>
@@ -369,7 +415,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
           <span data-i18n="book.email">Contact us by email</span>
         </a>
-      </form>
+      </div>
     </div>
     <ul class="contact-info" data-reveal data-delay="2">
       <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><b data-i18n="contact.locT">Location</b><span data-i18n="contact.loc">Tamarindo, Guanacaste, Costa Rica</span></div></li>
@@ -551,6 +597,27 @@
   <button class="top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 </div>
 
+<div class="cart-drawer" data-cart-drawer id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+  <div class="cart-drawer__backdrop" data-cart-close></div>
+  <div class="cart-drawer__panel">
+    <div class="cart-drawer__head">
+      <h2 id="cartDrawerTitle" data-i18n="cart.title">Your booking</h2>
+      <button type="button" class="cart-drawer__close" data-cart-close aria-label="Close">&times;</button>
+    </div>
+    <div class="cart-drawer__list" data-cart-list></div>
+    <div class="cart-drawer__totals" data-cart-totals hidden>
+      <div class="cart-drawer__row"><span data-i18n="cart.subtotal">Subtotal</span><span data-cart-subtotal>$0.00</span></div>
+      <div class="cart-drawer__row"><span data-i18n="cart.tax">Tax (13% IVA)</span><span data-cart-tax>$0.00</span></div>
+      <div class="cart-drawer__row cart-drawer__row--total"><span data-i18n="cart.total">Estimated total</span><span data-cart-total>$0.00</span></div>
+    </div>
+    <p class="cart-drawer__note" data-cart-onrequest hidden data-i18n="cart.onRequestNote">Some items are priced on request and will be confirmed on WhatsApp.</p>
+    <div class="field"><label data-i18n="book.fdate">Preferred date</label><input type="date" name="cartDate"></div>
+    <div class="field"><label data-i18n="book.fname">Your name</label><input type="text" name="cartName" data-i18n-ph="book.fnamePh" placeholder="First &amp; last name"></div>
+    <div class="field"><label data-i18n="book.fmsg">Anything else?</label><textarea name="cartNote" rows="2" data-i18n-ph="book.fmsgPh" placeholder="Level, questions, special requests…"></textarea></div>
+    <button type="button" class="btn btn--wa btn--block btn--lg" data-cart-send data-i18n="book.submit">Send booking on WhatsApp</button>
+  </div>
+</div>
+
 <!-- LIGHTBOX -->
 <div class="lightbox" aria-hidden="true">
   <button class="lb-btn lb-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
@@ -561,5 +628,6 @@
 
 <script src="js/i18n-en.js?v=3"></script>
 <script src="js/core.js?v=2"></script>
+<script src="js/cart.js?v=1"></script>
 </body>
 </html>
