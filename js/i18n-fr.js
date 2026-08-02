@@ -14,6 +14,7 @@ const I18N_DATA = {
     'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.faq':'FAQ','nav.about':'À propos','nav.blog':'The Blog',
     'nav.gallery':'Galerie','nav.reviews':'Avis','nav.contact':'Contact','cta.book':'Réserver','cta.bookCourse':'Réserver un cours','cta.learnMore':'En savoir plus',
 
+    'hero.h1':'Salty Horizon — Plongée sous-marine privée à Tamarindo, Costa Rica',
     'hero.eyebrow':'Tamarindo · Costa Rica',
     'hero.sub':'Plongée sous-marine exclusive',
     'hero.tag':'A rhythm defined by you.',

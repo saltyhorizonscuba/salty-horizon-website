@@ -277,4 +277,71 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 
 ---
 
+## 2026-07-31 — Éclatement des Expériences en pages produit/guide indépendantes, panier WhatsApp, traduction complète FR/ES (reconstitué a posteriori le 2026-08-01)
+
+**Contexte** : comme pour l'entrée du 2026-07-13/14, ce chantier n'a pas été mené par le sous-agent `head-of-seo-geo` en temps réel mais par la session principale, le même jour que « décision de publication des pages Catalina/Bat Islands » restait encore listée comme ouverte ci-dessus. Entrée reconstituée le 2026-08-01 par lecture directe des commits (`git show --stat 30a1e78`, `git log`) plutôt que par confiance dans un résumé fourni, pour que l'historique versionné reste la source de vérité même quand le SEO Lead n'a pas été dans la boucle au moment des faits.
+
+**Commit** : `30a1e78` (dev), porté sur `main` via `01df0f4` le même jour. 53 fichiers, +7085/-851 lignes.
+
+**Changements** :
+1. **Éclatement du contenu** : l'ancienne section à ancres `experiences.html#intro`/`#discover`/`#catalinas`/`#bat`/`#snorkel` devient 5 pages produit indépendantes et réservables — `discover-scuba-diving.html` ($195), `intro-to-scuba-diving.html` ($80), `fun-dive-catalina-islands.html` ($140), `fun-dive-bat-islands.html` (sur devis), `snorkeling-tamarindo.html` ($90) — chacune avec son propre `<title>`/meta/JSON-LD (`WebPage`+`Offer`+`BreadcrumbList`, `FAQPage` en plus sur discover/catalinas/bat). Les 2 pages guide `catalina-islands-diving.html`/`bat-islands-diving.html` (créées le 2026-07-23 mais jamais commitées jusqu'ici) sont commitées à cette occasion, avec leurs versions `fr`/`es` et hreflang ajoutés pour la première fois — le point « anglais uniquement » de l'entrée du 07-23 est donc clos. Maillage produit↔guide : chaque page produit Catalinas/Bat pointe vers sa page guide correspondante (« Learn more about diving at the X Islands »), vérifié le 2026-08-01.
+2. **Panier d'achat** (`js/cart.js`, nouveau, 230 lignes) : remplace le formulaire de réservation simple par un panier multi-articles (tiroir de nav + instance intégrée sur la home), checkout unique via un seul lien WhatsApp récapitulatif. Le checkout passe par `gtag_report_conversion()` (même fonction que les autres flux WhatsApp, pas un `window.location` direct) — vérifié le 2026-08-01, le tracking de conversion couvre donc aussi ce nouveau flux.
+3. **Traduction complète** : les 7 nouvelles pages (5 produit + 2 guide) traduites en `fr`/`es`, hub `experiences.html` reconstruit dans les 3 langues, hreflang + sélecteur de langue ajoutés sur les pages guide EN qui n'en avaient pas encore.
+4. **Changement de prix** : Discover Scuba Diving $170→$195, Fun Dive Catalinas $130→$140, Snorkeling $80→$90 (Intro to Scuba $80 et les tarifs PADI inchangés). Vérifié le 2026-08-01 : cohérent partout (`index.html`, `experiences.html`, chaque page produit, `llms.txt`), aucune valeur périmée trouvée.
+5. `sitemap.xml` (25→44 URLs) et `llms.txt` mis à jour avec les nouvelles pages et les nouveaux tarifs.
+
+**Commits liés le même jour/lendemain** (`f3899ea`, `864cf94` : mobile) et `e13c9f8` — voir entrée suivante pour ce dernier.
+
+**Fichiers créés** : `discover-scuba-diving.html`, `intro-to-scuba-diving.html`, `fun-dive-catalina-islands.html`, `fun-dive-bat-islands.html`, `snorkeling-tamarindo.html`, `catalina-islands-diving.html`, `bat-islands-diving.html` + leurs `fr/`/`es/`, `js/cart.js`. **Fichiers modifiés** : `index.html`, `experiences.html` (+fr/es), `private-charters.html` (+fr/es, hreflang/sélecteur), `padi-courses.html`/`scuba-diving-tamarindo-faq.html` (+fr/es, idem), `js/core.js`, `js/i18n-{en,fr,es}.js`, `css/styles.css`, `sitemap.xml`, `llms.txt`, les 7 pages du blog (liens internes mis à jour vers les nouvelles URLs produit).
+
+**Encore ouvert (au 07-31)** : voir entrée suivante pour le fix WhatsApp blank-tab (même jour) et les corrections round 3 du 08-01.
+
+---
+
+## 2026-07-31 (suite) — Fix boutons WhatsApp bloqués en onglet vide (navigateurs stricts)
+
+**Commit** : `e13c9f8`, même jour.
+
+**Problème** : `window.open()` était appelé de façon asynchrone (après le callback de `gtag`), ce que Safari et d'autres navigateurs stricts bloquent comme pop-up non sollicité — un clic WhatsApp pouvait ouvrir un onglet vide ou rien du tout.
+
+**Correction** : dans `gtag_report_conversion()` (`js/core.js`), l'onglet vide est désormais ouvert **de façon synchrone**, à l'intérieur même du gestionnaire de clic (`window.open('', '_blank')`), et sa `location` est fixée seulement une fois la conversion trackée (ou après le délai de repli).
+
+**Vérification (2026-08-01, a posteriori)** : lecture directe de `js/core.js` (lignes 10-24) confirmant le correctif dans la fonction centrale, pas dupliqué par flux. Comme cette fonction est appelée par (a) l'écouteur délégué qui capte tout `<a href="https://wa.me/...">` statique du HTML (102 occurrences sur 44 fichiers), (b) les boutons JS dédiés (charter/AOW/OW), et (c) le nouveau checkout du panier (`js/cart.js` ligne 193) — le fix couvre bien **tous** les flux WhatsApp du site, pas seulement certains boutons. Confirme la portée annoncée par le changelog fourni plutôt que de la prendre pour acquis.
+
+**Encore ouvert** : redirection double hPanel ; mise à jour périodique `aggregateRating` ; le fix ci-dessus n'a pas été testé manuellement sur un vrai Safari/iOS par le SEO Lead (vérification faite par lecture de code, pas par test navigateur réel) — à garder en tête si un client rapporte encore un souci de ce type.
+
+---
+
+## 2026-08-01 — Corrections round 3 : `sitemap.xml` (lastmod périmés), FAQ EN (politique d'annulation), cartes d'expérience (description vide non-JS)
+
+**Contexte** : suite de contrôle qualité après la restructuration du 07-31, menée par la session principale (pas le sous-agent) puis reconstituée ici le même jour lors du rattrapage documentaire. Commits `8f1c5eb` (dev) / `81fb3e9` (main) et `69c9699` (dev) / `e91f505` (main).
+
+**Corrections appliquées** :
+1. **`sitemap.xml` : 20 des 44 URLs avaient un `lastmod` périmé** — home, `private-charters.html`, `padi-courses.html`, `scuba-diving-tamarindo-faq.html` + leurs `fr`/`es`, et les 8 pages du blog gardaient une date antérieure au 07-31 alors que ces pages avaient réellement été modifiées ce jour-là. **Méthode de vérification avant correction** (pas une correction à l'aveugle) : `git log` par fichier pour confirmer un vrai changement de contenu le 07-31 (pas seulement un commit de cache-busting). Corrigées à `2026-07-31`. **Revérifié le 2026-08-01** par lecture intégrale de `sitemap.xml` : les 44 URLs ont bien `lastmod` `2026-07-31`, cohérent avec la dernière vraie modification de contenu connue pour chacune.
+2. **`scuba-diving-tamarindo-faq.html` (EN uniquement) : texte de secours de la clé `tfaq.a38` (politique d'annulation) périmé** — affichait « Free cancellation up to 24 hours » alors que le JSON-LD de la page et `js/i18n-en.js` avaient déjà la vraie politique par paliers (remboursement 100% à 7+ jours, 50% à 3-6 jours, 0% sous 48h, plus une clause de minimum 3 personnes). FR/ES avaient déjà le texte correct. **Le propriétaire du site a confirmé que la clause de minimum 3 personnes est réelle**, pas un reliquat périmé — corrigé pour aligner le secours statique EN sur le JSON-LD/i18n. Vérifié le 2026-08-01 : les 3 langues affichent maintenant un texte identique en substance.
+3. **`index.html`, `experiences.html` (EN) + `fr/experiences.html` + `es/experiences.html` : descriptions de secours vides sur les cartes d'expérience** — balises `<p data-i18n="card.X.d"></p>` sans texte statique, donc un crawler n'exécutant pas JS (GPTBot, ClaudeBot, PerplexityBot) voyait des cartes titre+prix sans description. Rempli avec la copie i18n existante, même convention que les 5 pages produit du 07-31. `fr/index.html`/`es/index.html` avaient déjà ce texte correctement. Vérifié le 2026-08-01 : plus aucune balise `data-i18n="card.*.d"` vide sur ces 4 fichiers.
+4. **Confirmé, pas une correction** : `aggregateRating` (`ratingValue:5`, `reviewCount:14`) présent et correct sur `index.html` dans les 3 langues — chiffres réels Google Business confirmés par le propriétaire le 2026-08-01.
+
+**Vérification globale (2026-08-01)** : `git diff --stat main dev` en local = vide → contenu de `main` et `dev` identique, tout ce qui précède est bien en production malgré `origin/dev` distant en retard de ces 2 derniers commits (non poussés vers le dépôt distant, seulement cherry-pickés vers `main`) — point d'hygiène Git à surveiller, sans impact sur le contenu réellement servi.
+
+**Fichiers modifiés** : `sitemap.xml`, `js/i18n-en.js` (clé `tfaq.a38`), `scuba-diving-tamarindo-faq.html`, `index.html`, `experiences.html`, `fr/experiences.html`, `es/experiences.html`.
+
+**Encore ouvert** : redirection double hPanel ; mise à jour périodique `aggregateRating` (14 avis, confirmé exact le 2026-08-01) ; `<h1>` de la home = image logo sans texte crawlable (signalé, pas corrigé, décision de design à trancher) ; les pages guide Catalina/Bat Islands ne sont linkées en interne que depuis leur page produit correspondante (pas depuis `experiences.html`/FAQ/blog) — constat factuel, pas un problème identifié, à garder à l'œil si le trafic organique de ces 2 pages semble faible.
+
+---
+
+## 2026-08-01 (suite) — Rattrapage documentaire `SEO_PROJECT_CONTEXT.md`/`SEO_AUDIT_LOG.md`
+
+**Contexte** : les deux fichiers de référence n'avaient pas été mis à jour depuis le 2026-07-28, alors que deux chantiers réels avaient eu lieu depuis (entrées ci-dessus). Mission explicitement documentaire : pas de modification de code HTML/CSS/JS.
+
+**Méthode** : chaque affirmation du changelog fourni par l'utilisateur a été revérifiée contre l'état réel des fichiers avant d'être consignée (pas de recopie aveugle) — `git log`/`git show --stat` sur les commits cités, comptage réel des URLs `sitemap.xml` (44) et de leurs `lastmod`, lecture du JSON-LD complet des 7 nouvelles pages, grep des prix sur toutes les pages concernées, lecture de `js/core.js`/`js/cart.js` pour confirmer la portée du fix WhatsApp et le raccordement du panier au tracking de conversion, vérification de la présence de `aggregateRating` sur les 3 langues, vérification des hreflang/nav dropdown/maillage interne des pages produit/guide, comparaison structurelle EN/FR/ES de `private-charters.html` et de la section « Las Catalinas » de la home, `git diff --stat main dev` pour confirmer que le contenu local des 2 branches est identique.
+
+**Écart trouvé par rapport au changelog fourni** : aucun écart factuel — toutes les affirmations se sont vérifiées exactes contre les fichiers réels. Seule précision apportée : les points 9, 10 et 11 (`private-charters.html` FR/ES, liens nav cassés, fond navy Catalinas) listés comme « encore ouverts » dans `SEO_PROJECT_CONTEXT.md` étaient en réalité déjà tous les trois résolus depuis le 2026-07-28 (avant même le chantier du 07-31) — le fichier de contexte n'avait simplement pas été mis à jour pour le refléter. Le point 10 (liens vers Catalina/Bat) est en plus devenu sans objet depuis le 07-31 puisque ces pages sont maintenant publiées.
+
+**Corrections appliquées** : `SEO_PROJECT_CONTEXT.md` (sections 1, 3, 4, 5, 6, 7, 8, 9 mises à jour — tableau de pages refait pour les 12 pages EN, tarifs corrigés, points 9-11 clos, points 15-16 ajoutés) et `SEO_AUDIT_LOG.md` (ce fichier, 4 nouvelles entrées ci-dessus + celle-ci).
+
+**Encore ouvert** : redirection double hPanel ; mise à jour périodique `aggregateRating` ; `<h1>` home sans texte crawlable ; `origin/dev` distant en retard de 2 commits non poussés (hygiène Git, pas de contenu affecté).
+
+---
+
 *Format pour les prochaines entrées : date, contexte de la mission, constats (avec méthode de vérification), corrections appliquées, décisions documentées sans code, points laissés ouverts et pourquoi.*
