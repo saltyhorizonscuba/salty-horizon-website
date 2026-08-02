@@ -14,6 +14,7 @@ const I18N_DATA = {
     'nav.experiences':'Experiences','nav.charters':'Private Charters','nav.courses':'PADI Courses','nav.faq':'FAQ','nav.about':'About','nav.blog':'The Blog',
     'nav.gallery':'Gallery','nav.reviews':'Reviews','nav.contact':'Contact','cta.book':'Book a dive','cta.bookCourse':'Book a course','cta.learnMore':'Learn more',
 
+    'hero.h1':'Salty Horizon — Private Scuba Diving in Tamarindo, Costa Rica',
     'hero.eyebrow':'Tamarindo · Costa Rica',
     'hero.sub':'Exclusive Scuba Diving',
     'hero.tag':'A rhythm defined by you.',

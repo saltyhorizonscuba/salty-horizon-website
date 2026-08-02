@@ -14,6 +14,7 @@ const I18N_DATA = {
     'nav.experiences':'Experiencias','nav.charters':'Charters privados','nav.courses':'Cursos PADI','nav.faq':'FAQ','nav.about':'Nosotros','nav.blog':'The Blog',
     'nav.gallery':'Galería','nav.reviews':'Reseñas','nav.contact':'Contacto','cta.book':'Reservar','cta.bookCourse':'Reservar un curso','cta.learnMore':'Saber más',
 
+    'hero.h1':'Salty Horizon — Buceo privado en Tamarindo, Costa Rica',
     'hero.eyebrow':'Tamarindo · Costa Rica',
     'hero.sub':'Buceo exclusivo',
     'hero.tag':'A rhythm defined by you.',
