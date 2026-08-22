@@ -290,5 +290,48 @@ document.addEventListener('DOMContentLoaded', ()=>{
     next.addEventListener('click', ()=> track.scrollBy({left:step(), behavior:'smooth'}));
   });
 
+  // homepage photo coverflow (#gallery, desktop only -- CSS keeps mobile on its
+  // own bento layout, this just sets --offset/--abs custom properties per
+  // figure; they have no visual effect below the 761px breakpoint)
+  const cfRoot = document.querySelector('#gallery .gallery');
+  if(cfRoot){
+    const cfTrack = cfRoot.querySelector('.gallery-track');
+    const cfCards = [...cfTrack.querySelectorAll('figure')];
+    const n = cfCards.length;
+    let active = Math.floor(n/2), cfTimer;
+    const cfRender = ()=>{
+      cfCards.forEach((card,i)=>{
+        let d = i - active;
+        if(d > n/2) d -= n;
+        if(d < -n/2) d += n;
+        const abs = Math.abs(d);
+        card.style.setProperty('--offset', d);
+        card.style.setProperty('--abs', abs);
+        card.toggleAttribute('data-cf-hidden', abs > 3);
+        card.toggleAttribute('data-cf-active', d === 0);
+      });
+    };
+    const cfGo = (i)=>{ active = (i + n) % n; cfRender(); };
+    const cfReset = ()=>{ clearInterval(cfTimer); cfTimer = setInterval(()=>cfGo(active+1), 4500); };
+    const cfPrev = cfRoot.querySelector('[data-gallery-prev]');
+    const cfNext = cfRoot.querySelector('[data-gallery-next]');
+    if(cfNext) cfNext.addEventListener('click', ()=>{ cfGo(active+1); cfReset(); });
+    if(cfPrev) cfPrev.addEventListener('click', ()=>{ cfGo(active-1); cfReset(); });
+    // Capture-phase listener on the track: fires before the lightbox's own
+    // click handler on the figure, so clicking a side card recenters it
+    // instead of opening the lightbox on the wrong photo; clicking the
+    // already-active card falls through to the lightbox as normal.
+    cfTrack.addEventListener('click', (e)=>{
+      const fig = e.target.closest('figure');
+      if(!fig) return;
+      const i = cfCards.indexOf(fig);
+      if(i !== active){ e.stopPropagation(); cfGo(i); cfReset(); }
+    }, true);
+    cfRoot.addEventListener('mouseenter', ()=>clearInterval(cfTimer));
+    cfRoot.addEventListener('mouseleave', cfReset);
+    cfRender();
+    cfReset();
+  }
+
   document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 });

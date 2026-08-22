@@ -147,7 +147,7 @@ function cartBuildMessage(form){
     if(!c) return;
     const qty = items[id];
     const priceLabel = typeof c.price === 'number' ? ('$'+c.price+' x '+qty+' = $'+(c.price*qty).toFixed(2)) : L.onreq;
-    msg += '\n- ' + t(c.key) + ' x' + qty + ' — ' + priceLabel;
+    msg += '\n- ' + t(c.key) + ' x' + qty + ' - ' + priceLabel;
   });
   if(tt.subtotal > 0){
     msg += '\n\n'+L.sub+': $'+tt.subtotal.toFixed(2);
