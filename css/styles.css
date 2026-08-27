@@ -324,15 +324,17 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
    recede into the distance on either side. Scoped via the #gallery id so
    private-charters keeps its plain bento grid. core.js sets the
    --offset/--abs custom properties on each figure to drive the transform. */
+#gallery .gallery{overflow:visible}
 #gallery .gallery-track{
   display:block;position:relative;overflow:visible;
   width:100%;height:clamp(280px,60vw,440px);
-  perspective:1600px;
+  perspective:1600px;touch-action:pan-y;
 }
 #gallery .gallery-track figure{
   position:absolute;top:50%;left:50%;margin:0;
   width:clamp(160px,42vw,300px);aspect-ratio:4/5;
-  transform-style:preserve-3d;will-change:transform;
+  transform-style:preserve-3d;will-change:transform;touch-action:pan-y;
+  -webkit-user-select:none;user-select:none;
   transition:transform .6s cubic-bezier(.22,.61,.36,1),opacity .6s,box-shadow .3s;
   transform:translate(-50%,-50%)
     translateX(calc(var(--offset,0) * clamp(88px,24vw,210px)))
@@ -349,6 +351,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 #gallery .gallery-track figure::after{content:none}
 #gallery .gallery-track figure .zoom{display:none}
 #gallery .gallery-track figure[data-cf-active]:hover .zoom{display:grid}
+#gallery .gallery-track img{-webkit-user-drag:none;user-drag:none}
 #gallery .gallery-track figure:nth-child(1) img{object-position:50% 50%}
 #gallery .gallery-track figure:nth-child(2) img{object-position:50% 42%}
 #gallery .gallery-track figure:nth-child(3) img{object-position:30% 30%}

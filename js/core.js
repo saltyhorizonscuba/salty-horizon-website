@@ -321,7 +321,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // click handler on the figure, so clicking a side card recenters it
     // instead of opening the lightbox on the wrong photo; clicking the
     // already-active card falls through to the lightbox as normal.
+    let cfWasSwipe = false;
     cfTrack.addEventListener('click', (e)=>{
+      if(cfWasSwipe){ cfWasSwipe = false; e.stopPropagation(); e.preventDefault(); return; }
       const fig = e.target.closest('figure');
       if(!fig) return;
       const i = cfCards.indexOf(fig);
@@ -329,6 +331,35 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }, true);
     cfRoot.addEventListener('mouseenter', ()=>clearInterval(cfTimer));
     cfRoot.addEventListener('mouseleave', cfReset);
+
+    // Touch/drag swipe: the side cards visually overflow the track (that's
+    // the point of the coverflow effect), so without this a horizontal
+    // swipe would just fall through to native scroll/pan on the wrapper and
+    // drag the whole block sideways instead of moving between photos.
+    let cfDragX = null, cfDragging = false;
+    const CF_SWIPE_PX = 40;
+    cfTrack.addEventListener('pointerdown', (e)=>{
+      if(e.pointerType === 'mouse' && e.button !== 0) return;
+      cfDragX = e.clientX; cfDragging = true;
+    });
+    cfTrack.addEventListener('pointermove', (e)=>{
+      if(!cfDragging || cfDragX === null) return;
+      if(Math.abs(e.clientX - cfDragX) > 10) e.preventDefault();
+    });
+    const cfEndDrag = (e)=>{
+      if(!cfDragging) return;
+      cfDragging = false;
+      const dx = e.clientX - cfDragX;
+      cfDragX = null;
+      if(Math.abs(dx) > CF_SWIPE_PX){
+        cfWasSwipe = true;
+        cfGo(dx < 0 ? active + 1 : active - 1);
+        cfReset();
+      }
+    };
+    cfTrack.addEventListener('pointerup', cfEndDrag);
+    cfTrack.addEventListener('pointercancel', ()=>{ cfDragging = false; cfDragX = null; });
+
     cfRender();
     cfReset();
   }
