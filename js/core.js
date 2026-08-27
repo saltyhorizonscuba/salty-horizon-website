@@ -336,29 +336,38 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // the point of the coverflow effect), so without this a horizontal
     // swipe would just fall through to native scroll/pan on the wrapper and
     // drag the whole block sideways instead of moving between photos.
-    let cfDragX = null, cfDragging = false;
+    // The gesture's axis is only decided once movement is clear enough to
+    // tell (cfIsHorizontal), and default is only prevented for a confirmed
+    // horizontal drag -- an ordinary vertical scroll that starts on a card
+    // is left completely alone so page scrolling never stutters.
+    let cfDragX = null, cfDragY = null, cfDragging = false, cfIsHorizontal = null;
     const CF_SWIPE_PX = 40;
     cfTrack.addEventListener('pointerdown', (e)=>{
       if(e.pointerType === 'mouse' && e.button !== 0) return;
-      cfDragX = e.clientX; cfDragging = true;
+      cfDragX = e.clientX; cfDragY = e.clientY; cfDragging = true; cfIsHorizontal = null;
     });
     cfTrack.addEventListener('pointermove', (e)=>{
       if(!cfDragging || cfDragX === null) return;
-      if(Math.abs(e.clientX - cfDragX) > 10) e.preventDefault();
+      const dx = e.clientX - cfDragX, dy = e.clientY - cfDragY;
+      if(cfIsHorizontal === null && (Math.abs(dx) > 12 || Math.abs(dy) > 12)){
+        cfIsHorizontal = Math.abs(dx) > Math.abs(dy);
+      }
+      if(cfIsHorizontal) e.preventDefault();
     });
     const cfEndDrag = (e)=>{
       if(!cfDragging) return;
       cfDragging = false;
       const dx = e.clientX - cfDragX;
-      cfDragX = null;
-      if(Math.abs(dx) > CF_SWIPE_PX){
+      cfDragX = null; cfDragY = null;
+      if(cfIsHorizontal && Math.abs(dx) > CF_SWIPE_PX){
         cfWasSwipe = true;
         cfGo(dx < 0 ? active + 1 : active - 1);
         cfReset();
       }
+      cfIsHorizontal = null;
     };
     cfTrack.addEventListener('pointerup', cfEndDrag);
-    cfTrack.addEventListener('pointercancel', ()=>{ cfDragging = false; cfDragX = null; });
+    cfTrack.addEventListener('pointercancel', ()=>{ cfDragging = false; cfDragX = null; cfDragY = null; cfIsHorizontal = null; });
 
     cfRender();
     cfReset();

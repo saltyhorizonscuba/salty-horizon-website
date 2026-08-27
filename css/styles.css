@@ -28,7 +28,7 @@
 }
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
@@ -323,7 +323,13 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
    where the active card sits large and sharp in the center and the rest
    recede into the distance on either side. Scoped via the #gallery id so
    private-charters keeps its plain bento grid. core.js sets the
-   --offset/--abs custom properties on each figure to drive the transform. */
+   --offset/--abs custom properties on each figure to drive the transform.
+   The far side cards peek past the .gallery/.gallery-track boxes on purpose
+   (that's the coverflow look), but that must stop at the section's own edge
+   -- clipping here instead of relying on body's overflow-x:hidden keeps the
+   document itself from ever measuring wider than the viewport, which is
+   what was making the whole page feel unstable on mobile. */
+#gallery{overflow-x:hidden}
 #gallery .gallery{overflow:visible}
 #gallery .gallery-track{
   display:block;position:relative;overflow:visible;
