@@ -9,14 +9,12 @@ const I18N_DATA = {
     'meta.padi.desc':'Formations PADI privées à Tamarindo : Open Water Diver et Advanced Open Water Diver. Progressez à votre rythme avec un instructeur PADI professionnel.',
     'meta.charters.title':'Charters privés à Tamarindo, Costa Rica | Salty Horizon × Playgrounds',
     'meta.charters.desc':"Une journée entièrement privée sur le Pacifique : plongée, surf, observation des baleines, snorkeling et plus, à bord d'un catamaran privé avec les guides de plongée de Salty Horizon. Tamarindo, Costa Rica.",
-    'meta.faq.title':'Plongée sous-marine à Tamarindo, Costa Rica : FAQ | Salty Horizon',
-    'meta.faq.desc':'Des réponses concrètes sur la plongée à Tamarindo et aux îles Catalinas : vie marine, saison des raies manta et des baleines, conditions de plongée, certification PADI avec Salty Horizon.',
+    'meta.faq.title':'FAQ Plongée : Tamarindo & îles Catalinas, Costa Rica | Salty Horizon',
+    'meta.faq.desc':'Réponses à de vraies questions sur la plongée à Tamarindo et aux îles Catalinas : vie marine, saison des raies manta et des baleines, conditions de plongée, certification PADI avec Salty Horizon.',
     'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.faq':'FAQ','nav.about':'À propos','nav.blog':'The Blog',
     'nav.gallery':'Galerie','nav.reviews':'Avis','nav.contact':'Contact','cta.book':'Réserver','cta.bookCourse':'Réserver un cours','cta.learnMore':'En savoir plus',
 
-    'hero.h1':'Salty Horizon : Plongée sous-marine privée à Tamarindo, Costa Rica',
-    'hero.eyebrow':'Tamarindo · Costa Rica',
-    'hero.sub':'Plongée sous-marine exclusive',
+    'hero.h1':'Plongée sous-marine privée à Tamarindo, Costa Rica',
     'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Réserver ma plongée','hero.cta2':'Voir les expériences','hero.scroll':'Défiler',
     'strip.private':'Uniquement des plongées guidées en privé','strip.padi':'Instructeurs PADI','strip.langs':'EN · FR · ES','strip.photos':'Photos incluses',
@@ -125,7 +123,7 @@ const I18N_DATA = {
     'cart.subtotal':'Sous-total','cart.tax':'Taxe (13% IVA)','cart.total':'Total estimé','cart.onRequest':'Prix à confirmer',
     'cart.onRequestNote':'Certains éléments sont sur devis et seront confirmés sur WhatsApp.',
 
-    'faq.eyebrow':'Bon à savoir','faq.title':'Questions fréquentes','faq.seeMore':'Voir toute la FAQ plongée à Tamarindo',
+    'faq.eyebrow':'Bon à savoir','faq.title':'Questions fréquentes','faq.seeMore':'Voir toute la FAQ plongée',
     'faq.q1':'Faut-il être certifié pour essayer la plongée à Tamarindo ?',
     'faq.a1':'Non, aucune certification n’est nécessaire pour le baptême de plongée (Discover Scuba Diving). Après un briefing privé avec un instructeur PADI et quelques exercices pratiques requis, vous réalisez deux plongées encadrées de 45 minutes à 1 heure, dès 10 ans.',
     'faq.q2':'Combien coûte le cours PADI Open Water Diver ?',
@@ -138,7 +136,7 @@ const I18N_DATA = {
     'faq.a5':'Oui, pour le baptême de plongée (Discover Scuba Diving), les cours Open Water et Advanced Open Water, vous devez confirmer votre aptitude médicale à la plongée ; un formulaire médical est disponible à télécharger et doit être complété avant le cours.',
 
     'tfaq.crumb':'FAQ plongée',
-    'tfaq.page.h1':'Plongée sous-marine à Tamarindo, Costa Rica : questions fréquentes',
+    'tfaq.page.h1':'FAQ Plongée : tout savoir sur la plongée à Tamarindo',
     'tfaq.intro':'De vraies questions sur la plongée à Tamarindo et aux îles Catalinas, avec des réponses directes : vie marine, saison des raies manta et des baleines, conditions de plongée locales, certification. La faune est sauvage : les observations mentionnées ci-dessous sont fréquemment rapportées, jamais garanties.',
     'tfaq.h1':'Plonger à Tamarindo et aux îles Catalinas','tfaq.h1intro':"Les îles Catalinas (Islas Catalinas) sont la principale destination de plongée des bateaux au départ de Tamarindo, une chaîne d'îlots volcaniques dans le golfe de Papagayo, réputée pour ses forts courants et sa vie marine riche.",
     'tfaq.h2':'La vie marine autour de Tamarindo','tfaq.h2intro':'Les eaux Pacifique du Guanacaste abritent une grande variété d\'espèces, entre faune résidente des récifs et visiteurs migratoires de passage selon la saison.',
@@ -251,6 +249,7 @@ const I18N_DATA = {
     'tfaq.a43':'Oui, une journée en mer entièrement personnalisée combinant plongée, snorkeling, paddle, e-foil et jet-ski.',
     'tfaq.q44':'Qu\'est-ce qui est inclus dans un charter privé ?',
     'tfaq.a44':'Un itinéraire flexible construit autour de vos envies, organisé pour votre groupe.',
+    'tfaq.bookCta':'Réserver votre plongée privée à Tamarindo',
 
     'contact.eyebrow':'Contactez-nous',
     'contact.title':'Planifions votre plongée',

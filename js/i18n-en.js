@@ -9,14 +9,12 @@ const I18N_DATA = {
     'meta.padi.desc':'Private PADI courses in Tamarindo: Open Water Diver and Advanced Open Water Diver. Learn at your own pace with a professional PADI instructor.',
     'meta.charters.title':'Private Boat Charters in Tamarindo, Costa Rica | Salty Horizon',
     'meta.charters.desc':'Book a private day at sea in Tamarindo: scuba, snorkeling, paddle boarding, e-foil & jet ski. Fully customized charters designed around you.',
-    'meta.faq.title':'Scuba Diving in Tamarindo, Costa Rica: FAQ | Salty Horizon',
-    'meta.faq.desc':'Real answers about scuba diving in Tamarindo and the Catalina Islands: marine life, manta ray and whale season, diving conditions, and PADI certification with Salty Horizon.',
+    'meta.faq.title':'Scuba Diving FAQ: Tamarindo & Catalina Islands, Costa Rica | Salty Horizon',
+    'meta.faq.desc':'Answers to real questions about scuba diving in Tamarindo and the Catalina Islands: marine life, manta ray and whale season, diving conditions, and PADI certification with Salty Horizon.',
     'nav.experiences':'Experiences','nav.charters':'Private Charters','nav.courses':'PADI Courses','nav.faq':'FAQ','nav.about':'About','nav.blog':'The Blog',
     'nav.gallery':'Gallery','nav.reviews':'Reviews','nav.contact':'Contact','cta.book':'Book a dive','cta.bookCourse':'Book a course','cta.learnMore':'Learn more',
 
-    'hero.h1':'Salty Horizon: Private Scuba Diving in Tamarindo, Costa Rica',
-    'hero.eyebrow':'Tamarindo · Costa Rica',
-    'hero.sub':'Exclusive Scuba Diving',
+    'hero.h1':'Private Scuba Diving in Tamarindo, Costa Rica',
     'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Book your dive','hero.cta2':'Explore experiences','hero.scroll':'Scroll',
     'strip.private':'Only Privately Guided Dives','strip.padi':'PADI instructors','strip.langs':'EN · FR · ES','strip.photos':'Photos included',
@@ -125,7 +123,7 @@ const I18N_DATA = {
     'cart.subtotal':'Subtotal','cart.tax':'Tax (13% IVA)','cart.total':'Estimated total','cart.onRequest':'Price to confirm',
     'cart.onRequestNote':'Some items are priced on request and will be confirmed on WhatsApp.',
 
-    'faq.eyebrow':'Good to know','faq.title':'Frequently asked questions','faq.seeMore':'See the full Tamarindo diving FAQ',
+    'faq.eyebrow':'Good to know','faq.title':'Frequently asked questions','faq.seeMore':'See the full diving FAQ',
     'faq.q1':'Do I need to be certified to try scuba diving in Tamarindo?',
     'faq.a1':'No certification is required for the Discover Scuba Diving experience. After a private briefing with a PADI instructor and some required skills practice, you complete two guided dives, 45 minutes to 1 hour each, from age 10 and up.',
     'faq.q2':'How much does the PADI Open Water Diver course cost?',
@@ -138,7 +136,7 @@ const I18N_DATA = {
     'faq.a5':'Yes, for the Discover Scuba Diving, Open Water and Advanced Open Water courses you need to confirm you are medically fit to dive; a medical form is available to download and must be completed before the course.',
 
     'tfaq.crumb':'Scuba Diving FAQ',
-    'tfaq.page.h1':'Scuba Diving in Tamarindo, Costa Rica: Frequently Asked Questions',
+    'tfaq.page.h1':'Scuba Diving FAQ: Everything You Need to Know About Diving in Tamarindo',
     'tfaq.intro':'Real questions about diving in Tamarindo and at the Catalina Islands, answered directly: marine life, manta ray and whale season, local diving conditions, and getting certified. Wildlife is wild: sightings mentioned below are commonly reported, never guaranteed.',
     'tfaq.h1':'Diving in Tamarindo and the Catalina Islands','tfaq.h1intro':'The Catalina Islands (Islas Catalinas) are the main dive destination for boats leaving Tamarindo, a chain of volcanic islets in the Gulf of Papagayo known for strong currents and rich marine life.',
     'tfaq.h2':'Marine Life Around Tamarindo','tfaq.h2intro':"Guanacaste's Pacific waters support a wide range of species, from resident reef life to migratory visitors passing through seasonally.",
@@ -251,6 +249,7 @@ const I18N_DATA = {
     'tfaq.a43':'Yes, a fully customized day at sea combining scuba, snorkeling, paddle boarding, e-foil and jet ski.',
     'tfaq.q44':"What's included in a private charter?",
     'tfaq.a44':'A flexible itinerary built around what you want to do on the water, organized around your group.',
+    'tfaq.bookCta':'Book your private scuba diving in Tamarindo',
 
     'contact.eyebrow':'Get in touch',
     'contact.title':'Let’s plan your dive',

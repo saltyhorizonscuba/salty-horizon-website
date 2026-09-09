@@ -201,7 +201,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 }
 .hero h1 .accent{color:var(--sand)}
 .hero__logo{display:block;width:clamp(260px,38vw,560px);height:auto;margin-bottom:.9rem;filter:drop-shadow(0 8px 30px rgba(0,0,0,.45))}
-.hero__sub{font-family:var(--font-serif);font-size:clamp(1rem,2.2vw,1.5rem);font-weight:500;letter-spacing:.04em;margin-top:.4rem;color:#eaf1f3}
+.hero h1 .eyebrow{font-size:clamp(1.05rem,2.2vw,1.4rem);letter-spacing:.1em}
 .hero__tag{max-width:540px;margin:1.6rem 0 2.4rem;font-size:1.05rem;color:var(--sand)}
 .hero__cta{display:flex;flex-wrap:wrap;gap:1rem}
 .hero__scroll{position:absolute;bottom:5.5rem;left:50%;transform:translateX(-50%);z-index:3;color:#fff;font-family:var(--font-display);font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;display:none;flex-direction:column;align-items:center;gap:.5rem;opacity:.92;text-shadow:0 2px 14px rgba(0,0,0,.45);pointer-events:none}
@@ -277,9 +277,9 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .exp-card h3{color:#fff;font-size:1.3rem;margin-bottom:.5rem}
 .exp-card p{font-size:.92rem;color:#dde8ec;max-height:0;opacity:0;overflow:hidden;transition:max-height .5s var(--ease),opacity .4s,margin .4s}
 .exp-card:hover p{max-height:170px;opacity:1;margin-top:.3rem}
-.exp-card .price{font-family:var(--font-display);font-weight:700;color:var(--sand);font-size:1.05rem;display:inline-flex;align-items:baseline;gap:.3rem}
+.exp-card .price{font-family:var(--font-display);font-weight:700;color:#fff;font-size:1.05rem;display:inline-flex;align-items:baseline;gap:.3rem}
 .exp-card .price small{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:#cdd9de;font-weight:600}
-.exp-card .tag{position:absolute;top:1rem;left:1rem;z-index:1;background:rgba(231,201,138,.92);color:#3a2a06;border:1px solid transparent;font-family:var(--font-display);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .7rem;border-radius:999px}
+.exp-card .tag{position:absolute;top:1rem;left:1rem;z-index:1;background:rgba(246,241,231,.9);color:#0a2733;border:1px solid transparent;font-family:var(--font-display);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:.35rem .7rem;border-radius:999px}
 .exp-card__cover{position:absolute;inset:0;z-index:1}
 .exp-card__actions{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-top:.9rem;flex-wrap:wrap;pointer-events:auto}
 .exp-card .cart-add-btn{position:relative;z-index:2;display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);color:#fff;font-family:var(--font-display);font-weight:700;font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;padding:.5rem .85rem;border-radius:var(--radius-sm);cursor:pointer;transition:background .25s,transform .25s;white-space:nowrap}
@@ -783,7 +783,6 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   .hero__strip{display:none}
   .hero__logo{width:74%;max-width:300px}
   .hero .eyebrow{margin-bottom:.25rem}
-  .hero__sub{margin-top:0;font-family:var(--font-display)}
   .about-copy p[data-i18n="about.p1"]{display:none}
   .hero__tag{display:none}
   .hero__cta{justify-content:center;text-align:center;margin-top:auto;padding-top:1.8rem}
