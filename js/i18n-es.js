@@ -267,7 +267,8 @@ const I18N_DATA = {
     'footer.cancel5':'Sin reembolso si el cliente no se presenta a la salida de un tour confirmado.',
     'footer.cancel6':'Sin reembolso si el cliente no cumple con los requisitos descritos en el tour (por ejemplo: condición médica, aptitud física, nivel de certificación).',
 
-    'exp.page.h1':'Experiencias',
+    'exp.page.h1':'Experiencias de buceo en Tamarindo, Costa Rica',
+    'exp.page.badge1':'Instructores certificados PADI','exp.page.badge2':'12+ años de experiencia en buceo','exp.page.badge3':'Equipo local en Tamarindo','exp.page.badge4':'Trilingüe: EN · FR · ES','exp.page.badge5':'Reseñas de 5 estrellas',
     'exp.page.intro':'100 % privado, 100 % flexible. Gracias a alianzas de confianza con centros seleccionados, adaptamos lugares, horarios y formatos a ti, y cada salida incluye fotos y videos sin editar.',
     'exp.incl.dives':'inmersiones guiadas','exp.incl.gear':'Todo el equipo de buceo incluido','exp.incl.snacks':'Snacks y bebidas incluidos','exp.incl.private':'Experiencia 100 % privada','exp.incl.photos':'Fotos y videos incluidos','exp.incl.pool':'Sesión privada en piscina incluida','exp.incl.certonly':'Solo para buceadores certificados','exp.incl.advancedOnly':'Solo para buceadores Advanced Open Water','exp.whatsIncluded':'Qué incluye',
     'exp.discover.faqLink':'Preguntas frecuentes sobre el buceo para principiantes','exp.catalinas.faqLink':'Más información sobre el buceo en las Islas Catalinas','exp.bat.faqLink':'Preguntas sobre el buceo con tiburones toro en las Bat Islands',

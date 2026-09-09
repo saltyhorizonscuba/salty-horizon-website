@@ -530,6 +530,9 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .pagehero--plain .pagehero__inner{padding-top:8.5rem;padding-bottom:2.6rem}
 .pagehero h1{color:#fff;font-size:clamp(2.2rem,6vw,4rem);text-transform:uppercase;letter-spacing:.03em}
 .crumbs{font-family:var(--font-display);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#cdd9de;margin-bottom:.8rem}
+.pagehero__badges{display:flex;flex-wrap:wrap;gap:.9rem .95rem;margin-top:1.3rem;font-family:var(--font-display);font-size:.78rem;font-weight:600;letter-spacing:.02em;text-transform:uppercase;color:#e9f1f3}
+.pagehero__badges li{display:flex;align-items:center;gap:.45rem;white-space:nowrap}
+.pagehero__badges svg{width:1.1em;height:1.1em;color:var(--sand);flex:none}
 .crumbs a:hover{color:var(--sand)}
 
 /* experience detail rows */
