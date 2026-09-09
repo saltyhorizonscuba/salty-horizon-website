@@ -9,14 +9,12 @@ const I18N_DATA = {
     'meta.padi.desc':'Cursos PADI privados en Tamarindo: Open Water Diver y Advanced Open Water Diver. Aprende a tu propio ritmo con un instructor PADI profesional.',
     'meta.charters.title':'Charters privados en Tamarindo, Costa Rica | Salty Horizon × Playgrounds',
     'meta.charters.desc':'Un día completamente privado en el Pacífico: buceo, surf, avistamiento de ballenas, snorkel y más, a bordo de un catamarán privado con los guías de buceo de Salty Horizon. Tamarindo, Costa Rica.',
-    'meta.faq.title':'Buceo en Tamarindo, Costa Rica: preguntas frecuentes | Salty Horizon',
-    'meta.faq.desc':'Respuestas reales sobre el buceo en Tamarindo y las Islas Catalinas: vida marina, temporada de rayas manta y ballenas, condiciones de buceo y certificación PADI con Salty Horizon.',
+    'meta.faq.title':'FAQ de Buceo: Tamarindo e Islas Catalinas, Costa Rica | Salty Horizon',
+    'meta.faq.desc':'Respuestas a preguntas reales sobre el buceo en Tamarindo y las Islas Catalinas: vida marina, temporada de rayas manta y ballenas, condiciones de buceo y certificación PADI con Salty Horizon.',
     'nav.experiences':'Experiencias','nav.charters':'Charters privados','nav.courses':'Cursos PADI','nav.faq':'FAQ','nav.about':'Nosotros','nav.blog':'The Blog',
     'nav.gallery':'Galería','nav.reviews':'Reseñas','nav.contact':'Contacto','cta.book':'Reservar','cta.bookCourse':'Reservar un curso','cta.learnMore':'Saber más',
 
-    'hero.h1':'Salty Horizon: Buceo privado en Tamarindo, Costa Rica',
-    'hero.eyebrow':'Tamarindo · Costa Rica',
-    'hero.sub':'Buceo exclusivo',
+    'hero.h1':'Buceo privado en Tamarindo, Costa Rica',
     'hero.tag':'A rhythm defined by you.',
     'hero.cta1':'Reserva tu inmersión','hero.cta2':'Ver experiencias','hero.scroll':'Desplázate',
     'strip.private':'Solo inmersiones guiadas en privado','strip.padi':'Instructores PADI','strip.langs':'EN · FR · ES','strip.photos':'Fotos incluidas',
@@ -125,7 +123,7 @@ const I18N_DATA = {
     'cart.subtotal':'Subtotal','cart.tax':'Impuesto (13% IVA)','cart.total':'Total estimado','cart.onRequest':'Precio a confirmar',
     'cart.onRequestNote':'Algunos elementos son a consultar y se confirmarán por WhatsApp.',
 
-    'faq.eyebrow':'Es bueno saberlo','faq.title':'Preguntas frecuentes','faq.seeMore':'Ver todas las preguntas sobre buceo en Tamarindo',
+    'faq.eyebrow':'Es bueno saberlo','faq.title':'Preguntas frecuentes','faq.seeMore':'Ver todas las preguntas sobre buceo',
     'faq.q1':'¿Necesito estar certificado para probar el buceo en Tamarindo?',
     'faq.a1':'No, no se necesita certificación para el bautismo de buceo (Discover Scuba Diving). Después de una charla privada con un instructor PADI y algunas prácticas de habilidades requeridas, realizas dos inmersiones guiadas de 45 minutos a 1 hora, desde los 10 años.',
     'faq.q2':'¿Cuánto cuesta el curso PADI Open Water Diver?',
@@ -138,7 +136,7 @@ const I18N_DATA = {
     'faq.a5':'Sí, para el bautismo de buceo (Discover Scuba Diving), los cursos Open Water y Advanced Open Water debes confirmar tu aptitud médica para bucear; hay un formulario médico disponible para descargar que debe completarse antes del curso.',
 
     'tfaq.crumb':'FAQ de buceo',
-    'tfaq.page.h1':'Buceo en Tamarindo, Costa Rica: preguntas frecuentes',
+    'tfaq.page.h1':'FAQ de Buceo: todo lo que debes saber sobre bucear en Tamarindo',
     'tfaq.intro':'Preguntas reales sobre el buceo en Tamarindo y en las Islas Catalinas, con respuestas directas: vida marina, temporada de rayas manta y ballenas, condiciones de buceo locales y certificación. La fauna es salvaje: los avistamientos mencionados abajo se reportan con frecuencia, pero nunca están garantizados.',
     'tfaq.h1':'Buceo en Tamarindo y las Islas Catalinas','tfaq.h1intro':'Las Islas Catalinas son el principal destino de buceo para los barcos que salen de Tamarindo: una cadena de islotes volcánicos en el golfo de Papagayo, conocida por sus fuertes corrientes y su rica vida marina.',
     'tfaq.h2':'Vida marina alrededor de Tamarindo','tfaq.h2intro':'Las aguas del Pacífico de Guanacaste albergan una gran variedad de especies, entre fauna residente de los arrecifes y visitantes migratorios de paso según la temporada.',
@@ -251,6 +249,7 @@ const I18N_DATA = {
     'tfaq.a43':'Sí, un día en el mar totalmente personalizado que combina buceo, snorkel, paddle, e-foil y jet ski.',
     'tfaq.q44':'¿Qué incluye un charter privado?',
     'tfaq.a44':'Un itinerario flexible construido según lo que quieras hacer en el agua, organizado para tu grupo.',
+    'tfaq.bookCta':'Reservar tu buceo privado en Tamarindo',
 
     'contact.eyebrow':'Contáctanos',
     'contact.title':'Planeemos tu inmersión',
