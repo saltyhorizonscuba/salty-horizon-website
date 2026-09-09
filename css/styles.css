@@ -577,6 +577,13 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .pagehero__badges{display:flex;flex-wrap:wrap;gap:.9rem .95rem;margin-top:1.3rem;font-family:var(--font-display);font-size:.78rem;font-weight:600;letter-spacing:.02em;text-transform:uppercase;color:#e9f1f3}
 .pagehero__badges li{display:flex;align-items:center;gap:.45rem;white-space:nowrap}
 .pagehero__badges svg{width:1.1em;height:1.1em;color:var(--sand);flex:none}
+@media (max-width:760px){
+  .exp-hero-title{text-align:center}
+  .pagehero__badges{flex-wrap:wrap;justify-content:center;gap:1rem .6rem;text-align:center}
+  .pagehero__badges li{flex-direction:column;align-items:center;gap:.35rem;white-space:normal;width:5.4rem}
+  .pagehero__badges svg{width:1.5em;height:1.5em}
+  .pagehero__badges span{font-size:.56rem;line-height:1.25;letter-spacing:.01em}
+}
 .crumbs a:hover{color:var(--sand)}
 
 /* experience detail rows */
