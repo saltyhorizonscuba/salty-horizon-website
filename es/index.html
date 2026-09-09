@@ -254,24 +254,61 @@
   </div>
 </section>
 
-<!-- LAS CATALINAS -->
+<!-- WHERE WE DIVE (CATALINAS / BAT ISLANDS CAROUSEL) -->
 <section class="section section--dark" id="catalinas">
-  <div class="container about-grid">
-    <div class="about-copy" data-reveal>
-      <span class="eyebrow" data-i18n="cat.eyebrow">Dónde buceamos</span>
-      <h2 class="h-title" data-i18n="cat.title">Las Catalinas y su ecosistema</h2>
-      <p class="lead" data-i18n="cat.lead">Un archipiélago volcánico frente a Tamarindo, uno de los mejores destinos de buceo de Costa Rica.</p>
-      <p data-i18n="cat.p1">Emergiendo del Pacífico justo al norte de Tamarindo, las Islas Catalinas canalizan corrientes frías y ricas en nutrientes que alimentan una concentración excepcional de vida marina en más de veinte pináculos y arrecifes.</p>
-      <p data-i18n="cat.p2">De diciembre a mayo, las mantas gigantes del Pacífico se deslizan entre las islas, acompañadas todo el año por rayas águila, tiburones punta blanca, tortugas marinas, morenas, pulpos y enormes bancos de peces tropicales. Aguas cálidas y claras y perfiles suaves la hacen ideal para las primeras inmersiones e inolvidable para los experimentados.</p>
-      <div class="chips">
-        <span class="chip" data-i18n="cat.h1">20+ puntos de buceo</span>
-        <span class="chip" data-i18n="cat.h2">Temporada de mantas · dic–may</span>
-        <span class="chip" data-i18n="cat.h3">Rayas águila, tiburones y tortugas</span>
-        <span class="chip" data-i18n="cat.h4">Todos los niveles</span>
+  <div class="container">
+    <div class="dive-carousel" data-reveal>
+      <button type="button" class="dive-nav dive-nav--prev" data-dive-prev aria-label="Sitio de buceo anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="dive-slide is-active" data-dive-slide>
+        <div class="about-grid">
+          <div class="about-copy">
+            <span class="eyebrow" data-i18n="cat.eyebrow">Dónde buceamos</span>
+            <h2 class="h-title" data-i18n="cat.title">Las Catalinas y su ecosistema</h2>
+            <p class="lead" data-i18n="cat.lead">Un archipiélago volcánico frente a Tamarindo, uno de los mejores destinos de buceo de Costa Rica.</p>
+            <p data-i18n="cat.p1">Emergiendo del Pacífico justo al norte de Tamarindo, las Islas Catalinas canalizan corrientes frías y ricas en nutrientes que alimentan una concentración excepcional de vida marina en más de veinte pináculos y arrecifes.</p>
+            <p class="dive-more" hidden data-i18n="cat.p2">De diciembre a mayo, las mantas gigantes del Pacífico se deslizan entre las islas, acompañadas todo el año por rayas águila, tiburones punta blanca, tortugas marinas, morenas, pulpos y enormes bancos de peces tropicales. Aguas cálidas y claras y perfiles suaves la hacen ideal para las primeras inmersiones e inolvidable para los experimentados.</p>
+            <button type="button" class="dive-more-toggle" data-dive-more-toggle aria-expanded="false"><span data-i18n="dive.seeMore">Ver más</span></button>
+            <div class="chips">
+              <span class="chip" data-i18n="cat.h1">20+ puntos de buceo</span>
+              <span class="chip" data-i18n="cat.h2">Temporada de mantas · dic–may</span>
+              <span class="chip" data-i18n="cat.h3">Rayas águila, tiburones y tortugas</span>
+              <span class="chip" data-i18n="cat.h4">Todos los niveles</span>
+            </div>
+          </div>
+          <div class="about-media">
+            <picture><source type="image/webp" srcset="../images/catalinas-rock.webp?v=2"><img loading="lazy" src="../images/catalinas-rock.jpg?v=2" style="aspect-ratio:auto" width="1500" height="1125" alt="Formaciones rocosas de las islas Catalinas frente a Tamarindo, Costa Rica"></picture>
+          </div>
+        </div>
       </div>
+      <div class="dive-slide" data-dive-slide>
+        <div class="about-grid">
+          <div class="about-copy">
+            <span class="eyebrow" data-i18n="cat.eyebrow">Dónde buceamos</span>
+            <h2 class="h-title" data-i18n="bat.title">Las Bat Islands y sus tiburones toro</h2>
+            <p class="lead" data-i18n="bat.lead">Una reserva protegida por la UNESCO frente al Parque Nacional Santa Rosa, uno de los pocos lugares del mundo con encuentros regulares y sin cebo con tiburones toro.</p>
+            <p data-i18n="bat.p1">Las Islas Murciélago se encuentran dentro del Sector Marino del Área de Conservación Guanacaste gestionada por el SINAC, Patrimonio de la Humanidad de la UNESCO, donde la profundidad y las corrientes exigen verdadera experiencia de buceo.</p>
+            <p class="dive-more" hidden data-i18n="bat.p2">Los tiburones toro se reúnen aquí de forma natural, sin cebo, en una estación de limpieza, junto a un arrecife saludable y, a veces, rayas águila. Un paso más allá de nuestros otros sitios, reservado para buceadores certificados Advanced Open Water.</p>
+            <button type="button" class="dive-more-toggle" data-dive-more-toggle aria-expanded="false"><span data-i18n="dive.seeMore">Ver más</span></button>
+            <div class="chips">
+              <span class="chip" data-i18n="bat.h1">Tiburones toro, sin cebo</span>
+              <span class="chip" data-i18n="bat.h2">Temporada · may–nov</span>
+              <span class="chip" data-i18n="bat.h3">Advanced Open Water requerido</span>
+            </div>
+          </div>
+          <div class="about-media">
+            <picture><source type="image/webp" srcset="../images/bull-shark-hd.webp?v=1"><img loading="lazy" src="../images/bull-shark-hd.jpg?v=1" style="aspect-ratio:auto" width="1135" height="1386" alt="Tiburón toro nadando sobre el arrecife en las Bat Islands, Costa Rica"></picture>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="dive-nav dive-nav--next" data-dive-next aria-label="Siguiente sitio de buceo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
     </div>
-    <div class="about-media" data-reveal data-delay="1">
-      <picture><source type="image/webp" srcset="../images/catalinas-rock.webp?v=2"><img loading="lazy" src="../images/catalinas-rock.jpg?v=2" style="aspect-ratio:auto" width="1500" height="1125" alt="Formaciones rocosas de las islas Catalinas frente a Tamarindo, Costa Rica"></picture>
+    <div class="dive-dots">
+      <button type="button" class="dive-dot is-active" data-dive-goto="0" data-i18n-aria="cat.title" aria-label="Las Catalinas y su ecosistema"></button>
+      <button type="button" class="dive-dot" data-dive-goto="1" data-i18n-aria="bat.title" aria-label="Las Bat Islands y sus tiburones toro"></button>
     </div>
   </div>
 </section>

@@ -373,5 +373,63 @@ document.addEventListener('DOMContentLoaded', ()=>{
     cfReset();
   }
 
+  document.querySelectorAll('[data-dive-more-toggle]').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const content = b.previousElementSibling;
+      if(!content) return;
+      content.hidden = !content.hidden;
+      b.classList.toggle('is-open');
+      b.setAttribute('aria-expanded', String(!content.hidden));
+      const span = b.querySelector('span');
+      if(span) span.textContent = t(content.hidden ? 'dive.seeMore' : 'dive.seeLess');
+    });
+  });
+
+  const diveCarousel = document.querySelector('.dive-carousel');
+  if(diveCarousel){
+    const diveSlides = [...diveCarousel.querySelectorAll('[data-dive-slide]')];
+    const diveDots = [...document.querySelectorAll('.dive-dot')];
+    let diveActive = diveSlides.findIndex(s=>s.classList.contains('is-active'));
+    if(diveActive < 0) diveActive = 0;
+    const diveGo = (i)=>{
+      diveActive = (i + diveSlides.length) % diveSlides.length;
+      diveSlides.forEach((s,idx)=>s.classList.toggle('is-active', idx === diveActive));
+      diveDots.forEach((d,idx)=>d.classList.toggle('is-active', idx === diveActive));
+    };
+    const divePrev = diveCarousel.querySelector('[data-dive-prev]');
+    const diveNext = diveCarousel.querySelector('[data-dive-next]');
+    if(divePrev) divePrev.addEventListener('click', ()=>diveGo(diveActive - 1));
+    if(diveNext) diveNext.addEventListener('click', ()=>diveGo(diveActive + 1));
+    diveDots.forEach((d,idx)=>d.addEventListener('click', ()=>diveGo(idx)));
+
+    let diveDragX = null, diveDragY = null, diveDragging = false, diveIsHorizontal = null;
+    const DIVE_SWIPE_PX = 40;
+    diveCarousel.addEventListener('pointerdown', (e)=>{
+      if(e.pointerType === 'mouse' && e.button !== 0) return;
+      if(e.target.closest('.dive-nav, .dive-more-toggle')) return;
+      diveDragX = e.clientX; diveDragY = e.clientY; diveDragging = true; diveIsHorizontal = null;
+    });
+    diveCarousel.addEventListener('pointermove', (e)=>{
+      if(!diveDragging || diveDragX === null) return;
+      const dx = e.clientX - diveDragX, dy = e.clientY - diveDragY;
+      if(diveIsHorizontal === null && (Math.abs(dx) > 12 || Math.abs(dy) > 12)){
+        diveIsHorizontal = Math.abs(dx) > Math.abs(dy);
+      }
+      if(diveIsHorizontal) e.preventDefault();
+    });
+    const diveEndDrag = (e)=>{
+      if(!diveDragging) return;
+      diveDragging = false;
+      const dx = e.clientX - diveDragX;
+      diveDragX = null; diveDragY = null;
+      if(diveIsHorizontal && Math.abs(dx) > DIVE_SWIPE_PX){
+        diveGo(dx < 0 ? diveActive + 1 : diveActive - 1);
+      }
+      diveIsHorizontal = null;
+    };
+    diveCarousel.addEventListener('pointerup', diveEndDrag);
+    diveCarousel.addEventListener('pointercancel', ()=>{ diveDragging = false; diveDragX = null; diveDragY = null; diveIsHorizontal = null; });
+  }
+
   document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 });
