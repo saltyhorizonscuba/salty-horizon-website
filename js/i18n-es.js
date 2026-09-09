@@ -40,6 +40,12 @@ const I18N_DATA = {
     'cat.p1':'Emergiendo del Pacífico justo al norte de Tamarindo, las Islas Catalinas canalizan corrientes frías y ricas en nutrientes que alimentan una concentración excepcional de vida marina en más de veinte pináculos y arrecifes.',
     'cat.p2':'De diciembre a mayo, las mantas gigantes del Pacífico se deslizan entre las islas, acompañadas todo el año por rayas águila, tiburones punta blanca, tortugas marinas, morenas, pulpos y enormes bancos de peces tropicales. Aguas cálidas y claras y perfiles suaves la hacen ideal para las primeras inmersiones e inolvidable para los experimentados.',
     'cat.h1':'20+ puntos de buceo','cat.h2':'Temporada de mantas · dic–may','cat.h3':'Rayas águila, tiburones y tortugas','cat.h4':'Todos los niveles',
+    'bat.title':'Las Bat Islands y sus tiburones toro',
+    'bat.lead':'Una reserva protegida por la UNESCO frente al Parque Nacional Santa Rosa, uno de los pocos lugares del mundo con encuentros regulares y sin cebo con tiburones toro.',
+    'bat.p1':'Las Islas Murciélago se encuentran dentro del Sector Marino del Área de Conservación Guanacaste gestionada por el SINAC, Patrimonio de la Humanidad de la UNESCO, donde la profundidad y las corrientes exigen verdadera experiencia de buceo.',
+    'bat.p2':'Los tiburones toro se reúnen aquí de forma natural, sin cebo, en una estación de limpieza, junto a un arrecife saludable y, a veces, rayas águila. Un paso más allá de nuestros otros sitios, reservado para buceadores certificados Advanced Open Water.',
+    'bat.h1':'Tiburones toro, sin cebo','bat.h2':'Temporada · may–nov','bat.h3':'Advanced Open Water requerido',
+    'dive.seeMore':'Ver más','dive.seeLess':'Ver menos',
     'price.from':'desde','price.pp':'por persona','price.request':'a consultar','price.contact':'Contáctanos',
 
     'card.intro.t':'Iniciación al buceo (piscina)','card.intro.d':'Descubre las sensaciones del buceo en una iniciación en piscina, ideal para un primer contacto con total seguridad. Acompañado por un instructor, aprenderás a usar el equipo, a respirar bajo el agua y a dominar las bases del buceo en un entorno tranquilo y seguro. Una experiencia divertida y tranquilizadora, perfecta antes de lanzarte al mar.',

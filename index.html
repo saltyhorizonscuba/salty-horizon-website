@@ -290,24 +290,61 @@
   </div>
 </section>
 
-<!-- LAS CATALINAS -->
+<!-- WHERE WE DIVE (CATALINAS / BAT ISLANDS CAROUSEL) -->
 <section class="section section--dark" id="catalinas">
-  <div class="container about-grid">
-    <div class="about-copy" data-reveal>
-      <span class="eyebrow" data-i18n="cat.eyebrow">Where we dive</span>
-      <h2 class="h-title" data-i18n="cat.title">Las Catalinas &amp; its ecosystem</h2>
-      <p class="lead" data-i18n="cat.lead">A cluster of volcanic islands off Tamarindo, one of Costa Rica's richest dive playgrounds.</p>
-      <p data-i18n="cat.p1">Rising from the Pacific just north of Tamarindo, the Catalina Islands channel cool, nutrient-rich currents.</p>
-      <p data-i18n="cat.p2">From December to May, giant manta rays glide through the islands, joined year-round by eagle rays, reef sharks, turtles and huge schools of fish.</p>
-      <div class="chips">
-        <span class="chip" data-i18n="cat.h1">20+ dive sites</span>
-        <span class="chip" data-i18n="cat.h2">Manta season · Dec–May</span>
-        <span class="chip" data-i18n="cat.h3">Eagle rays, reef sharks &amp; turtles</span>
-        <span class="chip" data-i18n="cat.h4">All levels welcome</span>
+  <div class="container">
+    <div class="dive-carousel" data-reveal>
+      <button type="button" class="dive-nav dive-nav--prev" data-dive-prev aria-label="Previous dive site">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="dive-slide is-active" data-dive-slide>
+        <div class="about-grid">
+          <div class="about-copy">
+            <span class="eyebrow" data-i18n="cat.eyebrow">Where we dive</span>
+            <h2 class="h-title" data-i18n="cat.title">Las Catalinas &amp; its ecosystem</h2>
+            <p class="lead" data-i18n="cat.lead">A cluster of volcanic islands off Tamarindo, one of Costa Rica's richest dive playgrounds.</p>
+            <p data-i18n="cat.p1">Rising from the Pacific just north of Tamarindo, the Catalina Islands channel cool, nutrient-rich currents.</p>
+            <p class="dive-more" hidden data-i18n="cat.p2">From December to May, giant manta rays glide through the islands, joined year-round by eagle rays, reef sharks, turtles and huge schools of fish.</p>
+            <button type="button" class="dive-more-toggle" data-dive-more-toggle aria-expanded="false"><span data-i18n="dive.seeMore">See more</span></button>
+            <div class="chips">
+              <span class="chip" data-i18n="cat.h1">20+ dive sites</span>
+              <span class="chip" data-i18n="cat.h2">Manta season · Dec–May</span>
+              <span class="chip" data-i18n="cat.h3">Eagle rays, reef sharks &amp; turtles</span>
+              <span class="chip" data-i18n="cat.h4">All levels welcome</span>
+            </div>
+          </div>
+          <div class="about-media">
+            <picture><source type="image/webp" srcset="images/catalinas-rock.webp?v=2"><img loading="lazy" src="images/catalinas-rock.jpg?v=2" style="aspect-ratio:auto" width="1500" height="1125" alt="Rock formations at the Catalina Islands off Tamarindo, Costa Rica"></picture>
+          </div>
+        </div>
       </div>
+      <div class="dive-slide" data-dive-slide>
+        <div class="about-grid">
+          <div class="about-copy">
+            <span class="eyebrow" data-i18n="cat.eyebrow">Where we dive</span>
+            <h2 class="h-title" data-i18n="bat.title">The Bat Islands &amp; their bull sharks</h2>
+            <p class="lead" data-i18n="bat.lead">A UNESCO-protected reserve off Santa Rosa National Park, one of the few places on Earth with regular, unbaited bull shark encounters.</p>
+            <p data-i18n="bat.p1">Islas Murciélago sit within the Marine Sector of SINAC's Área de Conservación Guanacaste, a UNESCO World Heritage Site, where depth and current call for real diving experience.</p>
+            <p class="dive-more" hidden data-i18n="bat.p2">Unbaited bull sharks gather naturally at a cleaning station here, alongside healthy reef structure and the occasional eagle ray. It's a step up from our other sites, reserved for certified Advanced Open Water divers.</p>
+            <button type="button" class="dive-more-toggle" data-dive-more-toggle aria-expanded="false"><span data-i18n="dive.seeMore">See more</span></button>
+            <div class="chips">
+              <span class="chip" data-i18n="bat.h1">Bull sharks, unbaited</span>
+              <span class="chip" data-i18n="bat.h2">Season · May–Nov</span>
+              <span class="chip" data-i18n="bat.h3">Advanced Open Water required</span>
+            </div>
+          </div>
+          <div class="about-media">
+            <picture><source type="image/webp" srcset="images/bull-shark-hd.webp?v=1"><img loading="lazy" src="images/bull-shark-hd.jpg?v=1" style="aspect-ratio:auto" width="1135" height="1386" alt="Bull shark swimming over the reef at the Bat Islands, Costa Rica"></picture>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="dive-nav dive-nav--next" data-dive-next aria-label="Next dive site">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
     </div>
-    <div class="about-media" data-reveal data-delay="1">
-      <picture><source type="image/webp" srcset="images/catalinas-rock.webp?v=2"><img loading="lazy" src="images/catalinas-rock.jpg?v=2" style="aspect-ratio:auto" width="1500" height="1125" alt="Rock formations at the Catalina Islands off Tamarindo, Costa Rica"></picture>
+    <div class="dive-dots">
+      <button type="button" class="dive-dot is-active" data-dive-goto="0" data-i18n-aria="cat.title" aria-label="Las Catalinas &amp; its ecosystem"></button>
+      <button type="button" class="dive-dot" data-dive-goto="1" data-i18n-aria="bat.title" aria-label="The Bat Islands &amp; their bull sharks"></button>
     </div>
   </div>
 </section>

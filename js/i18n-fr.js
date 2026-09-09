@@ -40,6 +40,12 @@ const I18N_DATA = {
     'cat.p1':'Surgissant du Pacifique juste au nord de Tamarindo, les îles Catalinas canalisent des courants froids et riches en nutriments qui nourrissent une concentration exceptionnelle de vie marine, répartie sur plus de vingt pitons et récifs.',
     'cat.p2':'De décembre à mai, les raies mantas géantes du Pacifique glissent entre les îles, rejointes toute l’année par les raies aigles, les requins à pointe blanche, les tortues marines, les murènes, les poulpes et d’immenses bancs de poissons tropicaux. Une eau chaude et claire et des profils doux en font un site idéal pour les premières plongées et inoubliable pour les confirmés.',
     'cat.h1':'20+ sites de plongée','cat.h2':'Saison des mantas · déc–mai','cat.h3':'Raies aigles, requins & tortues','cat.h4':'Tous niveaux',
+    'bat.title':'Les Bat Islands & leurs requins bouledogues',
+    'bat.lead':'Une réserve protégée par l\'UNESCO au large du parc national Santa Rosa, l\'un des rares endroits au monde avec des rencontres régulières et sans appât de requins bouledogues.',
+    'bat.p1':'Les Islas Murciélago se trouvent au sein du secteur marin de l\'Área de Conservación Guanacaste géré par le SINAC, site du patrimoine mondial de l\'UNESCO, où la profondeur et les courants demandent une vraie expérience de plongée.',
+    'bat.p2':'Les requins bouledogues se rassemblent ici naturellement, sans appât, à une station de nettoyage, aux côtés d\'un récif en bonne santé et parfois de raies aigles. Un cran au-dessus de nos autres sites, réservé aux plongeurs certifiés Advanced Open Water.',
+    'bat.h1':'Requins bouledogues, sans appât','bat.h2':'Saison · mai–nov','bat.h3':'Advanced Open Water requis',
+    'dive.seeMore':'Voir plus','dive.seeLess':'Voir moins',
     'price.from':'dès','price.pp':'par personne','price.request':'sur demande','price.contact':'Nous contacter',
 
     'card.intro.t':'Initiation Scuba (piscine)','card.intro.d':'Découvrez les sensations de la plongée sous-marine lors d’une initiation en piscine, idéale pour une première approche en toute sécurité. Accompagné d’un instructeur, vous apprendrez à utiliser l’équipement, à respirer sous l’eau et à maîtriser les bases de la plongée dans un environnement calme et sécurisé. Une expérience ludique et rassurante, parfaite avant de se lancer en mer.',
