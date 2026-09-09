@@ -275,7 +275,7 @@ const I18N_DATA = {
 
     /* subpages */
     'exp.page.h1':'Scuba Diving Experiences in Tamarindo, Costa Rica',
-    'exp.page.badge1':'PADI-Certified Instructors','exp.page.badge2':'12+ Years of Diving Experience','exp.page.badge3':'Local, Tamarindo-Based Team','exp.page.badge4':'Trilingual: EN · FR · ES','exp.page.badge5':'5-Star Reviews',
+    'exp.page.badge1':'PADI-Certified Instructors','exp.page.badge2':'12+ Years of Diving Experience','exp.page.badge3':'Local, Tamarindo-Based Team','exp.page.badge4':'Trilingual: EN · FR · ES','exp.page.badge5':'5-Star Reviews','exp.page.badge6':'Privately Guided',
     'exp.page.intro':'Fully private, fully flexible. Thanks to trusted partnerships with selected dive centers, we adapt locations, schedules and formats to you, and every session includes unedited photos and videos.',
     'exp.incl.dives':'guided dives','exp.incl.gear':'All scuba equipment included','exp.incl.snacks':'Snacks & drinks included','exp.incl.private':'Fully private experience','exp.incl.photos':'Photos & videos included','exp.incl.pool':'Private pool session included','exp.incl.certonly':'For certified divers only','exp.incl.advancedOnly':'For Advanced Open Water divers only','exp.whatsIncluded':"What's included",
     'exp.discover.faqLink':'Common questions about scuba diving for beginners','exp.catalinas.faqLink':'More about diving at the Catalina Islands','exp.bat.faqLink':'Questions about diving with bull sharks at the Bat Islands',

@@ -274,7 +274,7 @@ const I18N_DATA = {
     'footer.cancel6':'Aucun remboursement si le client ne remplit pas les conditions décrites dans la sortie (ex. : condition médicale, forme physique, niveau de certification).',
 
     'exp.page.h1':'Expériences de plongée sous-marine à Tamarindo, Costa Rica',
-    'exp.page.badge1':'Instructeurs certifiés PADI','exp.page.badge2':'12+ ans d\'expérience en plongée','exp.page.badge3':'Équipe locale basée à Tamarindo','exp.page.badge4':'Trilingue : EN · FR · ES','exp.page.badge5':'Avis 5 étoiles',
+    'exp.page.badge1':'Instructeurs certifiés PADI','exp.page.badge2':'12+ ans d\'expérience en plongée','exp.page.badge3':'Équipe locale basée à Tamarindo','exp.page.badge4':'Trilingue : EN · FR · ES','exp.page.badge5':'Avis 5 étoiles','exp.page.badge6':'Guidage privé',
     'exp.page.intro':'100 % privé, 100 % flexible. Grâce à nos partenariats de confiance avec des centres sélectionnés, nous adaptons lieux, horaires et formats à vous, et chaque sortie inclut des photos et vidéos non retouchées.',
     'exp.incl.dives':'plongées guidées','exp.incl.gear':'Tout l’équipement de plongée inclus','exp.incl.snacks':'Snacks & boissons inclus','exp.incl.private':'Expérience 100 % privée','exp.incl.photos':'Photos & vidéos incluses','exp.incl.pool':'Séance privée en piscine incluse','exp.incl.certonly':'Réservé aux plongeurs certifiés','exp.incl.advancedOnly':'Réservé aux plongeurs Advanced Open Water','exp.whatsIncluded':'Ce qui est inclus',
     'exp.discover.faqLink':'Questions fréquentes sur la plongée pour débutants','exp.catalinas.faqLink':'En savoir plus sur la plongée aux îles Catalinas','exp.bat.faqLink':'Questions sur la plongée avec les requins-taureaux aux Bat Islands',
