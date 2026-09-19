@@ -161,7 +161,7 @@ const I18N_DATA = {
     'tfaq.q2':'Are the Catalina Islands a protected marine area?',
     'tfaq.a2':'Not formally. Unlike the Bat Islands (Islas Murciélago), which fall within the Marine Sector of the SINAC-managed Área de Conservación Guanacaste (a UNESCO World Heritage Site), the Catalina Islands do not currently carry that same protected-area designation. They are a naturally rich dive site, not a classified protected area.',
     'tfaq.q3':'How deep are the dives at the Catalina Islands?',
-    'tfaq.a3':'Catalina Islands dive sites vary in depth and suit a range of experience levels, from supervised beginners to more advanced divers, without the depth and current demands of sites like the Bat Islands.',
+    'tfaq.a3':'Catalina Islands dive sites range from about 10 to 30 metres (33 to 100 feet) deep and suit a range of experience levels, from supervised beginners to more advanced divers, without the depth and current demands of sites like the Bat Islands.',
     'tfaq.q4':'How long is the boat ride to the Catalina Islands?',
     'tfaq.a4':'About 40 minutes from Tamarindo, depending on sea conditions.',
 
@@ -251,6 +251,10 @@ const I18N_DATA = {
 
     'tfaq.q42':'Do you offer snorkeling for non-divers?',
     'tfaq.a42':'Yes, private snorkeling sessions, two outings of 45 minutes to 1 hour, starting at $90.',
+    'tfaq.q46':"How long is the boat ride to the Bat Islands?",
+    'tfaq.a46':"The boat leaves from Tamarindo and the ride takes about 2 hours, depending on sea conditions.",
+    'tfaq.q47':"How deep are the dives at the Bat Islands?",
+    'tfaq.a47':"Dives at the Bat Islands average around 25 metres (80 feet), with a maximum of about 30 metres (100 feet). Together with the currents, this is why the site is reserved for certified Advanced Open Water divers.",
     'tfaq.q43':'Can I book a private boat charter?',
     'tfaq.a43':'Yes, a fully customized day at sea combining scuba, snorkeling, paddle boarding, e-foil and jet ski.',
     'tfaq.q44':"What's included in a private charter?",
