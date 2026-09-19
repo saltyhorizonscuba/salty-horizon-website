@@ -58,7 +58,7 @@ Document de référence factuel pour le sous-agent `head-of-seo-geo`. Toute info
 | `bat-islands-diving.html` | `/bat-islands-diving.html` | Guide informatif Bat Islands (statut de protection, sécurité, saisonnalité) — renvoie vers `fun-dive-bat-islands.html` pour réserver | `WebPage`, `BreadcrumbList`, `FAQPage` (5 Q/R) | — |
 | `padi-courses.html` | `/padi-courses.html` | Cours PADI Open Water ($540) et Advanced Open Water ($500), programme jour par jour | `Course`×2, `Offer`×2, `BreadcrumbList` | $540 / $500 |
 | `private-charters.html` | `/private-charters.html` | Charters privés à bord du catamaran partenaire Playgrounds (plongée, snorkeling, paddle, e-foil, jet ski, observation des baleines, surf) | `WebPage`, `BreadcrumbList` | — |
-| `scuba-diving-tamarindo-faq.html` | `/scuba-diving-tamarindo-faq.html` | FAQ de 43 questions, 11 sections (table des matières ancrée) | `WebPage`, `BreadcrumbList`, `FAQPage` (43 Q/R) | — |
+| `scuba-diving-tamarindo-faq.html` | `/scuba-diving-tamarindo-faq.html` | FAQ de 45 questions, 11 sections (table des matières ancrée) | `WebPage`, `BreadcrumbList`, `FAQPage` (45 Q/R) | — |
 
 Chacune de ces 12 pages existe aussi à l'identique (structure, schéma) en `fr/*.html` et `es/*.html`, avec titre/meta/contenu/JSON-LD traduits — voir section 5.
 
@@ -116,7 +116,7 @@ Les entités `#business`, `#camille`, `#julien` sont **partagées par référenc
 - `.well-known/agents.json` : fiche de découverte (nom, description, url, `capabilities: ["contact","booking"]`, contact). Une seule URL (page d'accueil anglaise), pas de mention fr/es/blog — pas de problème identifié à date, ce fichier reste volontairement minimal.
 - `llms.txt` : résumé de l'entreprise + liste des 12 pages produit/guide (EN) + section langues (`/fr/`, `/es/`, chacune listant les 11 pages hors home) + section Journal (blog, 7 articles) + faits clés. **Corrigé le 2026-07-14** : contenait des URLs sans extension `.html` — chaque URL revérifiée contre un fichier réel existant. **Revérifié à jour le 2026-08-01** après la restructuration du 2026-07-31 : les 7 nouvelles pages (5 produit + 2 guide, ces dernières déjà présentes depuis le 07-23 mais confirmées) y figurent avec les tarifs à jour ($195/$140/$90), cohérent avec `sitemap.xml` (44 URLs).
 - Entités JSON-LD reliées entre pages via `@id` partagés (section 4) — aide un LLM/crawler à comprendre qu'il s'agit de la même entité business/personnes sur tout le site, y compris entre langues.
-- `FAQPage` présent sur `index.html` (5 Q/R) et sur la page FAQ dédiée (43 Q/R), traduit intégralement sur `fr/`/`es/` — format que les moteurs génératifs et les featured snippets exploitent directement.
+- `FAQPage` présent sur `index.html` (5 Q/R) et sur la page FAQ dédiée (45 Q/R), traduit intégralement sur `fr/`/`es/` — format que les moteurs génératifs et les featured snippets exploitent directement.
 
 ## 7. Conventions du dépôt (constatées dans le code/l'historique Git)
 
