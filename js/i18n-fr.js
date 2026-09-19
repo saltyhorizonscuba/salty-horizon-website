@@ -161,7 +161,7 @@ const I18N_DATA = {
     'tfaq.q2':'Les îles Catalinas sont-elles une zone marine protégée ?',
     'tfaq.a2':"Pas officiellement. Contrairement aux Bat Islands (Islas Murciélago), qui font partie du Secteur Marin de l'Área de Conservación Guanacaste géré par le SINAC (site du patrimoine mondial UNESCO), les îles Catalinas ne bénéficient pas de ce même statut de protection. C'est un site naturellement riche, mais pas une aire protégée classée.",
     'tfaq.q3':'Quelle est la profondeur des plongées aux îles Catalinas ?',
-    'tfaq.a3':'Les sites de plongée des Catalinas ont des profondeurs variées et conviennent à différents niveaux, du débutant encadré au plongeur plus expérimenté, sans les exigences de profondeur et de courant des Bat Islands.',
+    'tfaq.a3':'Les sites de plongée des Catalinas se situent entre environ 10 et 30 mètres (33 à 100 pieds) de profondeur et conviennent à différents niveaux, du débutant encadré au plongeur plus expérimenté, sans les exigences de profondeur et de courant des Bat Islands.',
     'tfaq.q4':'Combien de temps dure le trajet en bateau jusqu\'aux îles Catalinas ?',
     'tfaq.a4':'Environ 40 minutes depuis Tamarindo, selon les conditions de mer.',
 
@@ -251,6 +251,10 @@ const I18N_DATA = {
 
     'tfaq.q42':'Proposez-vous du snorkeling pour les non-plongeurs ?',
     'tfaq.a42':'Oui, en privé, deux sessions de 45 minutes à 1 heure, à partir de 90 $.',
+    'tfaq.q46':"Combien de temps dure le trajet en bateau jusqu'aux Bat Islands ?",
+    'tfaq.a46':"Le bateau part de Tamarindo et le trajet dure environ 2 heures, selon les conditions de mer.",
+    'tfaq.q47':"Quelle est la profondeur des plongées aux Bat Islands ?",
+    'tfaq.a47':"Les plongées aux Bat Islands atteignent en moyenne environ 25 mètres (80 pieds), pour un maximum d'environ 30 mètres (100 pieds). Avec les courants, c'est pourquoi le site est réservé aux plongeurs certifiés Advanced Open Water.",
     'tfaq.q43':'Peut-on réserver un bateau privé ?',
     'tfaq.a43':'Oui, une journée en mer entièrement personnalisée combinant plongée, snorkeling, paddle, e-foil et jet-ski.',
     'tfaq.q44':'Qu\'est-ce qui est inclus dans un charter privé ?',

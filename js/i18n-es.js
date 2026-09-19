@@ -161,7 +161,7 @@ const I18N_DATA = {
     'tfaq.q2':'¿Las Islas Catalinas son un área marina protegida?',
     'tfaq.a2':'No formalmente. A diferencia de las Bat Islands (Islas Murciélago), que forman parte del Sector Marino del Área de Conservación Guanacaste gestionada por el SINAC (sitio del Patrimonio Mundial de la UNESCO), las Islas Catalinas no cuentan actualmente con esa misma designación de área protegida. Es un sitio naturalmente rico, pero no un área protegida clasificada.',
     'tfaq.q3':'¿Qué tan profundas son las inmersiones en las Islas Catalinas?',
-    'tfaq.a3':'Los sitios de buceo de las Catalinas tienen profundidades variadas y se adaptan a distintos niveles, desde principiantes supervisados hasta buzos más experimentados, sin las exigencias de profundidad y corriente de sitios como las Bat Islands.',
+    'tfaq.a3':'Los sitios de buceo de las Catalinas están entre unos 10 y 30 metros (33 a 100 pies) de profundidad y se adaptan a distintos niveles, desde principiantes supervisados hasta buzos más experimentados, sin las exigencias de profundidad y corriente de sitios como las Bat Islands.',
     'tfaq.q4':'¿Cuánto dura el trayecto en barco hasta las Islas Catalinas?',
     'tfaq.a4':'Unos 40 minutos desde Tamarindo, según las condiciones del mar.',
 
@@ -251,6 +251,10 @@ const I18N_DATA = {
 
     'tfaq.q42':'¿Ofrecen snorkel para quienes no bucean?',
     'tfaq.a42':'Sí, sesiones privadas de snorkel, dos salidas de 45 minutos a 1 hora, desde $90.',
+    'tfaq.q46':"¿Cuánto dura el trayecto en barco hasta las Bat Islands?",
+    'tfaq.a46':"El barco sale de Tamarindo y el trayecto dura unas 2 horas, según las condiciones del mar.",
+    'tfaq.q47':"¿Qué tan profundas son las inmersiones en las Bat Islands?",
+    'tfaq.a47':"Las inmersiones en las Bat Islands promedian unos 25 metros (80 pies), con un máximo de unos 30 metros (100 pies). Junto con las corrientes, por eso el sitio está reservado a buzos certificados Advanced Open Water.",
     'tfaq.q43':'¿Puedo reservar un charter privado en barco?',
     'tfaq.a43':'Sí, un día en el mar totalmente personalizado que combina buceo, snorkel, paddle, e-foil y jet ski.',
     'tfaq.q44':'¿Qué incluye un charter privado?',
