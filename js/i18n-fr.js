@@ -45,7 +45,7 @@ const I18N_DATA = {
     'bat.p1':'Les Islas Murciélago se trouvent au sein du secteur marin de l\'Área de Conservación Guanacaste géré par le SINAC, site du patrimoine mondial de l\'UNESCO, où la profondeur et les courants demandent une vraie expérience de plongée.',
     'bat.p2':'Les requins bouledogues se rassemblent ici naturellement, sans appât, à une station de nettoyage, aux côtés d\'un récif en bonne santé et parfois de raies aigles. Un cran au-dessus de nos autres sites, réservé aux plongeurs certifiés Advanced Open Water.',
     'bat.h1':'Requins bouledogues, sans appât','bat.h2':'Saison · mai–nov','bat.h3':'Advanced Open Water requis',
-    'dive.seeMore':'Voir plus','dive.seeLess':'Voir moins',
+    'dive.seeMore':'Voir plus','dive.seeLess':'Voir moins','dive.guideCat':'Guide de plongée des îles Catalinas','dive.guideBat':'Guide de plongée des Bat Islands',
     'price.from':'dès','price.pp':'par personne','price.request':'sur demande','price.contact':'Nous contacter',
 
     'card.intro.t':'Initiation Scuba (piscine)','card.intro.d':'Découvrez les sensations de la plongée sous-marine lors d’une initiation en piscine, idéale pour une première approche en toute sécurité. Accompagné d’un instructeur, vous apprendrez à utiliser l’équipement, à respirer sous l’eau et à maîtriser les bases de la plongée dans un environnement calme et sécurisé. Une expérience ludique et rassurante, parfaite avant de se lancer en mer.',

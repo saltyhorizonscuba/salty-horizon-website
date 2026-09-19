@@ -45,7 +45,7 @@ const I18N_DATA = {
     'bat.p1':"Islas Murciélago sit within the Marine Sector of SINAC's Área de Conservación Guanacaste, a UNESCO World Heritage Site, where depth and current call for real diving experience.",
     'bat.p2':'Unbaited bull sharks gather naturally at a cleaning station here, alongside healthy reef structure and the occasional eagle ray. It\'s a step up from our other sites, reserved for certified Advanced Open Water divers.',
     'bat.h1':'Bull sharks, unbaited','bat.h2':'Season · May–Nov','bat.h3':'Advanced Open Water required',
-    'dive.seeMore':'See more','dive.seeLess':'See less',
+    'dive.seeMore':'See more','dive.seeLess':'See less','dive.guideCat':'Catalina Islands dive guide','dive.guideBat':'Bat Islands dive guide',
     'price.from':'from','price.pp':'per person','price.request':'on request','price.contact':'Contact us',
 
     'card.intro.t':'Intro to Scuba (Pool)','card.intro.d':'Experience the sensations of scuba diving during a pool introduction, ideal for a safe first approach. With an instructor by your side, you’ll learn to use the equipment, breathe underwater and master the basics of diving in a calm, secure environment. A fun and reassuring experience, perfect before heading out to sea.',

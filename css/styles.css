@@ -233,6 +233,10 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .feature-list b{font-family:var(--font-display);font-size:.95rem;color:var(--ink)}
 
 /* ---------- Chips ---------- */
+.faq-guide{display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;margin:.4rem 0 1.4rem}
+.faq-guide a{font-family:var(--font-display);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);border-bottom:1px solid currentColor;padding-bottom:.2rem}
+.faq-guide a::after{content:" \2192"}
+.faq-guide a:hover,.faq-guide a:focus-visible{color:var(--navy)}
 .chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.7rem}
 .chip{font-family:var(--font-display);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;background:rgba(31,163,181,.1);color:var(--teal);border:1px solid rgba(31,163,181,.28);padding:.5rem .9rem;border-radius:999px}
 .section--dark .chip{background:rgba(255,255,255,.08);color:var(--aqua-bright);border-color:rgba(255,255,255,.25)}
@@ -255,6 +259,10 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .dive-dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.25);border:none;padding:0;cursor:pointer;transition:background .2s,transform .2s}
 .dive-dot:hover{background:rgba(255,255,255,.5)}
 .dive-dot.is-active{background:var(--sand);transform:scale(1.2)}
+.dive-links{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;margin-top:1.4rem}
+.dive-links a{font-family:var(--font-display);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sand);border-bottom:1px solid rgba(255,255,255,.28);padding-bottom:.2rem;transition:color .2s,border-color .2s}
+.dive-links a::after{content:" \2192"}
+.dive-links a:hover,.dive-links a:focus-visible{color:#fff;border-color:var(--sand)}
 .dive-more-toggle{display:none}
 .dive-carousel .about-copy p.dive-more[hidden]{display:block}
 @media (max-width:760px){

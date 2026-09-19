@@ -45,7 +45,7 @@ const I18N_DATA = {
     'bat.p1':'Las Islas Murciélago se encuentran dentro del Sector Marino del Área de Conservación Guanacaste gestionada por el SINAC, Patrimonio de la Humanidad de la UNESCO, donde la profundidad y las corrientes exigen verdadera experiencia de buceo.',
     'bat.p2':'Los tiburones toro se reúnen aquí de forma natural, sin cebo, en una estación de limpieza, junto a un arrecife saludable y, a veces, rayas águila. Un paso más allá de nuestros otros sitios, reservado para buceadores certificados Advanced Open Water.',
     'bat.h1':'Tiburones toro, sin cebo','bat.h2':'Temporada · may–nov','bat.h3':'Advanced Open Water requerido',
-    'dive.seeMore':'Ver más','dive.seeLess':'Ver menos',
+    'dive.seeMore':'Ver más','dive.seeLess':'Ver menos','dive.guideCat':'Guía de buceo de las Islas Catalinas','dive.guideBat':'Guía de buceo de las Bat Islands',
     'price.from':'desde','price.pp':'por persona','price.request':'a consultar','price.contact':'Contáctanos',
 
     'card.intro.t':'Iniciación al buceo (piscina)','card.intro.d':'Descubre las sensaciones del buceo en una iniciación en piscina, ideal para un primer contacto con total seguridad. Acompañado por un instructor, aprenderás a usar el equipo, a respirar bajo el agua y a dominar las bases del buceo en un entorno tranquilo y seguro. Una experiencia divertida y tranquilizadora, perfecta antes de lanzarte al mar.',
