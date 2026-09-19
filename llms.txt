@@ -4,7 +4,7 @@
 
 ## Pages
 
-- [Home](https://www.saltyhorizondiving.com/): overview, about the instructors, gallery, guest reviews, booking form, contact details
+- [Home](https://www.saltyhorizondiving.com/): overview, about the instructors, gallery, guest reviews, online booking request confirmed on WhatsApp, contact details
 - [Experiences](https://www.saltyhorizondiving.com/experiences.html): Intro to Scuba (Pool) from $80, Discover Scuba Diving from $195, Fun Dive at the Catalina Islands from $140, Fun Dive at the Bat Islands (bull sharks, contact for pricing), Private Snorkeling from $90
 - [PADI Courses](https://www.saltyhorizondiving.com/padi-courses.html): PADI Open Water Diver certification from $540, PADI Advanced Open Water Diver from $500
 - [Private Charters](https://www.saltyhorizondiving.com/private-charters.html): fully customized private boat days combining scuba, snorkeling, paddle boarding, e-foil and jet ski
@@ -25,7 +25,7 @@ All pages above are also available in full, natively, in French and Spanish, at 
 
 ## The Blog
 
-Sourced articles on diving, marine life and Tamarindo, in English only: [The Salty Horizon Blog](https://www.saltyhorizondiving.com/blog/index.html)
+Sourced articles on diving, marine life and Tamarindo, in English only: [The Salty Horizon Blog](https://www.saltyhorizondiving.com/blog/)
 
 - [The Top 10 Things to Do in Tamarindo, Costa Rica](https://www.saltyhorizondiving.com/blog/top-10-things-to-do-tamarindo.html): from scuba diving the Catalina Islands to surfing, ATV tours, sportfishing, sunset sailing and turtle nesting tours — the activities that define a trip to Tamarindo.
 - [The 10 Best Beaches Near Tamarindo, Costa Rica](https://www.saltyhorizondiving.com/blog/best-beaches-near-tamarindo.html): ten beaches within a short drive of Tamarindo, each with its own personality — where to swim, where to surf, where the turtles nest, and what to know before you go.
