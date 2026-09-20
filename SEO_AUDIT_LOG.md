@@ -342,6 +342,20 @@ Historique daté des audits, constats et corrections effectués par le `head-of-
 
 **Encore ouvert** : redirection double hPanel ; mise à jour périodique `aggregateRating` ; `<h1>` home sans texte crawlable ; `origin/dev` distant en retard de 2 commits non poussés (hygiène Git, pas de contenu affecté).
 
+## 2026-09-19 — Audits SEO technique + GEO, Lot 1, faits chiffrés Catalinas/Bat Islands, aperçus de partage
+
+**Contexte** : deux passes en lecture seule du sous-agent `head-of-seo-geo` (SEO technique et local : 8/10 ; GEO/AEO : 7/10 ; aucun problème critique dans les deux), puis corrections par la session principale sur `dev`, poussées sur `origin/dev` ; `main` n'a pas été mis à jour à cette date.
+
+**Méthode** : contrôles automatisés (Node) sur les 44 pages ; requêtes `curl -A` par User-Agent sur le site public ; `git log` par fichier ; rendu Playwright des pages modifiées ; validation du JSON-LD (53 blocs, 0 erreur) et contrôle statique/dictionnaire (0 écart) après chaque lot.
+
+**Constats principaux** : pages guide Catalinas/Bat Islands presque orphelines ; HTML statique de la home EN tronqué par rapport au dictionnaire (66 écarts au total) ; GPTBot et `meta-externalagent` bloqués en 429 par l'hébergeur malgré `robots.txt` ; JSON-LD avec références `@id` sans nom et `Offer` sans `itemOffered` ; faits chiffrés absents (profondeurs, trajet) ; article de blog affirmant à tort que les Bat Islands sont 30 min au-delà des Catalinas ; Open Graph incomplet (dimensions sur 15 pages, ni `og:site_name` ni `og:locale`), images de partage en portrait ou lourdes ; `lastmod` du sitemap tous périmés ; compteur d'avis 22 pour 12 avis affichés.
+
+**Corrections appliquées (commits sur `dev`)** : `114069e` liens vers les guides (carrousel, FAQ, blog) ; `36bffa7` synchro statique/dictionnaire ; `2033110` `llms.txt` ; `06d5be6` JSON-LD ; `23d3c2a` alts FR/ES et titre Catalinas FR/ES ; `974d401` et `f0e053e` `lastmod` ; `460cc33` et `3ea7a16` profondeurs Catalinas 10-30 m, Bat Islands ~25 m en moyenne (~30 m maximum), trajet Bat Islands ~2 h depuis Tamarindo (données du propriétaire), 3 nouvelles Q/R, `llms.txt`, blog corrigé ; `055aedd` 15 images de partage 1200×630, `og:image:width`/`height`, `og:site_name`, `og:locale`, `?v=` manquants.
+
+**Décisions** : le reste du Lot 2 (base des prix, `sameAs`/adresse, auteurs du blog, badge « 12+ ans », compteur d'avis) et le reste du Lot 3 (titres/descriptions, 404, H1 produit, blog, images en double) ne sont pas souhaités pour le moment. Recadrages des images de partage validés par l'utilisateur ; l'accueil partage la raie manta.
+
+**Encore ouvert** : blocage GPTBot chez Hostinger (le support attribue le 429 à une protection automatique en amont, indépendante du CDN, du WAF et des fichiers ; non résolu) ; les points listés en section 8 de `SEO_PROJECT_CONTEXT.md` (25 à 30). Un bump de cache (`styles.css`, `i18n-*.js`) reste à faire avant le prochain push vers `main`.
+
 ---
 
 *Format pour les prochaines entrées : date, contexte de la mission, constats (avec méthode de vérification), corrections appliquées, décisions documentées sans code, points laissés ouverts et pourquoi.*
