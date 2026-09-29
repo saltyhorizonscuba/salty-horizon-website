@@ -144,6 +144,7 @@ const I18N_DATA = {
     'tfaq.crumb':'FAQ de buceo',
     'tfaq.page.h1':'FAQ de Buceo: todo lo que debes saber sobre bucear en Tamarindo',
     'tfaq.intro':'Preguntas reales sobre el buceo en Tamarindo y en las Islas Catalinas, con respuestas directas: vida marina, temporada de rayas manta y ballenas, condiciones de buceo locales y certificación. La fauna es salvaje: los avistamientos mencionados abajo se reportan con frecuencia, pero nunca están garantizados.',
+    'tfaq.guideAll':'Todo el buceo en Tamarindo',
     'tfaq.h1':'Buceo en Tamarindo y las Islas Catalinas','tfaq.h1intro':'Las Islas Catalinas son el principal destino de buceo para los barcos que salen de Tamarindo: una cadena de islotes volcánicos en el golfo de Papagayo, conocida por sus fuertes corrientes y su rica vida marina.',
     'tfaq.h2':'Vida marina alrededor de Tamarindo','tfaq.h2intro':'Las aguas del Pacífico de Guanacaste albergan una gran variedad de especies, entre fauna residente de los arrecifes y visitantes migratorios de paso según la temporada.',
     'tfaq.h3':'Rayas manta y mobula','tfaq.h3intro':'Las rayas manta y mobula están entre los avistamientos más buscados en la costa Pacífica de Costa Rica, y sus movimientos son objeto de investigación científica en curso.',
