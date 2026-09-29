@@ -144,6 +144,7 @@ const I18N_DATA = {
     'tfaq.crumb':'FAQ plongée',
     'tfaq.page.h1':'FAQ Plongée : tout savoir sur la plongée à Tamarindo',
     'tfaq.intro':'De vraies questions sur la plongée à Tamarindo et aux îles Catalinas, avec des réponses directes : vie marine, saison des raies manta et des baleines, conditions de plongée locales, certification. La faune est sauvage : les observations mentionnées ci-dessous sont fréquemment rapportées, jamais garanties.',
+    'tfaq.guideAll':'Toutes nos plongées à Tamarindo',
     'tfaq.h1':'Plonger à Tamarindo et aux îles Catalinas','tfaq.h1intro':"Les îles Catalinas (Islas Catalinas) sont la principale destination de plongée des bateaux au départ de Tamarindo, une chaîne d'îlots volcaniques dans le golfe de Papagayo, réputée pour ses forts courants et sa vie marine riche.",
     'tfaq.h2':'La vie marine autour de Tamarindo','tfaq.h2intro':'Les eaux Pacifique du Guanacaste abritent une grande variété d\'espèces, entre faune résidente des récifs et visiteurs migratoires de passage selon la saison.',
     'tfaq.h3':'Raies manta et raies mobula','tfaq.h3intro':"Les raies manta et mobula comptent parmi les observations les plus recherchées sur la côte Pacifique du Costa Rica, et leurs déplacements font l'objet de recherches scientifiques en cours.",
