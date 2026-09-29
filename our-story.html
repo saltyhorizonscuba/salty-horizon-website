@@ -39,6 +39,7 @@
 <link rel="preload" as="script" href="js/i18n-en.js?v=9">
 <link rel="preload" as="script" href="js/core.js?v=6">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap&text=ACDEFGILNOPRSTU">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="css/styles.css?v=79">
 <script type="application/ld+json">
@@ -191,22 +192,26 @@
       <p class="lead">The Mediterranean, the Caribbean, the Coral Triangle and the Coral Sea. Every pin left its mark on the way we dive and teach today.</p>
     </div>
     <figure class="story-map" data-reveal>
-      <img src="images/story-map.svg?v=1" width="1200" height="449" alt="" loading="lazy">
+      <img src="images/story-map.svg?v=2" width="1200" height="449" alt="" loading="lazy">
       <svg viewBox="0 0 1200 449" role="img" aria-labelledby="storyMapTitle">
         <title id="storyMapTitle">World map of the places Camille and Julien have lived, travelled and dived: Marseille and Ramatuelle in France, Menorca in Spain, Saint-François in Guadeloupe, Nusa Lembongan in Indonesia, Cairns in Australia, and home in Tamarindo, Costa Rica</title>
-        <g class="story-map__arcs">
-          <path d="M105.4 207.9Q159 160 212.6 181.9"/>
-          <path d="M105.4 207.9Q290 20 505.7 64.1"/>
-          <path d="M105.4 207.9Q290 60 497.7 78.5"/>
-          <path d="M105.4 207.9Q560 470 983.8 290.7"/>
-          <path d="M105.4 207.9Q620 540 1116.1 326.7"/>
-        </g>
-        <g class="story-map__pin"><circle cx="505.7" cy="64.1" r="6"/><text x="516" y="52">Marseille &amp; Ramatuelle</text></g>
-        <g class="story-map__pin"><circle cx="497.7" cy="78.5" r="6"/><text x="486" y="101" text-anchor="end">Menorca</text></g>
-        <g class="story-map__pin"><circle cx="212.6" cy="181.9" r="6"/><text x="224" y="176">Saint-François</text></g>
-        <g class="story-map__pin"><circle cx="983.8" cy="290.7" r="6"/><text x="972" y="278" text-anchor="end">Nusa Lembongan</text></g>
-        <g class="story-map__pin"><circle cx="1116.1" cy="326.7" r="6"/><text x="1116" y="352" text-anchor="middle">Cairns</text></g>
-        <g class="story-map__pin story-map__pin--home"><circle class="story-map__pulse" cx="105.4" cy="207.9" r="9"/><circle cx="105.4" cy="207.9" r="9"/><text x="105" y="239" text-anchor="middle">Tamarindo</text></g>
+        <text class="story-map__ocean" x="300" y="105" text-anchor="middle"><tspan x="300" dy="0">North</tspan><tspan x="300" dy="19">Atlantic</tspan><tspan x="300" dy="19">Ocean</tspan></text>
+        <text class="story-map__ocean" x="415" y="345" text-anchor="middle"><tspan x="415" dy="0">South</tspan><tspan x="415" dy="19">Atlantic</tspan><tspan x="415" dy="19">Ocean</tspan></text>
+        <text class="story-map__ocean" x="62" y="318" text-anchor="middle"><tspan x="62" dy="0">Pacific</tspan><tspan x="62" dy="19">Ocean</tspan></text>
+        <text class="story-map__ocean" x="820" y="330" text-anchor="middle"><tspan x="820" dy="0">Indian</tspan><tspan x="820" dy="19">Ocean</tspan></text>
+        <g class="story-map__bubble"><circle cx="212.6" cy="181.9" r="20"/><circle class="story-map__core" cx="212.6" cy="181.9" r="8"/></g>
+        <g class="story-map__bubble"><circle cx="497.7" cy="78.5" r="17"/><circle class="story-map__core" cx="497.7" cy="78.5" r="6"/></g>
+        <g class="story-map__bubble"><circle cx="505.7" cy="64.1" r="24"/><circle class="story-map__core" cx="505.7" cy="64.1" r="9"/></g>
+        <g class="story-map__bubble"><circle cx="983.8" cy="290.7" r="22"/><circle class="story-map__core" cx="983.8" cy="290.7" r="8"/></g>
+        <g class="story-map__bubble"><circle cx="1116.1" cy="326.7" r="22"/><circle class="story-map__core" cx="1116.1" cy="326.7" r="8"/></g>
+        <circle class="story-map__pulse" cx="105.4" cy="207.9" r="16"/>
+        <g class="story-map__bubble story-map__bubble--home"><circle cx="105.4" cy="207.9" r="30"/><circle class="story-map__core" cx="105.4" cy="207.9" r="11"/></g>
+        <text class="story-map__country" x="522" y="40" text-anchor="start">FRANCE</text>
+        <text class="story-map__country" x="476" y="102" text-anchor="end">SPAIN</text>
+        <text class="story-map__country" x="240" y="187" text-anchor="start">GUADELOUPE</text>
+        <text class="story-map__country" x="118" y="262" text-anchor="middle">COSTA RICA</text>
+        <text class="story-map__country" x="962" y="262" text-anchor="middle">INDONESIA</text>
+        <text class="story-map__country" x="1068" y="380" text-anchor="middle">AUSTRALIA</text>
       </svg>
     </figure>
     <ol class="story-route" data-reveal>
