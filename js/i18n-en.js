@@ -11,7 +11,7 @@ const I18N_DATA = {
     'meta.charters.desc':'Book a private day at sea in Tamarindo: scuba, snorkeling, paddle boarding, e-foil & jet ski. Fully customized charters designed around you.',
     'meta.faq.title':'Scuba Diving FAQ: Tamarindo & Catalina Islands, Costa Rica | Salty Horizon',
     'meta.faq.desc':'Answers to real questions about scuba diving in Tamarindo and the Catalina Islands: marine life, manta ray and whale season, diving conditions, and PADI certification with Salty Horizon.',
-    'nav.experiences':'Experiences','nav.charters':'Private Charters','nav.courses':'PADI Courses','nav.faq':'FAQ','nav.about':'About','nav.blog':'The Blog',
+    'nav.experiences':'Experiences','nav.charters':'Private Charters','nav.courses':'PADI Courses','nav.faq':'FAQ','nav.about':'About','nav.story':'Our Story','nav.blog':'The Blog',
     'nav.gallery':'Gallery','nav.reviews':'Reviews','nav.contact':'Contact','cta.book':'Book a dive','cta.bookCourse':'Book a course','cta.learnMore':'Learn more',
 
     'hero.h1':'Private Scuba Diving in Tamarindo, Costa Rica',

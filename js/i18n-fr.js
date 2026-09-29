@@ -11,7 +11,7 @@ const I18N_DATA = {
     'meta.charters.desc':"Une journée entièrement privée sur le Pacifique : plongée, surf, observation des baleines, snorkeling et plus, à bord d'un catamaran privé avec les guides de plongée de Salty Horizon. Tamarindo, Costa Rica.",
     'meta.faq.title':'FAQ Plongée : Tamarindo & îles Catalinas, Costa Rica | Salty Horizon',
     'meta.faq.desc':'Réponses à de vraies questions sur la plongée à Tamarindo et aux îles Catalinas : vie marine, saison des raies manta et des baleines, conditions de plongée, certification PADI avec Salty Horizon.',
-    'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.faq':'FAQ','nav.about':'À propos','nav.blog':'The Blog',
+    'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.faq':'FAQ','nav.about':'À propos','nav.story':'Notre histoire','nav.blog':'The Blog',
     'nav.gallery':'Galerie','nav.reviews':'Avis','nav.contact':'Contact','cta.book':'Réserver','cta.bookCourse':'Réserver un cours','cta.learnMore':'En savoir plus',
 
     'hero.h1':'Plongée sous-marine privée à Tamarindo, Costa Rica',

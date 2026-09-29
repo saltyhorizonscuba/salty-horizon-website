@@ -11,7 +11,7 @@ const I18N_DATA = {
     'meta.charters.desc':'Un día completamente privado en el Pacífico: buceo, surf, avistamiento de ballenas, snorkel y más, a bordo de un catamarán privado con los guías de buceo de Salty Horizon. Tamarindo, Costa Rica.',
     'meta.faq.title':'FAQ de Buceo: Tamarindo e Islas Catalinas, Costa Rica | Salty Horizon',
     'meta.faq.desc':'Respuestas a preguntas reales sobre el buceo en Tamarindo y las Islas Catalinas: vida marina, temporada de rayas manta y ballenas, condiciones de buceo y certificación PADI con Salty Horizon.',
-    'nav.experiences':'Experiencias','nav.charters':'Charters privados','nav.courses':'Cursos PADI','nav.faq':'FAQ','nav.about':'Nosotros','nav.blog':'The Blog',
+    'nav.experiences':'Experiencias','nav.charters':'Charters privados','nav.courses':'Cursos PADI','nav.faq':'FAQ','nav.about':'Nosotros','nav.story':'Nuestra historia','nav.blog':'The Blog',
     'nav.gallery':'Galería','nav.reviews':'Reseñas','nav.contact':'Contacto','cta.book':'Reservar','cta.bookCourse':'Reservar un curso','cta.learnMore':'Saber más',
 
     'hero.h1':'Buceo privado en Tamarindo, Costa Rica',
