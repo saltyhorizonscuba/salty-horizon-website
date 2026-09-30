@@ -1,0 +1,51 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "mcp__analytics-mcp",
+      "mcp__google-ads",
+      "mcp__gsc__list_properties",
+      "mcp__gsc__get_site_details",
+      "mcp__gsc__get_performance_overview",
+      "mcp__gsc__get_search_analytics",
+      "mcp__gsc__get_advanced_search_analytics",
+      "mcp__gsc__get_search_by_page_query",
+      "mcp__gsc__compare_search_periods",
+      "mcp__gsc__check_indexing_issues",
+      "mcp__gsc__inspect_url_enhanced",
+      "mcp__gsc__batch_url_inspection",
+      "mcp__gsc__get_sitemaps",
+      "mcp__gsc__get_sitemap_details",
+      "mcp__gsc__list_sitemaps_enhanced",
+      "mcp__openseo__whoami",
+      "mcp__openseo__list_projects",
+      "mcp__openseo__get_project_context",
+      "mcp__openseo__list_reports",
+      "mcp__openseo__get_report",
+      "mcp__openseo__list_site_audits",
+      "mcp__openseo__get_audit_status",
+      "mcp__openseo__get_audit_issues",
+      "mcp__openseo__get_audit_pages",
+      "mcp__openseo__get_domain_overview",
+      "mcp__openseo__get_ranked_keywords",
+      "mcp__openseo__get_keyword_metrics",
+      "mcp__openseo__research_keywords",
+      "mcp__openseo__get_serp_results",
+      "mcp__openseo__find_serp_competitors",
+      "mcp__openseo__get_backlinks_overview",
+      "mcp__openseo__get_search_opportunities"
+    ],
+    "deny": [
+      "mcp__gsc__add_site",
+      "mcp__gsc__delete_site",
+      "mcp__gsc__delete_sitemap",
+      "mcp__gsc__submit_sitemap",
+      "mcp__gsc__manage_sitemaps",
+      "mcp__openseo__delete_report",
+      "mcp__openseo__delete_site_audit",
+      "mcp__openseo__remove_saved_keywords",
+      "mcp__openseo__remove_rank_tracking_keywords"
+    ]
+  }
+}
