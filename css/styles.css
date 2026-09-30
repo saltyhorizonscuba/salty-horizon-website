@@ -1024,6 +1024,22 @@ body:has(.pagehero--mobile-plain) .header .brand--logo img{height:52px}
 .beach-facts svg{flex:none;width:18px;height:18px;margin-top:.15rem;color:var(--aqua)}
 .beach-facts b{color:var(--ink);font-weight:600}
 
+/* ============ PADI COURSES: AT-A-GLANCE ANSWER ============ */
+.padi-glance{max-width:820px;margin:2rem auto 1.4rem;padding:clamp(1.3rem,3vw,2rem);background:var(--cream);border:1px solid #e2d9c4;border-radius:var(--radius)}
+.padi-glance__title{font-family:var(--font-display);font-size:clamp(1.25rem,2.4vw,1.55rem);font-weight:800;color:var(--ink);line-height:1.2;margin-bottom:.8rem}
+.padi-glance__answer{font-size:.98rem;line-height:1.65;color:var(--text);margin-bottom:1.3rem}
+.padi-glance__table{width:100%;border-collapse:collapse;font-size:.92rem;background:var(--white);border-radius:var(--radius-sm);overflow:hidden}
+.padi-glance__table thead th{background:var(--teal);color:#fff;font-weight:600;text-align:left;padding:.7rem .9rem}
+.padi-glance__table thead td{background:var(--teal)}
+.padi-glance__table tbody th{text-align:left;font-weight:600;color:var(--ink);white-space:nowrap}
+.padi-glance__table tbody th,.padi-glance__table tbody td{padding:.65rem .9rem;border-top:1px solid #ece4d2;vertical-align:top;color:var(--text)}
+.padi-glance__table tbody tr:first-child th,.padi-glance__table tbody tr:first-child td{border-top:0}
+@media (max-width:560px){
+  .padi-glance__table{font-size:.84rem}
+  .padi-glance__table thead th,.padi-glance__table tbody th,.padi-glance__table tbody td{padding:.55rem .6rem}
+  .padi-glance__table tbody th{white-space:normal}
+}
+
 .article-inline-figure{max-width:680px;margin:1.9rem auto;border-radius:var(--radius-sm);overflow:hidden;box-shadow:var(--shadow-sm)}
 .article-inline-figure img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block}
 .article-inline-figure figcaption{font-family:var(--font-serif);font-style:italic;font-size:.85rem;color:var(--muted);text-align:center;margin-top:.6rem}
