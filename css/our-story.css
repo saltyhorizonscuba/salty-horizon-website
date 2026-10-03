@@ -2,24 +2,7 @@
    Restore points: git tags backup/our-story-before-redesign and backup/our-story-v2-clean,
    plus ../backups/our-story-2026-10-03. */
 
-.story-page{--hand:'Caveat','Segoe Script',cursive}
-.story-page .sx-hand{font-family:var(--hand);font-weight:700;letter-spacing:.01em;line-height:1}
 
-/* ---------- Depth markers (chapters) ---------- */
-.story-page .sx-chap{display:flex;align-items:center;gap:.9rem;margin-bottom:1.3rem}
-.story-page .sx-chap b{font-family:var(--hand);font-weight:700;font-size:clamp(2.4rem,5vw,3.4rem);line-height:1;color:var(--teal);white-space:nowrap}
-.story-page .sx-chap span{font-family:var(--font-display);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--muted);white-space:nowrap}
-.story-page .sx-chap::after{content:"";flex:1;min-width:2rem;border-top:2px dashed rgba(212,176,106,.8);transform:translateY(2px)}
-.story-page .sx-chap--center{justify-content:center}
-.story-page .sx-chap--center::before{content:"";flex:1;min-width:2rem;border-top:2px dashed rgba(231,201,138,.55);transform:translateY(2px)}
-.story-page .sx-chap--center::after{border-top-color:rgba(231,201,138,.55)}
-.story-page .sx-chap + .eyebrow{display:none}
-.story-page .story-atlas .sx-chap b,
-.story-page .story-brand .sx-chap b,
-.story-page .section--dark .sx-chap b{color:var(--sand)}
-.story-page .story-atlas .sx-chap span,
-.story-page .story-brand .sx-chap span,
-.story-page .section--dark .sx-chap span{color:#cfe3e8}
 
 /* ---------- Hero: sunset surface, waves, tilted blob portraits ---------- */
 .story-page .sx-hero{position:relative;display:flex;align-items:flex-end;min-height:max(700px,min(100svh,940px));color:#fff;overflow:hidden;background:#0a2733}
@@ -28,7 +11,6 @@
 .story-page .sx-hero__sky::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,22,34,.6) 0%,rgba(6,22,34,0) 30%,rgba(8,32,44,.5) 62%,rgba(10,39,51,.92) 100%)}
 .story-page .sx-hero__inner{position:relative;z-index:3;padding-top:9rem;padding-bottom:clamp(8rem,15vw,12rem)}
 .story-page .sx-hero__copy{max-width:640px}
-.story-page .sx-hand--hello{font-size:clamp(1.8rem,3.4vw,2.6rem);color:var(--sand);transform:rotate(-3deg);transform-origin:left;margin-bottom:.4rem;text-shadow:0 2px 14px rgba(0,0,0,.45)}
 .story-page .sx-hero h1{color:#fff;font-size:clamp(2.6rem,6vw,5rem);line-height:.98;letter-spacing:0;text-transform:uppercase;text-shadow:0 4px 30px rgba(0,0,0,.35)}
 .story-page .sx-hero h1 em{font-style:normal;color:var(--sand)}
 .story-page .sx-hero .story-hero__sub{margin:1.2rem 0 0;max-width:40ch;text-align:left;text-shadow:0 2px 12px rgba(0,0,0,.5)}
@@ -41,7 +23,8 @@
 .story-page .sx-blob--a img{object-position:42% 30%;border-radius:58% 42% 54% 46% / 46% 58% 42% 54%}
 .story-page .sx-blob--b{margin-left:-14%;border-radius:44% 56% 42% 58% / 58% 44% 56% 42%;transform:rotate(5deg) translateY(10%)}
 .story-page .sx-blob--b img{object-position:50% 30%;border-radius:44% 56% 42% 58% / 58% 44% 56% 42%}
-.story-page .sx-blob .sx-hand{position:absolute;left:12%;bottom:-1.7rem;font-size:clamp(1.6rem,2.6vw,2.2rem);color:var(--sand);transform:rotate(-4deg);text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.story-page .sx-label{font-family:var(--font-display);font-weight:800;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:#fff}
+.story-page .sx-blob .sx-label{position:absolute;left:12%;bottom:-1.9rem;text-shadow:0 2px 12px rgba(0,0,0,.5)}
 
 .story-page .sx-wave{position:absolute;left:-3%;bottom:-1px;width:106%;display:block;pointer-events:none}
 .story-page .sx-wave--1{z-index:2;height:clamp(150px,19vw,270px);fill:rgba(31,163,181,.5);animation:sxDrift 14s ease-in-out infinite alternate}
@@ -49,17 +32,6 @@
 .story-page .sx-wave--3{z-index:4;height:clamp(80px,10vw,150px);fill:var(--cream)}
 @keyframes sxDrift{from{transform:translateX(-1.8%)}to{transform:translateX(1.8%)}}
 
-.story-page .sx-bubbles{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
-.story-page .sx-bubbles i{position:absolute;bottom:-40px;left:var(--x);width:var(--s);height:var(--s);border-radius:50%;background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.7),rgba(255,255,255,.12) 55%,transparent 70%);animation:sxRise var(--d) linear var(--t) infinite;opacity:0}
-.story-page .sx-bubbles i:nth-child(1){--x:8%;--s:14px;--d:13s;--t:0s}
-.story-page .sx-bubbles i:nth-child(2){--x:19%;--s:26px;--d:17s;--t:3s}
-.story-page .sx-bubbles i:nth-child(3){--x:33%;--s:10px;--d:11s;--t:6s}
-.story-page .sx-bubbles i:nth-child(4){--x:47%;--s:20px;--d:15s;--t:1s}
-.story-page .sx-bubbles i:nth-child(5){--x:61%;--s:12px;--d:12s;--t:8s}
-.story-page .sx-bubbles i:nth-child(6){--x:72%;--s:30px;--d:19s;--t:4s}
-.story-page .sx-bubbles i:nth-child(7){--x:86%;--s:16px;--d:14s;--t:9s}
-.story-page .sx-bubbles i:nth-child(8){--x:94%;--s:9px;--d:10s;--t:2s}
-@keyframes sxRise{0%{transform:translate(0,0);opacity:0}10%{opacity:.9}100%{transform:translate(24px,-105svh);opacity:0}}
 
 /* ---------- 5 m: lede with layered photos ---------- */
 .story-page .story-lede{background:var(--cream);padding-top:clamp(3rem,6vw,5rem);overflow:hidden}
@@ -68,7 +40,7 @@
 .story-page .sx-lede__blob{position:absolute;inset:-6% 2% 2% -8%;background:var(--sand);opacity:.55;border-radius:61% 39% 47% 53% / 44% 58% 42% 56%;transform:rotate(-7deg)}
 .story-page .sx-lede__main{position:relative;width:100%;height:auto;aspect-ratio:1/1.02;object-fit:cover;border-radius:46% 54% 42% 58% / 52% 44% 56% 48%;box-shadow:0 40px 70px -34px rgba(8,30,40,.6);transform:rotate(2deg)}
 .story-page .sx-lede__chip{position:absolute;right:0;bottom:0;width:38%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:56% 44% 50% 50% / 46% 54% 46% 54%;box-shadow:0 26px 44px -22px rgba(8,30,40,.65);transform:rotate(-8deg)}
-.story-page .sx-hand--note{position:absolute;left:4%;bottom:5%;font-size:clamp(1.5rem,2.4vw,2rem);color:var(--teal);transform:rotate(-5deg);background:var(--cream);padding:.2rem .7rem;border-radius:6px}
+.story-page .sx-label--note{position:absolute;left:4%;bottom:5%;color:var(--teal);background:var(--cream);padding:.45rem .8rem;border-radius:4px;transform:none}
 .story-page .sx-lede .story-lede__text{margin:0;max-width:none}
 .story-page .story-lede__text .story-lede__big{border:0;padding:0;font-size:clamp(1.6rem,3.2vw,2.4rem);line-height:1.22}
 .story-page .story-lede__text p:not(.story-lede__big){max-width:58ch}
@@ -94,9 +66,8 @@
 .story-page .story-crew .profile__chips li{border:0;padding:0;border-radius:0;color:#cfe3e8}
 .story-page .story-crew .profile__chips li + li::before{content:"/";margin-right:.6rem;color:var(--sand)}
 .story-page .story-crew .profile__chips{gap:.35rem .6rem}
-.story-page .atlas__map{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent),linear-gradient(transparent,#000 14%,#000 80%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent),linear-gradient(transparent,#000 14%,#000 80%,transparent);mask-composite:intersect;background:none;border:0;padding:0;border-radius:0}
+.story-page .atlas__map{background:none;border:0;padding:0;border-radius:0}
 .story-page .atlas__panel{background:#fbf6ea;border-radius:6px;transform:rotate(-1.4deg);box-shadow:0 26px 44px -22px rgba(0,0,0,.6)}
-.story-page .atlas__panel h3{font-family:var(--hand);font-weight:700;font-size:clamp(2rem,3.4vw,2.7rem);line-height:1}
 
 /* ---------- 20 m: Salty Horizon over the manta ---------- */
 .story-page .story-brand{background:linear-gradient(180deg,rgba(6,26,36,.78),rgba(6,26,36,.5) 45%,rgba(6,26,36,.85)),url(../images/manta.webp) center 30%/cover no-repeat}
@@ -110,7 +81,7 @@
 .story-page .story-brand__words li:nth-child(3){color:var(--aqua-bright);margin-left:clamp(2rem,16vw,14rem);transform:rotate(-1.5deg)}
 .story-page .story-brand__cols>div{border-top:2px dashed rgba(231,201,138,.5);padding-top:1.3rem}
 .story-page .story-brand__close{border:0;background:none;padding:0;text-align:left;margin-left:0;max-width:760px}
-.story-page .story-brand .story-brand__sign{font-family:var(--hand);font-size:clamp(2.4rem,5vw,3.6rem);font-weight:700;color:var(--sand);transform:rotate(-2deg);transform-origin:left}
+.story-page .story-brand .story-brand__sign{color:var(--sand)}
 
 /* ---------- Stats ---------- */
 .story-page .sx-stats{padding:clamp(3rem,6vw,4.5rem) 0;background:linear-gradient(180deg,#0a2733,#071b25)}
@@ -123,27 +94,18 @@
 .story-page .story-cred{display:grid;grid-template-columns:5rem minmax(0,.9fr) minmax(0,1.3fr);gap:.4rem 1.6rem;align-items:baseline;background:none;border:0;border-top:2px dashed rgba(231,201,138,.35);border-radius:0;padding:1.6rem 0;counter-increment:dive;transition:padding-left .35s var(--ease)}
 .story-page .story-cred:last-child{border-bottom:2px dashed rgba(231,201,138,.35)}
 .story-page .story-cred:hover{padding-left:.8rem;background:none;border-color:rgba(231,201,138,.35);transform:none}
-.story-page .story-cred::before{content:"#" counter(dive,decimal-leading-zero);font-family:var(--hand);font-weight:700;font-size:2rem;line-height:1;color:var(--sand)}
+.story-page .story-cred::before{content:counter(dive,decimal-leading-zero);font-family:var(--font-display);font-weight:800;font-size:.85rem;letter-spacing:.2em;color:var(--sand)}
 .story-page .story-cred .ic{display:none}
 .story-page .story-cred h3{font-size:clamp(1.15rem,2vw,1.5rem);line-height:1.15;margin:0}
 .story-page .story-cred p{font-size:.98rem}
 
 /* ---------- Quote: a note taped to the page ---------- */
 .story-page .story-quote{position:relative;max-width:820px;background:#fbf6ea;border:0;border-radius:4px;padding:clamp(2rem,5vw,3.6rem);box-shadow:0 30px 60px -30px rgba(8,30,40,.55);transform:rotate(-1.3deg)}
-.story-page .story-quote blockquote{font-family:var(--hand);font-weight:700;font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.2;color:var(--ink)}
-.story-page .story-quote blockquote::before{font-family:var(--hand);color:var(--sand-deep)}
+.story-page .story-quote blockquote{font-size:clamp(1.2rem,2.6vw,1.75rem);line-height:1.5;color:var(--ink)}
 .story-page .sx-tape{position:absolute;top:-16px;left:50%;width:130px;height:34px;margin-left:-65px;background:rgba(212,176,106,.75);transform:rotate(3deg)}
 
-/* ---------- Depth gauge ---------- */
-.story-page .sx-gauge{position:fixed;right:14px;top:50%;z-index:40;transform:translateY(-50%);height:42vh;display:flex;flex-direction:column;align-items:center;gap:.5rem;padding:.7rem .45rem;border-radius:999px;background:rgba(8,28,37,.55);backdrop-filter:blur(8px);color:var(--sand);font-family:var(--font-display);font-size:.62rem;font-weight:700;letter-spacing:.08em}
-.story-page .sx-gauge__line{position:relative;flex:1;width:10px;background:repeating-linear-gradient(180deg,rgba(255,255,255,.55) 0 1px,transparent 1px 12px) left/5px 100% no-repeat,linear-gradient(rgba(255,255,255,.25),rgba(255,255,255,.25)) center/2px 100% no-repeat}
-.story-page .sx-gauge__line i{position:absolute;left:50%;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--sand);box-shadow:0 0 0 4px rgba(231,201,138,.25)}
-.story-page .sx-gauge b{min-width:2.6em;text-align:center}
 
 /* ---------- Responsive ---------- */
-@media (max-width:1000px){
-  .story-page .sx-gauge{display:none}
-}
 @media (max-width:900px){
   .story-page .sx-hero{display:block;min-height:0}
   .story-page .sx-hero__inner{padding-top:7.5rem;padding-bottom:1rem}
@@ -160,7 +122,5 @@
   .story-page .sx-stats .stat:nth-child(odd){border-left:0}
 }
 @media (prefers-reduced-motion:reduce){
-  .story-page .sx-wave,.story-page .sx-bubbles i{animation:none}
-  .story-page .sx-bubbles{display:none}
   .story-page .story-cred{transition:none}
 }
