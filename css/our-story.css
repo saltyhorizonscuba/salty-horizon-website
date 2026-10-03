@@ -36,11 +36,9 @@
 /* ---------- 5 m: lede with layered photos ---------- */
 .story-page .story-lede{background:var(--cream);padding-top:clamp(3rem,6vw,5rem);overflow:hidden}
 .story-page .sx-lede{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(2rem,6vw,6rem);align-items:center}
-.story-page .sx-lede__media{position:relative;padding:0 8% 10% 0}
+.story-page .sx-lede__media{position:relative;padding:0 6% 6% 0;max-width:440px;justify-self:center}
 .story-page .sx-lede__blob{position:absolute;inset:-6% 2% 2% -8%;background:var(--sand);opacity:.55;border-radius:61% 39% 47% 53% / 44% 58% 42% 56%;transform:rotate(-7deg)}
 .story-page .sx-lede__main{position:relative;width:100%;height:auto;aspect-ratio:1/1.02;object-fit:cover;border-radius:46% 54% 42% 58% / 52% 44% 56% 48%;box-shadow:0 40px 70px -34px rgba(8,30,40,.6);transform:rotate(2deg)}
-.story-page .sx-lede__chip{position:absolute;right:0;bottom:0;width:38%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:56% 44% 50% 50% / 46% 54% 46% 54%;box-shadow:0 26px 44px -22px rgba(8,30,40,.65);transform:rotate(-8deg)}
-.story-page .sx-label--note{position:absolute;left:4%;bottom:5%;color:var(--teal);background:var(--cream);padding:.45rem .8rem;border-radius:4px;transform:none}
 .story-page .sx-lede .story-lede__text{margin:0;max-width:none}
 .story-page .story-lede__text .story-lede__big{border:0;padding:0;font-size:clamp(1.6rem,3.2vw,2.4rem);line-height:1.22}
 .story-page .story-lede__text p:not(.story-lede__big){max-width:58ch}
@@ -54,15 +52,15 @@
 .story-page .crew{align-items:start;gap:clamp(1.5rem,5vw,5rem)}
 .story-page .story-crew .profile{background:none;border:0;border-radius:0;overflow:visible}
 .story-page .story-crew .profile + .profile{margin-top:clamp(2.5rem,9vw,7rem)}
-.story-page .story-crew .profile__photo{width:92%;border:0;box-shadow:none;-webkit-mask-image:none;mask-image:none;border-radius:inherit;overflow:visible}
+.story-page .story-crew .profile__photo{width:68%;border:0;box-shadow:none;-webkit-mask-image:none;mask-image:none;border-radius:inherit;overflow:visible}
 .story-page .story-crew .profile__photo img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 28%;box-shadow:0 40px 70px -30px rgba(0,0,0,.65)}
 .story-page #camille .profile__photo{transform:rotate(-2.5deg)}
 .story-page #camille .profile__photo img{border-radius:58% 42% 52% 48% / 46% 56% 44% 54%}
 .story-page #julien .profile__photo{margin-left:auto;transform:rotate(2.5deg)}
 .story-page #julien .profile__photo img{border-radius:44% 56% 46% 54% / 56% 46% 54% 44%}
-.story-page .story-crew .profile__body{position:relative;margin-top:-3.4rem;padding:0 .4rem}
-.story-page #julien .profile__body{padding-left:8%}
-.story-page .story-crew .profile__body h3{font-size:clamp(3.4rem,8vw,6.4rem);line-height:.9;margin:0 0 .7rem;text-shadow:0 6px 30px rgba(0,0,0,.4)}
+.story-page .story-crew .profile__body{position:relative;margin-top:1.2rem;padding:0 .4rem}
+.story-page #julien .profile__body{padding-left:0}
+.story-page .story-crew .profile__body h3{font-size:clamp(1.8rem,3.2vw,2.6rem);line-height:1;margin:0 0 .7rem;text-shadow:0 6px 30px rgba(0,0,0,.4)}
 .story-page .story-crew .profile__chips li{border:0;padding:0;border-radius:0;color:#cfe3e8}
 .story-page .story-crew .profile__chips li + li::before{content:"/";margin-right:.6rem;color:var(--sand)}
 .story-page .story-crew .profile__chips{gap:.35rem .6rem}
