@@ -294,3 +294,90 @@
 
 .story-page .sx-why .story-cred p a,.story-page .story-brand__cols a{color:var(--sand);text-decoration:underline;text-underline-offset:3px}
 .story-page .sx-why .story-cred p a:hover,.story-page .story-brand__cols a:hover{color:#fff}
+
+/* ---------- Mobile polish (phones only) ---------- */
+@media (max-width:560px){
+  .story-page .sx-hero__inner{padding-top:6.5rem;padding-bottom:5.2rem}
+  .story-page .sx-hero h1{font-size:clamp(2.6rem,13vw,3.4rem)}
+  .story-page .story-crew#team{padding-top:1.2rem;padding-bottom:2.6rem}
+  .story-page .story-crew .title-block{margin-bottom:1.2rem}
+  .story-page .sx-intro{margin-bottom:1.6rem}
+  .story-page .sx-intro p{font-size:.98rem;line-height:1.7}
+  .story-page .story-crew .profile__photo{width:76%;margin-inline:auto}
+  .story-page #julien .profile__photo{margin-inline:auto}
+  .story-page .story-crew .profile__body{margin-top:1.4rem;padding:0}
+  .story-page .story-crew .profile__body h3{font-size:2rem}
+  .story-page .story-crew .profile + .profile{margin-top:3rem}
+  .story-page .story-crew .profile__chips{display:grid;grid-template-columns:1fr;gap:.45rem;margin-top:1.1rem}
+  .story-page .story-crew .profile__chips li{position:relative;padding-left:1rem;font-size:.66rem;line-height:1.35}
+  .story-page .story-crew .profile__chips li::before,.story-page .story-crew .profile__chips li + li::before{content:"";position:absolute;left:0;top:.35em;width:5px;height:5px;margin:0;border-radius:50%;background:var(--sand)}
+  .story-page .story-crew .crew{margin-bottom:1.6rem}
+  .story-page .story-crew .atlas{margin-top:.4rem}
+  .story-page .atlas__map{margin-inline:-.4rem;width:calc(100% + .8rem)}
+  .story-page .story-brand__words li{font-size:clamp(1.7rem,9vw,2.2rem)}
+  .story-page .story-brand h2{font-size:clamp(2.2rem,11vw,2.8rem)}
+  .story-page .sx-stats{padding:1.6rem 0}
+  .story-page .sx-stats .stats{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem .8rem;text-align:center}
+  .story-page .sx-stats .stat{flex-direction:column;align-items:center;gap:.2rem;padding:0}
+  .story-page .sx-stats .stat + .stat::before{content:none}
+  .story-page .sx-stats .stat b{font-size:1.5rem}
+  .story-page .sx-stats .stat span{font-size:.68rem;letter-spacing:.08em;line-height:1.3}
+  .story-page .sx-why .title-block{padding-inline:.2rem}
+}
+
+/* ---------- Mobile: icon cards for the brand story and the trust list ---------- */
+@media (max-width:560px){
+  .story-page{--ic-globe:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e7c98a%27%20stroke-width%3D%271.8%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%2712%27%20r%3D%2710%27%2F%3E%3Cline%20x1%3D%272%27%20y1%3D%2712%27%20x2%3D%2722%27%20y2%3D%2712%27%2F%3E%3Cpath%20d%3D%27M12%202a15.3%2015.3%200%200%201%204%2010%2015.3%2015.3%200%200%201-4%2010%2015.3%2015.3%200%200%201-4-10%2015.3%2015.3%200%200%201%204-10z%27%2F%3E%3C%2Fsvg%3E");--ic-star:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e7c98a%27%20stroke-width%3D%271.8%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpolygon%20points%3D%2712%202%2015.09%208.26%2022%209.27%2017%2014.14%2018.18%2021.02%2012%2017.77%205.82%2021.02%207%2014.14%202%209.27%208.91%208.26%2012%202%27%2F%3E%3C%2Fsvg%3E");--ic-user:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e7c98a%27%20stroke-width%3D%271.8%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M20%2021v-2a4%204%200%200%200-4-4H8a4%204%200%200%200-4%204v2%27%2F%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%277%27%20r%3D%274%27%2F%3E%3C%2Fsvg%3E");--ic-waves:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e7c98a%27%20stroke-width%3D%271.8%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M2%207c2-2%204-2%206%200s4%202%206%200%204-2%206%200%27%2F%3E%3Cpath%20d%3D%27M2%2013c2-2%204-2%206%200s4%202%206%200%204-2%206%200%27%2F%3E%3Cpath%20d%3D%27M2%2019c2-2%204-2%206%200s4%202%206%200%204-2%206%200%27%2F%3E%3C%2Fsvg%3E");--ic-heart:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e7c98a%27%20stroke-width%3D%271.8%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M20.84%204.61a5.5%205.5%200%200%200-7.78%200L12%205.67l-1.06-1.06a5.5%205.5%200%200%200-7.78%207.78l1.06%201.06L12%2021.23l7.78-7.78%201.06-1.06a5.5%205.5%200%200%200%200-7.78z%27%2F%3E%3C%2Fsvg%3E");--ic-award:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e7c98a%27%20stroke-width%3D%271.8%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%278%27%20r%3D%277%27%2F%3E%3Cpolyline%20points%3D%278.21%2013.89%207%2023%2012%2020%2017%2023%2015.79%2013.88%27%2F%3E%3C%2Fsvg%3E");--ic-buoy:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e7c98a%27%20stroke-width%3D%271.8%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%2712%27%20r%3D%2710%27%2F%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%2712%27%20r%3D%274%27%2F%3E%3Cline%20x1%3D%274.93%27%20y1%3D%274.93%27%20x2%3D%279.17%27%20y2%3D%279.17%27%2F%3E%3Cline%20x1%3D%2714.83%27%20y1%3D%2714.83%27%20x2%3D%2719.07%27%20y2%3D%2719.07%27%2F%3E%3Cline%20x1%3D%2714.83%27%20y1%3D%279.17%27%20x2%3D%2719.07%27%20y2%3D%274.93%27%2F%3E%3Cline%20x1%3D%274.93%27%20y1%3D%2719.07%27%20x2%3D%279.17%27%20y2%3D%2714.83%27%2F%3E%3C%2Fsvg%3E");--ic-users:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e7c98a%27%20stroke-width%3D%271.8%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M17%2021v-2a4%204%200%200%200-4-4H5a4%204%200%200%200-4%204v2%27%2F%3E%3Ccircle%20cx%3D%279%27%20cy%3D%277%27%20r%3D%274%27%2F%3E%3Cpath%20d%3D%27M23%2021v-2a4%204%200%200%200-3-3.87%27%2F%3E%3Cpath%20d%3D%27M16%203.13a4%204%200%200%201%200%207.75%27%2F%3E%3C%2Fsvg%3E");--ic-chat:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e7c98a%27%20stroke-width%3D%271.8%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M21%2011.5a8.38%208.38%200%200%201-.9%203.8%208.5%208.5%200%200%201-7.6%204.7%208.38%208.38%200%200%201-3.8-.9L3%2021l1.9-5.7a8.38%208.38%200%200%201-.9-3.8%208.5%208.5%200%200%201%204.7-7.6%208.38%208.38%200%200%201%203.8-.9h.5a8.48%208.48%200%200%201%208%208v.5z%27%2F%3E%3C%2Fsvg%3E");--ic-leaf:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e7c98a%27%20stroke-width%3D%271.8%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M11%2020A7%207%200%200%201%209.8%206.1C15.5%205%2017%204.48%2019%202c1%202%202%204.18%202%208%200%205.5-4.78%2010-10%2010z%27%2F%3E%3Cpath%20d%3D%27M2%2021c0-3%201.85-5.36%205.08-6C9.5%2014.52%2012%2013%2013%2012%27%2F%3E%3C%2Fsvg%3E")}
+  .story-page .story-brand{background:linear-gradient(180deg,rgba(6,26,36,.9),rgba(6,26,36,.78) 45%,rgba(6,26,36,.92)),url(../images/manta.webp) center 30%/cover no-repeat}
+  .story-page .story-brand__cols{gap:.7rem}
+  .story-page .story-brand__cols>div{display:contents;border:0;padding:0}
+  .story-page .story-brand__cols p,.story-page .sx-why .story-cred{position:relative;margin:0;padding:1rem 1rem 1rem 3.7rem;background:rgba(255,255,255,.06);border:1px solid rgba(231,201,138,.22);border-radius:14px;font-size:.96rem;line-height:1.6}
+  .story-page .story-brand__cols p::before,.story-page .sx-why .story-cred::before{content:"";position:absolute;left:.85rem;top:.85rem;width:2.1rem;height:2.1rem;display:grid;place-items:center;border-radius:10px;background-color:rgba(231,201,138,.14);background-position:center;background-size:1.15rem 1.15rem;background-repeat:no-repeat}
+  .story-page .story-brand__cols>div:first-child p:nth-child(1)::before{content:"";background-image:var(--ic-globe)}
+  .story-page .story-brand__cols>div:first-child p:nth-child(2)::before{content:"";background-image:var(--ic-star)}
+  .story-page .story-brand__cols>div:first-child p:nth-child(3)::before{content:"";background-image:var(--ic-user)}
+  .story-page .story-brand__cols>div:last-child p:nth-child(1)::before{content:"";background-image:var(--ic-waves)}
+  .story-page .story-brand__cols>div:last-child p:nth-child(2)::before{content:"";background-image:var(--ic-heart)}
+  .story-page .sx-why .story-creds{gap:.7rem}
+  .story-page .sx-why .story-cred{display:block;border-top:1px solid rgba(231,201,138,.22);padding:1rem 1rem 1rem 3.7rem}
+  .story-page .sx-why .story-cred::before{content:none}
+  .story-page .sx-why .story-cred:nth-child(1)::before{content:"";background-image:var(--ic-award)}
+  .story-page .sx-why .story-cred:nth-child(2)::before{content:"";background-image:var(--ic-globe)}
+  .story-page .sx-why .story-cred:nth-child(3)::before{content:"";background-image:var(--ic-buoy)}
+  .story-page .sx-why .story-cred:nth-child(4)::before{content:"";background-image:var(--ic-users)}
+  .story-page .sx-why .story-cred:nth-child(5)::before{content:"";background-image:var(--ic-chat)}
+  .story-page .sx-why .story-cred:nth-child(6)::before{content:"";background-image:var(--ic-leaf)}
+  .story-page .sx-why .story-cred h3{font-size:1.05rem;margin-bottom:.25rem}
+  .story-page .sx-why .story-cred p{font-size:.9rem;line-height:1.5;margin:0;padding:0;background:none;border:0;border-radius:0}
+  .story-page .sx-why .story-cred p::before{content:none}
+  .story-page .story-brand__close{margin-top:1.8rem}
+}
+
+/* ---------- Mobile: shorter page (swipe cards, 2-col trust tiles, one-line credential chips) ---------- */
+@media (max-width:560px){
+  .story-page .story-brand__cols{display:flex;gap:.8rem;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-inline:-1rem;padding:.2rem 1rem .6rem;scroll-padding-inline:1rem}
+  .story-page .story-brand__cols::-webkit-scrollbar{display:none}
+  .story-page .story-brand__cols p{flex:0 0 80%;scroll-snap-align:start;padding:3.7rem 1.1rem 1.1rem;font-size:.95rem}
+  .story-page .story-brand__cols p::before{left:1.1rem;top:1rem}
+  .story-page .story-brand__head{margin-bottom:1.4rem}
+  .story-page .story-brand__close{margin-top:1.2rem}
+  .story-page .story-brand__close p:first-child{font-size:.95rem;line-height:1.6}
+
+  .story-page .sx-why .story-creds{grid-template-columns:1fr 1fr;gap:.6rem}
+  .story-page .sx-why .story-cred{padding:3.6rem .85rem .9rem}
+  .story-page .sx-why .story-cred::before{left:.85rem;top:.85rem}
+  .story-page .sx-why .story-cred h3{font-size:.95rem;line-height:1.2}
+  .story-page .sx-why .story-cred p{font-size:.78rem;line-height:1.45}
+  .story-page .sx-why{padding:2rem 0}
+
+  .story-page .story-crew .profile__chips{display:flex;flex-wrap:nowrap;gap:.4rem;overflow-x:auto;scrollbar-width:none;margin-inline:-1rem;padding:0 1rem .2rem}
+  .story-page .story-crew .profile__chips::-webkit-scrollbar{display:none}
+  .story-page .story-crew .profile__chips li{flex:0 0 auto;white-space:nowrap;padding:.35rem .7rem;border:1px solid rgba(231,201,138,.5);border-radius:999px;color:var(--sand)}
+  .story-page .story-crew .profile__chips li::before,.story-page .story-crew .profile__chips li + li::before{content:none}
+}
+@media (max-width:560px){
+  .story-page .story-brand__cols p{flex-basis:86%;padding:3.4rem 1rem 1rem;font-size:.92rem;line-height:1.55}
+  .story-page .story-crew .profile__photo{width:60%}
+  .story-page .story-crew .profile + .profile{margin-top:2.2rem}
+  .story-page .story-crew .profile__body{margin-top:1rem}
+}
