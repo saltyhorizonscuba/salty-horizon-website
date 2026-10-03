@@ -73,10 +73,14 @@
 .story-page .story-brand__close{border:0;background:none;padding:0;text-align:center;margin:clamp(2rem,4vw,3rem) auto 0;max-width:640px}
 .story-page .story-brand .story-brand__sign{color:var(--sand);margin-top:1.4rem}
 
-/* ---------- Stats ---------- */
-.story-page .sx-stats{padding:clamp(3rem,6vw,4.5rem) 0;background:linear-gradient(180deg,#0a2733,#071b25)}
-.story-page .sx-stats .stat + .stat{border-left:1px dashed rgba(231,201,138,.35)}
-.story-page .sx-stats .stat b{font-size:clamp(3rem,7vw,5.2rem)}
+/* ---------- Stats: compact bullet line ---------- */
+.story-page .sx-stats{padding:1.4rem 0;background:#071b25}
+.story-page .sx-stats .stats{display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:.5rem 0;text-align:left}
+.story-page .sx-stats .stat{display:inline-flex;align-items:baseline;gap:.5rem;padding:0 1.4rem;border:0}
+.story-page .sx-stats .stat + .stat{border:0}
+.story-page .sx-stats .stat + .stat::before{content:"\2022";color:var(--sand);font-size:1.1rem;margin-left:-1.4rem;margin-right:1.4rem;line-height:1}
+.story-page .sx-stats .stat b{font-size:clamp(1.15rem,2vw,1.5rem);line-height:1;margin:0;display:inline}
+.story-page .sx-stats .stat span{font-size:.72rem}
 
 /* ---------- 30 m: the dive log ---------- */
 .story-page .section--dark:not(.sx-stats){background:linear-gradient(180deg,#071b25,#04121a)}
@@ -105,8 +109,6 @@
   .story-page .story-crew .profile + .profile{margin-top:3.5rem}
   .story-page .story-cred{grid-template-columns:3.4rem minmax(0,1fr)}
   .story-page .story-cred p{grid-column:2}
-  .story-page .sx-stats .stats{grid-template-columns:1fr 1fr;row-gap:1.6rem}
-  .story-page .sx-stats .stat:nth-child(odd){border-left:0}
 }
 @media (prefers-reduced-motion:reduce){
   .story-page .story-cred{transition:none}
