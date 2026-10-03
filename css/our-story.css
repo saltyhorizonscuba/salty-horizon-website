@@ -352,3 +352,32 @@
   .story-page .sx-why .story-cred p::before{content:none}
   .story-page .story-brand__close{margin-top:1.8rem}
 }
+
+/* ---------- Mobile: shorter page (swipe cards, 2-col trust tiles, one-line credential chips) ---------- */
+@media (max-width:560px){
+  .story-page .story-brand__cols{display:flex;gap:.8rem;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-inline:-1rem;padding:.2rem 1rem .6rem;scroll-padding-inline:1rem}
+  .story-page .story-brand__cols::-webkit-scrollbar{display:none}
+  .story-page .story-brand__cols p{flex:0 0 80%;scroll-snap-align:start;padding:3.7rem 1.1rem 1.1rem;font-size:.95rem}
+  .story-page .story-brand__cols p::before{left:1.1rem;top:1rem}
+  .story-page .story-brand__head{margin-bottom:1.4rem}
+  .story-page .story-brand__close{margin-top:1.2rem}
+  .story-page .story-brand__close p:first-child{font-size:.95rem;line-height:1.6}
+
+  .story-page .sx-why .story-creds{grid-template-columns:1fr 1fr;gap:.6rem}
+  .story-page .sx-why .story-cred{padding:3.6rem .85rem .9rem}
+  .story-page .sx-why .story-cred::before{left:.85rem;top:.85rem}
+  .story-page .sx-why .story-cred h3{font-size:.95rem;line-height:1.2}
+  .story-page .sx-why .story-cred p{font-size:.78rem;line-height:1.45}
+  .story-page .sx-why{padding:2rem 0}
+
+  .story-page .story-crew .profile__chips{display:flex;flex-wrap:nowrap;gap:.4rem;overflow-x:auto;scrollbar-width:none;margin-inline:-1rem;padding:0 1rem .2rem}
+  .story-page .story-crew .profile__chips::-webkit-scrollbar{display:none}
+  .story-page .story-crew .profile__chips li{flex:0 0 auto;white-space:nowrap;padding:.35rem .7rem;border:1px solid rgba(231,201,138,.5);border-radius:999px;color:var(--sand)}
+  .story-page .story-crew .profile__chips li::before,.story-page .story-crew .profile__chips li + li::before{content:none}
+}
+@media (max-width:560px){
+  .story-page .story-brand__cols p{flex-basis:86%;padding:3.4rem 1rem 1rem;font-size:.92rem;line-height:1.55}
+  .story-page .story-crew .profile__photo{width:60%}
+  .story-page .story-crew .profile + .profile{margin-top:2.2rem}
+  .story-page .story-crew .profile__body{margin-top:1rem}
+}
