@@ -294,3 +294,33 @@
 
 .story-page .sx-why .story-cred p a,.story-page .story-brand__cols a{color:var(--sand);text-decoration:underline;text-underline-offset:3px}
 .story-page .sx-why .story-cred p a:hover,.story-page .story-brand__cols a:hover{color:#fff}
+
+/* ---------- Mobile polish (phones only) ---------- */
+@media (max-width:560px){
+  .story-page .sx-hero__inner{padding-top:6.5rem;padding-bottom:5.2rem}
+  .story-page .sx-hero h1{font-size:clamp(2.6rem,13vw,3.4rem)}
+  .story-page .story-crew#team{padding-top:1.2rem;padding-bottom:2.6rem}
+  .story-page .story-crew .title-block{margin-bottom:1.2rem}
+  .story-page .sx-intro{margin-bottom:1.6rem}
+  .story-page .sx-intro p{font-size:.98rem;line-height:1.7}
+  .story-page .story-crew .profile__photo{width:76%;margin-inline:auto}
+  .story-page #julien .profile__photo{margin-inline:auto}
+  .story-page .story-crew .profile__body{margin-top:1.4rem;padding:0}
+  .story-page .story-crew .profile__body h3{font-size:2rem}
+  .story-page .story-crew .profile + .profile{margin-top:3rem}
+  .story-page .story-crew .profile__chips{display:grid;grid-template-columns:1fr;gap:.45rem;margin-top:1.1rem}
+  .story-page .story-crew .profile__chips li{position:relative;padding-left:1rem;font-size:.66rem;line-height:1.35}
+  .story-page .story-crew .profile__chips li::before,.story-page .story-crew .profile__chips li + li::before{content:"";position:absolute;left:0;top:.35em;width:5px;height:5px;margin:0;border-radius:50%;background:var(--sand)}
+  .story-page .story-crew .crew{margin-bottom:1.6rem}
+  .story-page .story-crew .atlas{margin-top:.4rem}
+  .story-page .atlas__map{margin-inline:-.4rem;width:calc(100% + .8rem)}
+  .story-page .story-brand__words li{font-size:clamp(1.7rem,9vw,2.2rem)}
+  .story-page .story-brand h2{font-size:clamp(2.2rem,11vw,2.8rem)}
+  .story-page .sx-stats{padding:1.6rem 0}
+  .story-page .sx-stats .stats{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem .8rem;text-align:center}
+  .story-page .sx-stats .stat{flex-direction:column;align-items:center;gap:.2rem;padding:0}
+  .story-page .sx-stats .stat + .stat::before{content:none}
+  .story-page .sx-stats .stat b{font-size:1.5rem}
+  .story-page .sx-stats .stat span{font-size:.68rem;letter-spacing:.08em;line-height:1.3}
+  .story-page .sx-why .title-block{padding-inline:.2rem}
+}
