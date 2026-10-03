@@ -35,16 +35,15 @@
 <meta property="og:image" content="https://www.saltyhorizondiving.com/images/og-colby.jpg?v=1">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<link rel="preload" as="image" href="../images/colby.webp?v=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="preconnect" href="https://wa.me">
-<link rel="preload" as="script" href="../js/i18n-es.js?v=11">
-<link rel="preload" as="script" href="../js/core.js?v=6">
+<link rel="preload" as="script" href="../js/i18n-es.js?v=12">
+<link rel="preload" as="script" href="../js/core.js?v=7">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../css/styles.css?v=81">
+<link rel="stylesheet" href="../css/styles.css?v=82">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -114,15 +113,32 @@
 </header>
 
 <main>
-<section class="pagehero">
-  <picture><source type="image/webp" srcset="../images/colby.webp?v=1"><img src="../images/colby.jpg?v=1" fetchpriority="high" width="1500" height="1001" alt="Buzo descendiendo en aguas azules cristalinas frente a Tamarindo, Costa Rica"></picture>
+<div class="courses-layout">
+  <aside class="courses-rail">
+    <nav class="courses-nav" aria-label="Cursos">
+      <span class="courses-nav__label" data-i18n="rail.label">Cursos</span>
+      <ul>
+        <li><a href="#open-water" data-i18n="rail.ow">Open Water</a></li>
+        <li><a href="#advanced-ow" data-i18n="rail.adv">Advanced</a></li>
+      </ul>
+      <span class="courses-nav__label courses-nav__label--sub" data-i18n="rail.spec">Especialidades</span>
+      <ul>
+        <li><a href="#deep" data-i18n="rail.deep">Deep</a></li>
+        <li><a href="#nitrox" data-i18n="rail.nitrox">Nitrox</a></li>
+        <li><a href="#photography" data-i18n="rail.photo">Fotografía</a></li>
+        <li><a href="#shark" data-i18n="rail.shark">Tiburón</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="courses-main">
+<section class="pagehero pagehero--plain pagehero--navy">
   <div class="container pagehero__inner">
     <div class="crumbs"><a href="../" data-i18n="footer.home">Inicio</a> / <span data-i18n="nav.courses">Cursos PADI</span></div>
     <h1><span data-i18n="padi.page.h1">Cursos PADI</span> <span class="pagehero__sub">Tamarindo, Costa Rica</span></h1>
   </div>
 </section>
 
-<section class="section wave-section">
+<section class="section section--dark section--wavebottom padi-intro">
   <div class="container">
     <p class="lead center" style="max-width:820px;margin:0 auto 1rem" data-reveal data-i18n="padi.page.intro">Progresa a tu propio ritmo con nuestros cursos de certificación PADI, guiados por instructores profesionales.</p>
     <div class="padi-glance" data-reveal>
@@ -141,8 +157,15 @@
         </tbody>
       </table>
     </div>
-    <p class="center muted" style="max-width:820px;margin:0 auto 3.5rem" data-reveal><a href="scuba-diving-tamarindo-faq.html#padi-courses-faq" data-i18n="padi.page.faqLink">Preguntas frecuentes sobre la certificación PADI</a></p>
+    <p class="center muted" style="max-width:820px;margin:0 auto" data-reveal><a href="scuba-diving-tamarindo-faq.html#padi-courses-faq" data-i18n="padi.page.faqLink">Preguntas frecuentes sobre la certificación PADI</a></p>
+  </div>
+  <div class="wave-divider wave-divider--white" aria-hidden="true">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,30 C960,60 1200,10 1440,40 L1440,100 L0,100 Z"></path></svg>
+  </div>
+</section>
 
+<section class="section wave-section">
+  <div class="container">
     <!-- Open Water Diver -->
     <div class="course-block">
       <div class="course-grid" id="open-water" data-reveal>
@@ -193,7 +216,7 @@
             <div class="price-pill"><small data-i18n="course.startingAt">Desde</small> $540</div>
           </div>
           <div class="about-copy">
-            <p class="lead course-lead" data-i18n="course.ow.lead">¿Listo para certificarte como buceador? El curso PADI Open Water Diver es tu primera certificación completa de buceo, diseñada para enseñarte las habilidades esenciales, los procedimientos de seguridad y la confianza necesarios para bucear de forma independiente con un compañero.</p>
+            <p class="lead course-lead" data-i18n="course.ow.lead">¿Listo para certificarte como buceador? El curso PADI Open Water Diver es tu primera certificación completa de buceo, diseñada para enseñarte las habilidades esenciales, los procedimientos de seguridad y la confianza necesarios para bucear de forma independiente con un compañero hasta 18 metros / 60 pies.</p>
             <p data-i18n="course.ow.d">Este curso de 3 días incluye teoría, 1 sesión en piscina y 4 inmersiones en aguas abiertas. Durante el curso aprenderás a usar el equipo de buceo, controlar tu flotabilidad, manejar situaciones básicas bajo el agua y explorar el océano de forma segura bajo la guía de un instructor PADI.</p>
 
             <div class="course-cols">
@@ -229,7 +252,7 @@
   </div>
 </section>
 
-<section class="section section--dark">
+<section class="section section--dark section--wavebottom">
   <div class="container">
     <!-- Advanced Open Water Diver -->
     <div class="course-block">
@@ -286,7 +309,48 @@
       </div>
     </div>
   </div>
+  <div class="wave-divider wave-divider--cream" aria-hidden="true">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,30 C960,60 1200,10 1440,40 L1440,100 L0,100 Z"></path></svg>
+  </div>
 </section>
+
+<section class="section section--specialty" id="specialty">
+  <div class="container">
+    <div class="title-block center" data-reveal>
+      <span class="eyebrow" data-i18n="spec.eyebrow">Sigue explorando</span>
+      <h2 class="h-title" data-i18n="spec.h">Cursos de especialidad</h2>
+      <p class="lead" data-i18n="spec.lead">Profundiza en lo que más te apasiona del buceo.</p>
+    </div>
+    <div class="spec-grid">
+      <article class="spec-card" id="deep" data-reveal>
+        <span class="spec-card__soon" data-i18n="spec.soon">Próximamente</span>
+        <h3 data-i18n="spec.deep.t">Deep Diver</h3>
+        <p class="muted" data-i18n="spec.deep.d">Amplía tu límite de profundidad y aprende a planificar y gestionar inmersiones más profundas con seguridad.</p>
+        <a href="https://wa.me/50687759641" class="btn btn--outline" target="_blank" rel="noopener" data-i18n="course.contactInfo">Contact us for more information.</a>
+      </article>
+      <article class="spec-card" id="nitrox" data-reveal>
+        <span class="spec-card__soon" data-i18n="spec.soon">Próximamente</span>
+        <h3 data-i18n="spec.nitrox.t">Aire enriquecido (Nitrox)</h3>
+        <p class="muted" data-i18n="spec.nitrox.d">Aprende a bucear con aire enriquecido para alargar tu tiempo de fondo y acortar los intervalos en superficie.</p>
+        <a href="https://wa.me/50687759641" class="btn btn--outline" target="_blank" rel="noopener" data-i18n="course.contactInfo">Contact us for more information.</a>
+      </article>
+      <article class="spec-card" id="photography" data-reveal>
+        <span class="spec-card__soon" data-i18n="spec.soon">Próximamente</span>
+        <h3 data-i18n="spec.photo.t">Fotógrafo submarino</h3>
+        <p class="muted" data-i18n="spec.photo.d">Aprende composición, iluminación y manejo de la cámara para llevarte a casa las imágenes que buscas.</p>
+        <a href="https://wa.me/50687759641" class="btn btn--outline" target="_blank" rel="noopener" data-i18n="course.contactInfo">Contact us for more information.</a>
+      </article>
+      <article class="spec-card" id="shark" data-reveal>
+        <span class="spec-card__soon" data-i18n="spec.soon">Próximamente</span>
+        <h3 data-i18n="spec.shark.t">Conservación de tiburones</h3>
+        <p class="muted" data-i18n="spec.shark.d">Descubre por qué los tiburones son importantes, las amenazas que enfrentan y cómo los buzos pueden ayudar a protegerlos.</p>
+        <a href="https://wa.me/50687759641" class="btn btn--outline" target="_blank" rel="noopener" data-i18n="course.contactInfo">Contact us for more information.</a>
+      </article>
+    </div>
+  </div>
+</section>
+  </div>
+</div>
 </main>
 
 <footer class="footer">
@@ -331,8 +395,8 @@
   </div>
 </div>
 
-<script src="../js/i18n-es.js?v=11"></script>
-<script src="../js/core.js?v=6"></script>
+<script src="../js/i18n-es.js?v=12"></script>
+<script src="../js/core.js?v=7"></script>
 <script src="../js/cart.js?v=2"></script>
 </body>
 </html>

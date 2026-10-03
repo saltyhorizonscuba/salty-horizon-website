@@ -11,7 +11,7 @@ const I18N_DATA = {
     'meta.charters.desc':'Book a private day at sea in Tamarindo: scuba, snorkeling, paddle boarding, e-foil & jet ski. Fully customized charters designed around you.',
     'meta.faq.title':'Scuba Diving FAQ: Tamarindo & Catalina Islands, Costa Rica | Salty Horizon',
     'meta.faq.desc':'Answers to real questions about scuba diving in Tamarindo and the Catalina Islands: marine life, manta ray and whale season, diving conditions, and PADI certification with Salty Horizon.',
-    'nav.experiences':'Experiences','nav.charters':'Private Charters','nav.courses':'PADI Courses','nav.faq':'FAQ','nav.about':'About','nav.blog':'The Blog',
+    'nav.experiences':'Experiences','nav.charters':'Private Charters','nav.courses':'PADI Courses','nav.faq':'FAQ','nav.about':'About','nav.story':'Our Story','nav.blog':'The Blog',
     'nav.gallery':'Gallery','nav.reviews':'Reviews','nav.contact':'Contact','cta.book':'Book a dive','cta.bookCourse':'Book a course','cta.learnMore':'Learn more',
 
     'hero.h1':'Private Scuba Diving in Tamarindo, Costa Rica',
@@ -85,7 +85,7 @@ const I18N_DATA = {
     'course.schedule':'Schedule','course.requirements':'Requirements','course.bring':'What to Bring','course.important':'Important Information','course.startingAt':'Starting at','course.included':'Included',
 
     'course.ow.t':'Open Water Diver',
-    'course.ow.lead':'Ready to become a certified diver? The PADI Open Water Diver course is your first full scuba certification, designed to teach you the essential skills, safety procedures, and confidence needed to dive independently with a buddy.',
+    'course.ow.lead':'Ready to become a certified diver? The PADI Open Water Diver course is your first full scuba certification, designed to teach you the essential skills, safety procedures, and confidence needed to dive independently with a buddy up to 18 meters / 60 ft.',
     'course.ow.d':'This 3-day course includes theory, 1 pool session, and 4 open water dives. During the course, you will learn how to use scuba equipment, control your buoyancy, manage basic underwater situations, and explore the ocean safely under the guidance of a PADI instructor.',
     'course.ow.incl1':'E-learning','course.ow.incl2':'PADI certification fee','course.ow.incl3':'PADI instructor','course.ow.incl4':'Snacks & drinks','course.ow.incl5':'All equipment',
     'course.ow.schedIntro':'Before we meet, please complete your PADI e-learning.',
@@ -96,6 +96,7 @@ const I18N_DATA = {
     'course.ow.bring1':'Swimsuit','course.ow.bring2':'Hat','course.ow.bring3':'Reef-safe sunscreen','course.ow.bring4':'Sunglasses',
     'course.ow.note':'You must wait a minimum of 24 hours after your last dive before flying.',
 
+    'rail.label':'Courses','rail.ow':'Open Water','rail.adv':'Advanced','rail.spec':'Specialties','rail.deep':'Deep','rail.nitrox':'Nitrox','rail.photo':'Photography','rail.shark':'Shark','spec.eyebrow':'Keep exploring','spec.h':'Specialty courses','spec.lead':'Go deeper into the part of diving that excites you most.','spec.soon':'Coming soon','spec.deep.t':'Deep Diver','spec.deep.d':'Extend your depth limit and learn how to plan and manage deeper dives safely.','spec.nitrox.t':'Enriched Air (Nitrox)','spec.nitrox.d':'Learn to dive with enriched air to extend your bottom time and shorten surface intervals.','spec.photo.t':'Underwater Photographer','spec.photo.d':'Learn composition, lighting and camera handling to bring home the images you want.','spec.shark.t':'Shark Conservation','spec.shark.d':'Learn why sharks matter, the threats they face, and how divers can help protect them.',
     'course.aow.t':'Advanced Open Water Diver',
     'course.aow.lead':'Already certified as a PADI Open Water Diver or equivalent? The PADI Advanced Open Water Diver course is designed to sharpen your skills, build your confidence, and expand your depth limit to 30m / 100 ft.',
     'course.aow.d1':'The course includes a short theory section and 5 adventure dives.',

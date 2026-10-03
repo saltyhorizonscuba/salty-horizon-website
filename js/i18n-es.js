@@ -11,7 +11,7 @@ const I18N_DATA = {
     'meta.charters.desc':'Un día completamente privado en el Pacífico: buceo, surf, avistamiento de ballenas, snorkel y más, a bordo de un catamarán privado con los guías de buceo de Salty Horizon. Tamarindo, Costa Rica.',
     'meta.faq.title':'FAQ de Buceo: Tamarindo e Islas Catalinas, Costa Rica | Salty Horizon',
     'meta.faq.desc':'Respuestas a preguntas reales sobre el buceo en Tamarindo y las Islas Catalinas: vida marina, temporada de rayas manta y ballenas, condiciones de buceo y certificación PADI con Salty Horizon.',
-    'nav.experiences':'Experiencias','nav.charters':'Charters privados','nav.courses':'Cursos PADI','nav.faq':'FAQ','nav.about':'Nosotros','nav.blog':'The Blog',
+    'nav.experiences':'Experiencias','nav.charters':'Charters privados','nav.courses':'Cursos PADI','nav.faq':'FAQ','nav.about':'Nosotros','nav.story':'Nuestra historia','nav.blog':'The Blog',
     'nav.gallery':'Galería','nav.reviews':'Reseñas','nav.contact':'Contacto','cta.book':'Reservar','cta.bookCourse':'Reservar un curso','cta.learnMore':'Saber más',
 
     'hero.h1':'Buceo privado en Tamarindo, Costa Rica',
@@ -85,7 +85,7 @@ const I18N_DATA = {
     'course.schedule':'Programa','course.requirements':'Requisitos','course.bring':'Qué llevar','course.important':'Información importante','course.startingAt':'Desde','course.included':'Incluye',
 
     'course.ow.t':'Open Water Diver',
-    'course.ow.lead':'¿Listo para certificarte como buceador? El curso PADI Open Water Diver es tu primera certificación completa de buceo, diseñada para enseñarte las habilidades esenciales, los procedimientos de seguridad y la confianza necesarios para bucear de forma independiente con un compañero.',
+    'course.ow.lead':'¿Listo para certificarte como buceador? El curso PADI Open Water Diver es tu primera certificación completa de buceo, diseñada para enseñarte las habilidades esenciales, los procedimientos de seguridad y la confianza necesarios para bucear de forma independiente con un compañero hasta 18 metros / 60 pies.',
     'course.ow.d':'Este curso de 3 días incluye teoría, 1 sesión en piscina y 4 inmersiones en aguas abiertas. Durante el curso aprenderás a usar el equipo de buceo, controlar tu flotabilidad, manejar situaciones básicas bajo el agua y explorar el océano de forma segura bajo la guía de un instructor PADI.',
     'course.ow.incl1':'E-learning','course.ow.incl2':'Tarifa de certificación PADI','course.ow.incl3':'Instructor PADI','course.ow.incl4':'Snacks y bebidas','course.ow.incl5':'Todo el equipo',
     'course.ow.schedIntro':'Antes de nuestro encuentro, completa tu e-learning de PADI.',
@@ -96,6 +96,7 @@ const I18N_DATA = {
     'course.ow.bring1':'Traje de baño','course.ow.bring2':'Gorra o sombrero','course.ow.bring3':'Protector solar biodegradable','course.ow.bring4':'Gafas de sol',
     'course.ow.note':'Debes esperar un mínimo de 24 horas después de tu última inmersión antes de volar.',
 
+    'rail.label':'Cursos','rail.ow':'Open Water','rail.adv':'Advanced','rail.spec':'Especialidades','rail.deep':'Deep','rail.nitrox':'Nitrox','rail.photo':'Fotografía','rail.shark':'Tiburón','spec.eyebrow':'Sigue explorando','spec.h':'Cursos de especialidad','spec.lead':'Profundiza en lo que más te apasiona del buceo.','spec.soon':'Próximamente','spec.deep.t':'Deep Diver','spec.deep.d':'Amplía tu límite de profundidad y aprende a planificar y gestionar inmersiones más profundas con seguridad.','spec.nitrox.t':'Aire enriquecido (Nitrox)','spec.nitrox.d':'Aprende a bucear con aire enriquecido para alargar tu tiempo de fondo y acortar los intervalos en superficie.','spec.photo.t':'Fotógrafo submarino','spec.photo.d':'Aprende composición, iluminación y manejo de la cámara para llevarte a casa las imágenes que buscas.','spec.shark.t':'Conservación de tiburones','spec.shark.d':'Descubre por qué los tiburones son importantes, las amenazas que enfrentan y cómo los buzos pueden ayudar a protegerlos.',
     'course.aow.t':'Advanced Open Water Diver',
     'course.aow.lead':'¿Ya estás certificado como PADI Open Water Diver o equivalente? El curso PADI Advanced Open Water Diver está diseñado para perfeccionar tus habilidades, aumentar tu confianza y ampliar tu límite de profundidad a 30 m.',
     'course.aow.d1':'El curso incluye una breve sección teórica y 5 inmersiones de aventura.',

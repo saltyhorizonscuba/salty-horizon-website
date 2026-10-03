@@ -11,7 +11,7 @@ const I18N_DATA = {
     'meta.charters.desc':"Une journée entièrement privée sur le Pacifique : plongée, surf, observation des baleines, snorkeling et plus, à bord d'un catamaran privé avec les guides de plongée de Salty Horizon. Tamarindo, Costa Rica.",
     'meta.faq.title':'FAQ Plongée : Tamarindo & îles Catalinas, Costa Rica | Salty Horizon',
     'meta.faq.desc':'Réponses à de vraies questions sur la plongée à Tamarindo et aux îles Catalinas : vie marine, saison des raies manta et des baleines, conditions de plongée, certification PADI avec Salty Horizon.',
-    'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.faq':'FAQ','nav.about':'À propos','nav.blog':'The Blog',
+    'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.faq':'FAQ','nav.about':'À propos','nav.story':'Notre histoire','nav.blog':'The Blog',
     'nav.gallery':'Galerie','nav.reviews':'Avis','nav.contact':'Contact','cta.book':'Réserver','cta.bookCourse':'Réserver un cours','cta.learnMore':'En savoir plus',
 
     'hero.h1':'Plongée sous-marine privée à Tamarindo, Costa Rica',
@@ -85,7 +85,7 @@ const I18N_DATA = {
     'course.schedule':'Programme','course.requirements':'Prérequis','course.bring':'Quoi apporter','course.important':'Informations importantes','course.startingAt':'À partir de','course.included':'Inclus',
 
     'course.ow.t':'Open Water Diver',
-    'course.ow.lead':'Prêt à devenir plongeur certifié ? La formation PADI Open Water Diver est votre première certification complète de plongée, conçue pour vous enseigner les compétences essentielles, les procédures de sécurité et la confiance nécessaires pour plonger en autonomie avec un binôme.',
+    'course.ow.lead':'Prêt à devenir plongeur certifié ? La formation PADI Open Water Diver est votre première certification complète de plongée, conçue pour vous enseigner les compétences essentielles, les procédures de sécurité et la confiance nécessaires pour plonger en autonomie avec un binôme jusqu’à 18 mètres / 60 pieds.',
     'course.ow.d':'Cette formation de 3 jours comprend de la théorie, 1 séance en piscine et 4 plongées en milieu naturel. Vous apprendrez à utiliser l’équipement de plongée, à maîtriser votre flottabilité, à gérer les situations sous-marines de base et à explorer l’océan en toute sécurité sous la supervision d’un instructeur PADI.',
     'course.ow.incl1':'E-learning','course.ow.incl2':'Frais de certification PADI','course.ow.incl3':'Instructeur PADI','course.ow.incl4':'Collations & boissons','course.ow.incl5':'Tout l’équipement',
     'course.ow.schedIntro':'Avant notre rencontre, merci de terminer votre e-learning PADI.',
@@ -96,6 +96,7 @@ const I18N_DATA = {
     'course.ow.bring1':'Maillot de bain','course.ow.bring2':'Casquette ou chapeau','course.ow.bring3':'Crème solaire respectueuse des récifs','course.ow.bring4':'Lunettes de soleil',
     'course.ow.note':'Un délai minimum de 24 heures après votre dernière plongée est requis avant de prendre l’avion.',
 
+    'rail.label':'Formations','rail.ow':'Open Water','rail.adv':'Advanced','rail.spec':'Spécialités','rail.deep':'Deep','rail.nitrox':'Nitrox','rail.photo':'Photographie','rail.shark':'Requin','spec.eyebrow':'Continuez l’exploration','spec.h':'Formations de spécialité','spec.lead':'Allez plus loin dans ce qui vous passionne le plus en plongée.','spec.soon':'Bientôt disponible','spec.deep.t':'Deep Diver','spec.deep.d':'Repoussez votre limite de profondeur et apprenez à planifier et gérer des plongées plus profondes en toute sécurité.','spec.nitrox.t':'Air enrichi (Nitrox)','spec.nitrox.d':'Apprenez à plonger à l’air enrichi pour allonger votre temps de fond et raccourcir vos intervalles de surface.','spec.photo.t':'Photographe sous-marin','spec.photo.d':'Maîtrisez composition, lumière et prise en main de l’appareil pour rapporter les images dont vous rêvez.','spec.shark.t':'Conservation des requins','spec.shark.d':'Découvrez pourquoi les requins sont essentiels, les menaces qui pèsent sur eux et comment les plongeurs peuvent contribuer à les protéger.',
     'course.aow.t':'Advanced Open Water Diver',
     'course.aow.lead':'Déjà certifié PADI Open Water Diver ou équivalent ? La formation PADI Advanced Open Water Diver est conçue pour affiner vos compétences, renforcer votre confiance et étendre votre limite de profondeur à 30 m.',
     'course.aow.d1':'La formation comprend une courte session théorique et 5 plongées d’aventure.',
