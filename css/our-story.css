@@ -64,15 +64,13 @@
 .story-page .story-brand{background:linear-gradient(180deg,rgba(6,26,36,.78),rgba(6,26,36,.5) 45%,rgba(6,26,36,.85)),url(../images/manta.webp) center 30%/cover no-repeat}
 @media (min-width:1025px){.story-page .story-brand{background-attachment:scroll,fixed}}
 .story-page .story-brand h2{font-size:clamp(2.6rem,6.6vw,5.2rem);line-height:1}
-.story-page .story-brand__head{text-align:left;max-width:none}
-.story-page .story-brand__words{align-items:flex-start;gap:.1rem 0;flex-direction:column;margin-top:1.4rem}
+.story-page .story-brand__head{text-align:center;max-width:none}
+.story-page .story-brand__words{align-items:center;gap:.1rem 0;flex-direction:column;margin-top:1.4rem}
 .story-page .story-brand__words li{font-size:clamp(1.8rem,5.4vw,3.6rem);line-height:1.05}
-.story-page .story-brand__words li:nth-child(1){transform:rotate(-2deg)}
-.story-page .story-brand__words li:nth-child(2){color:#fff;margin-left:clamp(1rem,8vw,7rem);transform:rotate(1deg)}
-.story-page .story-brand__words li:nth-child(3){color:var(--aqua-bright);margin-left:clamp(2rem,16vw,14rem);transform:rotate(-1.5deg)}
+.story-page .story-brand__words li:nth-child(2){color:#fff}
+.story-page .story-brand__words li:nth-child(3){color:var(--aqua-bright)}
 .story-page .story-brand__cols>div{border-top:2px dashed rgba(231,201,138,.5);padding-top:1.3rem}
 .story-page .story-brand__close{border:0;background:none;padding:0;text-align:center;margin:clamp(2rem,4vw,3rem) auto 0;max-width:640px}
-.story-page .story-brand__close::before{content:"";display:block;width:2px;height:2.6rem;margin:0 auto 1.4rem;background:linear-gradient(transparent,rgba(231,201,138,.7))}
 .story-page .story-brand .story-brand__sign{color:var(--sand);margin-top:1.4rem}
 
 /* ---------- Stats ---------- */
@@ -105,7 +103,6 @@
   .story-page .sx-hero__sky img{object-position:center 30%}
   .story-page .crew{grid-template-columns:minmax(0,1fr)}
   .story-page .story-crew .profile + .profile{margin-top:3.5rem}
-  .story-page .story-brand__words li:nth-child(n){margin-left:0}
   .story-page .story-cred{grid-template-columns:3.4rem minmax(0,1fr)}
   .story-page .story-cred p{grid-column:2}
   .story-page .sx-stats .stats{grid-template-columns:1fr 1fr;row-gap:1.6rem}
