@@ -35,8 +35,7 @@
 
 /* ---------- The two of us ---------- */
 .story-page .sx-intro{max-width:720px;margin:0 auto clamp(1rem,2vw,1.6rem);text-align:center}
-.story-page .sx-intro__big{font-family:var(--font-display);font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.25;color:#fff;margin-bottom:1.4rem}
-.story-page .sx-intro p:not(.sx-intro__big){color:#cfe3e8;line-height:1.75;margin-bottom:1rem}
+.story-page .sx-intro p{color:#cfe3e8;line-height:1.75;margin-bottom:1rem}
 .story-page .story-atlas{position:relative;overflow:hidden;background:linear-gradient(180deg,#12788b 0%,var(--teal) 30%,var(--deep) 100%)}
 .story-page .story-atlas::before,.story-page .story-atlas::after{content:"";position:absolute;pointer-events:none;border-radius:50%}
 .story-page .story-atlas::before{width:90vmin;height:90vmin;left:-24vmin;top:6%;background:repeating-radial-gradient(circle,transparent 0 26px,rgba(231,201,138,.09) 26px 28px)}
@@ -121,8 +120,7 @@
   .story-page .story-crew > .container{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,1fr);column-gap:clamp(1.5rem,3.5vw,3.5rem);align-items:start}
   .story-page .story-crew .title-block{grid-column:1/-1;grid-row:1}
   .story-page .story-crew .sx-intro{grid-column:2;grid-row:2;margin:0}
-  .story-page .story-crew .sx-intro__big{font-size:clamp(1.25rem,1.9vw,1.65rem)}
-  .story-page .story-crew .sx-intro p:not(.sx-intro__big){font-size:.95rem}
+  .story-page .story-crew .sx-intro p{font-size:.95rem}
   .story-page .story-crew .crew{display:contents}
   .story-page #camille{grid-column:1;grid-row:2}
   .story-page #julien{grid-column:3;grid-row:2;margin-top:clamp(1.5rem,4vw,3rem)}
