@@ -324,3 +324,30 @@
   .story-page .sx-stats .stat span{font-size:.68rem;letter-spacing:.08em;line-height:1.3}
   .story-page .sx-why .title-block{padding-inline:.2rem}
 }
+
+/* ---------- Mobile: emoji cards for the brand story and the trust list ---------- */
+@media (max-width:560px){
+  .story-page .story-brand{background:linear-gradient(180deg,rgba(6,26,36,.9),rgba(6,26,36,.78) 45%,rgba(6,26,36,.92)),url(../images/manta.webp) center 30%/cover no-repeat}
+  .story-page .story-brand__cols{gap:.7rem}
+  .story-page .story-brand__cols>div{display:contents;border:0;padding:0}
+  .story-page .story-brand__cols p,.story-page .sx-why .story-cred{position:relative;margin:0;padding:1rem 1rem 1rem 3.7rem;background:rgba(255,255,255,.06);border:1px solid rgba(231,201,138,.22);border-radius:14px;font-size:.96rem;line-height:1.6}
+  .story-page .story-brand__cols p::before,.story-page .sx-why .story-cred::before{content:"";position:absolute;left:.85rem;top:.85rem;width:2.1rem;height:2.1rem;display:grid;place-items:center;font-size:1.25rem;line-height:1;border-radius:10px;background:rgba(231,201,138,.14)}
+  .story-page .story-brand__cols>div:first-child p:nth-child(1)::before{content:"🌍"}
+  .story-page .story-brand__cols>div:first-child p:nth-child(2)::before{content:"✨"}
+  .story-page .story-brand__cols>div:first-child p:nth-child(3)::before{content:"🤿"}
+  .story-page .story-brand__cols>div:last-child p:nth-child(1)::before{content:"🌊"}
+  .story-page .story-brand__cols>div:last-child p:nth-child(2)::before{content:"🤝"}
+  .story-page .sx-why .story-creds{gap:.7rem}
+  .story-page .sx-why .story-cred{display:block;border-top:1px solid rgba(231,201,138,.22);padding:1rem 1rem 1rem 3.7rem}
+  .story-page .sx-why .story-cred::before{content:none}
+  .story-page .sx-why .story-cred:nth-child(1)::before{content:"🎓"}
+  .story-page .sx-why .story-cred:nth-child(2)::before{content:"🌍"}
+  .story-page .sx-why .story-cred:nth-child(3)::before{content:"🚑"}
+  .story-page .sx-why .story-cred:nth-child(4)::before{content:"🏝️"}
+  .story-page .sx-why .story-cred:nth-child(5)::before{content:"💬"}
+  .story-page .sx-why .story-cred:nth-child(6)::before{content:"🐢"}
+  .story-page .sx-why .story-cred h3{font-size:1.05rem;margin-bottom:.25rem}
+  .story-page .sx-why .story-cred p{font-size:.9rem;line-height:1.5;margin:0;padding:0;background:none;border:0;border-radius:0}
+  .story-page .sx-why .story-cred p::before{content:none}
+  .story-page .story-brand__close{margin-top:1.8rem}
+}
