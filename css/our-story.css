@@ -5,11 +5,9 @@
 
 
 /* ---------- Hero: sunset surface, waves, tilted blob portraits ---------- */
-.story-page .sx-hero{position:relative;display:flex;align-items:flex-end;min-height:max(700px,min(100svh,940px));color:#fff;overflow:hidden;background:#0a2733}
-.story-page .sx-hero__sky{position:absolute;inset:0}
-.story-page .sx-hero__sky img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 36%;max-width:none}
-.story-page .sx-hero__sky::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,22,34,.6) 0%,rgba(6,22,34,0) 30%,rgba(8,32,44,.5) 62%,rgba(10,39,51,.92) 100%)}
-.story-page .sx-hero__inner{position:relative;z-index:3;padding-top:9rem;padding-bottom:clamp(8rem,15vw,12rem)}
+.story-page .sx-hero{position:relative;display:flex;align-items:flex-end;min-height:0;color:#fff;overflow:hidden;background:#0a2733}
+.story-page .sx-hero__sky{position:absolute;inset:0;background:radial-gradient(70% 90% at 82% 20%,rgba(31,163,181,.3) 0%,transparent 60%),linear-gradient(160deg,#0f4a5c 0%,#0a2733 75%)}
+.story-page .sx-hero__inner{position:relative;z-index:3;padding-top:9rem;padding-bottom:clamp(8.5rem,14vw,11.5rem)}
 .story-page .sx-hero__copy{max-width:640px}
 .story-page .sx-hero h1{color:#fff;font-size:clamp(3rem,7.4vw,6.2rem);line-height:.95;white-space:nowrap;letter-spacing:.01em;text-transform:uppercase;text-shadow:0 4px 30px rgba(0,0,0,.35)}
 .story-page .sx-hero__tag{margin:1rem 0 0;font-family:var(--font-display);font-weight:800;font-size:clamp(1.05rem,2.1vw,1.6rem);letter-spacing:.08em;text-transform:uppercase;color:var(--sand);text-shadow:0 2px 14px rgba(0,0,0,.45)}
@@ -98,10 +96,9 @@
 
 /* ---------- Responsive ---------- */
 @media (max-width:900px){
-  .story-page .sx-hero{min-height:560px}
+
   .story-page .sx-hero__inner{padding-top:7.5rem;padding-bottom:8rem}
   .story-page .sx-hero__faces{position:relative;right:auto;bottom:auto;width:min(92%,460px);margin:2rem auto 0;padding-bottom:7rem}
-  .story-page .sx-hero__sky img{object-position:center 60%}
   .story-page .crew{grid-template-columns:minmax(0,1fr)}
   .story-page .story-crew .profile + .profile{margin-top:3.5rem}
   .story-page .story-cred{grid-template-columns:3.4rem minmax(0,1fr)}
@@ -148,10 +145,4 @@
   .story-page .postcard__main{padding-right:0;padding-bottom:1rem;border-right:0;border-bottom:1px solid rgba(10,39,51,.25)}
   .story-page .postcard__side{flex-direction:row;align-items:center;justify-content:space-between}
   .story-page .postcard__lines{display:none}
-}
-
-/* Hero: show the whole manta on desktop (portrait photo) */
-@media (min-width:901px){
-  .story-page .sx-hero__sky{background:linear-gradient(180deg,#3fc4e8 0%,#2aa9dc 32%,#1b78bd 60%,#0f4f93 84%,#0a3e7c 100%)}
-  .story-page .sx-hero__sky img{inset:0 clamp(2rem,9vw,9rem) 0 auto;width:auto;height:100%;aspect-ratio:1600/2844;object-fit:cover;object-position:center;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%,#000 70%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 30%,#000 70%,transparent 100%)}
 }
