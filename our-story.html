@@ -40,6 +40,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="css/styles.css?v=82">
+<link rel="stylesheet" href="css/our-story.css?v=1">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -95,7 +96,7 @@
 }
 </script>
 </head>
-<body>
+<body class="story-page">
 
 <header class="header">
   <div class="container nav">
@@ -135,14 +136,20 @@
 <main>
 
 <!-- ============ HERO ============ -->
-<section class="pagehero pagehero--plain story-hero">
-  <div class="container pagehero__inner">
-    <span class="story-hero__kicker">Our Story</span>
-    <h1>Our Story</h1>
-    <p class="story-hero__sub">Two divers. One shared passion. A life shaped by the ocean.</p>
-    <div class="story-trust">
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>PADI Certified Instructors</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>12 years of diving experience</span>
+<section class="pagehero pagehero--plain story-hero sx-hero">
+  <div class="container sx-hero__grid">
+    <div class="sx-hero__copy">
+      <span class="story-hero__kicker">Our Story</span>
+      <h1>Two divers.<br><em>One shared passion.</em></h1>
+      <p class="story-hero__sub">A life shaped by the ocean, from Australia to the Pacific coast of Costa Rica.</p>
+      <div class="story-trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>PADI Certified Instructors</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>12 years of diving experience</span>
+      </div>
+    </div>
+    <div class="sx-hero__faces">
+      <figure class="sx-arch sx-arch--a"><picture><source type="image/webp" srcset="images/story-camille.webp?v=1"><img src="images/story-camille.jpg?v=1" width="1000" height="878" alt="Camille Segonne, PADI instructor, smiling underwater"></picture><figcaption>Camille</figcaption></figure>
+      <figure class="sx-arch sx-arch--b"><picture><source type="image/webp" srcset="images/story-julien.webp?v=1"><img src="images/story-julien.jpg?v=1" width="1000" height="878" alt="Julien Escales, PADI instructor, making a shaka sign in an underwater cave"></picture><figcaption>Julien</figcaption></figure>
     </div>
   </div>
   <div class="wave-divider wave-divider--cream" aria-hidden="true">
@@ -152,7 +159,8 @@
 
 <!-- ============ INTRO ============ -->
 <section class="section story-lede">
-  <div class="container">
+  <div class="container sx-lede">
+    <div class="sx-chap" data-reveal><b>01</b><span>How it began</span></div>
     <div class="story-lede__text" data-reveal>
       <p class="story-lede__big">Our story began far from Costa Rica, in Australia, where we first met through our shared love for the ocean and adventure.</p>
       <p>Since then, diving has taken us around the world, from the Caribbean and Pacific to Indonesia, Australia, Europe, and the waters of Costa Rica. We travelled, worked, trained, taught, explored, and learned from different diving communities and marine environments.</p>
@@ -165,6 +173,7 @@
 <section class="section story-atlas story-crew" id="team">
   <div class="container">
     <div class="title-block center" data-reveal>
+      <div class="sx-chap sx-chap--center"><b>02</b><span>The two of us</span></div>
       <span class="eyebrow">The two of us</span>
       <h2 class="h-title">Two divers, one route</h2>
       <p class="lead">Meet your instructors, then follow the oceans that took us to Tamarindo. Tap a pin to explore.</p>
@@ -245,6 +254,7 @@
 <section class="section story-brand">
   <div class="container">
     <div class="story-brand__head" data-reveal>
+      <div class="sx-chap sx-chap--center"><b>03</b><span>The project</span></div>
       <span class="eyebrow">Salty Horizon</span>
       <h2 class="h-title">And then came Salty Horizon.</h2>
       <ul class="story-brand__words" aria-label="Personal, flexible, thoughtful"><li>Personal.</li><li>Flexible.</li><li>Thoughtful.</li></ul>
@@ -269,7 +279,7 @@
 </section>
 
 <!-- ============ STATS ============ -->
-<section class="section--dark" style="padding:clamp(2.5rem,5vw,3.5rem) 0">
+<section class="section--dark sx-stats">
   <div class="container">
     <div class="stats">
       <div class="stat" data-reveal data-delay="1"><b data-count="12">12</b><span>Years of diving experience</span></div>
@@ -289,12 +299,13 @@
 <section class="section section--dark">
   <div class="container">
     <div class="title-block center" data-reveal>
+      <div class="sx-chap sx-chap--center"><b>04</b><span>The promise</span></div>
       <span class="eyebrow">Why dive with us</span>
       <h2 class="h-title">Adventurous, never careless</h2>
       <p class="lead">We love wild places. We also know that the best dive is the one where you feel completely safe.</p>
     </div>
     <div class="story-creds" data-reveal>
-      <div class="story-cred">
+      <div class="story-cred story-cred--lead">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg></span>
         <h3>PADI Certified Instructors</h3>
         <p>Both of us teach to PADI standards, the world's most widely recognised dive training system. Camille is also a Master Scuba Diver Trainer.</p>
