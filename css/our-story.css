@@ -115,3 +115,17 @@
 }
 .story-page .story-crew .title-block{margin-bottom:clamp(1.2rem,2.4vw,1.8rem)}
 .story-page .story-crew#team{padding-top:clamp(1.5rem,3vw,2.5rem)}
+
+/* Portraits flank the intro text on desktop */
+@media (min-width:901px){
+  .story-page .story-crew > .container{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,1fr);column-gap:clamp(1.5rem,3.5vw,3.5rem);align-items:start}
+  .story-page .story-crew .title-block{grid-column:1/-1;grid-row:1}
+  .story-page .story-crew .sx-intro{grid-column:2;grid-row:2;margin:0}
+  .story-page .story-crew .sx-intro__big{font-size:clamp(1.25rem,1.9vw,1.65rem)}
+  .story-page .story-crew .sx-intro p:not(.sx-intro__big){font-size:.95rem}
+  .story-page .story-crew .crew{display:contents}
+  .story-page #camille{grid-column:1;grid-row:2}
+  .story-page #julien{grid-column:3;grid-row:2;margin-top:clamp(1.5rem,4vw,3rem)}
+  .story-page .story-crew .profile__photo{width:92%}
+  .story-page .story-crew .atlas{grid-column:1/-1;grid-row:3;margin-top:clamp(2rem,4vw,3rem)}
+}
