@@ -20,7 +20,7 @@
 .story-page .sx-blob{position:relative;margin:0;flex:0 0 57%;aspect-ratio:1/1.1}
 .story-page .sx-blob img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;box-shadow:0 34px 60px -26px rgba(0,0,0,.65);max-width:none}
 .story-page .sx-blob--a{border-radius:58% 42% 54% 46% / 46% 58% 42% 54%;transform:rotate(-6deg) translateY(-6%)}
-.story-page .sx-blob--a img{object-position:42% 30%;border-radius:58% 42% 54% 46% / 46% 58% 42% 54%}
+.story-page .sx-blob--a img{object-position:62% 45%;border-radius:58% 42% 54% 46% / 46% 58% 42% 54%}
 .story-page .sx-blob--b{margin-left:-14%;border-radius:44% 56% 42% 58% / 58% 44% 56% 42%;transform:rotate(5deg) translateY(10%)}
 .story-page .sx-blob--b img{object-position:50% 30%;border-radius:44% 56% 42% 58% / 58% 44% 56% 42%}
 .story-page .sx-label{font-family:var(--font-display);font-weight:800;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:#fff}
@@ -34,7 +34,7 @@
 
 
 /* ---------- The two of us ---------- */
-.story-page .sx-intro{max-width:720px;margin:0 auto clamp(3rem,7vw,5rem);text-align:center}
+.story-page .sx-intro{max-width:720px;margin:0 auto clamp(1rem,2vw,1.6rem);text-align:center}
 .story-page .sx-intro__big{font-family:var(--font-display);font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.25;color:#fff;margin-bottom:1.4rem}
 .story-page .sx-intro p:not(.sx-intro__big){color:#cfe3e8;line-height:1.75;margin-bottom:1rem}
 .story-page .story-atlas{position:relative;overflow:hidden;background:linear-gradient(180deg,#12788b 0%,var(--teal) 30%,var(--deep) 100%)}
@@ -44,11 +44,11 @@
 .story-page .story-atlas > .container{position:relative;z-index:1}
 .story-page .crew{align-items:start;gap:clamp(1.5rem,5vw,5rem)}
 .story-page .story-crew .profile{background:none;border:0;border-radius:0;overflow:visible}
-.story-page .story-crew .profile + .profile{margin-top:clamp(2.5rem,9vw,7rem)}
+.story-page .story-crew .profile + .profile{margin-top:clamp(1.5rem,4vw,3rem)}
 .story-page .story-crew .profile__photo{width:68%;border:0;box-shadow:none;-webkit-mask-image:none;mask-image:none;border-radius:inherit;overflow:visible}
 .story-page .story-crew .profile__photo img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 28%;box-shadow:0 40px 70px -30px rgba(0,0,0,.65)}
 .story-page #camille .profile__photo{transform:rotate(-2.5deg)}
-.story-page #camille .profile__photo img{border-radius:58% 42% 52% 48% / 46% 56% 44% 54%}
+.story-page #camille .profile__photo img{object-position:62% 45%;border-radius:58% 42% 52% 48% / 46% 56% 44% 54%}
 .story-page #julien .profile__photo{margin-left:auto;transform:rotate(2.5deg)}
 .story-page #julien .profile__photo img{border-radius:44% 56% 46% 54% / 56% 46% 54% 44%}
 .story-page .story-crew .profile__body{position:relative;margin-top:1.2rem;padding:0 .4rem}
@@ -114,3 +114,5 @@
 @media (prefers-reduced-motion:reduce){
   .story-page .story-cred{transition:none}
 }
+.story-page .story-crew .title-block{margin-bottom:clamp(1.2rem,2.4vw,1.8rem)}
+.story-page .story-crew#team{padding-top:clamp(1.5rem,3vw,2.5rem)}
