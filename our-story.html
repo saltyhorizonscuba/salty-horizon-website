@@ -40,7 +40,8 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="css/styles.css?v=82">
-<link rel="stylesheet" href="css/our-story.css?v=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap">
+<link rel="stylesheet" href="css/our-story.css?v=2">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -136,10 +137,12 @@
 <main>
 
 <!-- ============ HERO ============ -->
-<section class="pagehero pagehero--plain story-hero sx-hero">
-  <div class="container sx-hero__grid">
+<section class="sx-hero">
+  <div class="sx-hero__sky"><picture><source type="image/webp" srcset="images/charter-sunset.webp"><img src="images/charter-sunset.jpg" width="1124" height="1500" alt="" fetchpriority="high"></picture></div>
+  <div class="sx-bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="container sx-hero__inner">
     <div class="sx-hero__copy">
-      <span class="story-hero__kicker">Our Story</span>
+      <p class="sx-hand sx-hand--hello">hi, we're Camille &amp; Julien</p>
       <h1>Two divers.<br><em>One shared passion.</em></h1>
       <p class="story-hero__sub">A life shaped by the ocean, from Australia to the Pacific coast of Costa Rica.</p>
       <div class="story-trust">
@@ -147,21 +150,27 @@
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>12 years of diving experience</span>
       </div>
     </div>
-    <div class="sx-hero__faces">
-      <figure class="sx-arch sx-arch--a"><picture><source type="image/webp" srcset="images/story-camille.webp?v=1"><img src="images/story-camille.jpg?v=1" width="1000" height="878" alt="Camille Segonne, PADI instructor, smiling underwater"></picture><figcaption>Camille</figcaption></figure>
-      <figure class="sx-arch sx-arch--b"><picture><source type="image/webp" srcset="images/story-julien.webp?v=1"><img src="images/story-julien.jpg?v=1" width="1000" height="878" alt="Julien Escales, PADI instructor, making a shaka sign in an underwater cave"></picture><figcaption>Julien</figcaption></figure>
-    </div>
   </div>
-  <div class="wave-divider wave-divider--cream" aria-hidden="true">
-    <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,30 C960,60 1200,10 1440,40 L1440,100 L0,100 Z"></path></svg>
+  <div class="sx-hero__faces">
+    <figure class="sx-blob sx-blob--a"><picture><source type="image/webp" srcset="images/story-camille.webp?v=1"><img src="images/story-camille.jpg?v=1" width="1000" height="878" alt="Camille Segonne, PADI instructor, smiling underwater"></picture><span class="sx-hand">Camille</span></figure>
+    <figure class="sx-blob sx-blob--b"><picture><source type="image/webp" srcset="images/story-julien.webp?v=1"><img src="images/story-julien.jpg?v=1" width="1000" height="878" alt="Julien Escales, PADI instructor, making a shaka sign in an underwater cave"></picture><span class="sx-hand">Julien</span></figure>
   </div>
+  <svg class="sx-wave sx-wave--1" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0,90 C180,40 360,150 600,100 C840,50 1040,140 1240,90 C1340,66 1400,80 1440,92 L1440,220 L0,220 Z"/></svg>
+  <svg class="sx-wave sx-wave--2" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0,120 C220,70 420,160 680,115 C920,72 1120,150 1440,100 L1440,220 L0,220 Z"/></svg>
+  <svg class="sx-wave sx-wave--3" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0,150 C240,110 480,180 720,145 C960,110 1200,175 1440,140 L1440,220 L0,220 Z"/></svg>
 </section>
 
 <!-- ============ INTRO ============ -->
 <section class="section story-lede">
   <div class="container sx-lede">
-    <div class="sx-chap" data-reveal><b>01</b><span>How it began</span></div>
+    <div class="sx-lede__media" data-reveal>
+      <span class="sx-lede__blob" aria-hidden="true"></span>
+      <picture><source type="image/webp" srcset="images/about.webp?v=1"><img class="sx-lede__main" loading="lazy" src="images/about.jpg?v=3" width="1338" height="1175" alt="Camille and Julien, PADI dive instructors, diving together in Tamarindo, Costa Rica"></picture>
+      <picture><source type="image/webp" srcset="images/colby.webp?v=1"><img class="sx-lede__chip" loading="lazy" src="images/colby.jpg?v=1" width="1500" height="1001" alt="Diver gliding over the sea floor in clear blue water"></picture>
+      <span class="sx-hand sx-hand--note">us, underwater</span>
+    </div>
     <div class="story-lede__text" data-reveal>
+      <div class="sx-chap"><b>5 m</b><span>How it began</span></div>
       <p class="story-lede__big">Our story began far from Costa Rica, in Australia, where we first met through our shared love for the ocean and adventure.</p>
       <p>Since then, diving has taken us around the world, from the Caribbean and Pacific to Indonesia, Australia, Europe, and the waters of Costa Rica. We travelled, worked, trained, taught, explored, and learned from different diving communities and marine environments.</p>
       <p>Those experiences shaped the way we see diving today. For us, diving has never been simply about checking a dive site off a list. It is about slowing down, paying attention, learning something new, and creating a genuine connection with the ocean.</p>
@@ -173,7 +182,7 @@
 <section class="section story-atlas story-crew" id="team">
   <div class="container">
     <div class="title-block center" data-reveal>
-      <div class="sx-chap sx-chap--center"><b>02</b><span>The two of us</span></div>
+      <div class="sx-chap sx-chap--center"><b>12 m</b><span>The two of us</span></div>
       <span class="eyebrow">The two of us</span>
       <h2 class="h-title">Two divers, one route</h2>
       <p class="lead">Meet your instructors, then follow the oceans that took us to Tamarindo. Tap a pin to explore.</p>
@@ -254,7 +263,7 @@
 <section class="section story-brand">
   <div class="container">
     <div class="story-brand__head" data-reveal>
-      <div class="sx-chap sx-chap--center"><b>03</b><span>The project</span></div>
+      <div class="sx-chap sx-chap--center"><b>20 m</b><span>The project</span></div>
       <span class="eyebrow">Salty Horizon</span>
       <h2 class="h-title">And then came Salty Horizon.</h2>
       <ul class="story-brand__words" aria-label="Personal, flexible, thoughtful"><li>Personal.</li><li>Flexible.</li><li>Thoughtful.</li></ul>
@@ -299,13 +308,13 @@
 <section class="section section--dark">
   <div class="container">
     <div class="title-block center" data-reveal>
-      <div class="sx-chap sx-chap--center"><b>04</b><span>The promise</span></div>
+      <div class="sx-chap sx-chap--center"><b>30 m</b><span>The promise</span></div>
       <span class="eyebrow">Why dive with us</span>
       <h2 class="h-title">Adventurous, never careless</h2>
       <p class="lead">We love wild places. We also know that the best dive is the one where you feel completely safe.</p>
     </div>
     <div class="story-creds" data-reveal>
-      <div class="story-cred story-cred--lead">
+      <div class="story-cred">
         <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg></span>
         <h3>PADI Certified Instructors</h3>
         <p>Both of us teach to PADI standards, the world's most widely recognised dive training system. Camille is also a Master Scuba Diver Trainer.</p>
@@ -343,6 +352,7 @@
 <section class="section">
   <div class="container">
     <figure class="story-quote" data-reveal>
+      <span class="sx-tape" aria-hidden="true"></span>
       <blockquote>Camille and Julien are both very experienced divers who prioritize making sure that their divers are safe and equipped. They're both professional, kind and it made our entire trip to Costa Rica so amazing!</blockquote>
       <figcaption>Matilda Lucas · Google review</figcaption>
       <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
@@ -379,6 +389,23 @@
   </div>
 </footer>
 
+<div class="sx-gauge" aria-hidden="true"><span class="sx-gauge__top">0 m</span><span class="sx-gauge__line"><i data-gauge-dot></i></span><b data-gauge-val>0 m</b></div>
+<script>
+(function(){
+  var dot=document.querySelector('[data-gauge-dot]'),val=document.querySelector('[data-gauge-val]');
+  if(!dot||!val) return;
+  var tick=false;
+  function update(){
+    tick=false;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    var r=h>0?Math.min(1,Math.max(0,window.scrollY/h)):0;
+    dot.style.top=(r*100)+'%';
+    val.textContent=Math.round(r*30)+' m';
+  }
+  window.addEventListener('scroll',function(){ if(!tick){tick=true;requestAnimationFrame(update);} },{passive:true});
+  update();
+})();
+</script>
 <div class="fab">
   <a class="wa" href="https://wa.me/50687759641" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607z"/></svg></a>
   <button class="top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
