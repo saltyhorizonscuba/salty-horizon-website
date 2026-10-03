@@ -57,7 +57,6 @@
 .story-page .story-crew .profile__chips li + li::before{content:"/";margin-right:.6rem;color:var(--sand)}
 .story-page .story-crew .profile__chips{gap:.35rem .6rem}
 .story-page .atlas__map{background:none;border:0;padding:0;border-radius:0}
-.story-page .atlas__panel{background:#fbf6ea;border-radius:6px;transform:rotate(-1.4deg);box-shadow:0 26px 44px -22px rgba(0,0,0,.6)}
 
 /* ---------- 20 m: Salty Horizon over the manta ---------- */
 .story-page .story-brand{background:linear-gradient(180deg,rgba(6,26,36,.78),rgba(6,26,36,.5) 45%,rgba(6,26,36,.85)),url(../images/manta.webp) center 30%/cover no-repeat}
@@ -126,4 +125,28 @@
   .story-page #julien{grid-column:3;grid-row:2;margin-top:clamp(1.5rem,4vw,3rem)}
   .story-page .story-crew .profile__photo{width:92%}
   .story-page .story-crew .atlas{grid-column:1/-1;grid-row:3;margin-top:clamp(2rem,4vw,3rem)}
+}
+
+/* ---------- Postcard info card, map on the left ---------- */
+@media (min-width:1000px){
+  .story-page .atlas{grid-template-columns:minmax(0,2.3fr) minmax(0,1fr);align-items:center;justify-items:stretch;gap:clamp(1.5rem,3vw,3rem)}
+  .story-page .atlas .postcard{margin-left:auto;margin-right:clamp(0rem,2vw,2rem)}
+}
+.story-page .postcard{position:relative;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);gap:1.1rem;width:min(100%,520px);min-height:0;padding:1.5rem 1.4rem;color:var(--text);border:9px solid transparent;border-radius:6px;background:linear-gradient(#fbf6ea,#fbf6ea) padding-box,repeating-linear-gradient(135deg,#d9534f 0 14px,#fbf6ea 14px 24px,#2b7bb9 24px 38px,#fbf6ea 38px 48px) border-box;box-shadow:0 26px 44px -22px rgba(0,0,0,.6);transform:rotate(-1.2deg)}
+.story-page .postcard__main{padding-right:1.1rem;border-right:1px solid rgba(10,39,51,.25);min-width:0}
+.story-page .postcard .atlas__panel p,.story-page .postcard__main p{font-size:.95rem;line-height:1.55;max-width:none}
+.story-page .postcard h3{font-size:clamp(1.5rem,2.6vw,2rem)}
+.story-page .postcard__side{display:flex;flex-direction:column;align-items:stretch;gap:.9rem;min-width:0}
+.story-page .postcard__stamp{align-self:flex-end;position:relative;width:64px;height:78px;display:grid;place-items:center;align-content:center;gap:.2rem;color:var(--sand);background:linear-gradient(160deg,var(--aqua),var(--deep));border:3px solid #fbf6ea;outline:3px dotted rgba(10,39,51,.5);outline-offset:0;border-radius:2px}
+.story-page .postcard__stamp svg{width:30px;height:30px}
+.story-page .postcard__stamp span{font-family:var(--font-display);font-size:.46rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.story-page .postcard__stamp::before{content:"";position:absolute;left:-42px;top:12px;width:46px;height:46px;border:2px solid rgba(10,39,51,.35);border-radius:50%;box-shadow:inset 0 0 0 5px transparent;pointer-events:none}
+.story-page .postcard__lines{display:grid;gap:1.15rem;margin-top:.5rem}
+.story-page .postcard__lines i{display:block;border-bottom:1px solid rgba(10,39,51,.3)}
+.story-page .postcard .atlas__nav{position:static;justify-content:flex-end;margin-top:auto}
+@media (max-width:560px){
+  .story-page .postcard{grid-template-columns:minmax(0,1fr)}
+  .story-page .postcard__main{padding-right:0;padding-bottom:1rem;border-right:0;border-bottom:1px solid rgba(10,39,51,.25)}
+  .story-page .postcard__side{flex-direction:row;align-items:center;justify-content:space-between}
+  .story-page .postcard__lines{display:none}
 }
