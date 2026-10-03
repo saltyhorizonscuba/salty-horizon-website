@@ -271,6 +271,8 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .dive-links a{font-family:var(--font-display);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sand);border-bottom:1px solid rgba(255,255,255,.28);padding-bottom:.2rem;transition:color .2s,border-color .2s}
 .dive-links a::after{content:" \2192"}
 .dive-links a:hover,.dive-links a:focus-visible{color:#fff;border-color:var(--sand)}
+.dive-facts{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem 0;list-style:none;margin:1.1rem 0 1.3rem;padding:0;font-family:var(--font-display);font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;color:var(--aqua-bright)}
+.dive-facts li:not(:last-child)::after{content:"";display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--sand);vertical-align:middle;margin:0 .6rem}
 .dive-more-toggle{display:none}
 .dive-carousel .about-copy p.dive-more[hidden]{display:block}
 @media (max-width:760px){
@@ -285,8 +287,8 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   .dive-carousel .lead{font-size:.95rem}
   .dive-carousel .about-copy p:not(.lead){font-size:.92rem}
   .dive-carousel .about-copy p+p{margin-top:.8rem}
-  .dive-carousel .chips{margin-top:1.2rem;gap:.4rem}
-  .dive-carousel .chip{font-size:.62rem;padding:.38rem .65rem;letter-spacing:.03em}
+  .dive-facts{font-size:.66rem;letter-spacing:.08em;margin:.9rem 0 1rem}
+  .dive-facts li:not(:last-child)::after{margin:0 .55rem}
   .dive-dots{margin-top:1.3rem}
   .dive-more-toggle{
     all:unset;box-sizing:border-box;display:flex;align-items:center;gap:.35rem;cursor:pointer;
@@ -435,6 +437,21 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 .gallery-nav:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
 .gallery-nav--prev{left:-.6rem}
 .gallery-nav--next{right:-.6rem}
+/* Desktop: concave "wall" gallery. Cards sit on a cylinder around the viewer (side cards come closer and turn to face the centre), gaps are tight, and core.js drifts the ring continuously, driving a fractional --offset per card. */
+@media (min-width:761px){
+  #gallery .gallery-track{height:500px;perspective:1700px;perspective-origin:50% 50%}
+  #gallery .gallery-track figure{
+    width:240px;aspect-ratio:3/4;border-radius:10px;box-shadow:0 18px 40px -22px rgba(5,18,24,.6);
+    transition:opacity .5s,box-shadow .3s;will-change:transform;
+    transform:translate(-50%,-50%)
+      translateX(calc(sin(var(--offset,0) * 19deg) * 760px))
+      translateZ(calc((1 - cos(var(--offset,0) * 19deg)) * 760px))
+      rotateY(calc(var(--offset,0) * -19deg));
+    opacity:clamp(0, calc(3.6 - var(--abs,0)), 1);
+    z-index:calc(20 - var(--abs,0));
+  }
+  #gallery .gallery-track figure[data-cf-active]{box-shadow:0 18px 40px -22px rgba(5,18,24,.6)}
+}
 @media (max-width:760px){
   .gallery-nav{display:none}
   .gallery-track{margin-inline:-5%;padding-inline:5%}

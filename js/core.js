@@ -298,21 +298,51 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const cfTrack = cfRoot.querySelector('.gallery-track');
     const cfCards = [...cfTrack.querySelectorAll('figure')];
     const n = cfCards.length;
-    let active = Math.floor(n/2), cfTimer;
+    // pos is a fractional carousel position: a rAF loop drifts it continuously
+    // (desktop only) and eases it to a target when a card is clicked/swiped.
+    let active = Math.floor(n/2), pos = active, target = null, last = 0, raf = 0, paused = false, inView = true;
+    const cfDesk = window.matchMedia('(min-width:761px)');
+    const cfReduce = window.matchMedia('(prefers-reduced-motion: reduce)');
     const cfRender = ()=>{
+      active = ((Math.round(pos) % n) + n) % n;
       cfCards.forEach((card,i)=>{
-        let d = i - active;
-        if(d > n/2) d -= n;
-        if(d < -n/2) d += n;
+        let d = i - pos;
+        d = (((d + n/2) % n) + n) % n - n/2;
         const abs = Math.abs(d);
-        card.style.setProperty('--offset', d);
-        card.style.setProperty('--abs', abs);
-        card.toggleAttribute('data-cf-hidden', abs > 3);
-        card.toggleAttribute('data-cf-active', d === 0);
+        card.style.setProperty('--offset', d.toFixed(3));
+        card.style.setProperty('--abs', abs.toFixed(3));
+        card.toggleAttribute('data-cf-hidden', abs > 3.5);
+        card.toggleAttribute('data-cf-active', i === active);
       });
     };
-    const cfGo = (i)=>{ active = (i + n) % n; cfRender(); };
-    const cfReset = ()=>{ clearInterval(cfTimer); cfTimer = setInterval(()=>cfGo(active+1), 4500); };
+    const cfGo = (i)=>{
+      let delta = (((i - pos) % n) + n) % n;
+      if(delta > n/2) delta -= n;
+      target = pos + delta;
+      cfStart();
+    };
+    const cfTick = (t)=>{
+      const dt = Math.min((t - last)/1000, .1); last = t;
+      if(target !== null){
+        const diff = target - pos;
+        if(Math.abs(diff) < .002){ pos = target; target = null; }
+        else pos += diff * Math.min(1, dt * 6);
+      } else if(!paused && !cfReduce.matches){
+        pos += dt * 0.22;
+      }
+      cfRender();
+      raf = (cfDesk.matches && inView) ? requestAnimationFrame(cfTick) : 0;
+    };
+    function cfStart(){
+      if(raf || !cfDesk.matches || !inView) return;
+      last = performance.now();
+      raf = requestAnimationFrame(cfTick);
+    }
+    const cfReset = ()=>{};
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(([en])=>{ inView = en.isIntersecting; if(inView) cfStart(); }).observe(cfRoot);
+    }
+    cfDesk.addEventListener('change', ()=>{ pos = Math.round(pos); target = null; cfRender(); cfStart(); });
     const cfPrev = cfRoot.querySelector('[data-gallery-prev]');
     const cfNext = cfRoot.querySelector('[data-gallery-next]');
     if(cfNext) cfNext.addEventListener('click', ()=>{ cfGo(active+1); cfReset(); });
@@ -329,8 +359,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
       const i = cfCards.indexOf(fig);
       if(i !== active){ e.stopPropagation(); cfGo(i); cfReset(); }
     }, true);
-    cfRoot.addEventListener('mouseenter', ()=>clearInterval(cfTimer));
-    cfRoot.addEventListener('mouseleave', cfReset);
 
     // Touch/drag swipe: the side cards visually overflow the track (that's
     // the point of the coverflow effect), so without this a horizontal
@@ -370,7 +398,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     cfTrack.addEventListener('pointercancel', ()=>{ cfDragging = false; cfDragX = null; cfDragY = null; cfIsHorizontal = null; });
 
     cfRender();
-    cfReset();
+    cfStart();
   }
 
   document.querySelectorAll('[data-dive-more-toggle]').forEach(b=>{
