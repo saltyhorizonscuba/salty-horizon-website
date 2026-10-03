@@ -24,7 +24,7 @@
 .story-page .sx-hero .story-hero__sub{margin:1.3rem 0 0;max-width:42ch;text-align:left}
 .story-page .sx-hero .story-trust{justify-content:flex-start}
 .story-page .sx-hero__faces{position:relative;display:flex;justify-content:center;gap:clamp(.7rem,2vw,1.2rem);padding-bottom:2.2rem}
-.story-page .sx-arch{position:relative;isolation:isolate;flex:1 1 0;max-width:260px;margin:0;border-radius:999px 999px 18px 18px;overflow:hidden;border:2px solid rgba(231,201,138,.55);box-shadow:var(--shadow);aspect-ratio:3/4.4;background:var(--deep)}
+.story-page .sx-arch{position:relative;isolation:isolate;flex:1 1 0;max-width:260px;margin:0;border-radius:999px 999px 18px 18px;overflow:hidden;border:0;box-shadow:0 30px 60px -28px rgba(0,0,0,.55);aspect-ratio:3/4.4;background:var(--deep)}
 .story-page .sx-arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .story-page .sx-arch--a img{object-position:42% 30%}
 .story-page .sx-arch--b img{object-position:50% 30%}
@@ -42,7 +42,10 @@
 /* ---------- 02 Crew ---------- */
 .story-page .story-crew .profile__photo{border-radius:999px 999px 0 0}
 .story-page .story-crew .profile__photo img{aspect-ratio:4/3.2;object-position:center 28%}
-.story-page .story-crew .profile{background:rgba(255,255,255,.06);border-color:rgba(231,201,138,.25)}
+.story-page .story-crew .profile{background:none;border:0;border-radius:0;overflow:visible}
+.story-page .story-crew .profile__photo{border:0;box-shadow:0 30px 60px -28px rgba(0,0,0,.55)}
+.story-page .story-crew .profile__body{padding:1.4rem .2rem 0}
+.story-page .atlas__map{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent),linear-gradient(transparent,#000 14%,#000 80%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent),linear-gradient(transparent,#000 14%,#000 80%,transparent);mask-composite:intersect}
 .story-page .story-crew .profile__body h3{font-size:clamp(2.2rem,4.4vw,3.4rem);line-height:1;margin-bottom:.9rem}
 .story-page .story-crew .profile__role{color:var(--sand)}
 
@@ -99,3 +102,8 @@
   .story-page .story-cred{transition:none}
   .story-page .story-cred:hover{transform:none}
 }
+
+/* ---------- Smooth edges: feather instead of frames ---------- */
+.story-page .story-crew .profile__photo{box-shadow:none;-webkit-mask-image:linear-gradient(#000 62%,transparent 100%);mask-image:linear-gradient(#000 62%,transparent 100%)}
+.story-page .story-crew .profile__body{margin-top:-2.6rem;position:relative}
+.story-page .atlas__map{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent),linear-gradient(transparent,#000 14%,#000 80%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent),linear-gradient(transparent,#000 14%,#000 80%,transparent);mask-composite:intersect}
