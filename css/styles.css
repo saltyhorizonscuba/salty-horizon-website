@@ -967,7 +967,7 @@ body:has(.pagehero--mobile-plain) .header .brand--logo img{height:52px}
 .journal-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .journal-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,39,51,0) 45%,rgba(8,28,37,.92) 100%)}
 /* Category pill, top-left corner — color keyed to topic so the grid reads at a glance */
-.journal-card__cat{position:absolute;top:1.1rem;left:1.1rem;z-index:2;font-family:var(--font-display);font-weight:700;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;padding:.42rem .85rem;border-radius:6px;color:var(--ink);background:var(--sand)}
+.journal-card__cat{position:absolute;top:1.1rem;left:1.1rem;z-index:2;font-family:var(--font-display);font-weight:700;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;padding:.42rem .85rem;border-radius:6px;background:var(--deep);color:#fff}
 .journal-cat--marine-life{background:var(--aqua);color:#fff}
 .journal-cat--marine-science{background:var(--teal);color:#fff}
 .journal-cat--photography{background:var(--aqua-bright);color:var(--ink)}

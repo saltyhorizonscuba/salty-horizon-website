@@ -207,8 +207,8 @@
 .story-page .story-brand h2{font-size:clamp(2.6rem,6.6vw,5.2rem);line-height:1}
 .story-page .story-brand__head{text-align:center;max-width:none}
 .story-page .story-brand__words{align-items:center;gap:.1rem 0;flex-direction:column;margin-top:1.4rem}
-.story-page .story-brand__words li{font-size:clamp(1.8rem,5.4vw,3.6rem);line-height:1.05}
-.story-page .story-brand__words li:nth-child(2){color:#fff}
+.story-page .story-brand__words li{font-size:clamp(1.8rem,5.4vw,3.6rem);line-height:1.05;color:var(--aqua-bright)}
+.story-page .story-brand__words li:nth-child(2){color:var(--aqua-bright)}
 .story-page .story-brand__words li:nth-child(3){color:var(--aqua-bright)}
 .story-page .story-brand__cols>div{border-top:2px dashed rgba(231,201,138,.5);padding-top:1.3rem}
 .story-page .story-brand__close{border:0;background:none;padding:0;text-align:center;margin:clamp(2rem,4vw,3rem) auto 0;max-width:640px}
@@ -261,7 +261,7 @@
   .story-page .story-crew > .container{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,1fr);column-gap:clamp(1.5rem,3.5vw,3.5rem);align-items:start}
   .story-page .story-crew .title-block{grid-column:1/-1;grid-row:1}
   .story-page .story-crew .sx-intro{grid-column:2;grid-row:2;margin:0}
-  .story-page .story-crew .sx-intro p{font-size:.95rem}
+  .story-page .story-crew .sx-intro p{font-size:1.05rem}
   .story-page .story-crew .crew{display:contents}
   .story-page #camille{grid-column:1;grid-row:2}
   .story-page #julien{grid-column:3;grid-row:2;margin-top:clamp(1.5rem,4vw,3rem)}
@@ -381,3 +381,12 @@
   .story-page .story-crew .profile + .profile{margin-top:2.2rem}
   .story-page .story-crew .profile__body{margin-top:1rem}
 }
+/* Brand: funnel = wide lead, two columns, narrow close */
+.story-page .story-brand__lead{max-width:860px;margin:0 auto clamp(1.8rem,3.5vw,2.8rem);text-align:center;font-size:clamp(1.15rem,2vw,1.35rem);line-height:1.6;color:#e4eef1}
+.story-page .story-brand__cols{max-width:900px}
+@media (min-width:901px){.story-page .story-brand__cols p,.story-page .story-brand__close p:not(.story-brand__sign):not(.story-brand__tag){font-size:1.05rem}}
+.story-page .story-brand__close p{margin-bottom:.9rem}
+.story-page .story-brand .story-brand__sign{margin:0 0 1.2rem}
+.story-page .story-brand .story-brand__tag{margin-top:1.6rem}
+
+.story-page .story-crew .sx-intro p.sx-intro__lead,.story-page .sx-intro .sx-intro__lead{font-family:var(--font-display);font-weight:800;font-size:clamp(1.7rem,3.2vw,2.4rem);line-height:1.15;color:#fff;margin-bottom:1.6rem}
