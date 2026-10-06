@@ -459,5 +459,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
     diveCarousel.addEventListener('pointercancel', ()=>{ diveDragging = false; diveDragX = null; diveDragY = null; diveIsHorizontal = null; });
   }
 
+  // courses page side menu: highlight the section currently in view
+  const railLinks=[...document.querySelectorAll('.courses-nav a')];
+  if(railLinks.length && 'IntersectionObserver' in window){
+    const byId=new Map();
+    railLinks.forEach(a=>{ const el=document.querySelector(a.getAttribute('href')); if(el) byId.set(el,a); });
+    const spy=new IntersectionObserver(entries=>{
+      entries.forEach(en=>{
+        if(!en.isIntersecting) return;
+        railLinks.forEach(a=>a.classList.toggle('is-active', a===byId.get(en.target)));
+      });
+    },{rootMargin:'-30% 0px -60% 0px'});
+    byId.forEach((a,el)=>spy.observe(el));
+  }
+
   document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 });
