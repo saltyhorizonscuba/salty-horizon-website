@@ -576,7 +576,10 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
   display:flex;align-items:center;gap:.5rem;transition:color .25s;
 }
 .footer-toggle:hover,.footer-toggle.is-open{color:var(--sand)}
-.cancel-policy ul{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+.cancel-policy h4{font-size:.85rem;color:var(--sand);margin:1rem 0 .4rem}
+.cancel-policy h4:first-child{margin-top:0}
+.cancel-policy p{font-size:.82rem;line-height:1.55;margin-bottom:.5rem}
+.cancel-policy ul{list-style:none;display:flex;flex-direction:column;gap:.5rem}
 .cancel-policy li{font-size:.82rem;line-height:1.55;padding-left:1rem;position:relative}
 .cancel-policy li::before{content:"•";position:absolute;left:0;color:var(--sand)}
 .socials{display:flex;gap:.8rem;margin-top:1.2rem}
