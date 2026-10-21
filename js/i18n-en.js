@@ -2,7 +2,7 @@
    Flat key -> translated string map for this page's single language. */
 const I18N_DATA = {
     'meta.home.title':'Private Scuba Diving in Tamarindo, Costa Rica | Salty Horizon',
-    'meta.home.desc':'Private, personalized scuba diving in Tamarindo with PADI instructors Camille & Julien. Discover Scuba, fun dives at Catalina & Bat Islands. Book now!',
+    'meta.home.desc':'Private scuba diving in Tamarindo with PADI instructors Camille & Julien. A small local dive shop: Discover Scuba, Catalina & Bat Islands fun dives. Book now!',
     'meta.exp.title':'Scuba Diving Experiences in Tamarindo | Salty Horizon',
     'meta.exp.desc':'Private scuba in Tamarindo: Discover Scuba, fun dives at Las Catalinas & Bat Island, PADI courses & snorkeling. Photos and gear included on every dive.',
     'meta.padi.title':'PADI Courses in Tamarindo, Costa Rica | Salty Horizon',
@@ -22,7 +22,7 @@ const I18N_DATA = {
     'about.eyebrow':'Who we are',
     'about.title':'Diving done the right way',
     'about.lead':'We are Camille & Julien, two PADI instructors who turned a lifelong love of the ocean into a different kind of dive experience.',
-    'about.p1':'Trilingual in English, French and Spanish, we welcome travelers from all over the world and adapt every session to your comfort, goals and pace. No rushed schedules, just small, fully private groups and our full attention.',
+    'about.p1':'Trilingual in English, French and Spanish, we run a small dive shop in Tamarindo and welcome travelers from all over the world, adapting every session to your comfort, goals and pace. No rushed schedules, just small, fully private groups and our full attention.',
     'about.f1t':'Trilingual Guides','about.f1d':'Enjoy private guidance in English, Spanish, or French.',
     'about.f2t':'Local Experts','about.f2d':'Discover our little secrets that make every dive unique.',
     'about.f3t':'Memories Included','about.f3d':'Forget about getting the perfect shot. Enjoy your dive while we capture the experience for you.',
