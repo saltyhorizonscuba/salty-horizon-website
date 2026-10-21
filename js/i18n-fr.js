@@ -2,7 +2,7 @@
    Flat key -> translated string map for this page's single language. */
 const I18N_DATA = {
     'meta.home.title':'Plongée sous-marine privée à Tamarindo, Costa Rica | Salty Horizon',
-    'meta.home.desc':'Plongée sous-marine privée et personnalisée à Tamarindo avec les instructeurs PADI Camille & Julien. Baptême de plongée, sorties aux îles Catalinas & Bat Islands. Réservez maintenant !',
+    'meta.home.desc':'Plongée privée à Tamarindo avec les instructeurs PADI Camille & Julien. Un petit dive shop local : baptême de plongée, sorties aux îles Catalinas & Bat Islands. Réservez maintenant !',
     'meta.exp.title':'Expériences de plongée à Tamarindo | Salty Horizon',
     'meta.exp.desc':'Plongée privée à Tamarindo : baptême de plongée, sorties aux îles Catalinas & Bat Islands, formations PADI et snorkeling. Photos et matériel inclus à chaque plongée.',
     'meta.padi.title':'Formations PADI à Tamarindo, Costa Rica | Salty Horizon',
@@ -22,7 +22,7 @@ const I18N_DATA = {
     'about.eyebrow':'Qui sommes-nous',
     'about.title':'La plongée comme elle devrait être',
     'about.lead':'Nous sommes Camille & Julien, deux instructeurs PADI qui ont transformé une passion de toujours pour l’océan en une expérience de plongée différente.',
-    'about.p1':'Trilingues (français, anglais, espagnol), nous accueillons des voyageurs du monde entier et adaptons chaque sortie à votre niveau, vos envies et votre rythme. Pas d’horaires pressés, juste de petits groupes 100 % privés et toute notre attention.',
+    'about.p1':'Trilingues (français, anglais, espagnol), nous tenons un petit dive shop à Tamarindo et accueillons des voyageurs du monde entier, en adaptant chaque sortie à votre niveau, vos envies et votre rythme. Pas d’horaires pressés, juste de petits groupes 100 % privés et toute notre attention.',
     'about.f1t':'Guides trilingues','about.f1d':'Profitez d’un accompagnement privé en anglais, espagnol ou français.',
     'about.f2t':'Experts locaux','about.f2d':'Découvrez nos petits secrets qui rendent chaque plongée unique.',
     'about.f3t':'Souvenirs inclus','about.f3d':'Oubliez la quête de la photo parfaite. Profitez de votre plongée pendant que nous immortalisons l’expérience pour vous.',

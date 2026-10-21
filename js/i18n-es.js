@@ -2,7 +2,7 @@
    Flat key -> translated string map for this page's single language. */
 const I18N_DATA = {
     'meta.home.title':'Buceo privado en Tamarindo, Costa Rica | Salty Horizon',
-    'meta.home.desc':'Buceo privado y personalizado en Tamarindo con los instructores PADI Camille & Julien. Bautismo de buceo, inmersiones en las Islas Catalinas y Bat Islands. ¡Reserva ahora!',
+    'meta.home.desc':'Buceo privado en Tamarindo con los instructores PADI Camille & Julien. Un pequeño dive shop local: bautismo de buceo, inmersiones en las Islas Catalinas y Bat Islands. ¡Reserva ahora!',
     'meta.exp.title':'Experiencias de buceo en Tamarindo | Salty Horizon',
     'meta.exp.desc':'Buceo privado en Tamarindo: bautismo de buceo, inmersiones en las Islas Catalinas y Bat Island, cursos PADI y snorkel. Fotos y equipo incluidos en cada inmersión.',
     'meta.padi.title':'Cursos PADI en Tamarindo, Costa Rica | Salty Horizon',
@@ -22,7 +22,7 @@ const I18N_DATA = {
     'about.eyebrow':'Quiénes somos',
     'about.title':'Bucear como se debe',
     'about.lead':'Somos Camille & Julien, dos instructores PADI que convirtieron un amor de toda la vida por el océano en una forma distinta de bucear.',
-    'about.p1':'Trilingües (español, inglés y francés), recibimos viajeros de todo el mundo y adaptamos cada salida a tu comodidad, tus metas y tu ritmo. Sin horarios apresurados, solo grupos pequeños 100 % privados y toda nuestra atención.',
+    'about.p1':'Trilingües (español, inglés y francés), tenemos un pequeño dive shop en Tamarindo y recibimos viajeros de todo el mundo, adaptando cada salida a tu comodidad, tus metas y tu ritmo. Sin horarios apresurados, solo grupos pequeños 100 % privados y toda nuestra atención.',
     'about.f1t':'Guías trilingües','about.f1d':'Disfruta de un acompañamiento privado en inglés, español o francés.',
     'about.f2t':'Expertos locales','about.f2d':'Descubre nuestros pequeños secretos que hacen que cada inmersión sea única.',
     'about.f3t':'Recuerdos incluidos','about.f3d':'Olvídate de conseguir la foto perfecta. Disfruta de tu inmersión mientras capturamos la experiencia por ti.',
