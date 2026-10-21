@@ -9,8 +9,8 @@ const I18N_DATA = {
     'meta.padi.desc':'Formations PADI privées à Tamarindo : Open Water Diver et Advanced Open Water Diver. Progressez à votre rythme avec un instructeur PADI professionnel.',
     'meta.charters.title':'Charters privés à Tamarindo, Costa Rica | Salty Horizon × Playgrounds',
     'meta.charters.desc':"Une journée entièrement privée sur le Pacifique : plongée, surf, observation des baleines, snorkeling et plus, à bord d'un catamaran privé avec les guides de plongée de Salty Horizon. Tamarindo, Costa Rica.",
-    'meta.faq.title':'FAQ Plongée : Vie marine, saisons et conditions | Salty Horizon',
-    'meta.faq.desc':'Réponses directes aux questions que se posent les plongeurs avant de réserver : vie marine, saison des raies manta et des baleines, conditions de plongée, certification PADI avec Salty Horizon.',
+    'meta.faq.title':'FAQ Plongée : Tamarindo & îles Catalinas, Costa Rica | Salty Horizon',
+    'meta.faq.desc':'Réponses à de vraies questions sur la plongée à Tamarindo et aux îles Catalinas : vie marine, saison des raies manta et des baleines, conditions de plongée, certification PADI avec Salty Horizon.',
     'nav.experiences':'Expériences','nav.charters':'Charters privés','nav.courses':'Formations PADI','nav.faq':'FAQ','nav.about':'À propos','nav.story':'Notre histoire','nav.blog':'The Blog',
     'nav.gallery':'Galerie','nav.reviews':'Avis','nav.contact':'Contact','cta.book':'Réserver','cta.bookCourse':'Réserver un cours','cta.learnMore':'En savoir plus',
 
@@ -166,7 +166,7 @@ const I18N_DATA = {
     'faq.a5':'Oui, pour le baptême de plongée (Discover Scuba Diving), les cours Open Water et Advanced Open Water, vous devez confirmer votre aptitude médicale à la plongée ; un formulaire médical est disponible à télécharger et doit être complété avant le cours.',
 
     'tfaq.crumb':'FAQ plongée',
-    'tfaq.page.h1':'FAQ Plongée : vie marine, saisons et certification',
+    'tfaq.page.h1':'FAQ Plongée : tout savoir sur la plongée à Tamarindo',
     'tfaq.cta':'Prêt à plonger ? Découvrez notre <a href="./">plongée privée à Tamarindo</a> ou parcourez toutes nos <a href="experiences.html">expériences de plongée</a>.',
     'tfaq.intro':'De vraies questions sur la plongée à Tamarindo et aux îles Catalinas, avec des réponses directes : vie marine, saison des raies manta et des baleines, conditions de plongée locales, certification. La faune est sauvage : les observations mentionnées ci-dessous sont fréquemment rapportées, jamais garanties.',
     'tfaq.guideAll':'Toutes nos plongées à Tamarindo',

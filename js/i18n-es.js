@@ -9,8 +9,8 @@ const I18N_DATA = {
     'meta.padi.desc':'Cursos PADI privados en Tamarindo: Open Water Diver y Advanced Open Water Diver. Aprende a tu propio ritmo con un instructor PADI profesional.',
     'meta.charters.title':'Charters privados en Tamarindo, Costa Rica | Salty Horizon × Playgrounds',
     'meta.charters.desc':'Un día completamente privado en el Pacífico: buceo, surf, avistamiento de ballenas, snorkel y más, a bordo de un catamarán privado con los guías de buceo de Salty Horizon. Tamarindo, Costa Rica.',
-    'meta.faq.title':'FAQ de Buceo: Vida Marina, Temporadas y Condiciones | Salty Horizon',
-    'meta.faq.desc':'Respuestas directas a las preguntas que se hacen los buzos antes de reservar: vida marina, temporada de rayas manta y ballenas, condiciones de buceo y certificación PADI con Salty Horizon.',
+    'meta.faq.title':'FAQ de Buceo: Tamarindo e Islas Catalinas, Costa Rica | Salty Horizon',
+    'meta.faq.desc':'Respuestas a preguntas reales sobre el buceo en Tamarindo y las Islas Catalinas: vida marina, temporada de rayas manta y ballenas, condiciones de buceo y certificación PADI con Salty Horizon.',
     'nav.experiences':'Experiencias','nav.charters':'Charters privados','nav.courses':'Cursos PADI','nav.faq':'FAQ','nav.about':'Nosotros','nav.story':'Nuestra historia','nav.blog':'The Blog',
     'nav.gallery':'Galería','nav.reviews':'Reseñas','nav.contact':'Contacto','cta.book':'Reservar','cta.bookCourse':'Reservar un curso','cta.learnMore':'Saber más',
 
@@ -166,7 +166,7 @@ const I18N_DATA = {
     'faq.a5':'Sí, para el bautismo de buceo (Discover Scuba Diving), los cursos Open Water y Advanced Open Water debes confirmar tu aptitud médica para bucear; hay un formulario médico disponible para descargar que debe completarse antes del curso.',
 
     'tfaq.crumb':'FAQ de buceo',
-    'tfaq.page.h1':'FAQ de Buceo: Vida Marina, Temporadas y Certificación',
+    'tfaq.page.h1':'FAQ de Buceo: todo lo que debes saber sobre bucear en Tamarindo',
     'tfaq.cta':'¿Listo para bucear? Descubre nuestro <a href="./">buceo privado en Tamarindo</a> o explora todas nuestras <a href="experiences.html">experiencias de buceo</a>.',
     'tfaq.intro':'Preguntas reales sobre el buceo en Tamarindo y en las Islas Catalinas, con respuestas directas: vida marina, temporada de rayas manta y ballenas, condiciones de buceo locales y certificación. La fauna es salvaje: los avistamientos mencionados abajo se reportan con frecuencia, pero nunca están garantizados.',
     'tfaq.guideAll':'Todo el buceo en Tamarindo',

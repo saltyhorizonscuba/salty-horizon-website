@@ -9,8 +9,8 @@ const I18N_DATA = {
     'meta.padi.desc':'Private PADI courses in Tamarindo: Open Water Diver certification and Advanced Open Water Diver certification. Learn at your own pace with a professional PADI instructor.',
     'meta.charters.title':'Private Boat Charters in Tamarindo, Costa Rica | Salty Horizon',
     'meta.charters.desc':'Book a private day at sea in Tamarindo: scuba, snorkeling, paddle boarding, e-foil & jet ski. Fully customized charters designed around you.',
-    'meta.faq.title':'Diving FAQ: Marine Life, Seasons & Conditions | Salty Horizon',
-    'meta.faq.desc':'Straight answers to the questions divers ask before booking: marine life, manta ray and whale season, diving conditions and PADI certification with Salty Horizon.',
+    'meta.faq.title':'Scuba Diving FAQ: Tamarindo & Catalina Islands, Costa Rica | Salty Horizon',
+    'meta.faq.desc':'Answers to real questions about scuba diving in Tamarindo and the Catalina Islands: marine life, manta ray and whale season, diving conditions, and PADI certification with Salty Horizon.',
     'nav.experiences':'Experiences','nav.charters':'Private Charters','nav.courses':'PADI Courses','nav.faq':'FAQ','nav.about':'About','nav.story':'Our Story','nav.blog':'The Blog',
     'nav.gallery':'Gallery','nav.reviews':'Reviews','nav.contact':'Contact','cta.book':'Book a dive','cta.bookCourse':'Book a course','cta.learnMore':'Learn more',
 
@@ -166,7 +166,7 @@ const I18N_DATA = {
     'faq.a5':'Yes, for the Discover Scuba Diving, Open Water and Advanced Open Water courses you need to confirm you are medically fit to dive; a medical form is available to download and must be completed before the course.',
 
     'tfaq.crumb':'Scuba Diving FAQ',
-    'tfaq.page.h1':'Diving FAQ: Marine Life, Seasons & Getting Certified',
+    'tfaq.page.h1':'Scuba Diving FAQ: Everything You Need to Know About Diving in Tamarindo',
     'tfaq.cta':'Ready to dive? Discover our <a href="./">private scuba diving in Tamarindo</a> or browse all our <a href="experiences.html">scuba diving experiences</a>.',
     'tfaq.intro':'Real questions about diving in Tamarindo and at the Catalina Islands, answered directly: marine life, manta ray and whale season, local diving conditions, and getting certified. Wildlife is wild: sightings mentioned below are commonly reported, never guaranteed.',
     'tfaq.guideAll':'All Tamarindo diving experiences',
