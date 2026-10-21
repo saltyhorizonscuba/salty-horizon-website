@@ -34,7 +34,7 @@ function gtag_report_conversion(url, openInNewTab, source){
   gtag('event', 'whatsapp_click', {
     'send_to': 'G-MGJK95GCH7',
     'link_url': url,
-    'source': source || 'whatsapp'
+    'click_location': source || 'whatsapp'
   });
   setTimeout(go, 1000);
   return false;
