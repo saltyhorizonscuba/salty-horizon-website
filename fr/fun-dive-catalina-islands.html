@@ -40,11 +40,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="preconnect" href="https://wa.me">
-<link rel="preload" as="script" href="../js/i18n-fr.js?v=15">
+<link rel="preload" as="script" href="../js/i18n-fr.js?v=16">
 <link rel="preload" as="script" href="../js/core.js?v=9">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
-<link rel="stylesheet" href="../css/styles.css?v=86">
+<link rel="stylesheet" href="../css/styles.css?v=87">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -271,8 +271,13 @@
       <button type="button" class="cart-drawer__close" data-cart-close aria-label="Fermer">&times;</button>
     </div>
     <div class="cart-drawer__list" data-cart-list></div>
+    <div class="cart-promo" data-cart-promo hidden>
+      <div class="cart-promo__form"><input type="text" data-cart-promo-input data-i18n-ph="cart.promoPh" placeholder="Entrer le code" aria-label="Code promo" autocomplete="off" autocapitalize="characters" spellcheck="false"><button type="button" class="btn btn--outline" data-cart-promo-apply data-i18n="cart.promoApply">Appliquer</button></div>
+      <p class="cart-promo__msg" data-cart-promo-msg role="status"></p>
+    </div>
     <div class="cart-drawer__totals" data-cart-totals hidden>
       <div class="cart-drawer__row"><span data-i18n="cart.subtotal">Sous-total</span><span data-cart-subtotal>$0.00</span></div>
+      <div class="cart-drawer__row cart-drawer__row--discount" data-cart-discount-row hidden><span data-cart-discount-label></span><span data-cart-discount>-$0.00</span></div>
       <div class="cart-drawer__row"><span data-i18n="cart.tax">Taxe (13% IVA)</span><span data-cart-tax>$0.00</span></div>
       <div class="cart-drawer__row cart-drawer__row--total"><span data-i18n="cart.total">Total estimé</span><span data-cart-total>$0.00</span></div>
     </div>
@@ -284,8 +289,8 @@
   </div>
 </div>
 
-<script src="../js/i18n-fr.js?v=15"></script>
+<script src="../js/i18n-fr.js?v=16"></script>
 <script src="../js/core.js?v=9"></script>
-<script src="../js/cart.js?v=2"></script>
+<script src="../js/cart.js?v=3"></script>
 </body>
 </html>

@@ -10,6 +10,14 @@
 const CART_TAX_RATE = 0.13; // Costa Rica IVA
 const CART_MAX_QTY = 12;
 
+// Partner promo codes (case-insensitive): code -> discount rate on the subtotal.
+// Client-side only, like the rest of the cart: the booking is confirmed by hand
+// on WhatsApp, where the code is quoted so it can be checked.
+const CART_PROMOS = {
+  TOUTCOSTARICA15: 0.15,
+  VERTCR: 0.10
+};
+
 // Single source of truth for what can be added to the cart: id -> i18n key
 // (reuses the same keys already used for the experience card titles) + price.
 // price:null means "on request" (Bat Islands, PADI Courses) — excluded from
@@ -37,6 +45,14 @@ function cartGetForm(){
   catch(e){ return {}; }
 }
 function cartSaveForm(form){ localStorage.setItem('sh_cart_form', JSON.stringify(form)); }
+
+function cartGetPromo(){
+  const code = (localStorage.getItem('sh_cart_promo') || '').toUpperCase();
+  return CART_PROMOS[code] ? code : '';
+}
+function cartSavePromo(code){
+  if(code) localStorage.setItem('sh_cart_promo', code); else localStorage.removeItem('sh_cart_promo');
+}
 
 function cartAdd(id){
   if(!CART_CATALOG[id]) return;
@@ -72,8 +88,11 @@ function cartTotals(){
     if(typeof c.price === 'number') subtotal += c.price * qty;
     else hasOnRequest = true;
   });
-  const tax = subtotal * CART_TAX_RATE;
-  return { subtotal, tax, total: subtotal + tax, hasOnRequest, count, lines: Object.keys(items).length };
+  const promo = cartGetPromo();
+  const rate = promo ? CART_PROMOS[promo] : 0;
+  const discount = subtotal * rate;
+  const tax = (subtotal - discount) * CART_TAX_RATE;
+  return { subtotal, discount, promo, rate, tax, total: subtotal - discount + tax, hasOnRequest, count, lines: Object.keys(items).length };
 }
 
 // The cart can be rendered in more than one place on the same page at once
@@ -122,6 +141,15 @@ function cartRender(){
   });
 
   document.querySelectorAll('[data-cart-subtotal]').forEach(el=>{ el.textContent = '$'+tt.subtotal.toFixed(2); });
+  document.querySelectorAll('[data-cart-discount-row]').forEach(el=>{ el.hidden = !tt.promo; });
+  document.querySelectorAll('[data-cart-discount-label]').forEach(el=>{
+    el.textContent = tt.promo ? t('cart.discount')+' ('+tt.promo+', -'+Math.round(tt.rate*100)+'%)' : '';
+  });
+  document.querySelectorAll('[data-cart-discount]').forEach(el=>{ el.textContent = '-$'+tt.discount.toFixed(2); });
+  document.querySelectorAll('[data-cart-promo]').forEach(el=>{ el.hidden = ids.length === 0; });
+  document.querySelectorAll('[data-cart-promo-input]').forEach(el=>{
+    if(document.activeElement !== el) el.value = tt.promo;
+  });
   document.querySelectorAll('[data-cart-tax]').forEach(el=>{ el.textContent = '$'+tt.tax.toFixed(2); });
   document.querySelectorAll('[data-cart-total]').forEach(el=>{ el.textContent = '$'+tt.total.toFixed(2); });
   document.querySelectorAll('[data-cart-totals]').forEach(el=>{ el.hidden = tt.subtotal === 0; });
@@ -129,16 +157,28 @@ function cartRender(){
   document.querySelectorAll('[data-cart-send]').forEach(el=>{ el.disabled = ids.length === 0; });
 }
 
+function cartApplyPromo(wrap){
+  const input = wrap.querySelector('[data-cart-promo-input]');
+  const code = input.value.trim().toUpperCase();
+  const msgs = document.querySelectorAll('[data-cart-promo-msg]');
+  const say = (txt, ok)=> msgs.forEach(m=>{ m.textContent = txt; m.classList.toggle('is-ok', ok); m.classList.toggle('is-err', !ok && !!txt); });
+  if(!code){ cartSavePromo(''); cartRender(); say('', false); return; }
+  if(!CART_PROMOS[code]){ say(t('cart.promoInvalid'), false); return; }
+  cartSavePromo(code);
+  cartRender();
+  say(t('cart.promoApplied'), true);
+}
+
 function cartBuildMessage(form){
   const items = cartGetItems();
   const tt = cartTotals();
   const L = {
     en:{hi:'Hi Salty Horizon! I would like to book:', sub:'Subtotal', tax:'Tax (13% IVA)', total:'Estimated total',
-        onreq:'Price to confirm', date:'Preferred date', name:'Name', note:'Notes'},
+        onreq:'Price to confirm', disc:'Promo code', date:'Preferred date', name:'Name', note:'Notes'},
     fr:{hi:'Bonjour Salty Horizon ! Je souhaite réserver :', sub:'Sous-total', tax:'Taxe (13% IVA)', total:'Total estimé',
-        onreq:'Prix à confirmer', date:'Date souhaitée', name:'Nom', note:'Remarques'},
+        onreq:'Prix à confirmer', disc:'Code promo', date:'Date souhaitée', name:'Nom', note:'Remarques'},
     es:{hi:'¡Hola Salty Horizon! Quiero reservar:', sub:'Subtotal', tax:'Impuesto (13% IVA)', total:'Total estimado',
-        onreq:'Precio a confirmar', date:'Fecha', name:'Nombre', note:'Notas'}
+        onreq:'Precio a confirmar', disc:'Código promocional', date:'Fecha', name:'Nombre', note:'Notas'}
   }[LANG];
 
   let msg = L.hi;
@@ -151,6 +191,7 @@ function cartBuildMessage(form){
   });
   if(tt.subtotal > 0){
     msg += '\n\n'+L.sub+': $'+tt.subtotal.toFixed(2);
+    if(tt.promo) msg += '\n'+L.disc+' '+tt.promo+' (-'+Math.round(tt.rate*100)+'%): -$'+tt.discount.toFixed(2);
     msg += '\n'+L.tax+': $'+tt.tax.toFixed(2);
     msg += '\n'+L.total+': $'+tt.total.toFixed(2);
   }
@@ -185,6 +226,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
       if(sel && sel.value){ cartAdd(sel.value); sel.value=''; }
       return;
     }
+    const promoBtn = e.target.closest('[data-cart-promo-apply]');
+    if(promoBtn){ cartApplyPromo(promoBtn.closest('[data-cart-promo]')); return; }
     const sendBtn = e.target.closest('[data-cart-send]');
     if(sendBtn){
       if(sendBtn.disabled || Object.keys(cartGetItems()).length === 0) return;
@@ -213,6 +256,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
     form[key.charAt(0).toLowerCase()+key.slice(1)] = el.value;
     cartSaveForm(form);
     document.querySelectorAll('[name="'+el.name+'"]').forEach(other=>{ if(other !== el) other.value = el.value; });
+  });
+
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Enter' && e.target.matches && e.target.matches('[data-cart-promo-input]')){
+      e.preventDefault();
+      cartApplyPromo(e.target.closest('[data-cart-promo]'));
+    }
   });
 
   // drawer open/close
