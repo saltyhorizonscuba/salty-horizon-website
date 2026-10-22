@@ -294,7 +294,7 @@ const I18N_DATA = {
     'contact.phoneT':'WhatsApp','contact.emailT':'Correo','contact.instaT':'Instagram','contact.hoursT':'Idiomas','contact.hours':'English · Français · Español',
 
     'footer.tagline':'Buceo privado y personalizado en Tamarindo, Costa Rica. Calidad antes que cantidad, cada inmersión pensada para ti.',
-    'footer.explore':'Explorar','footer.contactH':'Contacto','footer.rights':'Todos los derechos reservados.','footer.made':'Diseñado para el océano.','footer.home':'Inicio',
+    'footer.explore':'Explorar','footer.partnersH':'Socios','footer.contactH':'Contacto','footer.rights':'Todos los derechos reservados.','footer.made':'Diseñado para el océano.','footer.home':'Inicio',
     'footer.cancelH':'Política de reserva, cancelación y reembolso',
     'footer.pol1H':'1. Depósito de reserva',
     'footer.pol1':'Se requiere un depósito para confirmar todas las reservas. El monto del depósito varía según la actividad reservada. La reserva se considera confirmada una vez recibido el depósito.',
