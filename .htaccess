@@ -2,6 +2,12 @@
 # redirect for anyone landing on the bare domain or plain http)
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Internal project files: never serve (agents.json stays public on purpose)
+  RewriteRule ^(\.claude|\.github|\.well-known/(?!agents\.json$)) - [F,L]
+  RewriteRule ^(README|SEO_[A-Z_]+|AMELIORATIONS)\.md$ - [F,L]
+  RewriteRule ^skills-lock\.json$ - [F,L]
+
   RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP_HOST} ^saltyhorizondiving\.com$ [NC]
   RewriteRule ^(.*)$ https://www.saltyhorizondiving.com/$1 [L,R=301]
@@ -40,6 +46,8 @@
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
   # Once a browser has visited over https, skip the http redirect for a year
   Header always set Strict-Transport-Security "max-age=31536000"
 </IfModule>
