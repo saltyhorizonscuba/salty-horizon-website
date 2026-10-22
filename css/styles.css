@@ -577,7 +577,7 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 
 .footer{background:#071c25;color:#9fb4bc;padding:3.5rem 0 2rem}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2.5rem;margin-bottom:2.5rem}
-.footer-grid:has(.footer-cancel){grid-template-columns:1.3fr .9fr 1.1fr .9fr 1.2fr}
+@media (min-width:1100px){.footer-grid:has(.footer-cancel){grid-template-columns:1.3fr .9fr 1.1fr .9fr 1.2fr}}
 .footer-partner .partner-logo{display:inline-block;padding:0;max-width:150px;opacity:.95;transition:opacity .25s,transform .25s}
 .footer-partner .partner-logo:hover{opacity:1;transform:translateY(-2px)}
 .footer-partner img{display:block;width:100%;height:auto;border-radius:10px}
