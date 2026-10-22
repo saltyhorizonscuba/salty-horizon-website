@@ -566,6 +566,12 @@ h1,h2,h3,h4{font-family:var(--font-display);line-height:1.1;color:var(--ink);fon
 
 .footer{background:#071c25;color:#9fb4bc;padding:3.5rem 0 2rem}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2.5rem;margin-bottom:2.5rem}
+.footer-grid:has(.footer-cancel){grid-template-columns:1.3fr .9fr 1.1fr .9fr 1.2fr}
+.footer-partner .partner-logo{display:inline-block;padding:0;max-width:150px;opacity:.95;transition:opacity .25s,transform .25s}
+.footer-partner .partner-logo:hover{opacity:1;transform:translateY(-2px)}
+.footer-partner img{display:block;width:100%;height:auto;border-radius:10px}
+.footer-partner--row{display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:1.4rem;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#fff}
+.footer-partner--row .partner-logo{max-width:120px}
 .footer .brand{font-size:1.3rem}
 .footer h3{color:#fff;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.1rem}
 .footer a{display:block;padding:.3rem 0;transition:color .25s}

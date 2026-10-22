@@ -293,7 +293,7 @@ const I18N_DATA = {
     'contact.phoneT':'WhatsApp','contact.emailT':'E-mail','contact.instaT':'Instagram','contact.hoursT':'Langues','contact.hours':'English · Français · Español',
 
     'footer.tagline':'Plongée sous-marine privée et personnalisée à Tamarindo, Costa Rica. La qualité avant la quantité, chaque plongée pensée pour vous.',
-    'footer.explore':'Explorer','footer.contactH':'Contact','footer.rights':'Tous droits réservés.','footer.made':'Conçu pour l’océan','footer.home':'Accueil',
+    'footer.explore':'Explorer','footer.partnersH':'Partenaires','footer.contactH':'Contact','footer.rights':'Tous droits réservés.','footer.made':'Conçu pour l’océan','footer.home':'Accueil',
     'footer.cancelH':'Politique de réservation, d’annulation et de remboursement',
     'footer.pol1H':'1. Acompte de réservation',
     'footer.pol1':'Un acompte est requis pour confirmer toute réservation. Son montant varie selon l’activité réservée. La réservation est considérée comme confirmée dès réception de l’acompte.',

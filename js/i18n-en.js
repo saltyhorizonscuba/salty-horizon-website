@@ -293,7 +293,7 @@ const I18N_DATA = {
     'contact.phoneT':'WhatsApp','contact.emailT':'Email','contact.instaT':'Instagram','contact.hoursT':'Languages','contact.hours':'English · Français · Español',
 
     'footer.tagline':'Private, personalized scuba diving in Tamarindo, Costa Rica. Quality over quantity, every dive designed around you.',
-    'footer.explore':'Explore','footer.contactH':'Contact','footer.rights':'All rights reserved.','footer.made':'Designed for the ocean.','footer.home':'Home',
+    'footer.explore':'Explore','footer.partnersH':'Partners','footer.contactH':'Contact','footer.rights':'All rights reserved.','footer.made':'Designed for the ocean.','footer.home':'Home',
     'footer.cancelH':'Booking, Cancellation and Refund Policy',
     'footer.pol1H':'1. Booking Deposit',
     'footer.pol1':'A deposit is required to confirm all bookings. The deposit amount varies depending on the activity booked. A booking is considered confirmed once the deposit has been received.',
