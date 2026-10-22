@@ -151,7 +151,7 @@ const I18N_DATA = {
     'book.alert':'Please choose an experience first.',
     'cart.title':'Your booking','cart.empty':'See our experiences','cart.add':'Add to cart','cart.added':'Added ✓','cart.remove':'Remove',
     'cart.subtotal':'Subtotal','cart.tax':'Tax (13% IVA)','cart.total':'Estimated total','cart.onRequest':'Price to confirm',
-    'cart.discount':'Discount','cart.promoPh':'Enter code','cart.promoApply':'Apply','cart.promoApplied':'Code applied!','cart.promoInvalid':'Invalid code.',
+    'cart.discount':'Discount','cart.promoPh':'Promo code','cart.promoApply':'Apply','cart.promoApplied':'Code applied!','cart.promoInvalid':'Invalid code.',
     'cart.onRequestNote':'Some items are priced on request and will be confirmed on WhatsApp.',
 
     'faq.eyebrow':'Good to know','faq.title':'Frequently asked questions','faq.seeMore':'See the full diving FAQ',

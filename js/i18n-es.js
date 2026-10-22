@@ -151,7 +151,7 @@ const I18N_DATA = {
     'book.alert':'Por favor elige una experiencia primero.',
     'cart.title':'Tu reserva','cart.empty':'Ver nuestras experiencias','cart.add':'Añadir al carrito','cart.added':'Añadido ✓','cart.remove':'Quitar',
     'cart.subtotal':'Subtotal','cart.tax':'Impuesto (13% IVA)','cart.total':'Total estimado','cart.onRequest':'Precio a confirmar',
-    'cart.discount':'Descuento','cart.promoPh':'Ingresar código','cart.promoApply':'Aplicar','cart.promoApplied':'¡Código aplicado!','cart.promoInvalid':'Código inválido.',
+    'cart.discount':'Descuento','cart.promoPh':'Código promo','cart.promoApply':'Aplicar','cart.promoApplied':'¡Código aplicado!','cart.promoInvalid':'Código inválido.',
     'cart.onRequestNote':'Algunos elementos son a consultar y se confirmarán por WhatsApp.',
 
     'faq.eyebrow':'Es bueno saberlo','faq.title':'Preguntas frecuentes','faq.seeMore':'Ver todas las preguntas sobre buceo',
