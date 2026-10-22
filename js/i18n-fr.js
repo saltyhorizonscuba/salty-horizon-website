@@ -151,6 +151,7 @@ const I18N_DATA = {
     'book.alert':'Veuillez d’abord choisir une expérience.',
     'cart.title':'Votre réservation','cart.empty':'Voir nos expériences','cart.add':'Ajouter au panier','cart.added':'Ajouté ✓','cart.remove':'Retirer',
     'cart.subtotal':'Sous-total','cart.tax':'Taxe (13% IVA)','cart.total':'Total estimé','cart.onRequest':'Prix à confirmer',
+    'cart.discount':'Réduction','cart.promoPh':'Entrer le code','cart.promoApply':'Appliquer','cart.promoApplied':'Code appliqué !','cart.promoInvalid':'Code invalide.',
     'cart.onRequestNote':'Certains éléments sont sur devis et seront confirmés sur WhatsApp.',
 
     'faq.eyebrow':'Bon à savoir','faq.title':'Questions fréquentes','faq.seeMore':'Voir toute la FAQ plongée',
